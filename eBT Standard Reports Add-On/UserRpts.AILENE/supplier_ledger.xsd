@@ -1,0 +1,36 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="supplier_ledger" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="supplier_ledger" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="supplier_ledger">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH" type="xs:string" minOccurs="0" />
+              <xs:element name="date1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="date2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="BPCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="BPNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="BPADDRESS" type="xs:string" minOccurs="0" />
+              <xs:element name="SALESPERSON" type="xs:string" minOccurs="0" />
+              <xs:element name="CREDITLIMIT" type="xs:double" minOccurs="0" />
+              <xs:element name="POSTDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DOCDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DOCNO" type="xs:string" minOccurs="0" />
+              <xs:element name="DOCSTATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="OB" type="xs:double" minOccurs="0" />
+              <xs:element name="DEBIT" type="xs:double" minOccurs="0" />
+              <xs:element name="CREDIT" type="xs:double" minOccurs="0" />
+              <xs:element name="OBJECTCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="TRXTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="TOTALDEBIT" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTALCREDIT" type="xs:double" minOccurs="0" />
+              <xs:element name="TOTAL" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

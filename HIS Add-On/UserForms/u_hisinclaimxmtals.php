@@ -1,0 +1,62 @@
+<tr><td>
+	<table class="tableFreeForm" width="100%" cellpadding="0" cellspacing="0" border="0">
+		<tr><td width="168" >&nbsp;</td>
+		<td align=left>&nbsp;</td>
+		<td width="168" ><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="40"><label <?php $page->businessobject->items->draw->caption("docno") ?> >No.</label></td><td align="right"><select <?php $page->businessobject->items->draw->select("docseries",array("loaddocseries",$page->objectcode,"-1:Manual")) ?> ></select></td></tr></table></td>
+		<td width="168" align=left>&nbsp;<input type="text" <?php $page->businessobject->items->draw->text("docno") ?> /></td>
+	</tr>
+	<tr><td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_inscode") ?>>Health Benefit</label></td>
+		<td >&nbsp;<select <?php $page->businessobject->items->userfields->draw->select("u_inscode",array("loadu_hishealthins7","",":")) ?>></select>&nbsp;<input type="checkbox" <?php $page->businessobject->items->userfields->draw->checkbox("u_package","1") ?>/><label <?php $page->businessobject->items->userfields->draw->caption("u_package") ?>>Bill Packages & A/R - Cash Sales</label></td>
+		<td ><label <?php $page->businessobject->items->draw->caption("docstatus") ?> >Status</label></td>
+		<td align=left>&nbsp;<select <?php $page->businessobject->items->draw->select("docstatus",array("loadenumdocstatus","","")) ?> ></select></td>
+	</tr>
+	<tr>
+	  <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_membergroup") ?>>Member Group</label></td>
+	<td >&nbsp;<select <?php $page->businessobject->items->userfields->draw->select("u_membergroup",array("loadudflinktable","u_hishealthinmemgroups:code:name",":[All]")) ?>></select></td>
+	  <td ><label <?php $page->businessobject->items->userfields->draw->caption("u_docdate") ?>>Date</label></td>
+	<td>&nbsp;<input type="text" size="18" <?php $page->businessobject->items->userfields->draw->text("u_docdate") ?>/></td>	  </tr>
+	<tr>
+	  <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_reftype") ?>>Visit Type</label></td>
+	<td >&nbsp;<select <?php $page->businessobject->items->userfields->draw->select("u_reftype") ?>></select></td>
+	  <td ><label <?php $page->businessobject->items->userfields->draw->caption("u_refno") ?>>Reference No.</label></td>
+	<td>&nbsp;<input type="text" size="18" <?php $page->businessobject->items->userfields->draw->text("u_refno") ?>/></td>
+	  </tr>
+	<tr>
+	  <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_startdate") ?>>Date From</label></td>
+		<td>&nbsp;<input type="text" size="10" <?php $page->businessobject->items->userfields->draw->text("u_startdate") ?>/><label <?php $page->businessobject->items->userfields->draw->caption("u_enddate") ?>>To</label>&nbsp;<input type="text" size="10" <?php $page->businessobject->items->userfields->draw->text("u_enddate") ?>/>&nbsp;<?php if (!isEditMode()) {?><a class="button" href="" onClick="formSubmit('?');return false;">Retrieve</a><?php } ?></td>
+	  <td width="168">&nbsp;</td>
+		<td >&nbsp;</td>
+	  </tr>
+	</table>
+</td></tr>	
+<tr class="fillerRow5px"><td></td></tr>	
+<tr><td>
+	<?php $objGrids[0]->draw(true) ?>	  
+</td></tr>		
+<tr class="fillerRow5px"><td></td></tr>	
+<tr><td>
+	<table class="tableFreeForm" width="100%" border="0" cellpadding="0" cellspacing="0" >
+		<tr>
+		  <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_preparedby") ?>>Prepared By</label></td>
+		<td >&nbsp;<select <?php $page->businessobject->items->userfields->draw->select("u_preparedby") ?>></select></td>
+		  <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_totalhfamount") ?>>Hospital Fees</label></td>
+			<td width="168">&nbsp;<input type="text" size="18" <?php $page->businessobject->items->userfields->draw->text("u_totalhfamount") ?>/></td>
+		</tr>
+		<tr>
+		  <td width="168">&nbsp;</td>
+		  <td >&nbsp;</td>
+		  <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_totalpfamount") ?>>Professional Fees</label></td>
+			<td>&nbsp;<input type="text" size="18" <?php $page->businessobject->items->userfields->draw->text("u_totalpfamount") ?>/></td>
+		</tr>
+		<tr>
+		  <td width="168">&nbsp;</td>
+		  <td >&nbsp;</td>
+		  <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_totalamount") ?>>Total Amount</label></td>
+			<td>&nbsp;<input type="text" size="18" <?php $page->businessobject->items->userfields->draw->text("u_totalamount") ?>/></td>
+		</tr>
+	</table>
+</td></tr>		
+<?php //$page->resize->addtab("tab1",-1,141); ?>
+<?php //$page->resize->addtabpage("tab1","udf") ?>
+<?php $page->resize->addgridobject($objGrids[0],20,240) ?>		
+

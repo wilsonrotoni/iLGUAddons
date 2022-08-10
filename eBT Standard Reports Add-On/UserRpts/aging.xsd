@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="aging" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="aging" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="aging">
+          <xs:complexType>
+            <xs:sequence>
+		  <xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+		  <xs:element name="COMPANYNAME" type="xs:string" minOccurs="0" />
+		  <xs:element name="BRANCH" type="xs:string" minOccurs="0" />
+		  <xs:element name="BRANCHNAME" type="xs:string" minOccurs="0" />
+		  <xs:element name="BPCODE" type="xs:string" minOccurs="0" />
+		  <xs:element name="BPNAME" type="xs:string" minOccurs="0" />
+		  <xs:element name="BILLTOADDRESS" type="xs:string" minOccurs="0" />
+		  <xs:element name="DOCNO" type="xs:string" minOccurs="0" />
+		  <xs:element name="DOCDUEDATE" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="DUEAMOUNT" type="xs:double" minOccurs="0" />
+		  <xs:element name="AGING" type="xs:double" minOccurs="0" />
+		  <xs:element name="current" type="xs:double" minOccurs="0" />
+		  <xs:element name="D7" type="xs:double" minOccurs="0" />
+		  <xs:element name="D15" type="xs:double" minOccurs="0" />
+		  <xs:element name="D30" type="xs:double" minOccurs="0" />
+		  <xs:element name="UP30" type="xs:double" minOccurs="0" />
+		  <xs:element name="advpay" type="xs:double" minOccurs="0" />
+		  <xs:element name="PDC" type="xs:double" minOccurs="0" />
+		  <xs:element name="date1" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="term" type="xs:string" minOccurs="0" />
+		  <xs:element name="creditlimit" type="xs:double" minOccurs="0" />
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('u_lguposterminalseries','docseriesname','Series Name','any',35,7,'',0,'u_lguforms:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.17.1015' WHERE ID='GPS.LGU';

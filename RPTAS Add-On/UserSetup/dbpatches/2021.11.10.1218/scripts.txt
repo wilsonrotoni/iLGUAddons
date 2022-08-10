@@ -1,0 +1,8 @@
+evaltrx:addUDF('u_rptaxbill','idlelandtotal','Idle Land Total','amount',0,87,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillarps','idle','Idle','amount',0,38,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillarps','idlepenalty','Idle Penalty','amount',0,39,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','isactiveidleland','Is Active Idle Land','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillcredits','idle','Idle','amount',0,28,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_taxcredits','idle','Idle','amount',0,50,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillpins','idle','Idle Land','numeric',4,75,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.11.10.1218' WHERE ID='GPS.RPTAS';

@@ -1,0 +1,17 @@
+evaltrx:addUDF('u_rptaxbill','advancediscperc','Advance Disc %','percent',1,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbill','owneraddress','Owner Address','text',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillpins','class','Classification','any',30,40,'',0,'u_rplands:name:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillpins','barangay','Barangay','any',15,45,'',0,'u_barangays:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillarps','pinno','PIN','any',30,5,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_rptaxbill','paymode','A','Annually');
+evaltrx:addUDFValue('u_rptaxbill','paymode','S','Semi Annually');
+evaltrx:addUDFValue('u_rptaxbill','paymode','Q','Quarterly');
+evaltrx:addUDF('u_rptaxbill','searchby','PIN','any',30,5,'1',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_rptaxbill','searchby','1','Land');
+evaltrx:addUDFValue('u_rptaxbill','searchby','2','Building');
+evaltrx:addUDFValue('u_rptaxbill','searchby','3','Machinery');
+evaltrx:addUserMenu('','LGUUTILMIG',570,'Update Geo FAAS Bill Year','P','u_updateGEORPTASUpdateFAASBilYear');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',570,'Update Geo FAAS Bill Year','P','u_updateGEORPTASUpdateFAASBilYear');
+evaltrx:addProgId('u_updateGEORPTASUpdateFAASBilYear','Update Geo FAAS Bill Year','./udp.php?&objectcode=u_updateGEORPTASUpdateFAASBilYear');
+evaltrx:addUDF('u_rptaxbill','isamnesty','Amnesty','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.28.1143' WHERE ID='GPS.RPTAS';

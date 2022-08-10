@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lgureceiptcashierreturn','docseries','Booklet Series','any',35,7,null,0,'',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.02.1334' WHERE ID='GPS.LGUReceipts';

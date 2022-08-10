@@ -1,0 +1,6 @@
+evaltrx:addUDF('u_lgupos','ttdosdate','Deed of Sale Date','date',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ttgross','CTC Gross','amount',0,10,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','tttctnumber','TCT Number','any',30,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ttsqm','Area (sqm.)','measure',0,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ttlotno','Lot No.','any',30,50,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.19.1050' WHERE ID='GPS.LGU';

@@ -1,0 +1,4 @@
+evaltrx:addUserMenu('','LGUADMIN',117,'Building Permit','M','LGUADMINENGINEERING');
+evaltrx:addUserMenu('','LGUADMINENGINEERING',117,'Scope of Work','P','u_buildingscopeofwork');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINENGINEERING',117,'Scope of Work','P','u_buildingscopeofwork');
+UPDATE DBVERSION SET VERSION='2021.03.05.0428' WHERE ID='GPS.ENGINEERING';

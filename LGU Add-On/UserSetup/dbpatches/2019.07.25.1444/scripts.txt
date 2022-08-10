@@ -1,0 +1,7 @@
+evaltrx:modifyUDO('lgufeecategories','Fees & Charges Categories','');
+evaltrx:addUDT('lgufeecategoryfees','Fees & Charges Categories - Items','MDLC','');
+evaltrx:addUDOChild('lgufeecategories','lgufeecategoryfees','Fees & Charges Categories - Items','G');
+evaltrx:addUDF('u_lgufeecategoryfees','feecode','Fee Code','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgufeecategoryfees','feedesc','Descriptions','any',100,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgufeecategoryfees','amount','Amount','amount',0,40,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.25.1444' WHERE ID='GPS.LGU';

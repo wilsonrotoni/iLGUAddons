@@ -1,0 +1,40 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="sales_analysis" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="sales_analysis" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sales_analysis">
+          <xs:complexType>
+            <xs:sequence>
+		  <xs:element name="company" type="xs:string" minOccurs="0" />
+		  <xs:element name="branchname" type="xs:string" minOccurs="0" />
+		  <xs:element name="datefm" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="dateto" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="docdate" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="docduedate" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="docno" type="xs:string" minOccurs="0" />
+		  <xs:element name="bpcode" type="xs:string" minOccurs="0" />
+		  <xs:element name="bpname" type="xs:string" minOccurs="0" />
+		  <xs:element name="salesperson" type="xs:string" minOccurs="0" />
+		  <xs:element name="itemcode" type="xs:string" minOccurs="0" />
+		  <xs:element name="itemdesc" type="xs:string" minOccurs="0" />
+		  <xs:element name="whscode" type="xs:string" minOccurs="0" />
+		  <xs:element name="serialno" type="xs:string" minOccurs="0" />
+		  <xs:element name="unit" type="xs:string" minOccurs="0" />
+		  <xs:element name="quantity" type="xs:double" minOccurs="0" />
+		  <xs:element name="unitprice" type="xs:double" minOccurs="0" />
+		  <xs:element name="itemcost" type="xs:double" minOccurs="0" />
+		  <xs:element name="vatcode" type="xs:string" minOccurs="0" />
+		  <xs:element name="vatamount" type="xs:double" minOccurs="0" />
+		  <xs:element name="totalcost" type="xs:double" minOccurs="0" />
+		  <xs:element name="linetotal" type="xs:double" minOccurs="0" />
+		  <xs:element name="netsales" type="xs:double" minOccurs="0" />
+		  <xs:element name="gpamount" type="xs:double" minOccurs="0" />
+          <xs:element name="percentage" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

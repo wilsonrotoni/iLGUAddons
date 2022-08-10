@@ -1,0 +1,10 @@
+evaltrx:addUDT('lguposterminalseries','Cashier - Terminal Series','MDL','G');
+evaltrx:addUDOChild('lguposterminals','lguposterminalseries','Cashier - Terminal Series','G');
+evaltrx:addUDF('u_lguposterminalseries','isdefault','Dflt','numeric',4,5,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguposterminalseries','numlen','Digits','numeric',1,10,'8',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguposterminalseries','prefix','Prefix','any',15,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguposterminalseries','nextno','Next No.','numeric',3,30,'1',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguposterminalseries','suffix','Suffix','any',15,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguposterminalseries','autoseries','Auto Series','numeric',1,45,'1',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguposterminalseries','nooflines','No of Lines','numeric',4,100,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.17.0910' WHERE ID='GPS.LGU';

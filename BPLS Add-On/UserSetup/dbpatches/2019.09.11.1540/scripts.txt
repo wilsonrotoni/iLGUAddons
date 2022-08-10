@@ -1,0 +1,2 @@
+evaltrx:addProgId('u_bplreqlist','Requirements Application List','./udp.php?&objectcode=u_bplreqlist');
+UPDATE DBVERSION SET VERSION='2019.09.11.1540' WHERE ID='GPS.BPLS';

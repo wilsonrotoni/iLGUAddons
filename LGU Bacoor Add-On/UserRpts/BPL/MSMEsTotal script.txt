@@ -1,0 +1,21 @@
+
+evaltrx:addUserMenu('','LGURPTSBPLS',200,'MSMEs and Employee Total','P','urpt_u_msmestotal');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSBPLS',200,'MSMEs and Employee Total','P','urpt_u_msmestotal');
+
+evaltrx:addUDR('u_msmestotal','MSMEs and Employee Total','QS','mysql',1);
+
+evaltrx:addUDRParam('u_msmestotal','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_msmestotal','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_msmestotal','brgy','Barangay','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_msmestotal','brgy','LQ','Q','select code,name from u_businessbarangays where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+evaltrx:addUDRLayout('u_msmestotal','MSMEs and Employee Total',1,'LGU Bacoor Add-On','BPL/apptypeperbrgy.rpt','1',1,'','','');
+
+
+
+
+
+
+
+
+

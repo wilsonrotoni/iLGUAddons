@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_rpfaas1','titleno','Title No','text',0,100,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1','phase','Phase','text',0,230,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.22.1140' WHERE ID='GPS.RPTAS';

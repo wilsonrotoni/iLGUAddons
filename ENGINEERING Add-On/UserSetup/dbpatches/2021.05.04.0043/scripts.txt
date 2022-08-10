@@ -1,0 +1,3 @@
+evaltrx:addUDT('buildingpermitfees','Fees and Charges','MD','');
+evaltrx:addUDO('buildingpermitfees','Fees and Charges','buildingpermitfees','G');
+UPDATE DBVERSION SET VERSION='2021.05.04.0043' WHERE ID='GPS.ENGINEERING';

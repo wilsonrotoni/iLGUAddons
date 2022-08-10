@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_lgusetup','rphousing','Socialized Housing Tax','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','isactivesht','Is Active SHT','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','bplbarangayfee','Barangay Clearance Fee','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.01.29.1521' WHERE ID='GPS.LGU';

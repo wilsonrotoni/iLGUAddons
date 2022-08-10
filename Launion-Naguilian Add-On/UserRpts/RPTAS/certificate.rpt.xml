@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+		<CommandText>certificate</CommandText>
+		<TableName>certificate</TableName>
+
+	</Config>
+	<Parameters>
+
+	<Parameter>
+			<Id>pi_company</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>company</SourceKey>
+			<SampleData></SampleData>
+	</Parameter>
+
+	<Parameter>
+			<Id>pi_branch</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>branch</SourceKey>
+			<SampleData></SampleData>
+	</Parameter>
+<Parameter>
+			<Id>pi_requester</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>requester</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+
+	<Parameter>
+			<Id>pi_pin</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>pin</SourceKey>
+			<SampleData></SampleData>
+	</Parameter>
+
+	
+
+	
+	
+
+
+	</Parameters>		
+</Configs>

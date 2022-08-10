@@ -1,0 +1,10 @@
+evaltrx:addUDF('u_lgubiddocinfra','zoomid','Zoom Id','any',50,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubiddocinfra','zoompass','Zoom Password','any',50,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubiddocinfra','officehours','Office Hours','text',0,20,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubiddocinfra','scc2','SCC 2','text',0,20,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubiddocinfra','scc41','SCC 41','text',0,20,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubiddocinfra','scc6','SCC 6','text',0,20,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubiddocgoods','zoomid','Zoom Id','any',50,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubiddocgoods','zoompass','Zoom Password','any',50,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubiddocgoods','officehours','Office Hours','text',0,20,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.12.03.1926' WHERE ID='GPS.LGUPurchasing';

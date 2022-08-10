@@ -1,0 +1,8 @@
+evaltrx:addUserMenu('','LGUPURCHASINGADMIN',600,'Mode of Procurement','P','u_lguprocmodes');
+evaltrx:addUserMenu('SYSADMIN','LGUPURCHASINGADMIN',600,'Mode of Procurement','P','u_lguprocmodes');
+evaltrx:modifyUDF('u_lgupurchaserequests','procmode','Mode of Procurement','any',255,20,null,0,'u_lguprocmodes:code:name',0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lguphilgeps','procmode','Mode of Procurement','any',255,20,null,0,'u_lguprocmodes:code:name',0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgupurchaseorder','procmode','Mode of Procurement','any',255,20,null,0,'u_lguprocmodes:code:name',0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgupurchasedelivery','procmode','Mode of Procurement','any',255,20,null,0,'u_lguprocmodes:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lguprojs','totalpramount','PR Amount (Total)','amount',0,70,'0',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2020.09.16.1642' WHERE ID='GPS.LGUPurchasing';

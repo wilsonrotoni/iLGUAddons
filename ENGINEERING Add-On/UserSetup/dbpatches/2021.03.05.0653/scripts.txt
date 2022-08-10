@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_buildingpermitapps','appno','Application No.','any',255,85,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','areano','Area No.','any',255,85,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.03.05.0653' WHERE ID='GPS.ENGINEERING';

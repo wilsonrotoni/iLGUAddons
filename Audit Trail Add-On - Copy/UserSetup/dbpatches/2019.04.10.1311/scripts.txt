@@ -1,0 +1,3 @@
+evaltrx:registerAddonMenu('GPS','Audit Trail');
+evaltrx:addAddonMenu('GPS','Audit Trail','ADMIN',100);
+UPDATE DBVERSION SET VERSION='2019.04.10.1311' WHERE ID='GPS.AuditTrail';

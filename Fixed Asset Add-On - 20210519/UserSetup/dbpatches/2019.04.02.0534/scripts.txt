@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_fasales','vatrate','VAT Rate','amount',0,10,'0',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2019.04.02.0534' WHERE ID='GPS.FixedAsset';

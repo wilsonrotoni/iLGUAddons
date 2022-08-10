@@ -1,0 +1,14 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',516,'Certification of Non-Improvement','P','urpt_cert_nonimprove');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',516,'Certification of Non-Improvement','P','urpt_cert_nonimprove');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',516,'Certification of Non-Improvement','P','urpt_cert_nonimprove');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',516,'Certification of Non-Improvement','P','urpt_cert_nonimprove');
+
+evaltrx:addUDR('cert_nonimprove','Certification of Non-Improvement','QS','mysql',1);
+
+
+evaltrx:addUDRParam('cert_nonimprove','tdno','TD No.','','any',1,'text',1,null,0,null);
+evaltrx:addUDRParam('cert_nonimprove','orno','OR No.','','any',1,'text',1,null,0,null);
+evaltrx:addUDRParam('cert_nonimprove','amount','Amount','','any',1,'text',1,null,0,null);
+evaltrx:addUDRParam('cert_nonimprove','ordate','OR Date','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRLayout('cert_nonimprove','Certification of Non-Improvement',1,'Launion-Rosario Add-On','RPTAS\cert_nonimprove.rpt','1',1,'','','');

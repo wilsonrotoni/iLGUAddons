@@ -1,0 +1,65 @@
+* { FONT-FAMILY: Calibri Light;
+}
+
+.divTableBox { BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid}
+.divTableFilterBox { BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid}
+.divTableBoxHead { BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid}
+
+.tableBox { BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid}
+
+.tableBox TD { FONT-SIZE: 14px; HEIGHT:16px}
+
+.tableBoxFreeForm { BORDER-RIGHT: 1px solid; BORDER-TOP: 1px solid; BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid}
+
+.tableBoxFreeForm TD { FONT-SIZE: 11px; HEIGHT:20px}
+
+.tableBoxHead TD { FONT-WEIGHT: bold;  BORDER-RIGHT: 1px solid; BORDER-BOTTOM: 1px solid; FONT-SIZE: 14px; HEIGHT: 16px}
+
+.tableBoxDataEntry TD { FONT-SIZE: 14px;  HEIGHT: 21px}
+.tableBoxFilterEntry TD { HEIGHT: 21px}
+
+.tableBoxDataEntryAction TD { BORDER-BOTTOM: 1px solid; FONT-SIZE: 14px; HEIGHT: 16px}
+
+.tableBoxFoot TD { FONT-WEIGHT: bold; BORDER-BOTTOM: 0px solid; FONT-SIZE: 14px;  HEIGHT: 18px}
+
+.tableBoxRow { BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 0px solid}
+
+.tableBoxRow TD { BORDER-RIGHT: 1px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 1px solid}
+
+.tableBoxSelectedRow { BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 0px solid}
+
+.tableBoxSelectedRow TD { BORDER-RIGHT: 1px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 1px solid}
+
+.headRow TD { FONT-WEIGHT: bold; BORDER-BOTTOM: 0px solid; FONT-SIZE: 14px;  HEIGHT: 16px}
+
+.dataRow TD { FONT-SIZE: 14px;}
+
+.fillerRow TD { HEIGHT: 1px}
+
+.fillerRow2 TD { HEIGHT: 5px}
+
+.fillerRow10px TD { HEIGHT: 10px}
+.fillerRow5px TD { HEIGHT: 10px}
+
+.fillerRow3 TD { HEIGHT: 7px}
+
+.fillerRow4 TD { HEIGHT: 20px}
+
+.xfillerRow4 TD { HEIGHT: 20px}
+
+.taskRow TD { FONT-WEIGHT: normal; BORDER-BOTTOM: 0px solid; FONT-SIZE: 14px; HEIGHT: 18px}
+
+.taskRowFoot TD { FONT-WEIGHT: normal; BORDER-BOTTOM: 0px solid; FONT-SIZE: 14px; HEIGHT: 18px}
+
+.tableBox TD A:link {        TEXT-DECORATION: none}
+.tableBox TD A:visited {        TEXT-DECORATION: none}
+.tableBox TD A:active {        TEXT-DECORATION: none}
+.tableBox TD A:hover {        FONT-WEIGHT: bold}
+
+	.boxpanel{
+		z-index:1;
+		border: 1px solid;
+		visibility: visible;
+		display:block;
+		overflow:auto
+	}

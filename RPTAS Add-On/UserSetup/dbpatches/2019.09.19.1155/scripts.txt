@@ -1,0 +1,6 @@
+evaltrx:addUserMenu('','LGUUTILMIG',600,'Re-Migrate Faas Land Assessment','P','u_updateGEORPTASAgriLand');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',600,'Re-Migrate Faas Land Assessment','P','u_updateGEORPTASAgriLand');
+evaltrx:addProgId('u_updateGEORPTASAgriLand','Re-Migrate Faas Land Assessment','./udp.php?&objectcode=u_updateGEORPTASAgriLand');
+evaltrx:addUDF('u_rpfaas2a','gryear','GR Year','any',50,260,'',0,'u_gryears:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3a','gryear','GR Year','any',50,260,'',0,'u_gryears:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.19.1155' WHERE ID='GPS.RPTAS';

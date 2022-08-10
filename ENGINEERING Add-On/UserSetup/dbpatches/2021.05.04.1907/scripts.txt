@@ -1,0 +1,2 @@
+evaltrx:deleteUDF('u_buildingdivisions','division','Division Catergory','any',100,10,'',0,'u_buildingfees:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.04.1907' WHERE ID='GPS.ENGINEERING';

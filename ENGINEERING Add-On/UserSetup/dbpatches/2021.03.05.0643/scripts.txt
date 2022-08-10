@@ -1,0 +1,2 @@
+evaltrx:addUDO('buildingrequirements','List of Required Documents','buildingrequirements','G');
+UPDATE DBVERSION SET VERSION='2021.03.05.0643' WHERE ID='GPS.ENGINEERING';

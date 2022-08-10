@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGUADMINRPTAS',45.0,'Real Property Land - Classes','P','u_rplandclasses');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINRPTAS',45.0,'Real Property Land - Classes','P','u_rplandclasses');
+UPDATE DBVERSION SET VERSION='2019.04.12.1331' WHERE ID='GPS.RPTAS';

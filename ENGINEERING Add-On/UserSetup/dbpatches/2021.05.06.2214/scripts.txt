@@ -1,0 +1,11 @@
+evaltrx:addUDF('u_buildingpermitmds','ownerlastname','Last Name','any',100,20,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','ownerfirstname','First Name','any',100,30,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','ownermiddlename','Middle Name','any',40,110,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','owneraddress','Address','any',255,50,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','applicationno','Application No.','any',30,60,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','areano','Area No.','any',30,70,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','apprefno','Application No.','any',30,80,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','appdate','Date Registration','date',0,90,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','regddate','Date Registration','date',0,100,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitmds','year','Year','numeric',4,120,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.06.2214' WHERE ID='GPS.ENGINEERING';

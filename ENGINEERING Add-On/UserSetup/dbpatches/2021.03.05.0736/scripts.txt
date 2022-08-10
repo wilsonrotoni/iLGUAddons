@@ -1,0 +1,10 @@
+evaltrx:addUDF('users','buildingencoder','Building - Encoder','numeric',1,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('users','buildingassessor','Building - Assessor','numeric',1,50,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('users','buildingapprover','Building - Approver','numeric',1,60,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('users','buildingapprover','0','No');
+evaltrx:addUDFValue('users','buildingapprover','1','Yes');
+evaltrx:addUDFValue('users','buildingassessor','0','No');
+evaltrx:addUDFValue('users','buildingassessor','1','Yes');
+evaltrx:addUDFValue('users','buildingencoder','0','No');
+evaltrx:addUDFValue('users','buildingencoder','1','Yes');
+UPDATE DBVERSION SET VERSION='2021.03.05.0736' WHERE ID='GPS.ENGINEERING';

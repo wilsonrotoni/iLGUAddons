@@ -1,0 +1,4 @@
+evaltrx:addUDF('userprofitcenters','isdefault','Default','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('userprofitcenters','isdefault','0','No');
+evaltrx:addUDFValue('userprofitcenters','isdefault','1','Yes');
+UPDATE DBVERSION SET VERSION='2019.05.15.1553' WHERE ID='GPS.LGUPurchasing';

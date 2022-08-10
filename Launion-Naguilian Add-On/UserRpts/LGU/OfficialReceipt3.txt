@@ -1,0 +1,27 @@
+evaltrx:addUserMenu('','LGURPTSPAY',281,'Official Receipt Series','P','urpt_u_orse');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',281,'Official Receipt Series','P','urpt_u_orse');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',281,'Official Receipt Series','P','urpt_u_orse');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',281,'Official Receipt Series','P','urpt_u_orse');
+
+evaltrx:addUDR('u_orse','Official Receipt Series','QS','mysql',1);
+
+
+evaltrx:addUDRParam('u_orse','docno','OR Number From','','any',1,'text',0,null,0,null);
+evaltrx:addUDRParam('u_orse','docno2','OR Number To','','any',1,'text',1,null,0,null);
+evaltrx:addUDRParam('u_orse','docno3','OR Number To','','any',1,'text',1,null,0,null);
+
+evaltrx:addUDRParam('u_orse','date','Date','','date',1,'text',10,'eval:currentdate()',1,null);
+
+
+evaltrx:addUDRParam('u_orse','profitcenter','Profitcenter','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_orse','profitcenter','BPL','BPLS');
+evaltrx:addUDRParamValue('u_orse','profitcenter','MTOP','FRANCHISE');
+evaltrx:addUDRParamValue('u_orse','profitcenter','PMR','PUBLIC MARKET');
+evaltrx:addUDRParamValue('u_orse','profitcenter','RPTA','REAL PROPERTY');
+evaltrx:addUDRParamValue('u_orse','profitcenter','','Cash');
+
+
+evaltrx:addUDRLayout('u_orse','Official Receipt Series',1,'LGU Add-On','OfficialReceipt2.rpt','1',1,'','','');
+
+
+

@@ -1,0 +1,15 @@
+evaltrx:addUDF('u_buildingpermitapps','scopeofwork','Scope of Work','any',30,10,'N',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','','');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','NEW CONSTRUCTION','NEW CONSTRUCTION');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','ACCESSORY BUILDING/STRUCTURE','ACCESSORY BUILDING/STRUCTURE');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','LEGALIZATION OF EXISTING BUILDING','LEGALIZATION OF EXISTING BUILDING');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','OTHERS','OTHERS');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','ERECTION','ERECTION');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','ADDITION','ADDITION');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','ALTERATION','ALTERATION');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','RENOVATION','RENOVATION');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','CONVERSION','CONVERSION');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','REPAIR','REPAIR');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','MOVING','MOVING');
+evaltrx:addUDFValue('u_buildingpermitapps','scopeofwork','RAISING','RAISING');
+UPDATE DBVERSION SET VERSION='2021.11.15.1259' WHERE ID='GPS.ENGINEERING';

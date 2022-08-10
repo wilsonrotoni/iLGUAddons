@@ -1,0 +1,4 @@
+evaltrx:addProgId('u_bpllist','List of Business Permits','./udp.php?&objectcode=u_bpllist');
+evaltrx:addProgId('u_bplasslist','For Approval Buisiness Permits','./udp.php?&objectcode=u_bplasslist');
+evaltrx:addProgId('u_bplprint','Print Business Permits','/udp.php?&objectcode=u_bpllist&df_opt=Print');
+UPDATE DBVERSION SET VERSION='2019.03.28.1052' WHERE ID='GPS.BPLS';

@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('u_rpfaas1b','class','Class','any',30,12,'',0,'u_rplandclasses:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.23.1312' WHERE ID='GPS.RPTAS';

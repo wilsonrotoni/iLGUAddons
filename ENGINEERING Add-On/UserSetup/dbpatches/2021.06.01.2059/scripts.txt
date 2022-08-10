@@ -1,0 +1,3 @@
+evaltrx:addUDT('buildingpermitappengr','Building Permit App - Engineers','DL','');
+evaltrx:addUDOChild('buildingpermitapps','buildingpermitappengr','Building Permit App - Engineers','G');
+UPDATE DBVERSION SET VERSION='2021.06.01.2059' WHERE ID='GPS.ENGINEERING';

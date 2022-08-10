@@ -1,0 +1,11 @@
+evaltrx:addUDF('u_bpllines','compbased','Computation Based','any',100,20,'2',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_bpllines','compbased','','');
+evaltrx:addUDFValue('u_bpllines','compbased','1','Fixed Amount');
+evaltrx:addUDFValue('u_bpllines','compbased','2','Table Based');
+evaltrx:addUDF('u_bpllines','fixedamount','Fixed Amount','amount',0,100,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUserMenu('','LGUADMINBPLS',150,'Business Barangays','P','u_businessbarangays');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINBPLS',150,'Business Barangays','P','u_businessbarangays');
+evaltrx:addUDT('businessbarangays','Business Barangays','MDC','G');
+evaltrx:addUDO('businessbarangays','Business Barangays','businessbarangays','G');
+evaltrx:modifyUDF('u_bplapps','bbrgy','Business Brgy.','any',50,250,'',0,'u_businessbarangays:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.05.24.2105' WHERE ID='GPS.BPLS';

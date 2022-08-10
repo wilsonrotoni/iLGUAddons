@@ -1,0 +1,4 @@
+evaltrx:addUserMenu('','LGUOTHREQBLDG',5,'Building Application List','P','u_buildingapplist');
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQBLDG',5,'Building Application List','P','u_buildingapplist');
+evaltrx:addProgId('u_buildingapplist','Building Application List','./udp.php?&objectcode=u_buildingapplist');
+UPDATE DBVERSION SET VERSION='2020.05.28.1119' WHERE ID='GPS.LGUBuilding';

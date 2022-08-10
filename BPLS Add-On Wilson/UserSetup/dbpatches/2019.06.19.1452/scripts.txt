@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_bplapps','retiredorno','Retired OR Number','any',50,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','retiredpaidamount','Retired Paid Amount','amount',0,50,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.19.1452' WHERE ID='GPS.BPLS';

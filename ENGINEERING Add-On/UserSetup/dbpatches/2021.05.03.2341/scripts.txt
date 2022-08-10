@@ -1,0 +1,6 @@
+evaltrx:deleteUDF('u_buildingdivisions','division','Building Division Catergory','any',100,10,'',0,'u_buildingfees:code:name',0,0,1,1,1,1);
+evaltrx:deleteUDF('u_buildingdivisions','area','Area Per Sqm','any',100,15,'',0,'u_buildingfeesarea:u_area',0,0,1,1,1,1);
+evaltrx:deleteUDF('u_buildingdivisions','fee','Fee Per Sqm','any',100,15,'',0,'u_buildingfeesarea:u_fee',0,0,1,1,1,1);
+evaltrx:deleteUDF('u_buildingdivisions','totalarea','Total Area in Sqm','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:deleteUDF('u_buildingdivisions','buildingfee','Building Fee','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.03.2341' WHERE ID='GPS.ENGINEERING';

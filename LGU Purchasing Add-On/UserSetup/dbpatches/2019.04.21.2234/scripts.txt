@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lgupurchaserequests','poprofitcenter','Purchase Order To','any',50,30,null,0,'profitcenters:profitcenter:profitcentername',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.21.2234' WHERE ID='GPS.LGUPurchasing';

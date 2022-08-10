@@ -1,0 +1,11 @@
+evaltrx:addUserMenu('','',920.1,'Queueing','M','QUEUEING');
+evaltrx:addUserMenu('SYSADMIN','',920.1,'Queueing','M','QUEUEING');
+evaltrx:addUserMenu('','QUEUEING',100,'Groups','P','u_quegroups');
+evaltrx:addUserMenu('SYSADMIN','QUEUEING',100,'Groups','P','u_quegroups');
+evaltrx:addUserMenu('','QUEUEING',200,'Terminals','P','u_queterminals');
+evaltrx:addUserMenu('SYSADMIN','QUEUEING',200,'Terminals','P','u_queterminals');
+evaltrx:addUserMenu('','QUEUEING',300,'Settings','P','u_quesetup');
+evaltrx:addUserMenu('SYSADMIN','QUEUEING',300,'Settings','P','u_quesetup');
+evaltrx:registerAddonMenu('GPS','Queueing');
+evaltrx:addAddonMenu('GPS','Queueing','',920.1);
+UPDATE DBVERSION SET VERSION='2019.11.24.1125' WHERE ID='GPS.Queueing';

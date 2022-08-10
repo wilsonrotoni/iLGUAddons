@@ -1,0 +1,6 @@
+evaltrx:addUserMenu('','LGUUTILITIES',3000.0,'Migrate','M','LGUUTILMIG');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILITIES',3000.0,'Migrate','M','LGUUTILMIG');
+evaltrx:addUserMenu('','LGUUTILMIG',100.0,'Migrate GEO BPLS','P','u_migrateGEOBPLS');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',100.0,'Migrate GEO BPLS','P','u_migrateGEOBPLS');
+evaltrx:addProgId('u_migrateGEOBPLS','Migrate GEO BPLS','./udp.php?&objectcode=u_migrateGEOBPLS');
+UPDATE DBVERSION SET VERSION='2019.05.10.1611' WHERE ID='GPS.BPLS';

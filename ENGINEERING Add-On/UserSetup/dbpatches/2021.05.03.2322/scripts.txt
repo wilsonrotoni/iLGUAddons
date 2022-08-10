@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_buildingdivisions','totalarea','Total Area in Sqm','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingdivisions','buildingfee','Building Fee','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.03.2322' WHERE ID='GPS.ENGINEERING';

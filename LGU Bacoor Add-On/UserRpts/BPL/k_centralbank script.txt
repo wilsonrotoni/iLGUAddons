@@ -1,0 +1,28 @@
+evaltrx:addUserMenu('','LGURPTSBPLS',240,'Central Bank','P','urpt_u_centralbank');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSBPLS',240,'Central Bank','P','urpt_u_centralbank');
+
+evaltrx:addUDR('u_centralbank','Central Bank','QS','mysql',1);
+
+evaltrx:addUDRParam('u_centralbank','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_centralbank','date2','To','','date',1,'text',20,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_centralbank','brgy','Barangay:','','any',1,'text',30,null,0,null);
+evaltrx:addUDRParam('u_centralbank','bldgname','Building:','','any',1,'text',40,null,0,null);
+evaltrx:addUDRParam('u_centralbank','businessnature','Business nature:','','any',1,'text',50,null,0,null);
+evaltrx:addUDRParam('u_centralbank','street','Street:','','any',1,'text',60,null,0,null);
+
+evaltrx:addUDRParam('u_centralbank','apptype','ApplicationType','','any',1,'select',5,null,0,null);
+evaltrx:addUDRParamValue('u_centralbank','apptype','','ALL');
+evaltrx:addUDRParamValue('u_centralbank','apptype','New','NEW');
+evaltrx:addUDRParamValue('u_centralbank','apptype','Renew','RENEW');
+
+
+evaltrx:addUDRLayout('u_centralbank','Central Bank',1,'LGU Bacoor Addon\BPL','k_centralbank.rpt','1',1,'','','');
+
+
+
+
+
+
+
+
+

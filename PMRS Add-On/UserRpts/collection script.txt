@@ -1,0 +1,18 @@
+evaltrx:addUserMenu('','LGURPTSPMR',137,'Cash Ticket Collection','P','urpt_u_collectcasht');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPMR',137,'Cash Ticket Collection','P','urpt_u_collectcasht');
+evaltrx:addUserMenu('LGU','LGURPTSPMR',137,'Cash Ticket Collection','P','urpt_u_collectcasht');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPMR',137,'Cash Ticket Collection','P','urpt_u_collectcasht');
+
+evaltrx:addUDR('u_collectcasht','Cash Ticket Collection','QS','mysql',1);
+
+
+
+
+evaltrx:addUDRParam('u_collectcasht','year','Year','','any',1,'text',0,null,0,null);
+
+
+
+evaltrx:addUDRLayout('u_collectcasht','Cash Ticket Collection',1,'PMRS Add-On','collection.rpt','1',1,'','','');
+
+
+

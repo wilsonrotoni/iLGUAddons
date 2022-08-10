@@ -1,0 +1,4 @@
+evaltrx:addUserMenu('','LGUADMIN',116,'Motor Violation','M','LGUADMINMOTORVIOLATION');
+evaltrx:addUserMenu('','LGUADMINMOTORVIOLATION',116,'List of Violations','P','u_motorviolations');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINMOTORVIOLATION',116,'List of Violations','P','u_motorviolations');
+UPDATE DBVERSION SET VERSION='2020.03.20.2303' WHERE ID='GPS.MotorViolation';

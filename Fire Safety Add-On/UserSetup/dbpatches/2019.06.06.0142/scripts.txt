@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_fsins','inspectorremarks','Inspector Remarks','text',0,50,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fsins','inspectorremarkhistory','Inspection Report History','text',0,50,null,0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_fsins','inspecttime','Inspection Time','time',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fsins','updatefrommobileapp','Updated from Mobile App','numeric',1,10,'0',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2019.06.06.0142' WHERE ID='GPS.FireSafety';

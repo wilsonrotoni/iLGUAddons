@@ -1,0 +1,14 @@
+evaltrx:addUserMenu('','LGUUTILMIG',1300,'Migrate Business Apps to Building Apps','P','u_migrateBplstoBldgApps');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',1300,'Migrate Business Apps to Building Apps','P','u_migrateBplstoBldgApps');
+evaltrx:addProgId('u_migrateBplstoBldgApps','Migrate Business Apps to Building Apps','./udp.php?&objectcode=u_migrateBplstoBldgApps');
+evaltrx:addUDF('u_bldgappfees','year','Year','any',4,5,null,0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_zoningclrappfees','year','Year','any',4,5,null,0,'',0,0,1,1,1,1);
+evaltrx:modifyUDF('u_bplreqappfees','seqno','Seq. No.','numeric',4,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDP('bldgledger','Building Apps Ledger','N','');
+evaltrx:addUDF('u_bplmds','bldgapprefno','Application No.','any',30,60,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','zoningapprefno','Application No.','any',30,60,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','sanitaryapprefno','Application No.','any',30,60,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_bldgapps','withannualinspection','2','Exempted');
+evaltrx:addUDF('u_electricalcomputeitems','maxkva','Max kVA','numeric',4,55,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_electricalcomputeitems','isfixamount','Fix Amt','numeric',1,60,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.10.08.1105' WHERE ID='GPS.LGUBuilding';

@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_bplapps','forinspection','For Inspection','numeric',1,300,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.24.1445' WHERE ID='GPS.BPLS';

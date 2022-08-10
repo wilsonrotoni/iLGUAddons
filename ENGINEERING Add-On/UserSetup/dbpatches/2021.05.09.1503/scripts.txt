@@ -1,0 +1,2 @@
+evaltrx:deleteUDF('u_buildingpermitapps5','area','Area','any',255,50,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.09.1503' WHERE ID='GPS.ENGINEERING';

@@ -1,0 +1,5 @@
+ALTER TABLE `u_hisips` ADD INDEX `hms_index` (`COMPANY`,`BRANCH`,`u_patientid`,`u_startdate`,`u_enddate`,`docno`);
+ALTER TABLE `u_hisops` ADD INDEX `hms_index` (`COMPANY`,`BRANCH`,`u_patientid`,`u_startdate`,`u_enddate`,`docno`);
+ALTER TABLE `u_hispatients` ADD INDEX `hms_index` (`COMPANY`,`BRANCH`,`code`);
+ALTER TABLE `u_hispatienthealthins` ADD INDEX `hms_index` (`COMPANY`,`BRANCH`,`code`,`u_inscode`);
+ALTER TABLE `u_hishealthins` ADD INDEX `hms_index` (`code`,`name`);

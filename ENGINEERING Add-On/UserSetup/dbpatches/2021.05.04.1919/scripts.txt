@@ -1,0 +1,7 @@
+evaltrx:addUDF('u_buildingdivisions','divisioncode','Division Catergory Code','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingdivisions','divisionname','Division Catergory Description','any',255,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingdivisions','area','Area in Sqm','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingdivisions','fee','Fee Per Sqm','any',100,15,'',0,'u_buildingfeesarea:u_fee',0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingdivisions','totalarea','Area','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingdivisions','buildingfee','Building Fee','numeric',1,40,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.04.1919' WHERE ID='GPS.ENGINEERING';

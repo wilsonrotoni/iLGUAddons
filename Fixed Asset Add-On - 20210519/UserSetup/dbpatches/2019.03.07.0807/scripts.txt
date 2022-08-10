@@ -1,0 +1,8 @@
+evaltrx:addUDR('fappeledgercard','PPE Ledger Card','QS','mysql',1);
+evaltrx:addUDRParam('fappeledgercard','code','Asset Code','','any',1,'text',5,null,0,null);
+evaltrx:addUDRParam('fappeledgercard','date','As of','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRFormattedSearch('fappeledgercard','code','LQ','Q','select code, name from u_fa','M',1);
+evaltrx:addUDRLayout('fappeledgercard','PPE Ledger Card',0,'Fixed Asset Add-On','u_faledgercard2.rpt','1',1,'','','');
+evaltrx:addUDRLayout('fappeledgercard','PPE Ledger Card Summary',1,'Fixed Asset Add-On','u_faledgercardsummary.rpt','1',1,'','','');
+evaltrx:addUDRLayout('fappeledgercard','PPE Ledger Card Summary By Class',0,'Fixed Asset Add-On','u_faledgercardsummarybyclass.rpt','1',1,'','','');
+UPDATE DBVERSION SET VERSION='2019.03.07.0807' WHERE ID='GPS.FixedAsset';

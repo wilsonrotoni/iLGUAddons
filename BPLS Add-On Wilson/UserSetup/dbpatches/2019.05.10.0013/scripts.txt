@@ -1,0 +1,5 @@
+evaltrx:addUDT('bplnature','Nature of Business','MDC','');
+evaltrx:addUDO('bplnature','Nature of Business','bplnature','G');
+evaltrx:addUserMenu('','LGUADMINBPLS',90.0,'Business Nature','P','u_bplnature');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINBPLS',90.0,'Business Nature','P','u_bplnature');
+UPDATE DBVERSION SET VERSION='2019.05.10.0013' WHERE ID='GPS.BPLS';

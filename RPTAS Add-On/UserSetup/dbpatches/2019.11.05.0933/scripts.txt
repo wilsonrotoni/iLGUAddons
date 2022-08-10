@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_rptaxbillpins','bilyear','Paid Year','numeric',4,60,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillpins','bilqtr','Quarter','numeric',4,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1b','description','Description','any',30,11,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.11.05.0933' WHERE ID='GPS.RPTAS';

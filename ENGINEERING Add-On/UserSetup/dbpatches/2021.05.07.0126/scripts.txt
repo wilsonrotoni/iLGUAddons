@@ -1,0 +1,2 @@
+evaltrx:addUDT('buildingdivisions','Building Divisions','DL','');
+UPDATE DBVERSION SET VERSION='2021.05.07.0126' WHERE ID='GPS.ENGINEERING';

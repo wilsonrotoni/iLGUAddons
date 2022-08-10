@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_bplapps','bfloorno','Business Floor No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','bblock','Business Block No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','floorno','Floor No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','block','Block No.','any',50,230,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.10.2149' WHERE ID='GPS.BPLS';

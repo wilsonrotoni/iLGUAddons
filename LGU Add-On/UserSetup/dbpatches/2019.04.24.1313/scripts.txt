@@ -1,0 +1,9 @@
+evaltrx:addUserMenu('','LGUUTILITIES',1000.0,'Download','M','LGUUTILDL');
+evaltrx:addUserMenu('','LGUUTILITIES',2000.0,'Upload','M','LGUUTILUL');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILITIES',1000.0,'Download','M','LGUUTILDL');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILITIES',2000.0,'Upload','M','LGUUTILUL');
+evaltrx:addUserMenu('','LGUUTILDL',100.0,'Download Real Property OR','P','u_downloadRPTOR');
+evaltrx:addUserMenu('','LGUUTILUL',200.0,'Upload Real Property OR','P','u_uploadRPTOR');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILDL',100.0,'Download Real Property OR','P','u_downloadRPTOR');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILUL',200.0,'Upload Real Property OR','P','u_uploadRPTOR');
+UPDATE DBVERSION SET VERSION='2019.04.24.1313' WHERE ID='GPS.LGU';

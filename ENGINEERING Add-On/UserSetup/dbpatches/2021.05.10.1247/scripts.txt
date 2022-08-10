@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_buildingpermitappS','asstotal','Total','amount',20,80,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.10.1247' WHERE ID='GPS.ENGINEERING';

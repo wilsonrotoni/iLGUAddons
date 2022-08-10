@@ -1,0 +1,16 @@
+
+
+evaltrx:addUserMenu('','LGURPTSPAY',110,'Cashier Collection List of Partial Payment','P','urpt_u_cashiercollectpartial');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',110,'Cashier Collection List of Partial Payment','P','urpt_u_cashiercollectpartial');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',110,'Cashier Collection List of Partial Payment','P','urpt_u_cashiercollectpartial');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',110,'Cashier Collection List of Partial Payment','P','urpt_u_cashiercollectpartial');
+
+evaltrx:addUDR('u_cashiercollectpartial','Cashier Collection List of Partial Payment','QS','mysql',1);
+
+evaltrx:addUDRParam('u_cashiercollectpartial','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_cashiercollectpartial','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRLayout('u_cashiercollectpartial','Cashier Collection List of Partial Payment',1,'LGU Add-On','listofpartialpayment.rpt','1',1,'','','');
+
+
+

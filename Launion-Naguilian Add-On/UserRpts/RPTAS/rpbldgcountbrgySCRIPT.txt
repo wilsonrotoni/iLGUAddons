@@ -1,0 +1,16 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',310,'Building Count per Brgy','P','urpt_u_rpbldgcountbrgy');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',310,'Building Count per Brgy','P','urpt_u_rpbldgcountbrgy');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',310,'Building Count per Brgy','P','urpt_u_rpbldgcountbrgy');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',310,'Building Count per Brgy','P','urpt_u_rpbldgcountbrgy');
+
+evaltrx:addUDR('u_rpbldgcountbrgy','Building Count per Brgy','QS','mysql',1);
+
+
+
+evaltrx:addUDRParam('u_rpbldgcountbrgy','date1','For the Period Ending:','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRParam('u_rpbldgcountbrgy','taxable','','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_rpbldgcountbrgy','taxable',1,'Taxable');
+evaltrx:addUDRParamValue('u_rpbldgcountbrgy','taxable',0,'Exempt');
+
+evaltrx:addUDRLayout('u_rpbldgcountbrgy','Building Count per Brgy',0,'Launion-Naguilian Add-On','RPTAS\rpbldgcountbrgy.rpt','1',1,'','','');

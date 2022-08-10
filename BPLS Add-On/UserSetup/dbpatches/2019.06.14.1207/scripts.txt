@@ -1,0 +1,2 @@
+evaltrx:addUDP('paymenthistory','Payment History','N','');
+UPDATE DBVERSION SET VERSION='2019.06.14.1207' WHERE ID='GPS.BPLS';

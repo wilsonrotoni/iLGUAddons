@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rptaxbillarps','selected','*','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.18.0854' WHERE ID='GPS.LGU';

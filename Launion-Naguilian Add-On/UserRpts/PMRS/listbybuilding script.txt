@@ -1,0 +1,23 @@
+evaltrx:addUserMenu('','LGURPTSPMR',145,'List by Building','P','urpt_u_listbybuilding2');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPMR',145,'List by Building','P','urpt_u_listbybuilding2');
+evaltrx:addUserMenu('LGU','LGURPTSPMR',145,'List by Building','P','urpt_u_listbybuilding2');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPMR',145,'List Building','P','urpt_u_listbybuilding2');
+
+evaltrx:addUDR('u_listbybuilding2','List by Building','QS','mysql',1);
+
+evaltrx:addUDRParam('u_listbybuilding2','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbybuilding2','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+
+
+evaltrx:addUDRParam('u_listbybuilding2','building','Building','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_listbybuilding2','building','LQ','Q','select code from u_pmrpmstalls where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+
+
+evaltrx:addUDRLayout('u_listbybuilding2','List by Building',1,'PMRS Add-On','listbybuilding.rpt','1',1,'','','');
+
+
+

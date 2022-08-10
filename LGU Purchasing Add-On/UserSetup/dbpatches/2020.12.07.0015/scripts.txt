@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lgupurchaserequests','refno','Reference No.','any',30,22,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.12.07.0015' WHERE ID='GPS.LGUPurchasing';

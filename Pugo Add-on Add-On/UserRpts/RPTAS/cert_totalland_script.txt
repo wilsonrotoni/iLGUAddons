@@ -1,0 +1,13 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',517,'Certification of Total Landholdings','P','urpt_cert_totalland');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',517,'Certification of Total Landholdings','P','urpt_cert_totalland');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',517,'Certification of Total Landholdings','P','urpt_cert_totalland');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',517,'Certification of Total Landholdings','P','urpt_cert_totalland');
+
+evaltrx:addUDR('cert_totalland','Certification of Total Landholdings','QS','mysql',1);
+
+
+evaltrx:addUDRParam('cert_totalland','tin','TIN','','any',1,'text',1,null,0,null);
+evaltrx:addUDRParam('cert_totalland','orno','OR No.','','any',1,'text',1,null,0,null);
+evaltrx:addUDRParam('cert_totalland','date','OR Date','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRLayout('cert_totalland','Certification of Total Landholdings',1,'Launion-Rosario Add-On','RPTAS\cert_totalland.rpt','1',1,'','','');

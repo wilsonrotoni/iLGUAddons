@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rptaxes','epsftotal','EPSF Total Tax','amount',0,87,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.14.0151' WHERE ID='GPS.RPTAS';

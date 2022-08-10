@@ -1,0 +1,5 @@
+evaltrx:modifyUDF('u_barangays','numlen','Digits','numeric',1,50,'5',0,null,0,0,1,1,1,1);
+evaltrx:addUserMenu('','LGUUTILMIG',550,'Update Geo Prev Assessment','P','u_updateGEORPTASSuperseded');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',550,'Update Geo Prev Assessment','P','u_updateGEORPTASSuperseded');
+evaltrx:addProgId('u_updateGEORPTASSuperseded','Update Geo Prev Assessment','./udp.php?&objectcode=u_updateGEORPTASSuperseded');
+UPDATE DBVERSION SET VERSION='2019.10.23.2232' WHERE ID='GPS.RPTAS';

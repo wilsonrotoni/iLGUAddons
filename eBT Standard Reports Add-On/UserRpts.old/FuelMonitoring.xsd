@@ -1,0 +1,35 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="FuelMonitoring" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="FuelMonitoring" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FuelMonitoring">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyType" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+              <xs:element name="date1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="date2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="u_date_from" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Shift1" type="xs:string" minOccurs="0" />
+              <xs:element name="Shift2" type="xs:string" minOccurs="0" />
+              <xs:element name="OB" type="xs:double" minOccurs="0" />
+              <xs:element name="FROMWHSCODE" type="xs:string" minOccurs="0" />
+              <xs:element name="STDOCNO" type="xs:string" minOccurs="0" />
+              <xs:element name="STDOCDATE" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="QTY" type="xs:double" minOccurs="0" />
+              <xs:element name="Item" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="Sales" type="xs:double" minOccurs="0" />
+              <xs:element name="UGT" type="xs:double" minOccurs="0" />
+              <xs:element name="inTransit" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

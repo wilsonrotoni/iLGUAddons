@@ -1,0 +1,2 @@
+evaltrx:addUDO('mvehicletype','Type of Vehicle','mvehicletype','G');
+UPDATE DBVERSION SET VERSION='2020.03.21.2114' WHERE ID='GPS.MotorViolation';

@@ -1,0 +1,47 @@
+REPORTID	REPORTNAME	REPORTACTION	DATECREATED	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION	SYSMANAGE	PROCNAME	DBTYPE
+hms_apinvsum	Purchase Subsidiary Ledger	QS	2013-06-20 16:35:17	manager	2013-06-20 16:35:17	manager	1	1		mysql
+hms_ap_aging	A/P Aging - DOCTORS	QS	2013-06-20 15:36:45	manager	2014-03-03 18:27:59	manager	4	1		mysql
+hms_ap_aging2	A/P Aging - SUPPLIERS/OTHERS	QS	2014-03-03 18:29:39	manager	2014-03-03 18:36:34	manager	2	1		mysql
+hms_araging	A/R Aging - PHIC/HMO/LGU/CO	QS	2013-06-11 18:11:14	manager	2014-03-03 18:23:33	manager	4	1		mysql
+HMS_ARAGING2	A/R Aging - EMPLOYEE/NON-TRADE	QS	2014-03-03 17:50:55	manager	2014-03-03 18:29:21	manager	3	1		mysql
+hms_bl	Bank Ledger	QS	2013-06-20 18:12:12	manager	2013-06-20 18:12:22	manager	2	1		mysql
+hms_bs	Balance Sheet	QS	2013-06-20 17:56:06	manager	2013-06-20 17:56:06	manager	1	1		mysql
+hms_census_filter_roomtype	Cases Report	QS	2013-06-06 15:54:22	manager	2013-06-06 16:03:43	manager	2	1		mysql
+hms_census_filter_roomtype_by_f	Census Report	QS	2013-06-06 16:12:37	manager	2013-10-21 15:42:18	manager	3	1		mysql
+hms_cf2	PHIC - Claim Form 2	QS	2013-06-11 10:20:05	manager	2013-06-11 16:42:37	manager	3	1		mysql
+hms_chrgrpts	Charge/Render Reports	QS	2014-03-13 23:16:56	manager	2014-03-13 23:21:14	manager	2	1		mysql
+hms_coa	Chart of Accounts	QS	2013-06-29 18:12:38	manager	2013-06-29 18:12:38	manager	1	1		mysql
+hms_daily_census	Daily Census	QS	2013-06-06 15:45:00	manager	2013-10-21 15:11:12	manager	2	1		mysql
+hms_dcr	Daily Collection Summary	QS	2013-08-29 14:23:22	manager	2014-01-09 17:38:29	manager	2	1		mysql
+hms_deips	Departmental Expenses, Issuances, Purchases & Stock Transfer Report	QS	2013-08-07 17:00:41	manager	2013-08-07 17:00:41	manager	1	1		mysql
+hms_dietL	Diet List	QS	2013-06-20 13:53:28	manager	2013-06-20 13:59:37	manager	2	1		mysql
+hms_dl	Discharged List	QS	2013-06-20 12:49:16	manager	2013-06-20 12:49:16	manager	1	1		mysql
+hms_gl	General Ledger	QS	2013-06-20 17:18:35	manager	2013-06-20 17:18:35	manager	1	1		mysql
+hms_heartstation	Heart Station Summary Report	QS	2013-07-03 19:23:15	manager	2013-08-22 13:59:36	manager	5	1		mysql
+hms_inv_SCvsActual	Inventory Stock Status (Stock Card vs. Actual)	QS	2013-08-20 15:02:12	manager	2013-08-20 15:15:43	manager	2	1		mysql
+hms_iop_ledger	Admission and Consultation Report	QS	2013-11-11 16:16:02	manager	2013-11-11 16:16:02	manager	1	1		mysql
+hms_ixr	Inventory Expiration Report	QS	2013-06-26 21:18:58	manager	2013-06-26 21:18:58	manager	1	1		mysql
+hms_lablist	Laboratory Reports	QS	2013-06-30 17:46:17	manager	2013-08-22 14:01:03	manager	8	1		mysql
+hms_log_book	Log Book	QS	2013-06-06 15:29:27	manager	2013-10-21 14:52:31	manager	2	1		mysql
+hms_minmax	Inventory Min./Max. Level Report	QS	2013-06-26 14:46:04	manager	2013-06-26 14:46:04	manager	1	1		mysql
+hms_nursinginv	Nursing Service Stock Report	QS	2013-07-04 09:56:43	manager	2013-10-21 16:02:33	manager	3	1		mysql
+hms_pf	Professional Fees Report	QS	2013-07-03 23:34:46	manager	2013-11-12 16:21:15	manager	2	1		mysql
+hms_phamorpts	Monthly Reports	QS	2013-08-23 19:34:32	manager	2013-08-23 19:45:51	manager	2	1		mysql
+hms_pharpt	Summary Report	QS	2013-08-22 22:15:53	manager	2013-08-23 19:32:05	manager	3	1		mysql
+hms_pl	Profit & Loss Statement	QS	2013-06-20 17:59:23	manager	2013-06-20 17:59:23	manager	1	1		mysql
+hms_povrr	Purchase Order Vs. Receiving Report	QS	2013-06-20 17:00:29	manager	2013-06-20 17:00:29	manager	1	1		mysql
+hms_prl	Price List	QS	2013-07-09 23:04:24	manager	2013-08-06 13:57:26	manager	3	1		mysql
+hms_pulmolist	Pulmonary Audit Report	QS	2013-06-30 15:46:41	manager	2013-08-22 14:17:41	manager	6	1		mysql
+hms_pulmopr	Pulmonary Patient Records	QS	2013-06-30 16:18:21	manager	2013-08-22 14:15:35	manager	3	1		mysql
+hms_radiolist	Radiology Summary Report	QS	2013-06-30 17:03:37	manager	2013-08-22 14:03:17	manager	3	1		mysql
+hms_reqrpts	Cash Sales/Request Reports	QS	2013-10-07 19:23:50	manager	2014-03-13 22:14:36	manager	3	1		mysql
+hms_roompl	Room Price List	QS	2013-08-23 01:23:52	manager	2013-08-23 01:25:43	manager	2	1		mysql
+hms_rvd	Request vs Delivery Report	QS	2013-07-04 12:00:46	manager	2013-07-04 12:00:46	manager	1	1		mysql
+hms_soa	Statement of Account	QS	2013-06-11 17:23:12	manager	2013-06-11 18:04:52	manager	2	1		mysql
+hms_splroom	Special Rooms Report	QS	2013-07-04 00:16:32	manager	2013-07-04 00:16:32	manager	1	1		mysql
+hms_sumpo	Purchase Order Report	QS	2013-06-20 15:51:13	manager	2013-06-20 15:59:04	manager	3	1		mysql
+hms_tb	Trial Balance	QS	2013-06-20 17:34:33	manager	2013-06-20 17:34:33	manager	1	1		mysql
+hms_trans	Transmittal Report	QS	2013-06-21 11:31:51	manager	2013-06-21 11:31:51	manager	1	1		mysql
+hms_transpay	Transmittal Payments	QS	2013-06-21 13:39:33	manager	2013-06-21 13:53:30	manager	2	1		mysql
+hms_trans_hmo	Transmittal - HMO	QS	2013-06-11 16:45:53	manager	2013-06-11 16:45:53	manager	1	1		mysql
+hms_trans_phic	Transmittal - PHIC	QS	2013-06-11 09:35:49	manager	2013-06-11 09:57:19	manager	2	1		mysql

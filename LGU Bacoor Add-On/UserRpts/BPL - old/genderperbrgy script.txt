@@ -1,0 +1,23 @@
+evaltrx:addUserMenu('','LGURPTSBPLS',145,'List by Gender per Barangay','P','urpt_u_listbybusinessgender');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSBPLS',145,'List by Gender per Barangay','P','urpt_u_listbybusinessgender');
+evaltrx:addUserMenu('LGU','LGURPTSBPLS',145,'List by Gender per Barangay','P','urpt_u_listbybusinessgender');
+evaltrx:addUserMenu('LGUUSR','LGURPTSBPLS',145,'List by Gender per Barangay','P','urpt_u_listbybusinessgender');
+
+evaltrx:addUDR('u_listbybusinessgender','List by Gender per Barangay','QS','mysql',1);
+evaltrx:addUDRParam('u_listbybusinessgender','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbybusinessgender','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRParam('u_listbybusinessgender','gender','Gender','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_listbybusinessgender','gender','','ALL');
+evaltrx:addUDRParamValue('u_listbybusinessgender','gender','male','Male');
+evaltrx:addUDRParamValue('u_listbybusinessgender','gender','female','Female');
+
+evaltrx:addUDRParam('u_listbybusinessgender','brgy','Barangay','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_listbybusinessgender','brgy','LQ','Q','select code,name from u_barangays where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+evaltrx:addUDRLayout('u_listbybusinessgender','List by Gender per Barangay',1,'BPLS Add-On','genderperbrgy.rpt','1',1,'','','');
+
+
+

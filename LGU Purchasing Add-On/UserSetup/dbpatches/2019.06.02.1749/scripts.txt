@@ -1,0 +1,6 @@
+evaltrx:addUserMenu('','LGUPURCHASINGADMIN',410,'Item Groups','P','u_lguitemgroups');
+evaltrx:addUserMenu('SYSADMIN','LGUPURCHASINGADMIN',410,'Item Groups','P','u_lguitemgroups');
+evaltrx:addUserMenu('','LGUPURCHASINGADMIN',500,'Items','P','u_lguitems');
+evaltrx:addUserMenu('SYSADMIN','LGUPURCHASINGADMIN',400,'Items','P','u_lguitems');
+evaltrx:addUDF('u_lguitemgroups','expenseglacctname','Expense - G/L Account Description','any',100,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.02.1749' WHERE ID='GPS.LGUPurchasing';

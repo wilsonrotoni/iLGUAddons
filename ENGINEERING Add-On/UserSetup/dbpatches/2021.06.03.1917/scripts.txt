@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_buildingpermitapps','buildingpermitno','Building Permit No.','any',255,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','buildingpermitdateissued','Building Permit Date Issued','date',0,265,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','fsecno','FSEC No','any',255,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','fsecnodateissued','FSEC No Date Issued','date',0,265,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.06.03.1917' WHERE ID='GPS.ENGINEERING';

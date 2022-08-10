@@ -1,0 +1,163 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="balance_sheet_standard_csld" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="balance_sheet_standard_csld" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="balance_sheet_standard_csld">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="pi_company" type="xs:string" minOccurs="0" />
+              <xs:element name="pi_branch" type="xs:string" minOccurs="0" />
+              <xs:element name="pi_date1" type="xs:string" minOccurs="0" />
+              <xs:element name="pi_date2" type="xs:string" minOccurs="0" />
+              <xs:element name="pi_zero" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCHNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="level" type="xs:double" minOccurs="0" />
+              <xs:element name="l1_acctcode" type="xs:string" minOccurs="0" />
+              <xs:element name="l1_acctname" type="xs:string" minOccurs="0" />
+              <xs:element name="l1_level" type="xs:double" minOccurs="0" />
+              <xs:element name="l1_HD" type="xs:string" minOccurs="0" />
+              <xs:element name="l2_acctcode" type="xs:string" minOccurs="0" />
+              <xs:element name="l2_acctname" type="xs:string" minOccurs="0" />
+              <xs:element name="l2_level" type="xs:double" minOccurs="0" />
+              <xs:element name="l2_HD" type="xs:string" minOccurs="0" />
+              <xs:element name="l3_acctcode" type="xs:string" minOccurs="0" />
+              <xs:element name="l3_acctname" type="xs:string" minOccurs="0" />
+              <xs:element name="l3_level" type="xs:double" minOccurs="0" />
+              <xs:element name="l3_HD" type="xs:string" minOccurs="0" />
+              <xs:element name="l4_acctcode" type="xs:string" minOccurs="0" />
+              <xs:element name="l4_acctname" type="xs:string" minOccurs="0" />
+              <xs:element name="l4_level" type="xs:double" minOccurs="0" />
+              <xs:element name="l4_HD" type="xs:string" minOccurs="0" />
+              <xs:element name="l5_acctcode" type="xs:string" minOccurs="0" />
+              <xs:element name="l5_acctname" type="xs:string" minOccurs="0" />
+              <xs:element name="l5_level" type="xs:double" minOccurs="0" />
+              <xs:element name="l5_HD" type="xs:string" minOccurs="0" />
+              <xs:element name="branchcode01" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname01" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT01" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT01" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode02" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname02" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT02" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT02" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode03" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname03" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT03" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT03" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode04" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname04" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT04" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT04" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode05" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname05" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT05" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT05" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode06" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname06" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT06" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT06" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode07" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname07" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT07" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT07" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode08" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname08" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT08" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT08" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode09" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname09" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT09" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT09" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode10" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname10" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT10" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT10" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode11" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname11" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT11" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT11" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode12" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname12" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT12" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT12" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode13" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname13" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT13" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT13" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode14" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname14" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT14" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT14" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode15" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname15" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT15" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT15" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode16" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname16" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT16" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT16" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode17" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname17" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT17" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT17" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode18" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname18" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT18" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT18" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode19" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname19" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT19" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT19" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode20" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname20" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT20" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT20" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode21" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname21" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT21" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT21" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode22" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname22" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT22" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT22" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode23" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname23" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT23" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT23" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode24" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname24" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT24" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT24" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode25" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname25" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT25" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT25" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode26" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname26" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT26" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT26" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode27" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname27" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT27" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT27" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode28" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname28" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT28" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT28" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode29" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname29" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT29" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT29" type="xs:double" minOccurs="0" />
+              <xs:element name="branchcode30" type="xs:string" minOccurs="0" />
+              <xs:element name="branchname30" type="xs:string" minOccurs="0" />
+              <xs:element name="GLDEBIT30" type="xs:double" minOccurs="0" />
+              <xs:element name="GLCREDIT30" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_lgusplitpoitems','linestatus','Line Status','any',15,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusplitposervice','linestatus','Line Status','any',15,25,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.10.2241' WHERE ID='GPS.LGUPurchasing';

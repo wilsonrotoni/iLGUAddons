@@ -1,0 +1,16 @@
+evaltrx:addUDF('u_rpfaas1','rpt','RPT','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1','rptor','RPT OR','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1','tt','TT','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1','ttor','TT OR/Date','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1','car','CAR','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','rpt','RPT','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','rptor','RPT OR','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','tt','TT','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','ttor','TT OR/Date','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','car','CAR','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','rpt','RPT','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','rptor','RPT OR','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','tt','TT','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','ttor','TT OR/Date','any',100,20,'',0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','car','CAR','any',100,20,'',0,'',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.14.0333' WHERE ID='GPS.RPTAS';

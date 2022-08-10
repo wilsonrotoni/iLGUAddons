@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('u_rpfaas1','cadlotno','CAD Lot No.','text',50,230,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.10.0858' WHERE ID='GPS.RPTAS';

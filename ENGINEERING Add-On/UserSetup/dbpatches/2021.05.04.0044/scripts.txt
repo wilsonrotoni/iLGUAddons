@@ -1,0 +1,3 @@
+evaltrx:addUDF('buildingpermitfees','amount','Amount','amount',20,60,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('buildingpermitfees','seqno','Sequence No.','any',30,10,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.04.0044' WHERE ID='GPS.ENGINEERING';

@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_buildingpermitmds','ownername','Owner Name','any',255,10,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.06.2213' WHERE ID='GPS.ENGINEERING';

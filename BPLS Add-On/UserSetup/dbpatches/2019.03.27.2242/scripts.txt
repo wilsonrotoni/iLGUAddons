@@ -1,0 +1,11 @@
+evaltrx:addUserMenu('','LGU',20.0,'Business Permit','M','LGUBPL');
+evaltrx:addUserMenu('','LGUBPL',10.0,'Business Permit List','P','u_bpllist');
+evaltrx:addUserMenu('','LGUBPL',14.0,'Business Permits For Approval','P','u_bplasslist');
+evaltrx:addUserMenu('','LGUBPL',15.0,'Print','P','u_bplprint');
+evaltrx:addUserMenu('','LGUBPL',20.0,'Business Permit Application','P','u_bplapps');
+evaltrx:addUserMenu('SYSADMIN','LGU',20.0,'Business Permit','M','LGUBPL');
+evaltrx:addUserMenu('SYSADMIN','LGUBPL',10.0,'Business Permit List','P','u_bpllist');
+evaltrx:addUserMenu('SYSADMIN','LGUBPL',14.0,'Business Permits For Approval','P','u_bplasslist');
+evaltrx:addUserMenu('SYSADMIN','LGUBPL',15.0,'Print','P','u_bplprint');
+evaltrx:addUserMenu('SYSADMIN','LGUBPL',20.0,'Business Permit Application','P','u_bplapps');
+UPDATE DBVERSION SET VERSION='2019.03.27.2242' WHERE ID='GPS.BPLS';

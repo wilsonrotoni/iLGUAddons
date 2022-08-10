@@ -1,0 +1,4 @@
+evaltrx:modifyUDF('u_lguitems','isconsumption','Is Consumption','numeric',1,50,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lguitems','isfixedasset','Is Fixed Asset','numeric',1,50,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lguitems','isstock','Is Stock','numeric',1,50,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.30.1126' WHERE ID='GPS.LGUPurchasing';

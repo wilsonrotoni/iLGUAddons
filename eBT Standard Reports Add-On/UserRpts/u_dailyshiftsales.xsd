@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="u_dailyshiftsales" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="u_dailyshiftsales" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="u_dailyshiftsales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANYNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="COMPANYTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCH" type="xs:string" minOccurs="0" />
+              <xs:element name="BRANCHNAME" type="xs:string" minOccurs="0" />
+              <xs:element name="DOCNO" type="xs:string" minOccurs="0" />
+              <xs:element name="DOCID" type="xs:double" minOccurs="0" />
+              <xs:element name="DOCSTATUS" type="xs:string" minOccurs="0" />
+              <xs:element name="U_DFLTREADINGTYPE" type="xs:string" minOccurs="0" />
+              <xs:element name="U_SHIFT" type="xs:string" minOccurs="0" />
+              <xs:element name="U_DATE_FROM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="U_TIME_FROM" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="U_DATE_TO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="U_TIME_TO" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="U_ATTENDANT1" type="xs:string" minOccurs="0" />
+              <xs:element name="U_ATTENDANT2" type="xs:string" minOccurs="0" />
+              <xs:element name="U_ATTENDANT3" type="xs:string" minOccurs="0" />
+              <xs:element name="U_ATTENDANT4" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

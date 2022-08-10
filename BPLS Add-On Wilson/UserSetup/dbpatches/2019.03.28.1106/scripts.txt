@@ -1,0 +1,5 @@
+evaltrx:addUserMenu('','LGU',22.0,'Fire Safety','M','LGUFSI');
+evaltrx:addUserMenu('SYSADMIN','LGU',22.0,'Fire Safety','M','LGUFSI');
+evaltrx:addAddonMenu('GPS','BPLS','LGU',21);
+evaltrx:addAddonMenu('GPS','BPLS','LGU',22);
+UPDATE DBVERSION SET VERSION='2019.03.28.1106' WHERE ID='GPS.BPLS';

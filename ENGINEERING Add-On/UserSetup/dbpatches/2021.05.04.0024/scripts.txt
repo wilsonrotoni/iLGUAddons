@@ -1,0 +1,7 @@
+evaltrx:addUDF('u_buildingpermitappfees','feecode','Fee Code','any',30,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitappfees','feedesc','Description','any',50,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitappfees','amount','Amount','amount',20,60,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitappfees','discount','Discount','amount',20,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitappfees','total','Total','amount',20,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitappfees','penalty','Penalty','amount',20,90,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.04.0024' WHERE ID='GPS.ENGINEERING';

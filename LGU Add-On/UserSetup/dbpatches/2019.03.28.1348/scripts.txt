@@ -1,0 +1,11 @@
+evaltrx:addUDOChild('lgupos','lgupositems','Items','G');
+evaltrx:addUDOChild('lgupos','lguposcheques','Cheques','G');
+evaltrx:addUDOChild('lgupos','lguposcreditcards','Credit Cards','G');
+evaltrx:addUDOChild('lgupos','lguposcashcards','Others','G');
+evaltrx:addUDOChild('lgupos','lguposdps','Downpayments','G');
+evaltrx:addUDOChild('lguposregisters','lguposregisterdenominations','Bill/Coins','G');
+evaltrx:addUDOChild('lguposregisters','lguposregisterclosedenominations','Bill/Coins','G');
+evaltrx:addUDOChild('lguposregisters','lguposregistercards','Payments','G');
+evaltrx:addUDOChild('lguposregisters','lguposregisterreceipts','Receipts','G');
+evaltrx:addUDOChild('lguposregisters','lguposregisterclosereceipts','Receipts','G');
+UPDATE DBVERSION SET VERSION='2019.03.28.1348' WHERE ID='GPS.LGU';

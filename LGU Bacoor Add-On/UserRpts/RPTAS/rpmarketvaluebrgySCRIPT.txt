@@ -1,0 +1,16 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',270,'Land Market Value per Brgy','P','urpt_u_rpmarketvaluebrgy');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',270,'Land Market Value per Brgy','P','urpt_u_rpmarketvaluebrgy');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',270,'Land Market Value per Brgy','P','urpt_u_rpmarketvaluebrgy');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',270,'Land Market Value per Brgy','P','urpt_u_rpmarketvaluebrgy');
+
+evaltrx:addUDR('u_rpmarketvaluebrgy','Launion-Naguilian Add-On','QS','mysql',1);
+
+
+
+evaltrx:addUDRParam('u_rpmarketvaluebrgy','date1','For the Period Ending:','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRParam('u_rpmarketvaluebrgy','taxable','','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_rpmarketvaluebrgy','taxable',1,'Taxable');
+evaltrx:addUDRParamValue('u_rpmarketvaluebrgy','taxable',0,'Exempt');
+
+evaltrx:addUDRLayout('u_rpmarketvaluebrgy','Land Market Value per Brgy',0,'Launion-Naguilian Add-On','RPTAS\rpmarketvaluebrgy.rpt','1',1,'','','');

@@ -1,0 +1,12 @@
+evaltrx:addUDF('u_rpfaas1','trxcodeothers','Transcation Code Others','any',100,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','trxcodeothers','Transcation Code Others','any',100,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','trxcodeothers','Transcation Code Others','any',100,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1','idleland','Idle Land','numeric',1,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUserMenu('','LGUADMINRPTAS',7,'Transaction Code Others','P','u_trxcodeothers');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINRPTAS',7,'Transaction Code Others','P','u_trxcodeothers');
+evaltrx:addUDT('trxcodeothers','Transaction Code Others','MD','G');
+evaltrx:addUDO('trxcodeothers','Transaction Code Others','trxcodeothers','G');
+evaltrx:modifyUDF('u_rpfaas1','trxcodeothers','Transcation Code Others','any',100,150,'',0,'u_trxcodeothers:code:name',0,0,1,1,1,1);
+evaltrx:modifyUDF('u_rpfaas2','trxcodeothers','Transcation Code Others','any',100,150,'',0,'u_trxcodeothers:code:name',0,0,1,1,1,1);
+evaltrx:modifyUDF('u_rpfaas3','trxcodeothers','Transcation Code Others','any',100,150,'',0,'u_trxcodeothers:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.10.19.0043' WHERE ID='GPS.RPTAS';

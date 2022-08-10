@@ -1,0 +1,10 @@
+evaltrx:addUDF('u_bplmds','bbldgno','Business Bldg No.','any',50,210,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','bbldgname','Business Bldg Name','any',50,220,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','bunitno','Business Unit No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','bstreet','Business Street','any',50,240,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','bbrgy','Business Brgy.','any',50,250,'',0,'u_barangays:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','bfloorno','Business Floor No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','bblock','Business Block No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','bvillage','Business Village','any',50,260,'',0,'u_subdivisions:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_bplmds','btelno','Business Tel No.','any',50,290,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.17.2259' WHERE ID='GPS.BPLS';

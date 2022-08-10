@@ -1,0 +1,30 @@
+set output file c:\hmsRPT_screen\reportlayouts.dat;
+select * from reportlayouts where location = 'HIS Add-On';
+
+
+set output file c:\hmsRPT_screen\sysrpts.dat;
+select * from sysrpts where reportid like '%hms%';
+
+
+set output file c:\hmsRPT_screen\sysrptparams.dat;
+select * from sysrptparams where reportid like '%hms%';
+
+
+set output file c:\hmsRPT_screen\sysrptparamvalues.dat;
+select * from sysrptparamvalues where reportid like '%hms%';
+
+
+set output file c:\hmsRPT_screen\progids.dat;
+select * from progids where progid like '%hms%';
+
+
+set output file c:\hmsRPT_screen\usermenu.dat;
+select * from usermenu where menuid in('FINANCIALRPTS','SALESRPTS','PURCHASINGRPTS','BANKINGRPTS', 'InventoryRpts','HISRPTS','HISINV','HISPULX','HISPHAX') or menucmd in('HISRPTS','HISINV','HISPULX','HISPHAX');
+
+
+set output file c:\hmsRPT_screen\objectfss.dat;
+select * from objectfss where objectcode like '%hms%';
+
+
+set output file c:\hmsRPT_screen\docseriesprintlayouts.dat;
+select * from docseriesprintlayouts where location = 'HIS Add-On';

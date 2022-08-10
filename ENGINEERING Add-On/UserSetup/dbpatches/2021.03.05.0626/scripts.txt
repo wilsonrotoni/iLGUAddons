@@ -1,0 +1,4 @@
+evaltrx:addUDT('buildingcharacteroccupancykind','Building Character Occupancy - Kind','DL','');
+evaltrx:addUDOChild('buildingcharacteroccupancy','buildingcharacteroccupancykind','Building Character Occupancy Kind','G');
+evaltrx:addUDF('u_buildingcharacteroccupancykind','kind','Kind','any',225,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.03.05.0626' WHERE ID='GPS.ENGINEERING';

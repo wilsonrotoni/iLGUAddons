@@ -1,0 +1,10 @@
+evaltrx:addUserMenu('','LGUADMINOTHREQSSANITARY',30.0,'Health Character','P','u_sanitarycharacters');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQSSANITARY',30.0,'Health Character','P','u_sanitarycharacters');
+evaltrx:addUDT('sanitarycharacters','Health Character','MDC','');
+evaltrx:addUDT('sanitarycharacterkinds','Health Character - Kinds','MDLC','');
+evaltrx:addUDO('sanitarycharacters','Health Character','sanitarycharacters','');
+evaltrx:addUDOChild('sanitarycharacters','sanitarycharacterkinds','Kind of Businesses','G');
+evaltrx:addUDF('u_sanitarycharacters','amount','Tax Amount','amount',0,10,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_sanitarycharacterkinds','items','Items','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_sanitarycharacterkinds','amount','Tax Amount','amount',0,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.08.05.1642' WHERE ID='GPS.BPLS';

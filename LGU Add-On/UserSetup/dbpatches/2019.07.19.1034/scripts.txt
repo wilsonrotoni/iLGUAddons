@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_lgusetup','transfertaxfee','Transfer Tax Fee','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','transfertaxintfee','Transfer Tax Interest Fee','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','processingfee','Processing Fee','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.19.1034' WHERE ID='GPS.LGU';

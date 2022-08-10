@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_bplfees','regulatory','Regulatory Fees','any',10,40,'0',0,null,0,0,1,1,0,0);
+evaltrx:addUDFValue('u_bplfees','regulatory','0','No');
+evaltrx:addUDFValue('u_bplfees','regulatory','1','Yes');
+UPDATE DBVERSION SET VERSION='2019.04.05.1310' WHERE ID='GPS.BPLS';

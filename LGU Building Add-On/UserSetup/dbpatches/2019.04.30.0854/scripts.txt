@@ -1,0 +1,8 @@
+evaltrx:addUserMenu('SYSADMIN','LGU',21.5,'Other Requirements','M','LGUOTHREQS','F',1,1);
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQS',20.0,'Building','M','LGUOTHREQBLDG');
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQBLDG',10.0,'Building Assessment Application','P','u_bldgapps');
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQBLDG',20.0,'Building Assessment Inspection','P','u_bldgins');
+evaltrx:addUserMenu('SYSADMIN','LGUADMIN',13.0,'Other Requirements','M','LGUADMINOTHREQS','F',1,1);
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQS',20.0,'Building','M','LGUADMINOTHREQSBLDG');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQSBLDG',10.0,'Inspectors','P','u_bldginspectors');
+UPDATE DBVERSION SET VERSION='2019.04.30.0854' WHERE ID='GPS.LGUBuilding';

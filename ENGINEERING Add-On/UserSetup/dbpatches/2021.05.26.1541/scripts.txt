@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGUADMINENGINEERING',130,'List of Engineers','P','u_buildingpermitengineers');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINENGINEERING',130,'List of Engineers','P','u_buildingpermitengineers');
+UPDATE DBVERSION SET VERSION='2021.05.26.1541' WHERE ID='GPS.ENGINEERING';

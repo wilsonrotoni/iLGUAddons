@@ -1,0 +1,16 @@
+evaltrx:addUserMenu('','LGURPTSMTOP',165,'List of Unrenewed ','P','urpt_u_urenew');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSMTOP',165,'List of Unrenewed ','P','urpt_u_urenew');
+evaltrx:addUserMenu('LGU','LGURPTSMTOP',165,'List of Unrenewed ','P','urpt_u_urenew');
+evaltrx:addUserMenu('LGUUSR','LGURPTSMTOP',165,'List of Unrenewed','P','urpt_u_urenew');
+
+evaltrx:addUDR('u_urenew','List of Unrenewed ','QS','mysql',1);
+
+evaltrx:addUDRParam('u_urenew','toda','Toda','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_urenew','toda','LQ','Q','select code,name from u_mtoptodas where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+evaltrx:addUDRLayout('u_urenew','List of Unrenewed ',1,'LGU Add-On','list of unrenewed.rpt','1',1,'','','');
+
+
+

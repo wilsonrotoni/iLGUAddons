@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('u_bplcharacterkinds','amount','Annual Tax','amount',0,50,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.10.1612' WHERE ID='GPS.BPLS';

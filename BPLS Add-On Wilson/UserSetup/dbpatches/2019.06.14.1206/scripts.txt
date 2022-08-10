@@ -1,0 +1,2 @@
+evaltrx:deleteProgId('u_paymenthistory','Payment History','./udp.php?&objectcode=u_paymenthistory');
+UPDATE DBVERSION SET VERSION='2019.06.14.1206' WHERE ID='GPS.BPLS';

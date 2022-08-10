@@ -1,0 +1,6 @@
+evaltrx:addUDF('u_bplapps','baccessroad','Business Access Road','any',100,160,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','bin','BIN','any',30,140,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','prevacctcode','Prev Account Code','any',30,140,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','baddress','Business Address','any',150,160,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','baddressno','Business Address No','any',10,160,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.11.19.0951' WHERE ID='GPS.BPLS';

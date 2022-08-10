@@ -1,0 +1,6 @@
+evaltrx:addUserMenu('','LGUADMINRPTAS',400.0,'Land Stripping','P','u_landstripping');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINRPTAS',400.0,'Land Stripping','P','u_landstripping');
+evaltrx:addUDT('landstripping','Land Stripping','MDC','');
+evaltrx:addUDO('landstripping','Land Stripping','landstripping','G');
+evaltrx:addUDF('u_landstripping','adjperc','% Adjustment','percent',0,20,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.09.1016' WHERE ID='GPS.RPTAS';

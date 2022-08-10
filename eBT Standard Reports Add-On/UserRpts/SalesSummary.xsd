@@ -1,0 +1,50 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="SalesSummary" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="SalesSummary" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SalesSummary">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyType" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+              <xs:element name="date1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="date2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="u_date_from" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Shift1" type="xs:string" minOccurs="0" />
+              <xs:element name="Shift2" type="xs:string" minOccurs="0" />
+              <xs:element name="Biodiesel_volume" type="xs:double" minOccurs="0" />
+              <xs:element name="Biodiesel_unitPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Biodiesel_amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Premium_volume" type="xs:double" minOccurs="0" />
+              <xs:element name="Premium_unitPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Premium_amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Unleaded_volume" type="xs:double" minOccurs="0" />
+              <xs:element name="Unleaded_unitPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Unleaded_amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Regular_volume" type="xs:double" minOccurs="0" />
+              <xs:element name="Regular_unitPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Regular_amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Kerosene_volume" type="xs:double" minOccurs="0" />
+              <xs:element name="Kerosene_unitPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Kerosene_amount" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalLiters" type="xs:double" minOccurs="0" />
+              <xs:element name="TotalSales" type="xs:double" minOccurs="0" />
+              <xs:element name="Revenue" type="xs:double" minOccurs="0" />
+              <xs:element name="FuelSales" type="xs:double" minOccurs="0" />
+              <xs:element name="EarlyReg" type="xs:double" minOccurs="0" />
+              <xs:element name="StationReceivables" type="xs:double" minOccurs="0" />
+              <xs:element name="Discount" type="xs:double" minOccurs="0" />
+              <xs:element name="CashWithdrawals" type="xs:double" minOccurs="0" />
+              <xs:element name="CashonHand" type="xs:double" minOccurs="0" />
+              <xs:element name="CashOverShort" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

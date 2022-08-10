@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lgupos','issuectr','Issue Counter','numeric',4,35,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.02.1047' WHERE ID='GPS.LGU';

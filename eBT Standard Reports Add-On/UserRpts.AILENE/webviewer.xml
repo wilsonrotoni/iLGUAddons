@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<ShowCrystalLogo></ShowCrystalLogo>
+		<ShowDrillUpButton></ShowDrillUpButton>
+		<ShowExportButton>No</ShowExportButton>
+		<ShowGotoPageButton></ShowGotoPageButton>
+		<ShowPageNavigationsButton></ShowPageNavigationsButton>
+		<ShowPrintButton></ShowPrintButton>
+		<ShowRefreshButton></ShowRefreshButton>
+		<ShowSearchButton></ShowSearchButton>
+		<ShowToggleGroupTreeButton></ShowToggleGroupTreeButton>
+		<ShowViewListButton></ShowViewListButton>
+		<ShowZoomFactorListButton></ShowZoomFactorListButton>
+	</Config>
+</Configs>

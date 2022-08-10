@@ -1,0 +1,37 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="accounts_payable" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="accounts_payable" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="accounts_payable">
+          <xs:complexType>
+            <xs:sequence>
+		 <xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+		 <xs:element name="BRANCH" type="xs:string" minOccurs="0" />
+		 <xs:element name="BRANCHNAME" type="xs:string" minOccurs="0" />
+		 <xs:element name="DATE1" type="xs:dateTime" minOccurs="0" />
+		 <xs:element name="BPCODE" type="xs:string" minOccurs="0" />
+		 <xs:element name="BPNAME" type="xs:string" minOccurs="0" />
+		 <xs:element name="RRNO" type="xs:string" minOccurs="0" />
+		 <xs:element name="INVOICENO" type="xs:string" minOccurs="0" />
+		 <xs:element name="RRDATE" type="xs:dateTime" minOccurs="0" />
+              	 <xs:element name="DUEDATE" type="xs:dateTime" minOccurs="0" />
+              	 <xs:element name="BALANCE" type="xs:double" minOccurs="0" />
+              	 <xs:element name="current" type="xs:double" minOccurs="0" />
+              	 <xs:element name="D30" type="xs:double" minOccurs="0" />
+              	 <xs:element name="D60" type="xs:double" minOccurs="0" />
+		 <xs:element name="D90" type="xs:double" minOccurs="0" />
+              	 <xs:element name="LAST_MONTH_BAL" type="xs:double" minOccurs="0" />
+              	 <xs:element name="PAYMENTS" type="xs:double" minOccurs="0" />
+		 <xs:element name="PURCHASES" type="xs:double" minOccurs="0" />
+		 <xs:element name="RR_AMOUNT" type="xs:double" minOccurs="0" />
+		 <xs:element name="PRS" type="xs:double" minOccurs="0" />
+		 <xs:element name="advpay1" type="xs:double" minOccurs="0" />
+		 <xs:element name="advpay2" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,6 @@
+evaltrx:addUDF('u_lgupurchasesetup','stockallocglacctname','Stock Alloc - G/L Account Description','any',100,50,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupurchasesetup','stockallocglacctno','Stock Alloc - G/L Account No.','any',30,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupurchasesetup','municipality','Municipality','any',100,50,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupurchasesetup','city','City','any',100,60,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupurchasesetup','province','Province','any',100,70,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.03.1049' WHERE ID='GPS.LGUPurchasing';

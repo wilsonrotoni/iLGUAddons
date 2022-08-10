@@ -1,0 +1,4 @@
+evaltrx:addUserMenu('','LGUPAY',11,'List of Registers','P','u_listofregisters');
+evaltrx:addUserMenu('SYSADMIN','LGUPAY',11,'List of Registers','P','u_listofregisters');
+evaltrx:addProgId('u_listofregisters','List of Registers','./udp.php?&objectcode=u_listofregisters');
+UPDATE DBVERSION SET VERSION='2020.05.15.0056' WHERE ID='GPS.LGU';

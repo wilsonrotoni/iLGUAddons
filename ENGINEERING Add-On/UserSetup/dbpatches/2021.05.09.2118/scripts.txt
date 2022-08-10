@@ -1,0 +1,8 @@
+evaltrx:addUDF('u_buildingpermitapps4','category','Category','any',225,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_buildingpermitapps4','category','','');
+evaltrx:addUDFValue('u_buildingpermitapps4','category','Building','Building');
+evaltrx:addUDFValue('u_buildingpermitapps4','category','Electrical','Electrical');
+evaltrx:addUDFValue('u_buildingpermitapps4','category','Electronics','Electronics');
+evaltrx:addUDFValue('u_buildingpermitapps4','category','Mechanical','Mechanical');
+evaltrx:addUDFValue('u_buildingpermitapps4','category','Plumbing','Plumbing');
+UPDATE DBVERSION SET VERSION='2021.05.09.2118' WHERE ID='GPS.ENGINEERING';

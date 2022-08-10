@@ -1,0 +1,6 @@
+evaltrx:addUDF('u_barangays','numlen','Digits','numeric',1,50,'8',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_barangays','prefix','Prefix','any',15,60,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_barangays','nextno','Next No.','numeric',3,70,'1',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_barangays','suffix','Suffix','any',15,80,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_barangays','autoseries','Auto Series','numeric',1,90,'1',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.16.1220' WHERE ID='GPS.RPTAS';

@@ -1,0 +1,7 @@
+evaltrx:addUDF('u_taxcredits','docno','Reference No.','any',50,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillcredits','docno','Ref No.','any',50,5,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_taxcredits','assvalue','Assessed Value','amount',0,25,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillcredits','assvalue','Assessed Value','amount',0,25,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_taxcredits','epsf','EPSF','amount',0,26,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillcredits','epsf','EPSF','amount',0,26,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.01.02.0005' WHERE ID='GPS.RPTAS';

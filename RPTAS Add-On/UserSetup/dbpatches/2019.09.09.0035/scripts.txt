@@ -1,0 +1,5 @@
+evaltrx:addUDFValue('u_rpnoticeitems','kind','','');
+evaltrx:addUDFValue('u_rpnoticeitems','kind','L','Land');
+evaltrx:addUDFValue('u_rpnoticeitems','kind','B','Building');
+evaltrx:addUDFValue('u_rpnoticeitems','kind','M','Machinery');
+UPDATE DBVERSION SET VERSION='2019.09.09.0035' WHERE ID='GPS.RPTAS';

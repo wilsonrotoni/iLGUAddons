@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lgupos','issuedocno','Issue Docno','any',30,35,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.02.1334' WHERE ID='GPS.LGU';

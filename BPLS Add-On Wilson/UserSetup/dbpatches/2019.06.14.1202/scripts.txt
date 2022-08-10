@@ -1,0 +1,2 @@
+evaltrx:addProgId('u_paymenthistory','Payment History','./udp.php?&objectcode=u_paymenthistory');
+UPDATE DBVERSION SET VERSION='2019.06.14.1202' WHERE ID='GPS.BPLS';

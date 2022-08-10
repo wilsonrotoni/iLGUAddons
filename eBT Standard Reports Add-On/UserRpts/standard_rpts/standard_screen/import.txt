@@ -1,0 +1,30 @@
+set logtrx on;
+set shareddatatype COMPANY;
+set logtrxrows off;
+
+ALTER TABLE `objectfss` MODIFY COLUMN `OBJECTCODE` VARCHAR(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL COMMENT 'OBJECT CODE';
+ALTER TABLE `journalentries` ADD INDEX `bi_index`(`COMPANY`, `BRANCH`, `DOCDATE`);
+ALTER TABLE `journalentryitems` ADD INDEX `bi_index`(`COMPANY`, `BRANCH`, `DOCDATE`, `GLACCTNO`);
+ALTER TABLE `chartofaccounts` ADD INDEX `bi_index`(`ACCTCODE`, `POSTABLE`, `FORMATCODE`,`parentacct`,`level`);
+
+
+delete from reportlayouts where progid like '%xxx%' or progid = 'JournalEntries';
+import data into reportlayouts from c:\standard_screen\reportlayouts.dat;
+
+delete from sysrpts where reportid like '%xxx%';
+import data into sysrpts from c:\standard_screen\sysrpts.dat;
+
+delete from sysrptparams where reportid like '%xxx%';
+import data into sysrptparams from c:\standard_screen\sysrptparams.dat;
+
+delete from sysrptparamvalues where reportid like '%xxx%';
+import data into sysrptparamvalues from c:\standard_screen\sysrptparamvalues.dat;
+
+delete from progids where progid like '%xxx%';
+import data into progids from c:\standard_screen\progids.dat;
+
+delete from usermenu where menuid like '%xxx%' or menucmd like '%xxx%';
+import data into usermenu from c:\standard_screen\usermenu.dat;
+
+delete from objectfss where objectcode like '%xxx%';
+import data into objectfss from c:\standard_screen\objectfss.dat;

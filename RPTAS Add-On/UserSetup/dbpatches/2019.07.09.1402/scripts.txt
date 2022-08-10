@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_rpassessors','recommenddefault','Recommend Default','numeric',1,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpassessors','approvedefault','Approve Default','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.09.1402' WHERE ID='GPS.RPTAS';

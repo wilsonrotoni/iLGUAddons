@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_rpfaas1','subdivision','Subdivision','any',50,260,'',0,'u_subdivisions:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','subdivision','Subdivision','any',50,260,'',0,'u_subdivisions:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','subdivision','Subdivision','any',50,260,'',0,'u_subdivisions:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.28.1432' WHERE ID='GPS.RPTAS';

@@ -1,0 +1,3 @@
+evaltrx:modifyUDF('u_bpltaxclassnature','businessnature','Business Nature','any',50,260,'',0,'u_bpltaxclassnature:code:name',0,0,1,1,1,1);
+evaltrx:modifyUDF('u_bpllines','businessnature','Business Nature','any',50,260,'',0,'u_bpltaxclassnature:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.10.0014' WHERE ID='GPS.BPLS';

@@ -1,0 +1,5 @@
+evaltrx:addUserMenu('','LGURPTSPAY',140,'Cash Count','P','urpt_Cash Count');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',140,'Cash Count','P','urpt_Cash Count');
+evaltrx:addUDR('Cash Count','Cash Count','QS','mysql',1);
+evaltrx:addUDRParam('Cash Count','cashier','Cashier','','any',1,'text',10,'',1,users:userid:username);
+evaltrx:addUDRLayout('Cash Count','Cash Count',1,'LGU Add-On','Cash Count.rpt','1',1,'','','');

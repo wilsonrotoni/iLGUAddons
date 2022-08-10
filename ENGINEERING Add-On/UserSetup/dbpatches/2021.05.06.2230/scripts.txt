@@ -1,0 +1,3 @@
+evaltrx:deleteUDT('buildingpermitmds','Building Permit - Master Data','D','');
+evaltrx:deleteUDO('buildingpermitmds','Building Permit - Master Data','buildingpermitmds','');
+UPDATE DBVERSION SET VERSION='2021.05.06.2230' WHERE ID='GPS.ENGINEERING';

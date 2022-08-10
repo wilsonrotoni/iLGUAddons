@@ -1,0 +1,9 @@
+evaltrx:addUDF('u_barangays','oldbarangay','Old Barangay','any',15,45,'',0,'u_oldbarangays:name:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','isvalidamnesty','Is Valid Amnesty','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','amnestyyear','Amnesty Year','numeric',4,90,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpdiscs','dueday','Due Day','numeric',4,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpdiscs','discafterdue','Discount After Due','amount',0,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillarps','sht','SHT','amount',0,37,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbill','shttotal','SHT Tax','amount',0,87,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbill','linetotal','Line Total','amount',0,87,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.01.09.1610' WHERE ID='GPS.RPTAS';

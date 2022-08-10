@@ -1,0 +1,27 @@
+	.treemain{
+		z-index:1;
+		border: 1px solid;
+		visibility: visible;
+		display:block;
+		overflow:auto
+	}
+
+	.treemain2{
+		z-index:1;
+		border: 1px solid;
+		visibility: visible;
+		display:block;
+		overflow:auto
+	}
+	#tree1{
+		z-index:1;
+		border: 0px;
+		visibility: visible;
+		display:block;
+	}
+	.nodecls
+	{
+		font-family:Verdana, Arial, Helvetica, sans-serif;
+		font-size:11px;
+		text-decoration:none;
+	}

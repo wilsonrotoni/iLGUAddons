@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_rptaxbillarps','shtpenalty','SHT Penalty','amount',0,37,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbill','shtpenaltytotal','SHT Penalty Tax','amount',0,87,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2022.07.27.1815' WHERE ID='GPS.RPTAS';

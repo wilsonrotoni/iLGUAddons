@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('u_bplapplines','lastyrgrsales','Last Year Gross Sales','amount',0,70,'0',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2019.04.10.1354' WHERE ID='GPS.BPLS';

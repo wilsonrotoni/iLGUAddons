@@ -1,0 +1,12 @@
+evaltrx:addUDP('searchgeobpas','Search GeoData BPAS','N','');
+evaltrx:addUDF('u_lgufees','geodatafeeid','GeoData Fee ID','any',15,2,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','bpasappno','BPAS Application No.','any',50,210,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','obosharefee','OBO Share Fee','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','dpwhsharefee','DPWH Share Fee','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+evaltrx:addUserMenu('','LGUADMINCASHIER',10.3,'GeoData Fees and Charges','P','u_geodatafees');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINCASHIER',10.3,'GeoData Fees and Charges','P','u_geodatafees');
+evaltrx:addUDT('geodatafees','GeoData Fees and Charges','MDC','G');
+evaltrx:addUDO('geodatafees','GeoData Fees and Charges','geodatafees','G');
+evaltrx:deleteUDF('u_lgufees','geodatafeeid','GeoData Fee ID','any',15,2,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_geodatafees','lgufeeid','LGU Fee ID','any',30,2,'',0,'u_lgufees:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.06.23.2259' WHERE ID='GPS.LGU';

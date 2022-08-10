@@ -1,0 +1,18 @@
+evaltrx:addUDF('u_bldgapps','withannualinspection','With Annual Inspection','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','withoccupational','With Occupational','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','baddressno','Business Address No','any',10,160,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bbldgno','Business Bldg No.','any',50,210,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bbldgname','Business Bldg Name','any',50,220,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bblock','Business Block No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bfloorno','Business Floor No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bunitno','Business Unit No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bstreet','Business Street','any',50,240,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bbrgy','Business Brgy.','any',50,250,null,0,'u_businessbarangays:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bvillage','Business Village','any',50,260,null,0,'u_subdivisions:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bcity','Business City','any',50,270,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bprovince','Business Province','any',50,280,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bphaseno','Business Phase No.','any',50,290,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','btelno','Business Tel No.','any',50,290,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','blotno','Business Lot No.','any',50,230,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','acctno','Account No.','any',50,230,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.06.16.0939' WHERE ID='GPS.LGUBuilding';

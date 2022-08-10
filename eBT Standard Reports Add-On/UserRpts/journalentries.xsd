@@ -1,0 +1,45 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="journalentries" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="journalentries" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="journalentries">
+          <xs:complexType>
+            <xs:sequence>
+		  <xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+		  <xs:element name="BRANCH" type="xs:string" minOccurs="0" />
+                  <xs:element name="BRANCHNAME" type="xs:string" minOccurs="0" />
+		  <xs:element name="POSTINGDDATE" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="DATE1" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="DATE2" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="DOCTYPENAME" type="xs:string" minOccurs="0" />
+		  <xs:element name="DUEDATE" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="DOCNO" type="xs:string" minOccurs="0" />
+		  <xs:element name="DOCTYPE" type="xs:string" minOccurs="0" />
+		  <xs:element name="REFNO" type="xs:string" minOccurs="0" />
+		  <xs:element name="ACCTCODE" type="xs:string" minOccurs="0" />
+		  <xs:element name="ACCTNAME" type="xs:string" minOccurs="0" />
+
+		  <xs:element name="DEBIT" type="xs:double" minOccurs="0" />
+		  <xs:element name="CREDIT" type="xs:double" minOccurs="0" />
+
+		  <xs:element name="SLACCTCODE" type="xs:string" minOccurs="0" />
+		  <xs:element name="SLACCTNAME" type="xs:string" minOccurs="0" />
+
+		  <xs:element name="SLDEBIT" type="xs:double" minOccurs="0" />
+		  <xs:element name="SLCREDIT" type="xs:double" minOccurs="0" />
+
+		  <xs:element name="REMARKS" type="xs:string" minOccurs="0" />
+		  <xs:element name="DOCSTATUS" type="xs:string" minOccurs="0" />
+		  <xs:element name="replenish_no" type="xs:string" minOccurs="0" />
+		  <xs:element name="pcv_no" type="xs:string" minOccurs="0" />
+		  <xs:element name="pcv_date" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="pcv_name" type="xs:string" minOccurs="0" />
+		  <xs:element name="SLTYPE" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

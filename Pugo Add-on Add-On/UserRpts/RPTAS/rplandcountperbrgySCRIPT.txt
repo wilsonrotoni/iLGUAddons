@@ -1,0 +1,15 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',290,'Land Count per Brgy','P','urpt_u_rplandcountperbrgy');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',290,'Land Count per Brgy','P','urpt_u_rplandcountperbrgy');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',290,'Land Count per Brgy','P','urpt_u_rplandcountperbrgy');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',290,'Land Count per Brgy','P','urpt_u_rplandcountperbrgy');
+
+evaltrx:addUDR('u_rplandcountperbrgy','Land Count per Brgy','QS','mysql',1);
+
+
+
+evaltrx:addUDRParam('u_rplandcountperbrgy','date1','For the Period Ending:','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRParam('u_rplandcountperbrgy','taxable','','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_rplandcountperbrgy','taxable',1,'Taxable');
+
+evaltrx:addUDRLayout('u_rplandcountperbrgy','Land Count per Brgy',0,'Launion-Aringay Add-On','RPTAS\rplandcountperbrgy.rpt','1',1,'','','');

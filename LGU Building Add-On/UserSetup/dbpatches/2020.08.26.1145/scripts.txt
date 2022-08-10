@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_bldgapps','natureofbusiness','Nature of Business Activity','text',0,20,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.08.26.1145' WHERE ID='GPS.LGUBuilding';

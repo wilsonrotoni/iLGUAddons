@@ -1,0 +1,13 @@
+evaltrx:addUDT('motorviolationapps','Motor Violator List','D',''); 
+evaltrx:addUDO('motorviolationapps','Motor Violator List','motorviolationapps','');
+evaltrx:addUDF('u_motorviolationapps','Appdate','Application Date','date',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Licenseno','License No.','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Firstname','First Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Middlename','Middle Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Lastname','Last Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Plateno','Plate No.','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Vehicletype','Vehicle Type','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Offense','Offense','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Ticketby','Ticket By','any',255,10,'',0,null,0,0,1,1,1,1);
+
+UPDATE DBVERSION SET VERSION='2020.03.23.2232' WHERE ID='GPS.MotorViolation';

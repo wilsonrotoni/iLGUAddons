@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('arinvoiceitems','facapitalize','Capitalize','upper',10,20,'',0,null,0,0,1,1,0,1);
+UPDATE DBVERSION SET VERSION='2019.08.23.1417' WHERE ID='GPS.FixedAsset';

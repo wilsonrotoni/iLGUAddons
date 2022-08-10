@@ -1,0 +1,29 @@
+
+evaltrx:addUserMenu('','LGURPTSBPLS',130,'List by Application Type','P','urpt_u_listapptypebrgy');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSBPLS',130,'List by Application Type','P','urpt_u_listapptypebrgy');
+evaltrx:addUserMenu('LGU','LGURPTSBPLS',130,'List by Application Type','P','urpt_u_listapptypebrgy');
+evaltrx:addUserMenu('LGUUSR','LGURPTSBPLS',130,'List by Application Type','P','urpt_u_listapptypebrgy');
+
+evaltrx:addUDR('u_listapptypebrgy','List by Application Type','QS','mysql',1);
+
+evaltrx:addUDRParam('u_listapptypebrgy','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listapptypebrgy','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listapptypebrgy','apptype','ApplicationType','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_listapptypebrgy','apptype','','ALL');
+evaltrx:addUDRParamValue('u_listapptypebrgy','apptype','new','NEW');
+evaltrx:addUDRParamValue('u_listapptypebrgy','apptype','Renew','RENEW');
+
+evaltrx:addUDRParam('u_listapptypebrgy','brgy','Barangay','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_listapptypebrgy','brgy','LQ','Q','select code,name from u_barangays where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+evaltrx:addUDRLayout('u_listapptypebrgy','List by Application Type',1,'BPLS Add-On','apptypeperbrgy.rpt','1',1,'','','');
+
+
+
+
+
+
+
+
+

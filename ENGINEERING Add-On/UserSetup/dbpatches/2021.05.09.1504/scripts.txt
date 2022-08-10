@@ -1,0 +1,2 @@
+evaltrx:deleteUDT('buildingpermitapps5','BEMEP Details','DL','');
+UPDATE DBVERSION SET VERSION='2021.05.09.1504' WHERE ID='GPS.ENGINEERING';

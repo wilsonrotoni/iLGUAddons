@@ -1,0 +1,39 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="stock_ledger" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="stock_ledger" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="stock_ledger">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+							<xs:element name="DATE1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DATE2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="ITEM" type="xs:string" minOccurs="0" />
+							<xs:element name="STORE" type="xs:string" minOccurs="0" />
+							<xs:element name="DEPARTMENT" type="xs:string" minOccurs="0" />
+							<xs:element name="HAND" type="xs:string" minOccurs="0" />
+							<xs:element name="LAST_ORDER" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="UOM" type="xs:string" minOccurs="0" />
+							<xs:element name="ITEM_LOC" type="xs:string" minOccurs="0" />
+							<xs:element name="SEQ" type="xs:string" minOccurs="0" />
+							<xs:element name="CURR_COST" type="xs:double" minOccurs="0" />
+							<xs:element name="b_qty" type="xs:double" minOccurs="0" />
+							<xs:element name="DOCDATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="SOURCE" type="xs:string" minOccurs="0" />
+							<xs:element name="INQTY" type="xs:double" minOccurs="0" />
+							<xs:element name="OUTQTY" type="xs:double" minOccurs="0" />
+							<xs:element name="INCOST" type="xs:double" minOccurs="0" />
+							<xs:element name="OUTCOST" type="xs:double" minOccurs="0" />
+							<xs:element name="ORIGCOST" type="xs:double" minOccurs="0" />
+							<xs:element name="ORIGQTY" type="xs:double" minOccurs="0" />
+							<xs:element name="REFTYPE" type="xs:string" minOccurs="0" />
+							<xs:element name="cust_supp" type="xs:string" minOccurs="0" />
+							<xs:element name="costprice" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

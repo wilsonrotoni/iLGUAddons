@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('u_bplappfees','quantity','Qty','amount',0,22,'1',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.13.2049' WHERE ID='GPS.BPLS';

@@ -1,0 +1,5 @@
+evaltrx:addUDT('lgugoodsissueitems','LGU Goods Issue - Items','DL','G');
+evaltrx:addUDOChild('lgugoodsissue','lgugoodsissueitems','LGU Goods Issue - Items','G');
+evaltrx:addUDF('u_lgugoodsissueitems','itemcode','Item Code','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgugoodsissueitems','itemdesc','Item Description','any',100,20,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.03.0044' WHERE ID='GPS.LGUPurchasing';

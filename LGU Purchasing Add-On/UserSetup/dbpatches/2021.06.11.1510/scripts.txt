@@ -1,0 +1,2 @@
+evaltrx:addUDF('lgupurchasesetup','linkprograms','Link Programs/Projects','numeric',1,80,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.06.11.1510' WHERE ID='GPS.LGUPurchasing';

@@ -1,0 +1,6 @@
+evaltrx:modifyUDO('rpbldgstructclassrates','Building Structure/Class Rates','');
+evaltrx:addUDF('u_rpbldgstructclassrates','revisionyear','Revision Year','any',50,260,'',0,'u_gryears:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_taxcredits','sht','SHT','amount',0,50,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbillcredits','sht','SHT','amount',0,27,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbill','savestatus','Save Status','numeric',1,80,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.11.09.1250' WHERE ID='GPS.RPTAS';

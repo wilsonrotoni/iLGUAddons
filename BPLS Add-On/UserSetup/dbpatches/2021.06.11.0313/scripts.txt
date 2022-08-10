@@ -1,0 +1,4 @@
+evaltrx:addUserMenu('','LGUUTILUL',400,'Update Business Ledger','P','u_updateBPLLedger');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILUL',400,'Update Business Ledger','P','u_updateBPLLedger');
+evaltrx:addProgId('u_updateBPLLedger','Update Business Ledger','./udp.php?&objectcode=u_updateBPLLedger');
+UPDATE DBVERSION SET VERSION='2021.06.11.0313' WHERE ID='GPS.BPLS';

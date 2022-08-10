@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('u_lgufees','glacctcode','G/L Code','any',30,240,null,0,'chartofaccounts:formatcode',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.16.1114' WHERE ID='GPS.LGU';

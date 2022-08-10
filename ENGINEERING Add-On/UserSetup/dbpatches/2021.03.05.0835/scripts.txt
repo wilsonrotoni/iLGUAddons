@@ -1,0 +1,2 @@
+evaltrx:DELETEUDT('buildingcharacteroccupancykind','Building Character Occupancy - Kind','DL','');
+UPDATE DBVERSION SET VERSION='2021.03.05.0835' WHERE ID='GPS.ENGINEERING';

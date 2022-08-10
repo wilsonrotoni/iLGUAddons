@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGUADMINENGINEERING',119,'List of Requirements','P','u_buildingrequirements');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINENGINEERING',119,'List of Requirements','P','u_buildingrequirements');
+UPDATE DBVERSION SET VERSION='2021.03.05.0636' WHERE ID='GPS.ENGINEERING';

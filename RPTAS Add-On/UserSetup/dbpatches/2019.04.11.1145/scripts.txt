@@ -1,0 +1,5 @@
+evaltrx:addUDT('gryears','GR Years','MDC','');
+evaltrx:addUDO('gryears','GR Years','gryears','G');
+evaltrx:addUserMenu('','LGUADMINRPTAS',10.0,'GR Years','P','u_gryears');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINRPTAS',10.0,'GR Years','P','u_gryears');
+UPDATE DBVERSION SET VERSION='2019.04.11.1145' WHERE ID='GPS.RPTAS';

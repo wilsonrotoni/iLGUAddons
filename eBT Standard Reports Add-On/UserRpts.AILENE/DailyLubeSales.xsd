@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="DailyLubeSales" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="DailyLubeSales" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DailyLubeSales">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyType" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+              <xs:element name="date1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="date2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="H_Item" type="xs:string" minOccurs="0" />
+              <xs:element name="U_SHIFT" type="xs:string" minOccurs="0" />
+              <xs:element name="U_TIME" type="xs:string" minOccurs="0" />
+              <xs:element name="U_ATTENDANT" type="xs:string" minOccurs="0" />
+              <xs:element name="username" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemCode" type="xs:string" minOccurs="0" />
+              <xs:element name="ItemDesc" type="xs:string" minOccurs="0" />
+              <xs:element name="OB_UGT" type="xs:double" minOccurs="0" />
+              <xs:element name="GRPO" type="xs:double" minOccurs="0" />
+              <xs:element name="STO" type="xs:double" minOccurs="0" />
+              <xs:element name="UGT_Close" type="xs:double" minOccurs="0" />
+              <xs:element name="OB_FC" type="xs:double" minOccurs="0" />
+              <xs:element name="STI" type="xs:double" minOccurs="0" />
+              <xs:element name="Sold" type="xs:double" minOccurs="0" />
+              <xs:element name="UnitPrice" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount" type="xs:double" minOccurs="0" />
+              <xs:element name="Sold2" type="xs:double" minOccurs="0" />
+              <xs:element name="UnitPrice2" type="xs:double" minOccurs="0" />
+              <xs:element name="Amount2" type="xs:double" minOccurs="0" />
+              <xs:element name="FC_Close" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

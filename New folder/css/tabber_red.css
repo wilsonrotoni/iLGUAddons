@@ -1,0 +1,33 @@
+ul.tabbernav li a
+{
+ border: 1px solid #E00F1C;
+ background: #FFE9ED;
+}
+
+ul.tabbernav li a:link { color: #C60000; }
+ul.tabbernav li a:visited { color: #667; }
+
+ul.tabbernav li a:hover
+{
+ color: #000;
+ background: #AAE;
+ border-color: #C60000;
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background-color: #fff;
+ border-bottom: 1px solid #fff;
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+ color: #000;
+ background: white;
+ border-bottom: 1px solid white;
+}
+
+.tabberlive .tabbertab {
+ border:1px solid #E00F1C;
+}
+

@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_buildingpermitapps3','charactercode','Character Occupancy Code','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps3','characterdesc','Character Occupancy Description','any',255,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps3','characterkind','Character Occupancy Kind','any',225,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.03.05.0713' WHERE ID='GPS.ENGINEERING';

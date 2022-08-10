@@ -1,0 +1,17 @@
+evaltrx:addUDF('u_lgupos','ctcgross','CTC Gross','amount',0,10,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ctcgender','CTC Gender','any',30,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ctccivilstatus','Civil Status','any',30,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ctccitizenship','Citizenship','any',30,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ctcpob','Place of Birth','any',30,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ctcdob','Date of Birth','date',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ctctype','Citizenship','any',30,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','ctcoccupation','Occupation','any',30,150,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_lgupos','ctcgender','','');
+evaltrx:addUDFValue('u_lgupos','ctcgender','Female','Female');
+evaltrx:addUDFValue('u_lgupos','ctcgender','Male','Male');
+evaltrx:addUDFValue('u_lgupos','ctccivilstatus','','');
+evaltrx:addUDFValue('u_lgupos','ctccivilstatus','Single','Single');
+evaltrx:addUDFValue('u_lgupos','ctccivilstatus','Married','Married');
+evaltrx:addUDFValue('u_lgupos','ctccivilstatus','Divorced','Divorced');
+evaltrx:addUDFValue('u_lgupos','ctccivilstatus','Widow/Widower/Legally Separated','Widow/Widower/Legally Separated');
+UPDATE DBVERSION SET VERSION='2019.07.18.2213' WHERE ID='GPS.LGU';

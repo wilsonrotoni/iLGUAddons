@@ -1,0 +1,17 @@
+evaltrx:addUserMenu('','LGURPTSPAY',115,'List of Unpaid Bills','P','urpt_unpaidbills');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',115,'List of Unpaid Bills','P','urpt_unpaidbills');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',115,'List of Unpaid Bills','P','urpt_unpaidbills');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',115,'List of Unpaid Bills','P','urpt_unpaidbills');
+
+evaltrx:addUDR('unpaidbills','List of Unpaid Bills','QS','mysql',1);
+
+evaltrx:addUDRParam('unpaidbills','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('unpaidbills','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRParam('unpaidbills','profitcenter','Profit Center','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('unpaidbills','profitcenter','','ALL');
+evaltrx:addUDRParamValue('unpaidbills','profitcenter','BPL','Business Permit');
+evaltrx:addUDRParamValue('unpaidbills','profitcenter','PMR','Public Market Rental');
+evaltrx:addUDRParamValue('unpaidbills','profitcenter','MTOP','MTOP');
+
+evaltrx:addUDRLayout('unpaidbills','List of Unpaid Bills',1,'Launion-Rosario Add-On','LGU\lst_unpaidbills.rpt','1',1,'','','');

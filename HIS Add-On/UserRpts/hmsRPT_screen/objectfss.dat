@@ -1,0 +1,39 @@
+OBJECTCODE	FIELDNAME	FSTYPE	FSSOURCE	FSQUERYCODE	FSQUERYVALUE	REFRESHTYPE	VALIDATE	DATECREATED	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION	FSQUERYTITLES	FSQUERYFORMATS	FSQUERYWIDTS
+sysRpthms_apinvsum	whs	LQ	Q		select warehouse, warehousename from warehouses	M	0	2013-06-20 16:38:27	manager	2013-06-20 16:38:27	manager	1			
+sysRpthms_ap_aging	custno	LQ	Q		SELECT suppno, suppname FROM suppliers	M	0	2013-06-20 15:40:09	manager	2013-06-20 15:40:42	manager	2			
+sysRpthms_ap_aging2	custgroup	LQ	Q		select suppgroup, groupname from suppliergroups	M	0	2014-03-03 18:35:20	manager	2014-03-03 18:35:20	manager	1			
+sysRpthms_ap_aging2	custno	LQ	Q		SELECT suppno, suppname FROM suppliers	M	0	2014-03-03 18:34:36	manager	2014-03-03 18:34:36	manager	1			
+sysRpthms_araging	custno	LQ	Q		select custno, custname from customers	M	0	2013-06-11 18:19:02	manager	2013-06-11 18:19:02	manager	1	[null]	[null]	null
+sysRptHMS_ARAGING2	custgroup	LQ	Q		select custgroup, groupname from customergroups	M	0	2014-03-03 18:17:29	manager	2014-03-03 18:17:29	manager	1			
+sysRptHMS_ARAGING2	custno	LQ	Q		select custno, custname from customers	M	0	2014-03-03 18:16:34	manager	2014-03-03 18:16:34	manager	1			
+sysRpthms_bl	acctno	LQ	Q		SELECT c.BANKACCTNO, b.BANK, b.BANKNAME FROM banks b inner join housebankaccounts c on c.bank = b.bank	M	0	2013-06-20 18:14:58	manager	2013-06-20 18:14:58	manager	1			
+sysRpthms_census_filter_roomtype	roomtype	LQ	Q		SELECT code, name FROM u_hisroomtypes where u_type = 'Special Room'	M	0	2013-06-06 16:02:36	manager	2013-06-20 11:31:18	manager	3			
+sysRpthms_census_filter_roomtype_by_f	roomtype	LQ	Q		SELECT code, name FROM u_hisroomtypes where u_type = 'Special Room'	M	0	2013-06-06 16:15:13	manager	2013-06-20 11:50:33	manager	3			
+sysRpthms_cf2	bpcode	LQ	Q		select code, name from u_hispatients 	M	0	2013-06-11 10:37:46	manager	2013-06-11 10:37:46	manager	1	[null]	[null]	null
+sysRpthms_gl	account	LQ	Q		select acctcode, acctname from chartofaccounts	M	0	2013-06-20 17:27:35	manager	2013-06-20 17:27:35	manager	1			
+sysRpthms_heartstation	trx	LQ	Q		select code, name from u_hislabtesttypes	M	0	2013-07-03 19:27:51	manager	2013-07-03 19:27:51	manager	1			
+sysRpthms_ixr	itemgroup	LQ	Q		select itemgroup, itemgroupname from itemgroups	M	0	2013-06-26 21:22:48	manager	2013-06-26 21:22:48	manager	1			
+sysRpthms_ixr	whscode	LQ	Q		select warehouse, warehousename from warehouses	M	0	2013-06-26 21:22:28	manager	2013-06-26 21:22:28	manager	1			
+sysRpthms_lablist	trx	LQ	Q		select code, name from u_hislabtesttypes	M	0	2013-06-30 17:50:03	manager	2013-06-30 17:50:03	manager	1			
+sysRpthms_minmax	itemgroup	LQ	Q		select itemgroup, itemgroupname from itemgroups	M	0	2013-06-26 14:50:36	manager	2013-06-26 14:51:02	manager	2			
+sysRpthms_minmax	whscode	LQ	Q		select warehouse, warehousename from warehouses	M	0	2013-06-26 14:50:14	manager	2013-06-26 14:50:14	manager	1			
+sysRpthms_nursinginv	dep	LQ	Q		select department, departmentname from departments	M	0	2013-07-04 09:59:54	manager	2013-07-04 09:59:54	manager	1			
+sysRpthms_pf	bpcode	LQ	Q		select suppno, suppname from suppliers where suppgroup = '4'	M	0	2013-11-12 16:20:37	manager	2013-11-12 16:20:37	manager	1			
+sysRpthms_povrr	item	LQ	Q		select itemcode, itemdesc from items	M	0	2013-06-20 17:03:22	manager	2013-06-20 17:03:22	manager	1			
+sysRpthms_prl	itemclass	LQ	Q		select code, name from u_hissections union all select 'Global', 'Global'	M	0	2013-07-09 23:08:29	manager	2013-07-09 23:29:02	manager	2			
+sysRpthms_prl	itemgroup	LQ	Q		select department, departmentname from departments union all select 'Global', 'Global'	M	0	2013-07-09 23:10:57	manager	2013-07-09 23:10:57	manager	1			
+sysRpthms_pulmopr	bpcode	LQ	Q		select code, name from u_hispatients	M	0	2013-06-30 16:21:33	manager	2013-06-30 16:21:33	manager	1			
+sysRpthms_radiolist	trx	LQ	Q		SELECT U_TRXTYPE FROM u_hislabtests WHERE U_DEPARTMENT = 'RADIOLOGY' GROUP BY U_TRXTYPE	M	0	2013-06-30 17:09:49	manager	2013-06-30 17:10:10	manager	2			
+sysRpthms_rvd	docno	LQ	Q		select a.docno, a.u_startdate, a.u_patientname from u_hismedsuprequests a where a.u_startdate between '$[date1]$' and '$[date2]$' and a.branch='$[branch]$' and a.u_fromdepartment='$[dep]$'	M	0	2013-07-04 12:08:39	manager	2013-07-04 12:27:32	manager	4			
+sysRpthms_soa	bpcode	LQ	Q		select code, name from u_hispatients	M	0	2013-06-11 17:41:00	manager	2013-06-11 17:41:00	manager	1	[null]	[null]	null
+sysRpthms_soa	docno	LQ	Q		select docno, u_docdate, u_patientname from u_hisbills where u_patientid = '$[bpcode]$'	M	0	2013-06-11 17:42:19	manager	2013-08-05 15:47:45	manager	12			null
+sysRpthms_sumpo	bpcode	LQ	Q		SELECT suppno, suppname FROM suppliers	M	1	2013-06-20 16:06:09	manager	2014-02-27 19:45:50	manager	5			
+sysRpthms_sumpo	itemcode	LQ	Q		SELECT itemcode, itemdesc FROM items	M	1	2013-06-20 16:25:51	manager	2014-02-27 19:45:57	manager	5			
+sysRpthms_sumpo	whs	LQ	Q		select warehouse, warehousename from warehouses	M	1	2013-06-20 16:10:50	manager	2014-02-27 19:46:03	manager	7			
+sysRpthms_sumpo	whscode	LQ	Q		SELECT warehouse, warehousename FROM warehouses	M	0	2013-06-20 16:01:20	manager	2013-06-20 16:01:20	manager	1			
+sysRpthms_sumpo	xwhs	Q	Q		select * from branches	M	0	2013-06-20 16:21:27	manager	2013-06-20 16:22:16	manager	3			
+sysRpthms_trans	mtype	LQ	Q		SELECT code, name FROM u_hishealthinmemtypes	M	0	2013-06-21 11:35:05	manager	2013-06-21 11:35:05	manager	1			
+sysRpthms_transpay	mtype	LQ	Q		SELECT code, name FROM u_hishealthinmemtypes	M	0	2013-06-21 13:44:37	manager	2013-06-21 13:44:37	manager	1			
+sysRpthms_trans_hmo	hmo	LQ	Q		SELECT code, name FROM u_hishealthins where code <> 'PHIC'	M	0	2013-06-11 16:53:12	manager	2013-06-11 16:53:12	manager	1	[null]	[null]	null
+sysRpthms_trans_hmo	phic	LQ	Q		select u_membertype from u_hispatienthealthins group by u_membertype 	M	0	2013-06-11 16:51:33	manager	2013-06-11 16:51:33	manager	1	[null]	[null]	null
+sysRpthms_trans_phic	phic	LQ	Q		select u_membertype from u_hispatienthealthins group by u_membertype 	M	0	2013-06-11 09:39:59	manager	2013-06-11 09:39:59	manager	1	[null]	[null]	null

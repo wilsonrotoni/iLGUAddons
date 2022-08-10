@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+	</Config>
+	<Parameters>
+
+		<Parameter>
+			<Id>pi_company</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>company</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_branch</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>branch</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_date1</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>date1</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_date2</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>date2</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_whscode</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>whs</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_itemcode</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>itemcode</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

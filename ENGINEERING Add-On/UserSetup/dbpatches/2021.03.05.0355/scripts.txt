@@ -1,0 +1,2 @@
+evaltrx:addUDO('buildingpermitapps','Building Permit Application','buildingpermitapps','D');
+UPDATE DBVERSION SET VERSION='2021.03.05.0355' WHERE ID='GPS.ENGINEERING';

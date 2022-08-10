@@ -1,0 +1,2 @@
+evaltrx:deleteUDF('u_lgureceiptitems','doctype','Document Type','any',30,20,'',0,'u_doctypes:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.03.28.1359' WHERE ID='GPS.LGU';

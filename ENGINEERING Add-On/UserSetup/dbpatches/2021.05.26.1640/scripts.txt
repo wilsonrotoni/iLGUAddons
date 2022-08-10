@@ -1,0 +1,2 @@
+evaltrx:addUDT('buildingpermitapps','Building Permit Application','D','');
+UPDATE DBVERSION SET VERSION='2021.05.26.1640' WHERE ID='GPS.ENGINEERING';

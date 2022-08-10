@@ -1,0 +1,4 @@
+evaltrx:addUDF('users','goodsissueapprove','Goods Issue Approver','numeric',1,140,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('users','goodsissueapprove','0','No');
+evaltrx:addUDFValue('users','goodsissueapprove','1','Yes');
+UPDATE DBVERSION SET VERSION='2021.10.14.0144' WHERE ID='GPS.LGUPurchasingBayambang';

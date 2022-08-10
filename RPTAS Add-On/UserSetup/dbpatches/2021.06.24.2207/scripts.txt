@@ -1,0 +1,9 @@
+evaltrx:addUDF('u_lra','barangay','Barangay','any',100,120,'',0,null,0,0,1,1,1,1);
+evaltrx:addUserMenu('','LGUUTILITIES',100,'LRA Data List','P','u_lralist');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILITIES',100,'LRA Data List','P','u_lralist');
+evaltrx:addProgId('u_lralist','LRA Data List','./udp.php?&objectcode=u_lralist');
+evaltrx:addUDF('u_rpnoticeofcancel','datecancel','Cancellation Date','date',0,70,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeofcancel','effyear','Effectivity Year','numeric',4,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeofcancel','endyear','End Year','numeric',4,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeofcancel','appno','Document No','any',100,20,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.06.24.2207' WHERE ID='GPS.RPTAS';

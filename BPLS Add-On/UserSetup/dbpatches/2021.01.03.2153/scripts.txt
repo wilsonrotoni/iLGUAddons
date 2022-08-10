@@ -1,0 +1,11 @@
+evaltrx:addUDF('u_bplapps','billseqno','Mayors Permit SeqNo','any',50,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','incfirebusiness','Include Fire to Business Assessment','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','incfirestartyear','Include Fire Start Year','numeric',4,90,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_zoningclrapps','isonlineapp','Online Application','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','isonlineapp','Online Application','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','isonlineapp','Online Application','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('users','bpldelete','Delete Business','numeric',1,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('users','bplretire','Retire Business','numeric',1,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('users','bplhold','Hold Business','numeric',1,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','assyearto','Assessment','numeric',4,6,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.01.03.2153' WHERE ID='GPS.BPLS';

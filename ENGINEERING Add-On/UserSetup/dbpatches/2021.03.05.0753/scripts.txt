@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGUADMINENGINEERING',126,'Building Permit fees','P','u_buildingfees');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINENGINEERING',126,'Building Permit fees','P','u_buildingfees');
+UPDATE DBVERSION SET VERSION='2021.03.05.0753' WHERE ID='GPS.ENGINEERING';

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>xml</DataSource>
+		<CommandType>StoredProcedure</CommandType>
+		<CommandText>ap_invoice</CommandText>
+		<TableName>List of Business</TableName>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>date1</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>company</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		
+</Configs>

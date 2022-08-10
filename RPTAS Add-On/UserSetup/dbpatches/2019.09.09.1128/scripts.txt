@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_rpfaas1','marketvalue','Market Value','amount',0,350,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','marketvalue','Market Value','amount',0,350,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','marketvalue','Market Value','amount',0,350,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.09.1128' WHERE ID='GPS.RPTAS';

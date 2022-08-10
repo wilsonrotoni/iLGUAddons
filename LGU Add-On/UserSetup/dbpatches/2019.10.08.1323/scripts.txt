@@ -1,0 +1,3 @@
+evaltrx:modifyUDF('u_lgusetupcashticket','cashticketfee','Cash Ticket Fee','any',50,10,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgusetupcashticket','cashticketfeeamt','Amount','amount',0,20,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.08.1323' WHERE ID='GPS.LGU';

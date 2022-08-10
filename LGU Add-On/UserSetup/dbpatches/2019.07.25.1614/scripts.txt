@@ -1,0 +1,2 @@
+evaltrx:addUDP('feecategories','Fees and Charges Category List','N','');
+UPDATE DBVERSION SET VERSION='2019.07.25.1614' WHERE ID='GPS.LGU';

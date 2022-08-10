@@ -1,0 +1,15 @@
+evaltrx:deleteUDF('u_rptaxes','date','Date','date',0,70,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnotice','date','Date','date',0,70,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnotice','totalmarketvalue','Total Market Value','amount',0,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnotice','totalassvalue','Total Assesed Value','amount',0,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDT('rpnoticeitems','RP Notice - Items','DL','');
+evaltrx:addUDOChild('rpnotice','rpnoticeitems','RP Notice - Items','G');
+evaltrx:addUDF('u_rpnoticeitems','trxcode','Transaction Code','any',30,10,'',0,'u_rptrxcodes:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeitems','tdno','TD No.','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeitems','pin','PIN','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeitems','location','Location','any',100,40,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeitems','class','Classification','any',30,50,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeitems','kind','Kind','any',30,60,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeitems','marketvalue','Market Value','amount',0,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnoticeitems','assvalue','Assesed Value','amount',0,80,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.09.0024' WHERE ID='GPS.RPTAS';

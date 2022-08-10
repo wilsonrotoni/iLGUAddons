@@ -1,0 +1,59 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="EarlyReg" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="EarlyReg" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="EarlyReg">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyType" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+              <xs:element name="date1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="date2" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="u_date_from" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Shift1" type="xs:string" minOccurs="0" />
+              <xs:element name="Shift2" type="xs:string" minOccurs="0" />
+
+              <xs:element name="Biodiesel1" type="xs:double" minOccurs="0" />
+              <xs:element name="Biodiesel2" type="xs:double" minOccurs="0" />
+              <xs:element name="Biodiesel3" type="xs:double" minOccurs="0" />
+              <xs:element name="Biodiesel4" type="xs:double" minOccurs="0" />
+              <xs:element name="Biodiesel5" type="xs:double" minOccurs="0" />
+
+              <xs:element name="Premium1" type="xs:double" minOccurs="0" />
+              <xs:element name="Premium2" type="xs:double" minOccurs="0" />
+              <xs:element name="Premium3" type="xs:double" minOccurs="0" />
+              <xs:element name="Premium4" type="xs:double" minOccurs="0" />
+              <xs:element name="Premium5" type="xs:double" minOccurs="0" />
+
+              <xs:element name="Unleaded1" type="xs:double" minOccurs="0" />
+              <xs:element name="Unleaded2" type="xs:double" minOccurs="0" />
+              <xs:element name="Unleaded3" type="xs:double" minOccurs="0" />
+              <xs:element name="Unleaded4" type="xs:double" minOccurs="0" />
+              <xs:element name="Unleaded5" type="xs:double" minOccurs="0" />
+
+              <xs:element name="Regular1" type="xs:double" minOccurs="0" />
+              <xs:element name="Regular2" type="xs:double" minOccurs="0" />
+              <xs:element name="Regular3" type="xs:double" minOccurs="0" />
+              <xs:element name="Regular4" type="xs:double" minOccurs="0" />
+              <xs:element name="Regular5" type="xs:double" minOccurs="0" />
+
+              <xs:element name="Kerosene1" type="xs:double" minOccurs="0" />
+              <xs:element name="Kerosene2" type="xs:double" minOccurs="0" />
+              <xs:element name="Kerosene3" type="xs:double" minOccurs="0" />
+              <xs:element name="Kerosene4" type="xs:double" minOccurs="0" />
+              <xs:element name="Kerosene5" type="xs:double" minOccurs="0" />
+
+              <xs:element name="U_ATTENDANT1" type="xs:string" minOccurs="0" />
+              <xs:element name="username" type="xs:string" minOccurs="0" />
+
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

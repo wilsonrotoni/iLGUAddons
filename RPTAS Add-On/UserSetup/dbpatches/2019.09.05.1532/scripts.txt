@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGURPT',20,'Real Property Tax For Approval','P','u_rpforapprovallist');
+evaltrx:addUserMenu('SYSADMIN','LGURPT',20,'Real Property Tax For Approval','P','u_rpforapprovallist');
+UPDATE DBVERSION SET VERSION='2019.09.05.1532' WHERE ID='GPS.RPTAS';

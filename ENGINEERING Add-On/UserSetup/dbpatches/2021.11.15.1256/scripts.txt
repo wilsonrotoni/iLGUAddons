@@ -1,0 +1,2 @@
+evaltrx:deleteUDT('buildingpermitapps2','Building Permit Scope of Work','DL','');
+UPDATE DBVERSION SET VERSION='2021.11.15.1256' WHERE ID='GPS.ENGINEERING';

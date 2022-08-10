@@ -1,0 +1,5 @@
+evaltrx:addUDT('lgugoodsissue','LGU Goods Issue','D','');
+evaltrx:addUDO('lgugoodsissue','LGU Goods Issue','lgugoodsissue','');
+evaltrx:addUDT('lgustocktransfer','LGU Stock Transfer','D','');
+evaltrx:addUDO('lgustocktransfer','LGU Stock Transfer','lgustocktransfer','');
+UPDATE DBVERSION SET VERSION='2019.06.03.0039' WHERE ID='GPS.LGUPurchasing';

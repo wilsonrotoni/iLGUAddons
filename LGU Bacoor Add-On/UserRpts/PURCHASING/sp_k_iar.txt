@@ -1,0 +1,141 @@
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sp_k_iar` $$
+CREATE PROCEDURE `sp_k_iar`(IN pi_company VARCHAR(10),
+                             IN pi_branch VARCHAR(10),
+                             IN pi_docno VARCHAR(50))
+BEGIN
+
+DECLARE v1 INT DEFAULT 0;
+
+DROP TEMPORARY TABLE IF EXISTS `sp_k_iar`;
+CREATE TEMPORARY TABLE `sp_k_iar`(
+`COMPANY` VARCHAR(10) NULL DEFAULT '',
+`COMPANYNAME` VARCHAR(150) NULL DEFAULT '',
+`MUNICIPALITY` VARCHAR(150) NULL DEFAULT '',
+`PROVINCE` VARCHAR(150) NULL DEFAULT '',
+`BRANCH` VARCHAR(10) NULL DEFAULT '',
+`BRANCHNAME` VARCHAR(150) NULL DEFAULT '',
+`DOCNO` VARCHAR(100) NULL DEFAULT '',
+`SUPPCODE` VARCHAR(10) NULL DEFAULT '',
+`SUPPNAME` VARCHAR(250) NULL DEFAULT '',
+`PROFITCENTER` VARCHAR(100) NULL DEFAULT '',
+`PROFITCENTERNAME` VARCHAR(250) NULL DEFAULT '',
+`ITEMNO` VARCHAR(10) NULL DEFAULT '',
+`UNITISSUE` VARCHAR(20) NULL DEFAULT '',
+`ITEMDESC` VARCHAR(250) NULL DEFAULT '',
+`QUANTITY` NUMERIC(18,6) NULL DEFAULT 0,
+`DATEINSPECTED` DATE NULL,
+`DATERECEIVED` DATE NULL,
+`REVIEWEDBY` VARCHAR(250) NULL DEFAULT '',
+`REVIEWEDBYPOSITION` VARCHAR(250) NULL DEFAULT '',
+`APPROVEDBY` VARCHAR(250) NULL DEFAULT '',
+`APPROVEDBYPOSITION` VARCHAR(250) NULL DEFAULT ''
+)ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+INSERT INTO sp_k_iar()
+SELECT a.company AS COMPANY,
+       comp.companyname AS COMPANYNAME,
+       comp.u_municipality AS MUNICIPALITY,
+       comp.u_province AS PROVINCE,
+       a.branch AS BRANCH,
+       br.branchname AS BRANCHNAME,
+       a.docno AS DOCNO,
+       a.u_bpcode AS SUPPCODE,
+       a.u_bpname AS SUPPNAME,
+       a.u_profitcenter AS PROFITCENTER,
+       a.u_profitcenter AS PROFITCENTERNAME,
+       b.u_itemcode AS ITEMNO,
+       b.u_unitissue AS UNITISSUE,
+       b.u_itemdesc AS ITEMDESC,
+       b.u_quantity AS QUANTITY,
+       a.u_date AS DATEINSPECTED,
+       a.u_date AS DATERECEIVED,
+       a.u_reviewedby AS REVIEWEDBY,
+       a.u_reviewedbyposition AS REVIEWEDBYPOSITION,
+       a.u_approvedby AS APPROVEDBY,
+       a.u_approvedbyposition AS APPROVEDBYPOSITION
+
+
+FROM u_lgupurchasedelivery a
+JOIN u_lgupurchasedeliveryitems b ON b.company = a.company
+                                  AND b.branch = a.branch
+                                  AND b.docid = a.docid
+JOIN companies comp ON comp.companycode = a.company
+JOIN branches br ON br.companycode = a.company
+                 AND br.branchcode = a.branch
+
+WHERE a.company = pi_company
+  AND a.branch = pi_branch
+  AND a.docno = pi_docno
+UNION
+SELECT a.company AS COMPANY,
+       comp.companyname AS COMPANYNAME,
+       comp.u_municipality AS MUNICIPALITY,
+       comp.u_province AS PROVINCE,
+       a.branch AS BRANCH,
+       br.branchname AS BRANCHNAME,
+       a.docno AS DOCNO,
+       a.u_bpcode AS SUPPCODE,
+       a.u_bpname AS SUPPNAME,
+       a.u_profitcenter AS PROFITCENTER,
+       a.u_profitcenter AS PROFITCENTERNAME,
+       '' AS ITEMNO,
+       b.u_unitissue AS UNITISSUE,
+       b.u_itemdesc AS ITEMDESC,
+       b.u_quantity AS QUANTITY,
+       a.u_date AS DATEINSPECTED,
+       a.u_date AS DATERECEIVED,
+       a.u_reviewedby AS REVIEWEDBY,
+       a.u_reviewedbyposition AS REVIEWEDBYPOSITION,
+       a.u_approvedby AS APPROVEDBY,
+       a.u_approvedbyposition AS APPROVEDBYPOSITION
+
+
+FROM u_lgupurchasedelivery a
+JOIN u_lgupurchasedeliveryservice b ON b.company = a.company
+                                  AND b.branch = a.branch
+                                  AND b.docid = a.docid
+JOIN companies comp ON comp.companycode = a.company
+JOIN branches br ON br.companycode = a.company
+                 AND br.branchcode = a.branch
+
+WHERE a.company = pi_company
+  AND a.branch = pi_branch
+  AND a.docno = pi_docno
+;
+    WHILE v1 < 30 DO
+      select count(*) into v1 from sp_k_iar;
+
+      INSERT INTO sp_k_iar()
+      SELECT '' AS COMPANY,
+             '' AS COMPANYNAME,
+             '' AS MUNICIPALITY,
+             '' AS PROVINCE,
+             '' AS BRANCH,
+             '' AS BRANCHNAME,
+             '' AS DOCNO,
+             '' AS SUPPCODE,
+             '' AS SUPPNAME,
+             '' AS PROFITCENTER,
+             '' AS PROFITCENTERNAME,
+             '' AS ITEMNO,
+             '' AS UNITISSUE,
+             '' AS ITEMDESC,
+             0  AS QUANTITY,
+             a.u_date AS DATEINSPECTED,
+             a.u_date AS DATERECEIVED,
+             a.u_reviewedby AS REVIEWEDBY,
+             a.u_reviewedbyposition AS REVIEWEDBYPOSITION,
+             a.u_approvedby AS APPROVEDBY,
+             a.u_approvedbyposition AS APPROVEDBYPOSITION
+      FROM u_lgupurchasedelivery a
+      WHERE a.company = pi_company
+        AND a.branch = pi_branch
+
+        AND a.docno = pi_docno;
+    END WHILE;
+SELECT * FROM sp_k_iar;
+END $$
+
+DELIMITER ;

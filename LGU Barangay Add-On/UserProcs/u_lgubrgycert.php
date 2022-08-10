@@ -1,0 +1,107 @@
+<?php
+ 
+
+//$page->businessobject->events->add->customAction("onCustomActionGPSLGUBarangay");
+
+//$page->businessobject->events->add->beforeDefault("onBeforeDefaultGPSLGUBarangay");
+$page->businessobject->events->add->afterDefault("onAfterDefaultGPSLGUBarangay");
+
+//$page->businessobject->events->add->prepareAdd("onPrepareAddGPSLGUBarangay");
+//$page->businessobject->events->add->beforeAdd("onBeforeAddGPSLGUBarangay");
+//$page->businessobject->events->add->afterAdd("onAfterAddGPSLGUBarangay");
+
+//$page->businessobject->events->add->prepareEdit("onPrepareEditGPSLGUBarangay");
+//$page->businessobject->events->add->beforeEdit("onBeforeEditGPSLGUBarangay");
+//$page->businessobject->events->add->afterEdit("onAfterEditGPSLGUBarangay");
+
+//$page->businessobject->events->add->prepareUpdate("onPrepareUpdateGPSLGUBarangay");
+//$page->businessobject->events->add->beforeUpdate("onBeforeUpdateGPSLGUBarangay");
+//$page->businessobject->events->add->afterUpdate("onAfterUpdateGPSLGUBarangay");
+
+//$page->businessobject->events->add->prepareDelete("onPrepareDeleteGPSLGUBarangay");
+//$page->businessobject->events->add->beforeDelete("onBeforeDeleteGPSLGUBarangay");
+//$page->businessobject->events->add->afterDelete("onAfterDeleteGPSLGUBarangay");
+
+function onCustomActionGPSLGUBarangay($action) {
+	return true;
+}   
+
+function onBeforeDefaultGPSLGUBarangay() { 
+	return true;
+}
+
+function onAfterDefaultGPSLGUBarangay() { 
+    
+        global $objConnection;
+	global $page;
+	global $objGrids;
+        
+	$page->setitem("u_appdate",currentdate());
+	$page->setitem("u_paiddate",currentdate());
+	return true;
+}
+
+function onPrepareAddGPSLGUBarangay(&$override) { 
+	return true;
+}
+
+function onBeforeAddGPSLGUBarangay() { 
+	return true;
+}
+
+function onAfterAddGPSLGUBarangay() { 
+	return true;
+}
+
+function onPrepareEditGPSLGUBarangay(&$override) { 
+	return true;
+}
+
+function onBeforeEditGPSLGUBarangay() { 
+	return true;
+}
+
+function onAfterEditGPSLGUBarangay() { 
+	return true;
+}
+
+function onPrepareUpdateGPSLGUBarangay(&$override) { 
+	return true;
+}
+
+function onBeforeUpdateGPSLGUBarangay() { 
+	return true;
+}
+
+function onAfterUpdateGPSLGUBarangay() { 
+	return true;
+}
+
+function onPrepareDeleteGPSLGUBarangay(&$override) { 
+	return true;
+}
+
+function onBeforeDeleteGPSLGUBarangay() { 
+	return true;
+}
+
+function onAfterDeleteGPSLGUBarangay() { 
+	return true;
+}
+$page->businessobject->items->setcfl("u_appdate","Calendar");
+$page->businessobject->items->setcfl("u_paiddate","Calendar");
+$page->businessobject->items->setcfl("u_residentsince","Calendar");
+    
+$page->businessobject->items->seteditable("u_lastname",false);
+$page->businessobject->items->seteditable("u_middlename",false);
+$page->businessobject->items->seteditable("u_firstname",false);
+$page->businessobject->items->seteditable("u_dueamount",false);
+$page->businessobject->items->seteditable("u_changeamount",false);
+
+$page->businessobject->items->setcfl("u_apprefno","OpenCFLfs()");
+$objGrids[0]->columncfl("u_feecode","OpenCFLfs()");
+$objGrids[0]->columncfl("u_feedesc","OpenCFLfs()");
+$objGrids[0]->columnattributes("u_linetotal","disabled");
+$objMaster->reportaction = "QS";
+?> 
+

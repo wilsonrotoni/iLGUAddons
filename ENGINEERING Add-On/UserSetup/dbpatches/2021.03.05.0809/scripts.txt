@@ -1,0 +1,15 @@
+evaltrx:addUDT('buildingmds','Business Master Data','MD','');
+evaltrx:addUDF('u_buildingmds','appdate','Date of Application','date',0,70,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','apprefno','Application No.','any',30,60,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','expdate','Expiration Date','date',0,80,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','firstname','Owner First Name','any',50,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','firstyear','First Year','numeric',4,90,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','lastname','Owner Last Name','any',50,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','middlename','Owner Middle Name','any',30,50,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','regdate','Date of Registration','date',0,70,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','retired','Retired','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','retireddate','Date Retired','date',0,40,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','ownership','Ownership','any',100,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingmds','year','Year','numeric',4,90,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDO('buildingmds','Business Master Data','buildingmds','G');
+UPDATE DBVERSION SET VERSION='2021.03.05.0809' WHERE ID='GPS.ENGINEERING';

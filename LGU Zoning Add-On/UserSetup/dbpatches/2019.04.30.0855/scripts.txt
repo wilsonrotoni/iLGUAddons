@@ -1,0 +1,8 @@
+evaltrx:addUserMenu('SYSADMIN','LGU',21.5,'Other Requirements','M','LGUOTHREQS','F',1,1);
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQS',10.0,'Zoning','M','LGUOTHREQSZONE');
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQSZONE',10.0,'Zoning Clearance Application','P','u_zoningclrapps');
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQSZONE',20.0,'Zoning Clearance Inspection','P','u_zoningclrins');
+evaltrx:addUserMenu('SYSADMIN','LGUADMIN',13.0,'Other Requirements','M','LGUADMINOTHREQS','F',1,1);
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQS',10.0,'Zoning','M','LGUADMINOTHREQSZONE');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQSZONE',10.0,'Inspectors','P','u_zoningclrinspectors');
+UPDATE DBVERSION SET VERSION='2019.04.30.0855' WHERE ID='GPS.LGUZoning';

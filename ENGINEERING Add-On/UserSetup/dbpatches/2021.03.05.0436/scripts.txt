@@ -1,0 +1,3 @@
+evaltrx:addUDT('buildingcharacteroccupancy','Use Or Character of Occupancy','MDC','');
+evaltrx:addUDO('buildingcharacteroccupancy','Use Or Character of Occupancy','buildingcharacteroccupancy','G');
+UPDATE DBVERSION SET VERSION='2021.03.05.0436' WHERE ID='GPS.ENGINEERING';

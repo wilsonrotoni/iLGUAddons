@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lguitemgroups','expenseglacctno','Expense - G/L Account No.','any',30,20,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.02.1750' WHERE ID='GPS.LGUPurchasing';

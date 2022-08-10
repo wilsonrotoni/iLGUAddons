@@ -1,0 +1,3 @@
+evaltrx:modifyUDF('u_audittrail','code','Code/Document No.','any',100,0,'',0,null,0,0);
+evaltrx:modifyUDF('u_audittrailtables','code','Code/Document No.','any',100,0,'',0,null,0,0);
+UPDATE DBVERSION SET VERSION='2019.12.11.1355' WHERE ID='GPS.AuditTrail';

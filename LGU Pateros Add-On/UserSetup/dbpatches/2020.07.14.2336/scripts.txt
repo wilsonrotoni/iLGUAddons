@@ -1,0 +1,6 @@
+evaltrx:addUserMenu('','LGUUTILITIES',3500,'Pateros Migrate','M','LGUUTILMIGPATEROS');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILITIES',3500,'Pateros Migrate','M','LGUUTILMIGPATEROS');
+evaltrx:addUserMenu('','LGUUTILMIGPATEROS',100,'Migrate Business Permit','P','u_migratepaterosdb');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIGPATEROS',100,'Migrate Business Permit','P','u_migratepaterosdb');
+evaltrx:addProgId('u_migratepaterosdb','Migrate Business Permit','./udp.php?&objectcode=u_migratepaterosdb');
+UPDATE DBVERSION SET VERSION='2020.07.14.2336' WHERE ID='GPS.LGUPateros';

@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_lgupurchasedeliveryitems','linestatus','Line Status','any',15,25,'O',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupurchasedeliveryservice','linestatus','Line Status','any',15,25,'O',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupurchasedeliveryservice','openquantity','Open Quantity','quantity',0,35,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.09.11.1650' WHERE ID='GPS.LGUPurchasing';

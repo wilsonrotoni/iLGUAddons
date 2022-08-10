@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_buildingpermitapps','approvedby','Approved By','any',50,230,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','approveddatetime','Approved Timestamp','timestamp',0,235,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','approverremarks','Approver Remarks','text',0,240,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.03.05.0731' WHERE ID='GPS.ENGINEERING';

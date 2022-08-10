@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_fsapps','contactno','Contact No','any',50,20,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.25.1536' WHERE ID='GPS.FireSafety';

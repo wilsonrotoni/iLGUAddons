@@ -1,0 +1,25 @@
+evaltrx:addUserMenu('','LGURPTSBPLS',131,'List by Organization Type','P','urpt_u_listbyorgantype');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSBPLS',131,'List by Organization Type','P','urpt_u_listbyorgantype');
+evaltrx:addUserMenu('LGU','LGURPTSBPLS',131,'List by Organization Type','P','urpt_u_listbyorgantype');
+evaltrx:addUserMenu('LGUUSR','LGURPTSBPLS',131,'List by Organization Type','P','urpt_u_listbyorgantype');
+
+evaltrx:addUDR('u_listbyorgantype','List by Organization Type','QS','mysql',1);
+
+evaltrx:addUDRParam('u_listbyorgantype','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbyorgantype','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbyorgantype','orgtype','Organization Type','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_listbyorgantype','orgtype','','ALL');
+evaltrx:addUDRParamValue('u_listbyorgantype','orgtype','single','Single');
+evaltrx:addUDRParamValue('u_listbyorgantype','orgtype','partnership','Partnership');
+evaltrx:addUDRParamValue('u_listbyorgantype','orgtype','corporation','Corporation');
+evaltrx:addUDRParamValue('u_listbyorgantype','orgtype','cooperative','Cooperative');
+
+evaltrx:addUDRParam('u_listbyorgantype','brgy','Barangay','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_listbyorgantype','brgy','LQ','Q','select code,name from u_barangays where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+evaltrx:addUDRLayout('u_listbyorgantype','List by Organization Type',1,'BPLS Add-On','orgtypebrgy.rpt','1',1,'','','');
+
+
+

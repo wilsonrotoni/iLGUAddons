@@ -1,0 +1,27 @@
+.tableHead1 {        FONT-WEIGHT: bold; BORDER-BOTTOM: 1px solid}
+.tableHead2 {        FONT-WEIGHT: normal;}
+.msgRow1 TD {        FONT-WEIGHT: bold; BORDER-BOTTOM: 1px solid}
+
+A:link {        TEXT-DECORATION: none}
+A:visited {        TEXT-DECORATION: none}
+A:active {        TEXT-DECORATION: none}
+A:hover {        TEXT-DECORATION: bold}
+
+.labelB { FONT-WEIGHT: bold; FONT-SIZE: 11px; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif}
+
+
+INPUT.text { BORDER-RIGHT: 1px solid; PADDING-RIGHT: 1px; BORDER-TOP: 1px solid; PADDING-LEFT: 1px; PADDING-BOTTOM: 1px; BORDER-LEFT: 1px solid; PADDING-TOP: 1px; BORDER-BOTTOM: 1px solid; HEIGHT: 16px}
+
+
+A:link {        BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000}
+A:visited {        BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #000}
+A:active {        BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #f00}
+A:hover {        BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #f00}
+
+INPUT.text { BORDER-LEFT-COLOR: #000; BORDER-BOTTOM-COLOR: #000; BORDER-TOP-COLOR: #000; BACKGROUND-COLOR: #FFFFC6; BORDER-RIGHT-COLOR: #000}
+
+.tableHead1 { COLOR: #000; BACKGROUND-COLOR: #C0C0C0}
+.tableHead1 TD { BORDER-LEFT-COLOR: #000; BORDER-BOTTOM-COLOR: #000; BORDER-TOP-COLOR: #000; BORDER-RIGHT-COLOR: #000;  COLOR: #000; BACKGROUND-COLOR: #C0C0C0}
+.tableHead2 {        COLOR: #000; BACKGROUND-COLOR: #C0C0C0}
+.tableHead2 TD { FONT-SIZE: 9px;        COLOR: #000; BACKGROUND-COLOR: #C0C0C0}
+.msgRow1 TD {        BORDER-LEFT-COLOR: #000; BORDER-BOTTOM-COLOR: #000; BORDER-TOP-COLOR: #000; BORDER-RIGHT-COLOR: #000; COLOR: #000; BACKGROUND-COLOR: #fff}

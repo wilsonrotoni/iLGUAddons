@@ -1,0 +1,32 @@
+evaltrx:addUserMenu('','LGURPTSMTOP',157,'List of Registered Motorized Vehicle','P','urpt_u_mtoplisting');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSMTOP',157,'List of Registered Motorized Vehicle','P','urpt_u_mtoplisting');
+evaltrx:addUserMenu('LGU','LGURPTSMTOP',157,'List of Registered Motorized Vehicle','P','urpt_u_mtoplisting');
+evaltrx:addUserMenu('LGUUSR','LGURPTSMTOP',157,'List of Registered Motorized Vehicle','P','urpt_u_mtoplisting');
+
+evaltrx:addUDR('u_mtoplisting','List of Registered Motorized Vehicle','QS','mysql',1);
+
+evaltrx:addUDRParam('u_mtoplisting','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_mtoplisting','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+
+
+evaltrx:addUDRParam('u_mtoplisting','apptype','ApplicationType','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_mtoplisting','apptype','','ALL');
+evaltrx:addUDRParamValue('u_mtoplisting','apptype','new','NEW');
+evaltrx:addUDRParamValue('u_mtoplisting','apptype','Renew','RENEW');
+
+evaltrx:addUDRParam('u_mtoplisting','plate','Plate','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_mtoplisting','plate','','ALL');
+evaltrx:addUDRParamValue('u_mtoplisting','plate','green','Green');
+evaltrx:addUDRParamValue('u_mtoplisting','plate','yellow','Yellow');
+
+
+evaltrx:addUDRParam('u_mtoplisting','toda','Toda','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_mtoplisting','toda','LQ','Q','select code,name from u_mtoptodas where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+evaltrx:addUDRLayout('u_mtoplisting','List of Registered Motorized Vehicle',1,'MTOP Add-On','MTOP.rpt','1',1,'','','');
+
+
+

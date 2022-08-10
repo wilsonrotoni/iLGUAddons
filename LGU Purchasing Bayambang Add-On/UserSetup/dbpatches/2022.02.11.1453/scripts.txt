@@ -1,0 +1,5 @@
+evaltrx:addUDF('lgupurchasedelivery','drno','Delivery Receipt No','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('lgupurchasedelivery','invoiceno','Invoice Number','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('lguitems','brand','Brand','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('lgupurchasedelivery','icsno','ICS Number','any',30,10,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2022.02.11.1453' WHERE ID='GPS.LGUPurchasingBayambang';

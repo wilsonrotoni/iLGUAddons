@@ -1,0 +1,8 @@
+evaltrx:addUserMenu('','LGUUTILMIG',1100,'Migrate Geo Business Old Ledger','P','u_migrateGeoBPLOldLedger');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',1100,'Migrate Geo Business Old Ledger','P','u_migrateGeoBPLOldLedger');
+evaltrx:addProgId('u_migrateGeoBPLOldLedger','Migrate Geo Business Old Ledger','./udp.php?&objectcode=u_migrateGeoBPLOldLedger');
+evaltrx:addUDP('bplbusinessledgerold','Business Old Ledger','N','');
+evaltrx:addUserMenu('','LGUUTILMIG',1200,'Migrate Geo Business Unpaid Bills','P','u_migrateGEOBplsUnpaidBills');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',1200,'Migrate Geo Business Unpaid Bills','P','u_migrateGEOBplsUnpaidBills');
+evaltrx:addProgId('u_migrateGEOBplsUnpaidBills','Migrate Geo Business Unpaid Bills','./udp.php?&objectcode=u_migrateGEOBplsUnpaidBills');
+UPDATE DBVERSION SET VERSION='2020.09.13.0329' WHERE ID='GPS.BPLS';

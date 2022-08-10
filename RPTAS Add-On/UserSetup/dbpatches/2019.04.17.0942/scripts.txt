@@ -1,0 +1,5 @@
+evaltrx:modifyUDOChild('rptaxes','rptaxarps','FAAS','G');
+evaltrx:modifyUDOChild('rptaxes','rptaxpins','PINS','G');
+evaltrx:modifyUDOChild('rptaxes','rptaxcredits','Credits','G');
+evaltrx:modifyUDOChild('rptaxes','rptaxbalance','Balances','G');
+UPDATE DBVERSION SET VERSION='2019.04.17.0942' WHERE ID='GPS.RPTAS';

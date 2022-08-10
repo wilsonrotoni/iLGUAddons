@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>pi_company</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>company</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_branch</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>branch</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_docno1</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>docno1</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_docno2</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>docno2</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_brgy</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>brgy</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

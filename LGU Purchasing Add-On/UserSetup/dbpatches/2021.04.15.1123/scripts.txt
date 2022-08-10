@@ -1,0 +1,14 @@
+evaltrx:addUDF('u_lgubidabstractasread','status','Status','any',100,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_lgubidabstractasread','status','','[Select]');
+evaltrx:addUDFValue('u_lgubidabstractasread','status','Pass','Pass');
+evaltrx:addUDFValue('u_lgubidabstractasread','status','Fail','Fail');
+evaltrx:addUDFValue('u_lgubidabstractasread','issufficient','','[Select]');
+evaltrx:addUDFValue('u_lgubidabstractasread','issufficient','Sufficient','Sufficient');
+evaltrx:addUDFValue('u_lgubidabstractasread','issufficient','Insufficient','Insufficient');
+evaltrx:addUserMenu('','LGUPURCHASINGADMIN',200,'Form of Bid Security','P','u_lguphilgepsbidsec');
+evaltrx:addUserMenu('SYSADMIN','LGUPURCHASINGADMIN',200,'Form of Bid Security','P','u_lguphilgepsbidsec');
+evaltrx:addUDT('lguphilgepsbidsec','Form of Bid Security','MD','G');
+evaltrx:addUDO('lguphilgepsbidsec','Form of Bid Security','lguphilgepsbidsec','G');
+evaltrx:addUDF('u_lguphilgepsbidsec','percentage','%','amount',0,18,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgubidabstractasread','bidsec','Form of Bid Sec','any',50,25,'',0,'u_lguphilgepsbidsec:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.04.15.1123' WHERE ID='GPS.LGUPurchasing';

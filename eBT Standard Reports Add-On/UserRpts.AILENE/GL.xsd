@@ -1,0 +1,125 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="GL" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="GL" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GL">
+          <xs:complexType>
+            <xs:sequence>
+		 <xs:element name="Company" type="xs:string" minOccurs="0" />
+		 <xs:element name="BRANCH" type="xs:string" minOccurs="0" />
+		 <xs:element name="BRANCHNAME" type="xs:string" minOccurs="0" />
+		 <xs:element name="posting_date" type="xs:dateTime" minOccurs="0" />
+		 <xs:element name="due_date" type="xs:dateTime" minOccurs="0" />
+		 <xs:element name="series" type="xs:string" minOccurs="0" />
+		 <xs:element name="doc_no" type="xs:string" minOccurs="0" />
+		 <xs:element name="trans_no" type="xs:string" minOccurs="0" />
+		 <xs:element name="remarks" type="xs:string" minOccurs="0" />
+              	 <xs:element name="acct_code" type="xs:string" minOccurs="0" />
+              	 <xs:element name="acct_name" type="xs:string" minOccurs="0" />
+
+              	 <xs:element name="debit1" type="xs:double" minOccurs="0" />
+              	 <xs:element name="credit1" type="xs:double" minOccurs="0" />
+              	 <xs:element name="debit2" type="xs:double" minOccurs="0" />
+              	 <xs:element name="credit2" type="xs:double" minOccurs="0" />
+
+              	 <xs:element name="debit" type="xs:double" minOccurs="0" />
+              	 <xs:element name="credit" type="xs:double" minOccurs="0" />
+              	 <xs:element name="debit_m" type="xs:double" minOccurs="0" />
+              	 <xs:element name="credit_m" type="xs:double" minOccurs="0" />
+		 <xs:element name="debit_last_year" type="xs:double" minOccurs="0" />
+             	 <xs:element name="credit_last_year" type="xs:double" minOccurs="0" />
+		 <xs:element name="debit_for_the_month" type="xs:double" minOccurs="0" />
+            	 <xs:element name="credit_for_the_month" type="xs:double" minOccurs="0" />
+		 <xs:element name="debit_for_the_month_last_year" type="xs:double" minOccurs="0" />
+              	 <xs:element name="credit_for_the_month_last_year" type="xs:double" minOccurs="0" />
+
+              	 <xs:element name="plan_as_of" type="xs:double" minOccurs="0" />
+		 <xs:element name="plan_for_the_month" type="xs:double" minOccurs="0" />
+
+              	 <xs:element name="level" type="xs:double" minOccurs="0" />
+		 <xs:element name="parent_code" type="xs:double" minOccurs="0" />
+	         <xs:element name="date1" type="xs:dateTime" minOccurs="0" />
+	         <xs:element name="date2" type="xs:dateTime" minOccurs="0" />
+	         <xs:element name="date3" type="xs:dateTime" minOccurs="0" />
+		 <xs:element name="level0_code" type="xs:string" minOccurs="0" />
+	  	 <xs:element name="level0_name" type="xs:string" minOccurs="0" />
+	  	 <xs:element name="level_2_no" type="xs:double" minOccurs="0" />
+	  	 <xs:element name="level_2_name" type="xs:string" minOccurs="0" />
+		 <xs:element name="drawer_no" type="xs:double" minOccurs="0" />
+	         <xs:element name="drawer" type="xs:string" minOccurs="0" />
+		 <xs:element name="OGLDEBIT" type="xs:double" minOccurs="0" />
+		 <xs:element name="OGLCREDIT" type="xs:double" minOccurs="0" />
+
+		 <xs:element name="plan_as_of_gross_sales" type="xs:double" minOccurs="0" />
+		 <xs:element name="plan_as_of_vat" type="xs:double" minOccurs="0" />
+		 <xs:element name="plan_as_of_cost_of_sales" type="xs:double" minOccurs="0" />
+		 <xs:element name="plan_as_of_expenses" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="plan_as_of_other_income" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="plan_as_of_admin_expense" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="plan_as_of_income_bank" type="xs:double" minOccurs="0" />
+
+		 <xs:element name="plan_for_the_month_gross_sales" type="xs:double" minOccurs="0" />
+		 <xs:element name="plan_for_the_month_vat" type="xs:double" minOccurs="0" />
+		 <xs:element name="plan_for_the_month_cost_of_sales" type="xs:double" minOccurs="0" />
+		 <xs:element name="plan_for_the_month_expenses" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="plan_for_the_month_other_income" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="plan_for_the_month_admin_expense" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="plan_for_the_month_income_bank" type="xs:double" minOccurs="0" />
+
+		 <xs:element name="gross_sales" type="xs:double" minOccurs="0" />
+		 <xs:element name="vat" type="xs:double" minOccurs="0" />
+		 <xs:element name="cost_of_sales" type="xs:double" minOccurs="0" />
+		 <xs:element name="expenses" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="other_income" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="admin_expense" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="income_bank" type="xs:double" minOccurs="0" />
+
+		 <xs:element name="gross_sales_last_year" type="xs:double" minOccurs="0" />
+		 <xs:element name="vat_last_year" type="xs:double" minOccurs="0" />
+		 <xs:element name="cost_of_sales_last_year" type="xs:double" minOccurs="0" />
+		 <xs:element name="expenses_last_year" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="other_income_last_year" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="admin_expense_last_year" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="income_bank_last_year" type="xs:double" minOccurs="0" />
+
+		 <xs:element name="gross_sales_for_the_month" type="xs:double" minOccurs="0" />
+		 <xs:element name="vat_for_the_month" type="xs:double" minOccurs="0" />
+		 <xs:element name="cost_of_sales_for_the_month" type="xs:double" minOccurs="0" />
+		 <xs:element name="expenses_for_the_month" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="other_income_for_the_month" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="admin_expense_for_the_month" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="income_bank_for_the_month" type="xs:double" minOccurs="0" />
+
+		 <xs:element name="gross_sales_for_the_month_last_year" type="xs:double" minOccurs="0" />
+		 <xs:element name="vat_for_the_month_last_year" type="xs:double" minOccurs="0" />
+		 <xs:element name="cost_of_sales_for_the_month_last_year" type="xs:double" minOccurs="0" />
+		 <xs:element name="expenses_for_the_month_last_year" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="other_income_for_the_month_last_year" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="admin_expense_for_the_month_last_year" type="xs:double" minOccurs="0" />
+ 		 <xs:element name="income_bank_for_the_month_last_year" type="xs:double" minOccurs="0" />
+
+		 <xs:element name="assets" type="xs:double" minOccurs="0" />
+		 <xs:element name="liabilities" type="xs:double" minOccurs="0" />
+		 <xs:element name="equity" type="xs:double" minOccurs="0" />
+		 <xs:element name="assets2" type="xs:double" minOccurs="0" />
+		 <xs:element name="liabilities2" type="xs:double" minOccurs="0" />
+		 <xs:element name="equity2" type="xs:double" minOccurs="0" />
+
+
+
+		  <xs:element name="DEPT" type="xs:string" minOccurs="0" />
+		  <xs:element name="DEPTNAME" type="xs:string" minOccurs="0" />
+		  <xs:element name="SALES" type="xs:double" minOccurs="0" />
+		  <xs:element name="CREDITMEMO" type="xs:double" minOccurs="0" />
+		  <xs:element name="TOTALAMOUNT" type="xs:double" minOccurs="0" />
+	         <xs:element name="SUPPNO" type="xs:string" minOccurs="0" />
+	         <xs:element name="SUPPNAME" type="xs:string" minOccurs="0" />
+	         <xs:element name="REF" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,34 @@
+blue
+
+	main tabs : #3E82C5
+	input lostfocus background : #F4FAFF
+	input border : #66AAEE
+	page title text,linkbutton background : #02359A
+	linkbutton bottom& right border: #A8BBDF
+	labels : #0066CC
+	
+green : hue -100
+
+red : hue +140, +100 -100 -100
+
+	main tabs,linkbutton left & top border : #E00F1C	
+	main tabs border : #A12929
+	hilighted menu : #FC959D
+	input lostfocus background : #FFE9ED
+	input border : #F6293D
+	page title text,linkbutton background : #C60000
+	linkbutton bottom& right border: #EE6F70
+	labels : #E40005
+
+
+dark red : hue +140
+
+	main tabs,linkbutton left & top border : #C53E55	
+	main tabs border : #A12929
+	hilighted menu : #F9C3C8
+	input lostfocus background : #FFF4F6
+	input border : #EE667D
+	linkbutton background : #9A0203
+	page title text: #990000
+	linkbutton bottom& right border: #DFA8A9
+	labels : #CC0022

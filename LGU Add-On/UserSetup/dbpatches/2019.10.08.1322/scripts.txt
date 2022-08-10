@@ -1,0 +1,5 @@
+evaltrx:addUDT('lgusetupcashticket','Cash Ticket-Setup','MDL','');
+evaltrx:addUDOChild('lgusetup','lgusetupcashticket','Cash Ticket-Setup','G');
+evaltrx:addUDF('u_lgusetupcashticket','cashticketfee','Cash Ticket Fee','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetupcashticket','cashticketfeeamt','Amount','amount',0,7,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.08.1322' WHERE ID='GPS.LGU';

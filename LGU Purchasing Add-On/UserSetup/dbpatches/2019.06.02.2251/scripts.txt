@@ -1,0 +1,3 @@
+evaltrx:addUDT('lgupurchasesetup','User Profit Center','MD','');
+evaltrx:addUDO('lgupurchasesetup','User Profit Center','lgupurchasesetup','');
+UPDATE DBVERSION SET VERSION='2019.06.02.2251' WHERE ID='GPS.LGUPurchasing';

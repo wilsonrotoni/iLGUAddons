@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rplandadjfactors','gryear','GR Year','any',100,10,'',0,'u_gryears:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.14.2255' WHERE ID='GPS.RPTAS';

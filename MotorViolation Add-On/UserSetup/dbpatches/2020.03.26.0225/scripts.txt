@@ -1,0 +1,2 @@
+evaltrx:addUserMenu('','LGUADMINMOTORVIOLATION',119,'Motor Violation Assessment Lines','P','u_motorviolationapplines');
+UPDATE DBVERSION SET VERSION='2020.03.26.0225' WHERE ID='GPS.MotorViolation';

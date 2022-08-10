@@ -1,0 +1,7 @@
+evaltrx:addUDF('u_buildingpermitengineersclass','prcno','PRC No.','any',225,35,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitengineersclass','prcvalidity','PRC Validity','any',225,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitengineersclass','ptrno','PTR No.','any',225,45,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitengineersclass','dateissued','Date Issued','date',0,50,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitengineersclass','issuedat','Issued At','any',225,55,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitengineersclass','tinno','Tin No.','any',225,60,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.06.01.2057' WHERE ID='GPS.ENGINEERING';

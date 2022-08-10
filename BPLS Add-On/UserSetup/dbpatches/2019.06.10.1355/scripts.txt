@@ -1,0 +1,3 @@
+evaltrx:deleteUDF('u_bplapplines','btaxamount','B.Tax Amount','amount',0,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapplines','btaxlinetotal','Business Tax','amount',0,70,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.10.1355' WHERE ID='GPS.BPLS';

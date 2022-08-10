@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="purchase_book" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+	<xs:element name="purchase_book" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+		<xs:complexType>
+			<xs:choice minOccurs="0" maxOccurs="unbounded">
+				<xs:element name="purchase_book">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="COMPANY" type="xs:string" minOccurs="0" />
+							<xs:element name="BRANCH" type="xs:string" minOccurs="0" />
+							<xs:element name="BRANCHNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="DEPT" type="xs:string" minOccurs="0" />
+							<xs:element name="DATE1" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="DATE2" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="SOURCE" type="xs:string" minOccurs="0" />
+							<xs:element name="DOCDATE" type="xs:dateTime" minOccurs="0" />
+							<xs:element name="BPCODE" type="xs:string" minOccurs="0" />
+							<xs:element name="BPNAME" type="xs:string" minOccurs="0" />
+							<xs:element name="INVOICENO" type="xs:string" minOccurs="0" />
+							<xs:element name="INVENTORY" type="xs:double" minOccurs="0" />
+							<xs:element name="INPUTVAT" type="xs:double" minOccurs="0" />
+							<xs:element name="PAYABLE" type="xs:double" minOccurs="0" />
+							<xs:element name="ewt" type="xs:double" minOccurs="0" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:choice>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

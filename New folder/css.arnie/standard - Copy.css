@@ -1,0 +1,23 @@
+BODY {        FONT-SIZE: 11px; BACKGROUND: #fff; COLOR: #000; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif}
+
+TD {        FONT-SIZE: 11px; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif}
+
+.tableFreeForm TD { FONT-SIZE: 11px; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif ; HEIGHT:20px}
+.xtableFreeForm TD { FONT-SIZE: 11px; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif ; HEIGHT:18px}
+
+
+.labelPageHeader { FONT-WEIGHT: bold; FONT-SIZE: 12px; FONT-FAMILY: Arial,Helvetica,sans-serif;
+	HEIGHT: 18px}
+
+.labelPageHeaderPgInfo { FONT-WEIGHT: bold; FONT-SIZE: 9px; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif;
+	HEIGHT: 18px}
+
+.popupwinheadrow TD { FONT-WEIGHT: bold; BORDER-BOTTOM: 0px solid; FONT-SIZE: 11px; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif; HEIGHT: 16px}
+
+.popupwinheadrowBig TD { FONT-WEIGHT: bold; BORDER-BOTTOM: 0px solid; FONT-SIZE: 24px; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif; HEIGHT: 24px}
+
+.popupwin { BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid}
+
+.popupwinTbl { BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 0px solid}
+
+.popupwinTbl TD { FONT-SIZE: 11px; FONT-FAMILY: Courier New,Arial,Helvetica,sans-serif ; HEIGHT:16px}

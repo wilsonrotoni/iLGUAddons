@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGUADMINMOTORVIOLATION',118,'Type of Vehicle','P','u_mvehicletype');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINMOTORVIOLATION',118,'Type of Vehicle','P','u_mvehicletype');
+UPDATE DBVERSION SET VERSION='2020.03.21.2118' WHERE ID='GPS.MotorViolation';

@@ -1,0 +1,75 @@
+REPORTID	PARAMID	PARAMVALUE	PARAMVALUEDESC	PARAMVALUEINDEX	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION	DATECREATED
+hms_araging	hi		All	0	manager	2013-10-22 15:15:10	manager	1	2013-10-22 15:15:10
+hms_araging	hi	0	National Health Insurance	0	manager	2013-10-22 15:15:10	manager	1	2013-10-22 15:15:10
+hms_araging	hi	1	HMO	0	manager	2013-10-22 15:15:10	manager	1	2013-10-22 15:15:10
+hms_araging	hi	2	Discount	0	manager	2013-10-22 15:15:10	manager	1	2013-10-22 15:15:10
+hms_araging	hi	3	LGU	0	manager	2013-10-22 15:15:10	manager	1	2013-10-22 15:15:10
+hms_araging	hi	4	Company	0	manager	2013-10-22 15:15:10	manager	1	2013-10-22 15:15:10
+hms_araging	hi	5	Collector	0	manager	2013-10-22 15:15:10	manager	1	2013-10-22 15:15:10
+hms_census_filter_roomtype	type		All	0	manager	2013-06-20 13:20:41	manager	1	2013-06-20 13:20:41
+hms_census_filter_roomtype	type	In	In-Patients	0	manager	2013-06-20 13:20:41	manager	1	2013-06-20 13:20:41
+hms_census_filter_roomtype	type	Out	Out-Patients	0	manager	2013-06-20 13:20:41	manager	1	2013-06-20 13:20:41
+hms_census_filter_roomtype_by_f	type		All	0	manager	2013-06-20 13:25:41	manager	1	2013-06-20 13:25:41
+hms_census_filter_roomtype_by_f	type	In	In-Patients	0	manager	2013-06-20 13:25:41	manager	1	2013-06-20 13:25:41
+hms_census_filter_roomtype_by_f	type	Out	Out-Patients	0	manager	2013-06-20 13:25:41	manager	1	2013-06-20 13:25:41
+hms_daily_census	type		All	0	manager	2013-06-20 13:17:37	manager	1	2013-06-20 13:17:37
+hms_daily_census	type	In	In-Patients	0	manager	2013-06-20 13:17:37	manager	1	2013-06-20 13:17:37
+hms_daily_census	type	Out	Out-Patients	0	manager	2013-06-20 13:17:37	manager	1	2013-06-20 13:17:37
+hms_dcr	colltype		All	0	manager	2014-04-01 19:38:01	manager	1	2014-04-01 19:38:01
+hms_dcr	colltype	Credits/Partial Payments	Credits/Partial Payments	0	manager	2014-04-01 19:38:01	manager	1	2014-04-01 19:38:01
+hms_dcr	colltype	Hospital Fees	Hospital Fees	0	manager	2014-04-01 19:38:01	manager	1	2014-04-01 19:38:01
+hms_dcr	colltype	Professional Fees	Professional Fees	0	manager	2014-04-01 19:38:01	manager	1	2014-04-01 19:38:01
+hms_dcr	docstatus		ALL	0	manager	2014-01-09 17:37:09	manager	1	2014-01-09 17:37:09
+hms_dcr	docstatus	C	CLOSED	0	manager	2014-01-09 17:37:09	manager	1	2014-01-09 17:37:09
+hms_dcr	docstatus	CN	CANCELLED	0	manager	2014-01-09 17:37:09	manager	1	2014-01-09 17:37:09
+hms_dcr	docstatus	D	DRAFT	0	manager	2014-01-09 17:37:09	manager	1	2014-01-09 17:37:09
+hms_dcr	docstatus	O	OPEN	0	manager	2014-01-09 17:37:09	manager	1	2014-01-09 17:37:09
+hms_dl	type		All	0	manager	2013-06-20 13:27:39	manager	1	2013-06-20 13:27:39
+hms_dl	type	In	In-Patients	0	manager	2013-06-20 13:27:39	manager	1	2013-06-20 13:27:39
+hms_dl	type	Out	Out-Patients	0	manager	2013-06-20 13:27:39	manager	1	2013-06-20 13:27:39
+hms_heartstation	regtype		All	0	manager	2013-07-03 19:25:28	manager	1	2013-07-03 19:25:28
+hms_heartstation	regtype	In	In-Patients	0	manager	2013-07-03 19:25:28	manager	1	2013-07-03 19:25:28
+hms_heartstation	regtype	Out	Out-Patients	0	manager	2013-07-03 19:25:28	manager	1	2013-07-03 19:25:28
+hms_lablist	regtype		All	0	manager	2013-07-03 18:54:48	manager	1	2013-07-03 18:54:48
+hms_lablist	regtype	In	In-Patients	0	manager	2013-07-03 18:54:48	manager	1	2013-07-03 18:54:48
+hms_lablist	regtype	Out	Out-Patients	0	manager	2013-07-03 18:54:48	manager	1	2013-07-03 18:54:48
+hms_log_book	type		All	0	manager	2013-06-20 13:15:37	manager	1	2013-06-20 13:15:37
+hms_log_book	type	In	In-Patients	0	manager	2013-06-20 13:15:37	manager	1	2013-06-20 13:15:37
+hms_log_book	type	Out	Out-Patients	0	manager	2013-06-20 13:15:37	manager	1	2013-06-20 13:15:37
+hms_phamorpts	prepaid		All	0	manager	2013-08-23 19:36:43	manager	1	2013-08-23 19:36:43
+hms_phamorpts	prepaid	0	Charged	0	manager	2013-08-23 19:36:43	manager	1	2013-08-23 19:36:43
+hms_phamorpts	prepaid	1	Cash	0	manager	2013-08-23 19:36:43	manager	1	2013-08-23 19:36:43
+hms_phamorpts	prepaid	2	Downpayment	0	manager	2013-08-23 19:36:43	manager	1	2013-08-23 19:36:43
+hms_phamorpts	regtype		All	0	manager	2013-08-23 19:38:11	manager	1	2013-08-23 19:38:11
+hms_phamorpts	regtype	IP	In-Patient	0	manager	2013-08-23 19:38:11	manager	1	2013-08-23 19:38:11
+hms_phamorpts	regtype	OP	Out-Patient	0	manager	2013-08-23 19:38:11	manager	1	2013-08-23 19:38:11
+hms_phamorpts	regtype	WI	Walk-In	0	manager	2013-08-23 19:38:11	manager	1	2013-08-23 19:38:11
+hms_pharpt	prepaid		All	0	manager	2013-08-22 22:22:55	manager	1	2013-08-22 22:22:55
+hms_pharpt	prepaid	0	Charged	0	manager	2013-08-22 22:22:55	manager	1	2013-08-22 22:22:55
+hms_pharpt	prepaid	1	Cash	0	manager	2013-08-22 22:22:55	manager	1	2013-08-22 22:22:55
+hms_pharpt	prepaid	2	Downpayment	0	manager	2013-08-22 22:22:55	manager	1	2013-08-22 22:22:55
+hms_pharpt	regtype		All	0	manager	2013-08-22 22:42:14	manager	1	2013-08-22 22:42:14
+hms_pharpt	regtype	IP	In-Patient	0	manager	2013-08-22 22:42:14	manager	1	2013-08-22 22:42:14
+hms_pharpt	regtype	OP	Out-Patient	0	manager	2013-08-22 22:42:14	manager	1	2013-08-22 22:42:14
+hms_pharpt	regtype	WI	Walk-In	0	manager	2013-08-22 22:42:14	manager	1	2013-08-22 22:42:14
+hms_radiolist	dep	RAD-CT-SCAN	CT-Scan	0	manager	2013-08-22 13:55:38	manager	1	2013-08-22 13:55:38
+hms_radiolist	dep	RAD-ULTRASOUND	Ultrasound	0	manager	2013-08-22 13:55:38	manager	1	2013-08-22 13:55:38
+hms_radiolist	dep	RAD-X-RAY	X-Ray	0	manager	2013-08-22 13:55:38	manager	1	2013-08-22 13:55:38
+hms_radiolist	regtype		All	0	manager	2013-07-03 18:42:10	manager	1	2013-07-03 18:42:10
+hms_radiolist	regtype	In	In-Patients	0	manager	2013-07-03 18:42:10	manager	1	2013-07-03 18:42:10
+hms_radiolist	regtype	Out	Out-Patients	0	manager	2013-07-03 18:42:10	manager	1	2013-07-03 18:42:10
+hms_trans	inscode	0	National Health Insurance	0	manager	2013-12-10 17:31:41	manager	1	2013-12-10 17:31:41
+hms_trans	inscode	1	HMO	0	manager	2013-12-10 17:31:41	manager	1	2013-12-10 17:31:41
+hms_trans	inscode	2	Discount	0	manager	2013-12-10 17:31:41	manager	1	2013-12-10 17:31:41
+hms_trans	inscode	3	LGU	0	manager	2013-12-10 17:31:41	manager	1	2013-12-10 17:31:41
+hms_trans	inscode	4	Company	0	manager	2013-12-10 17:31:41	manager	1	2013-12-10 17:31:41
+hms_trans	inscode	5	Collector	0	manager	2013-12-10 17:31:41	manager	1	2013-12-10 17:31:41
+hms_transpay	inscode	0	National Health Insurance	0	manager	2013-12-10 16:36:53	manager	1	2013-12-10 16:36:53
+hms_transpay	inscode	1	HMO	0	manager	2013-12-10 16:36:53	manager	1	2013-12-10 16:36:53
+hms_transpay	inscode	2	Discount	0	manager	2013-12-10 16:36:53	manager	1	2013-12-10 16:36:53
+hms_transpay	inscode	3	LGU	0	manager	2013-12-10 16:36:53	manager	1	2013-12-10 16:36:53
+hms_transpay	inscode	4	Company	0	manager	2013-12-10 16:36:53	manager	1	2013-12-10 16:36:53
+hms_transpay	inscode	5	Collector	0	manager	2013-12-10 16:36:53	manager	1	2013-12-10 16:36:53
+hms_transpay	pck		All	0	manager	2013-06-21 13:44:51	manager	1	2013-06-21 13:44:51
+hms_transpay	pck	0	Not Package	0	manager	2013-06-21 13:43:29	manager	1	2013-06-21 13:43:29
+hms_transpay	pck	1	Package	0	manager	2013-06-21 13:43:29	manager	1	2013-06-21 13:43:29

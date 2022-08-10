@@ -1,0 +1,2 @@
+evaltrx:addUDT('buildingrequiredplans','List of Required Plans','MDC','');
+UPDATE DBVERSION SET VERSION='2021.03.05.0647' WHERE ID='GPS.ENGINEERING';

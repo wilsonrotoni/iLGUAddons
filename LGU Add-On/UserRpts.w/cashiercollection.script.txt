@@ -1,0 +1,16 @@
+
+
+evaltrx:addUserMenu('','LGURPTSPAY',102,'Cashier Collection','P','urpt_u_cashiercollect');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',102,'Cashier Collection','P','urpt_u_cashiercollect');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',102,'Cashier Collection','P','urpt_u_cashiercollect');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',102,'Cashier Collection','P','urpt_u_cashiercollect');
+
+evaltrx:addUDR('u_cashiercollect','Cashier Collection','QS','mysql',1);
+
+evaltrx:addUDRParam('u_cashiercollect','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_cashiercollect','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRLayout('u_cashiercollect','Cashier Collection',1,'LGU Add-On','cashiercollection.rpt','1',1,'','','');
+
+
+

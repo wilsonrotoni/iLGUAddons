@@ -1,0 +1,56 @@
+evaltrx:addUDT('hisclinicgynes','Gynecologic Diagnosis','D','FF');
+evaltrx:addUDO('hisclinicgynes','Gynecologic Diagnosis','hisclinicgynes','');
+evaltrx:addUDF('u_hisclinicgynes','reftype','Reference Type','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','refno','Reference No.','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDT('hisclinicobs','Obstetrical Diagnosis','D','FF');
+evaltrx:addUDO('hisclinicobs','Obstetrical Diagnosis','hisclinicobs','');
+evaltrx:addUDF('u_hisclinicobs','reftype','Reference Type','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','refno','Reference No.','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_hisclinicgynes','reftype','IP','In-Patients');
+evaltrx:addUDFValue('u_hisclinicgynes','reftype','OP','Out-Patients');
+
+evaltrx:addUDFValue('u_hisclinicobs','reftype','IP','In-Patients');
+evaltrx:addUDFValue('u_hisclinicobs','reftype','OP','Out-Patients');
+
+evaltrx:addUDF('u_hisclinicobs','pl','Pregnancy Location','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','pl_site','Specify site','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','pl_tubal','if tubal','numeric',1,10,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','pl_tubalpart','Tubal part','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','pl_ruptured','Ruptured/Unruptured','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','pl_embryo','if embryo','numeric',1,10,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','pl_embryostate','state if with cardiac activity','any',30,10,'',0,null,0,0,1,1,1,1);
+
+evaltrx:addUDF('u_hisclinicobs','od_aog','Age of Gestation','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_fd','Final Diagnosis','text',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_preterm','if Preterm/Postterm','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_pa','Pediatric aging','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_presentation','Presentation','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_presentationbreech','Breech','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_laborstatus','Labor Status','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_omsc','Obstetrical / Medical / Surgical Complication','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_stmsc','State the medical / surgical complication','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_stsotc','State the status of the conditions','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_mannerofdelivery','Manner of Delivery','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_vaginal','Vaginal Assisted','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_cesarean','Cesarean','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','od_anesthesia','Type of Anesthesia','any',30,10,'',0,null,0,0,1,1,1,1);
+
+evaltrx:addUDF('u_hisclinicobs','fo_general','General Outcome','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','fo_generalstillbirth','Stillbirth','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','fo_weight','Weight','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','fo_length','Length','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','fo_placentalweight','Placental Weight','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicobs','fo_apgarscore','APGAR Score','any',30,10,'',0,null,0,0,1,1,1,1);
+
+evaltrx:addUDF('u_hisclinicgynes','cgcd_location','Location/Organ Involvement','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','cgcd_activity','Activity','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','cgcd_note','Note','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','mi_scpsp','State complete primary surgical procedure','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','mi_asps','Additional surgical procedure should also be included','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','mi_asps2','Adhesioslysis/Cystorrhaphy','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','mi_fs','Frozen Section','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','pps_history','History','text',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','pps_yrprev','Year of the previous surgery','any',4,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_hisclinicgynes','sm','Surgical Morbidities','any',30,10,'',0,null,0,0,1,1,1,1);
+
+UPDATE DBVERSION SET VERSION='2020.05.03.2109' WHERE ID='GPS.HIS';

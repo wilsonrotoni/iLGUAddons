@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_barangays','district','District','numeric',4,40,'0',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2019.09.04.1514' WHERE ID='GPS.RPTAS';

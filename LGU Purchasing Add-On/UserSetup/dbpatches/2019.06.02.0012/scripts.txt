@@ -1,0 +1,5 @@
+evaltrx:addUserMenu('','LGUPURCHASING',580,'Goods Issue','P','u_lgugoodsissue');
+evaltrx:addUserMenu('SYSADMIN','LGUPURCHASING',580,'Goods Issue','P','u_lgugoodsissue');
+evaltrx:addUserMenu('','LGUPURCHASING',590,'Stock Transfer','P','u_lgustocktransfer');
+evaltrx:addUserMenu('SYSADMIN','LGUPURCHASING',590,'Stock Transfer','P','u_lgustocktransfer');
+UPDATE DBVERSION SET VERSION='2019.06.02.0012' WHERE ID='GPS.LGUPurchasing';

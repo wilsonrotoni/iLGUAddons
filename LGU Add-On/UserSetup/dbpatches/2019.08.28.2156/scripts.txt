@@ -1,0 +1,6 @@
+evaltrx:addUDT('lguposbillnos','LGU POS - Multiple Bill Nos','DL','');
+evaltrx:addUDOChild('lgupos','lguposbillnos','Multiple Bill Nos','G');
+evaltrx:addUDF('u_lguposbillnos','billno','Bill No','any',100,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguposbillnos','remarks','Remarks','any',100,20,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguposbillnos','amount','Amount','amount',0,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.08.28.2156' WHERE ID='GPS.LGU';

@@ -1,0 +1,10 @@
+evaltrx:modifyUDF('u_lgupurchasedeliveryitems','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgupurchasedeliveryservice','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgupurchaseorderitems','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgupurchaseorderservice','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgupurchaserequestitems','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgupurchaserequestservice','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgupurchasereturnitems','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgusplitpoitems','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgusplitposervice','unitcost','Unit Cost','price',0,40,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.24.1419' WHERE ID='GPS.LGUPurchasing';

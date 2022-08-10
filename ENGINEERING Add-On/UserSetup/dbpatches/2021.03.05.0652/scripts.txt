@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_buildingpermitapps','lmunicipality','Cons. Location Municipality','any',255,103,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.03.05.0652' WHERE ID='GPS.ENGINEERING';

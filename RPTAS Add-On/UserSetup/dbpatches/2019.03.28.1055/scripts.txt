@@ -1,0 +1,2 @@
+evaltrx:addProgId('u_rplist','Real Property List','./udp.php?&objectcode=u_rplist');
+UPDATE DBVERSION SET VERSION='2019.03.28.1055' WHERE ID='GPS.RPTAS';

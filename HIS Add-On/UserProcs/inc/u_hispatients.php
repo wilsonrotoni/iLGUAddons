@@ -1,0 +1,15 @@
+<input type="hidden" <?php genInputHiddenDFHtml("u_disccode") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_address") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_country") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_fatheraddress") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_fathercountry") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_motheraddress") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_mothercountry") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_spouseaddress") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_spousecountry") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_employeraddress") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_employercountry") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_contactaddress") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_contactcountry") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_responsibleaddress") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_responsiblecountry") ?> >

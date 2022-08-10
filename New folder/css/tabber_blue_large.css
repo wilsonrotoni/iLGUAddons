@@ -1,0 +1,38 @@
+ul.tabbernav li a
+{
+ border: 1px solid #778;
+ background: #F4FAFF;
+ font-size:14px; font-family:Arial, Helvetica, sans-serif
+}
+
+ul.tabbernav li a:link { color: #003399; }
+ul.tabbernav li a:visited { color: #667; }
+
+ul.tabbernav li a:hover
+{
+ color: #000;
+ background: #AAE;
+ border-color: #227;
+ 
+}
+
+ul.tabbernav li.tabberactive a
+{
+ background-color: #fff;
+ border-bottom: 1px solid #fff;
+ 
+}
+
+ul.tabbernav li.tabberactive a:hover
+{
+ color: #000;
+ background: white;
+ border-bottom: 1px solid white;
+ 
+}
+
+.tabberlive .tabbertab {
+ border:1px solid #aaa;
+ 
+}
+

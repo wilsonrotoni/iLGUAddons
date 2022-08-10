@@ -1,0 +1,4 @@
+reportlayouts : replace standard_rpts\\ to standard_rpts\\\\
+docseriesprintlayouts :	standard_forms\\ to standard_forms\\\\
+
+objectfss, sysrptparamvalues, sysrptparams : replace ' to \'

@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGUFSI',50.0,'New Application','P','u_fsapps');
+evaltrx:addUserMenu('','LGUFSI',60.0,'Fire Safety Inspection','P','u_fsins');
+UPDATE DBVERSION SET VERSION='2019.03.28.1115' WHERE ID='GPS.FireSafety';

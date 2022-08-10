@@ -1,0 +1,149 @@
+USERID	MENUID	ITEMID	MENUNAME	MENUCMD	MENUTYPE	RCDVERSION	CREATEDBY	DATECREATED	LASTUPDATEDBY	LASTUPDATED	AUTHTYPE	VISIBLE	ISSYSTEM	IS_SD	IS_SA	IS_SAP	IS_PU	IS_PUP	IS_IN	IS_INP	IS_GL	IS_GLP	IS_BA	IS_SE	IS_SO	IS_FU	IS_FUP	IS_FI	IS_FIP	IS_PR	IS_PRP	IS_PA	IS_PAP	IS_HU	IS_HUP	IS_GE
+		100.0	Reports	xxx_rpt	M	1	manager	2011-10-03 19:32:52	manager	2011-10-03 19:32:52		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	xxx_bank	1.0	Cash Receipts Book	sysRptxxx_CRBook	P	2	manager	2010-02-11 12:47:16	manager	2010-02-15 19:40:09		1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank	2.0	PDC Schedule	sysRptxxx_pdcassof	P	3	manager	2010-02-11 16:10:49	manager	2010-03-03 11:05:11		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank	3.0	Unapplied Customer Deposit Schedule	sysRptxxx_unappliedcustdeposit	P	3	manager	2010-02-11 17:27:40	manager	2010-03-03 11:05:11		1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank	4.0	Applied Customer Deposit Schedule	sysRptxxx_appliedcustdeposit	P	3	manager	2010-02-11 17:58:01	manager	2010-03-03 11:05:11		1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank	5.0	Cash In Bank Balances Report	sysRptxxx_cashinbank	P	2	manager	2010-05-27 17:18:39	manager	2010-05-27 18:17:38		1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank	6.0	Bank Ledger Report	sysRptxxx_bnk_ledger	P	1	manager	2010-05-27 18:17:38	manager	2010-05-27 18:17:38		1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank	7.0	Cash Disbursement Report	sysRptxxx_cdr	P	1	admin	2011-05-04 12:09:48	admin	2011-05-04 12:09:48		1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank	8.0	Transaction Journals	xxx_bank_tj	M	2	manager	2011-09-27 13:54:41	manager	2011-10-02 01:35:06		1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank_tj	1.0	Cash Disbursements	sysRptxxx_bnk_tj_cd	P	1	manager	2011-09-27 14:34:50	manager	2011-09-27 14:34:50		1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bank_tj	2.0	Cash Receipts	sysRptxxx_bnk_tj_cr	P	1	manager	2011-09-27 15:02:19	manager	2011-09-27 15:02:19		1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bp	1.0	Supplier Ledger Report	sysRptxxx_supp_ledger	P	1	manager	2010-05-31 01:18:58	manager	2010-05-31 01:18:58		1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bp	2.0	Customer Ledger Report	sysRptxxx_cl	P	1	manager	2010-05-31 01:18:58	manager	2010-05-31 01:18:58		1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_bp	3.0	Statement of Account - Customer	sysRptxxx_soa	P	1	manager	2010-05-31 01:20:35	manager	2010-05-31 01:20:35		1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin	1.0	Accounts	xxx_fin_acct	M	1	manager	2011-09-12 15:37:24	manager	2011-09-12 15:37:24		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin	2.0	Balance Sheet	xxx_fin_bs	M	1	manager	2011-09-12 15:37:24	manager	2011-09-12 15:37:24		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin	3.0	Profit and Loss	xxx_fin_pl	M	1	manager	2011-09-12 15:37:24	manager	2011-09-12 15:37:24		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin	6.0	Cash Flow	sysRptxxx_cash_flow	P	1	manager	2009-11-21 03:24:04	manager	2009-11-21 03:24:04		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin	7.0	General Journals	sysRptxxx_general_journal	P	5	manager	2011-09-26 14:11:07	manager	2011-10-01 17:18:22		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin	8.0	Listings	xxx_fin_l	M	1	manager	2011-10-01 17:32:45	manager	2011-10-01 17:32:45		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_acct	1.0	Accounts List Summary	sysRptxxx_accounts_list_summary	P	2	manager	2011-09-12 18:37:56	manager	2011-09-13 14:28:27		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_acct	2.0	Accounts List Detail	sysRptxxx_account_list_detail	P	1	manager	2011-09-13 16:24:30	manager	2011-09-13 16:24:30		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_acct	3.0	Account Transactions	sysRptxxx_account_transactions	P	1	manager	2011-09-17 16:16:38	manager	2011-09-17 16:16:38		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_acct	4.0	General Ledger Summary	sysRptxxx_gl_summary	P	1	manager	2011-09-17 21:55:20	manager	2011-09-17 21:55:20		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_acct	5.0	General Ledger Detail	sysRptxxx_gl_detail	P	1	manager	2011-09-17 18:03:39	manager	2011-09-17 18:03:39		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_acct	6.0	Trial Balance	sysRptxxx_trial_balance	P	1	manager	2011-09-18 02:09:50	manager	2011-09-18 02:09:50		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_acct	7.0	Book of Accounts	sysRptxxx_trans_journal	P	1	manager	2011-10-01 16:32:56	manager	2011-10-01 16:32:56		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_acct	8.0	Subsidiary Ledger	sysRptxxx_sl	P	2	manager	2010-05-28 14:55:59	manager	2011-10-01 16:56:29		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_bs	1.0	Balance Sheet Standard	sysRptxxx_bs_standard	P	1	manager	2011-09-19 03:00:29	manager	2011-09-19 03:00:29		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_bs	2.0	Balance Sheet Last Year Analysis	sysRptxxx_bs_last_year_analysis	P	1	manager	2011-09-23 01:02:46	manager	2011-09-23 01:02:46		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_l	1.0	Journal Voucher List Report	sysRptxxx_jv_list	P	4	manager	2010-03-04 18:16:50	manager	2010-03-08 19:43:35		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_l	2.0	Recurring Postings List Report	sysRptxxx_recurringposting	P	1	manager	2010-03-18 15:25:55	manager	2010-03-18 15:25:55		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_pl	1.0	Profit and Loss Statement	sysRptxxx_profit_loss_statement	P	1	manager	2011-09-24 21:22:58	manager	2011-09-24 21:22:58		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_pl	2.0	Profit and Loss With Year to Date	sysRptxxx_pl_year_to_date	P	1	manager	2011-09-25 04:11:29	manager	2011-09-25 04:11:29		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_pl	3.0	Profit and Loss With Last Year	sysRptxxx_pl_with_last_year	P	1	manager	2011-09-25 06:29:32	manager	2011-09-25 06:29:32		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_fin_pl	4.0	Profit and Loss Last Year Analysis	sysRptxxx_pl_last_year_analysis	P	1	manager	2011-09-26 13:39:58	manager	2011-09-26 13:39:58		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv	1.0	Aging	sysRptxxx_stock_aging	P	1	manager	2010-02-13 01:42:30	manager	2010-02-13 01:42:30		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv	2.0	Stock Status with Cost	sysRptxxx_inv_ss	P	2	manager	2010-02-12 00:18:33	manager	2010-02-12 00:19:55		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv	3.0	Stock Ledger with Printing	sysRptxxx_stock_ledger	P	3	manager	2010-02-12 02:23:26	admin	2011-04-28 12:53:41		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv	4.0	Price List	sysRptxxx_inv_pl	P	1	manager	2010-05-29 17:28:02	manager	2010-05-29 17:28:02		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv	10.0	Inventory Journal	sysRptxxx_inv_tj	P	3	manager	2011-09-27 13:55:21	manager	2011-10-02 02:22:05		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv	11.0	Listings	xxx_inv_l	M	1	manager	2011-10-02 03:02:35	manager	2011-10-02 03:02:35		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv_l	1.0	Goods Receipt List Report	sysRptxxx_goods_receipt	P	1	manager	2010-04-26 12:33:45	manager	2010-04-26 12:33:45		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv_l	2.0	Goods Issue List Report	sysRptxxx_goods_issue	P	1	manager	2010-04-26 14:48:47	manager	2010-04-26 14:48:47		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_inv_l	3.0	Stock Transfer List Report	sysRptxxx_sttrans	P	2	manager	2010-04-26 15:09:06	manager	2010-04-26 15:20:29		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur	1.0	Aging	sysRptxxx_AP_AGING	P	1	manager	2010-02-10 00:43:22	manager	2010-02-10 00:43:22		1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur	2.0	Purchase Book	sysRptxxx_pur_book	P	1	manager	2010-02-09 23:56:59	manager	2010-02-09 23:56:59		1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur	3.0	Purchase Analysis	sysRptxxx_pa	P	1	manager	2010-03-02 17:11:37	manager	2010-03-02 17:11:37		1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur	7.0	Purchases and Payables Journal	sysRptxxx_pur_tj	P	3	manager	2011-09-27 13:53:46	manager	2011-10-01 17:19:35		1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur	8.0	Listings	xxx_pur_l	M	1	manager	2011-10-01 20:06:34	manager	2011-10-01 20:06:34		1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur_l	1.0	Purchase Order List Report	sysRptxxx_purchaseorder_list	P	2	manager	2010-03-17 15:08:00	manager	2010-03-17 15:09:44		1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur_l	2.0	Goods Receipt PO List Report	sysRptxxx_grpo_list	P	1	manager	2010-03-17 15:23:15	manager	2010-03-17 15:23:15		1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur_l	3.0	Goods Return List Report	sysRptxxx_goodsreturn_list	P	1	manager	2010-03-17 15:43:39	manager	2010-03-17 15:43:39		1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur_l	4.0	A/P Invoice List Report	sysRptxxx_inv_rr	P	3	manager	2010-02-10 18:21:25	manager	2010-03-17 15:07:07		1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_pur_l	5.0	A/P Credit Memo List Report	sysRptxxx_prs	P	3	manager	2010-02-10 18:38:50	manager	2010-03-17 15:07:07		1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_rpt	1.0	Financials	xxx_fin	M	1	manager	2011-09-12 15:31:10	manager	2011-09-12 15:31:10		1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_rpt	1.5	A/R	xxx_sales	M	1	manager	2011-09-12 15:31:10	manager	2011-09-12 15:31:10		1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_rpt	2.0	Sales	xxx_sales	M	1	manager	2011-09-12 15:31:10	manager	2011-09-12 15:31:10		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_rpt	2.5	A/P	xxx_pur	M	1	manager	2011-09-12 15:31:10	manager	2011-09-12 15:31:10		1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_rpt	3.0	Purchasing	xxx_pur	M	1	manager	2011-09-12 15:31:10	manager	2011-09-12 15:31:10		1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_rpt	4.0	Business Partners	xxx_bp	M	1	manager	2011-09-12 15:31:10	manager	2011-09-12 15:31:10		1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_rpt	5.0	Banking	xxx_bank	M	1	manager	2011-09-12 15:31:10	manager	2011-09-12 15:31:10		1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_rpt	6.0	Inventory	xxx_inv	M	1	manager	2011-09-12 15:31:10	manager	2011-09-12 15:31:10		1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales	1.0	Aging	sysRptxxx_aging	P	1	manager	2010-02-07 23:16:00	manager	2010-02-07 23:16:00		1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales	2.0	Sales Book	sysRptxxx_sb	P	2	manager	2010-02-08 15:54:20	manager	2010-02-10 16:15:08		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales	3.0	Sales Analysis	sysRptxxx_sales_analysis	P	1	manager	2010-02-25 13:20:17	manager	2010-02-25 13:20:17		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales	8.0	Sales and Receivables Journal	sysRptxxx_sr_tj	P	3	manager	2011-09-27 03:03:37	manager	2011-10-01 17:17:45		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales	9.0	Listings	xxx_sales_l	M	1	manager	2011-10-01 18:22:07	manager	2011-10-01 18:22:07		1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales_l	1.0	Sales Quotation List Report	sysRptxxx_salesquotation_list	P	4	manager	2010-03-17 13:30:36	manager	2010-03-17 14:31:19		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales_l	2.0	Sales Order List Report	sysRptxxx_salesorder_list	P	2	manager	2010-03-17 14:12:24	manager	2010-03-17 14:31:19		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales_l	3.0	Sales Delivery List Report	sysRptxxx_salesdelivery_list	P	2	manager	2010-03-17 14:30:43	manager	2010-03-17 14:31:19		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales_l	4.0	Sales Return List Report	sysRptxxx_salesreturn_list	P	1	manager	2010-03-17 14:41:02	manager	2010-03-17 14:41:02		1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales_l	5.0	A/R Invoice List Report	sysRptxxx_arinvoice_list	P	4	manager	2010-03-08 19:40:14	manager	2011-06-29 00:58:44		1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	xxx_sales_l	6.0	A/R Credit Memo List Report	sysRptxxx_arcreditmemo_list	P	2	manager	2010-03-08 20:02:41	manager	2010-03-17 13:28:33		1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN		100.0	Reports	xxx_rpt	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	xxx_bank	1.0	Cash Receipts Book	sysRptxxx_CRBook	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank	2.0	PDC Schedule	sysRptxxx_pdcassof	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank	3.0	Unapplied Customer Deposit Schedule	sysRptxxx_unappliedcustdeposit	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank	4.0	Applied Customer Deposit Schedule	sysRptxxx_appliedcustdeposit	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank	5.0	Cash In Bank Balances Report	sysRptxxx_cashinbank	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank	6.0	Bank Ledger Report	sysRptxxx_bnk_ledger	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank	7.0	Cash Disbursement Report	sysRptxxx_cdr	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank	8.0	Transaction Journals	xxx_bank_tj	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank_tj	1.0	Cash Disbursements	sysRptxxx_bnk_tj_cd	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bank_tj	2.0	Cash Receipts	sysRptxxx_bnk_tj_cr	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bp	1.0	Supplier Ledger Report	sysRptxxx_supp_ledger	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bp	2.0	Customer Ledger Report	sysRptxxx_cl	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_bp	3.0	Statement of Account - Customer	sysRptxxx_soa	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin	1.0	Accounts	xxx_fin_acct	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin	2.0	Balance Sheet	xxx_fin_bs	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin	3.0	Profit and Loss	xxx_fin_pl	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin	6.0	Cash Flow	sysRptxxx_cash_flow	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin	7.0	General Journals	sysRptxxx_general_journal	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin	8.0	Listings	xxx_fin_l	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_acct	1.0	Accounts List Summary	sysRptxxx_accounts_list_summary	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_acct	2.0	Accounts List Detail	sysRptxxx_account_list_detail	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_acct	3.0	Account Transactions	sysRptxxx_account_transactions	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_acct	4.0	General Ledger Summary	sysRptxxx_gl_summary	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_acct	5.0	General Ledger Detail	sysRptxxx_gl_detail	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_acct	6.0	Trial Balance	sysRptxxx_trial_balance	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_acct	7.0	Book of Accounts	sysRptxxx_trans_journal	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_acct	8.0	Subsidiary Ledger	sysRptxxx_sl	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_bs	1.0	Balance Sheet Standard	sysRptxxx_bs_standard	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_bs	2.0	Balance Sheet Last Year Analysis	sysRptxxx_bs_last_year_analysis	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_l	1.0	Journal Voucher List Report	sysRptxxx_jv_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_l	2.0	Recurring Postings List Report	sysRptxxx_recurringposting	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_pl	1.0	Profit and Loss Statement	sysRptxxx_profit_loss_statement	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_pl	2.0	Profit and Loss With Year to Date	sysRptxxx_pl_year_to_date	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_pl	3.0	Profit and Loss With Last Year	sysRptxxx_pl_with_last_year	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_fin_pl	4.0	Profit and Loss Last Year Analysis	sysRptxxx_pl_last_year_analysis	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv	1.0	Aging	sysRptxxx_stock_aging	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv	2.0	Stock Status with Cost	sysRptxxx_inv_ss	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv	3.0	Stock Ledger with Printing	sysRptxxx_stock_ledger	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv	4.0	Price List	sysRptxxx_inv_pl	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv	10.0	Inventory Journal	sysRptxxx_inv_tj	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv	11.0	Listings	xxx_inv_l	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv_l	1.0	Goods Receipt List Report	sysRptxxx_goods_receipt	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv_l	2.0	Goods Issue List Report	sysRptxxx_goods_issue	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_inv_l	3.0	Stock Transfer List Report	sysRptxxx_sttrans	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur	1.0	Aging	sysRptxxx_AP_AGING	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur	2.0	Purchase Book	sysRptxxx_pur_book	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur	3.0	Purchase Analysis	sysRptxxx_pa	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur	7.0	Purchases and Payables Journal	sysRptxxx_pur_tj	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur	8.0	Listings	xxx_pur_l	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur_l	1.0	Purchase Order List Report	sysRptxxx_purchaseorder_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur_l	2.0	Goods Receipt PO List Report	sysRptxxx_grpo_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur_l	3.0	Goods Return List Report	sysRptxxx_goodsreturn_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur_l	4.0	A/P Invoice List Report	sysRptxxx_inv_rr	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_pur_l	5.0	A/P Credit Memo List Report	sysRptxxx_prs	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_rpt	1.0	Financials	xxx_fin	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_rpt	1.5	A/R	xxx_sales	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_rpt	2.0	Sales	xxx_sales	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_rpt	2.5	A/P	xxx_pur	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_rpt	3.0	Purchasing	xxx_pur	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_rpt	4.0	Business Partners	xxx_bp	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_rpt	5.0	Banking	xxx_bank	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	1	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_rpt	6.0	Inventory	xxx_inv	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales	1.0	Aging	sysRptxxx_aging	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales	2.0	Sales Book	sysRptxxx_sb	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales	3.0	Sales Analysis	sysRptxxx_sales_analysis	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales	8.0	Sales and Receivables Journal	sysRptxxx_sr_tj	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales	9.0	Listings	xxx_sales_l	M	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales_l	1.0	Sales Quotation List Report	sysRptxxx_salesquotation_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales_l	2.0	Sales Order List Report	sysRptxxx_salesorder_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales_l	3.0	Sales Delivery List Report	sysRptxxx_salesdelivery_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales_l	4.0	Sales Return List Report	sysRptxxx_salesreturn_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales_l	5.0	A/R Invoice List Report	sysRptxxx_arinvoice_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	xxx_sales_l	6.0	A/R Credit Memo List Report	sysRptxxx_arcreditmemo_list	P	1	manager	2012-06-20 08:56:43	manager	2012-06-20 08:56:43	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

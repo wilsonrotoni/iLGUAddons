@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_gryears','isactive','Active','numeric',2,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_gryears','isactive','0','No');
+evaltrx:addUDFValue('u_gryears','isactive','1','Yes');
+UPDATE DBVERSION SET VERSION='2019.04.11.1150' WHERE ID='GPS.RPTAS';

@@ -1,0 +1,2 @@
+evaltrx:addUDFValue('u_lguprofitcenters','module','Building Permit','Building Permit');
+UPDATE DBVERSION SET VERSION='2021.06.03.1932' WHERE ID='GPS.ENGINEERING';

@@ -1,0 +1,4 @@
+evaltrx:addProgId('u_unpaybilllist','List of Unpaid Bills','./udp.php?&objectcode=u_unpaybilllist');
+evaltrx:addProgId('u_lgureceiptslist','List of Receipts','./udp.php?&objectcode=u_lgureceiptslist');
+evaltrx:addProgId('u_lgupostoacctg','POS to Acctg Batch Processing','./udp.php?&objectcode=u_lgupostoacctg');
+UPDATE DBVERSION SET VERSION='2019.03.28.1340' WHERE ID='GPS.LGU';

@@ -1,0 +1,13 @@
+evaltrx:addUserMenu('','LGURPTSMTOP',189,'Assessment for Multiple Payment','P','urpt_u_ass');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSMTOP',189,'Assessment for Multiple Payment','P','urpt_u_ass');
+evaltrx:addUserMenu('LGU','LGURPTSMTOP',189,'Assessment for Multiple Payment','P','urpt_u_ass');
+evaltrx:addUserMenu('LGUUSR','LGURPTSMTOP',189,'Assessment for Multiple Payment','P','urpt_u_ass');
+
+evaltrx:addUDR('u_ass','Assessment for Multiple Payment','QS','mysql',1);
+
+evaltrx:addUDRParam('u_ass','docno','Doc.No.','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_ass','docno','LQ','Q','select docno,u_lastname,u_firstname from u_lgupos where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+evaltrx:addUDRLayout('u_ass','Assessment for Multiple Payment',1,'MTOP Add-On','PermitMTOP.rpt','1',1,'','','');

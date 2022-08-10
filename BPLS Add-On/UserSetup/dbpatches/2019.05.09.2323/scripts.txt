@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_bplapps','prevappno','Prev Application No','any',50,50,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.09.2323' WHERE ID='GPS.BPLS';

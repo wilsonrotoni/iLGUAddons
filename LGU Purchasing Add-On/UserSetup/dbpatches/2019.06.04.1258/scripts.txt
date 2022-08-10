@@ -1,0 +1,4 @@
+evaltrx:modifyUDF('u_lguitems','instockqty','In-Stock','amount',0,18,'0',0,null,0,0,1,1,1,0);
+evaltrx:modifyUDF('u_lguitems','availableqty','Available','amount',0,19,'0',0,null,0,0,1,1,1,0);
+evaltrx:modifyUDF('u_lguitems','orderedqty','Ordered','amount',0,18,'0',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2019.06.04.1258' WHERE ID='GPS.LGUPurchasing';

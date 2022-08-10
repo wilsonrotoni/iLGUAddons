@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_bldgapps','zoningappno','Zoning Application No.','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgapps','bplappno','Business Application No.','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bldgappfees','seqno','Seq. No.','numeric',4,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.05.06.1357' WHERE ID='GPS.LGUBuilding';

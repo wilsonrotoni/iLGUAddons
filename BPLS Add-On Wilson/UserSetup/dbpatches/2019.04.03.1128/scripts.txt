@@ -1,0 +1,9 @@
+evaltrx:addUDT('streets','Streets','MDC','');
+evaltrx:addUDO('streets','Streets','streets','G');
+evaltrx:addUserMenu('','LGUADMINCASHIER',31.0,'Streets','P','u_streets');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINCASHIER',31.0,'Streets','P','u_streets');
+evaltrx:addUDT('subdivisions','Subdivisions','MDC','');
+evaltrx:addUDO('subdivisions','Subdivisions','subdivisions','G');
+evaltrx:addUserMenu('','LGUADMINCASHIER',33.0,'Subdivisions','P','u_subdivisions');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINCASHIER',33.0,'Subdivisions','P','u_subdivisions');
+UPDATE DBVERSION SET VERSION='2019.04.03.1128' WHERE ID='GPS.BPLS';

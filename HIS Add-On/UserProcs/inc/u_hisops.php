@@ -1,0 +1,9 @@
+<input type="hidden" <?php genInputHiddenDFHtml("u_mgh") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_mghdate") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_mghtime") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_tfisroomshared") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_discharged") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_expired") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_endmethod") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_predischarge") ?> >
+<input type="hidden" <?php genInputHiddenDFHtml("u_healthins") ?> >

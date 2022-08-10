@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lguposterminalseries','cashier','cashier','any',30,6,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.16.1630' WHERE ID='GPS.LGU';

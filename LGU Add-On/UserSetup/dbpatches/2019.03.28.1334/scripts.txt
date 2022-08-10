@@ -1,0 +1,5 @@
+evaltrx:addUDOChild('lgubills','lgubillitems','Items','G');
+evaltrx:addUDOChild('lgureceiptissue','lgureceiptissueitems','Receipts On hand','G');
+evaltrx:addUDOChild('lgureceipts','lgureceiptitems','Receipt Items','G');
+evaltrx:addUDOChild('lguupdpays','lguupdpaysdetails','POS Detail','G');
+UPDATE DBVERSION SET VERSION='2019.03.28.1334' WHERE ID='GPS.LGU';

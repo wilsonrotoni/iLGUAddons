@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_lguphilgeps','projcode','Project Code','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguphilgeps','projname','Project Name','any',200,40,'',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2020.10.13.1348' WHERE ID='GPS.LGUPurchasing';

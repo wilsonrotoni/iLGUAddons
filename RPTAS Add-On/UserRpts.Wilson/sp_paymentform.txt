@@ -1,0 +1,97 @@
+DELIMITER $$
+
+DROP PROCEDURE IF EXISTS `sp_paymentform` $$
+CREATE PROCEDURE `sp_paymentform` (
+                         IN pi_company VARCHAR(30),
+				                 IN pi_branch VARCHAR(30),
+				                 IN pi_docno VARCHAR(30)
+
+)
+
+
+BEGIN
+DROP TEMPORARY TABLE IF EXISTS `tmp_class1`;
+CREATE TEMPORARY TABLE  `tmp_class1` (
+    `class` varchar(30) NULL default '',
+    `arpno` varchar(30) NULL default '',
+    PRIMARY KEY  (`arpno`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TEMPORARY TABLE IF EXISTS `tmp_class2`;
+CREATE TEMPORARY TABLE  `tmp_class2` (
+    `class` varchar(30) NULL default '',
+    `arpno` varchar(30) NULL default '',
+    PRIMARY KEY  (`arpno`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+DROP TEMPORARY TABLE IF EXISTS `tmp_class3`;
+CREATE TEMPORARY TABLE  `tmp_class3` (
+    `class` varchar(30) NULL default '',
+    `arpno` varchar(30) NULL default '',
+    PRIMARY KEY  (`arpno`)
+  ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+  insert into tmp_class1(class,arpno)
+select
+group_concat(distinct C.u_class)
+,C.u_arpno
+from u_rptaxes a
+left join u_rptaxarps b on a.docid = b.docid and b.u_selected = 1 and a.company = b.company and a.branch = b.branch
+left join u_rpfaas1a c on b.u_Arpno = c.u_arpno
+where a.docno = pi_docno group by c.u_arpno ;
+
+insert into tmp_class2(class,arpno)
+select
+group_concat(distinct C.u_class)
+,C.u_arpno
+from u_rptaxes a
+left join u_rptaxarps b on a.docid = b.docid and b.u_selected = 1 and a.company = b.company and a.branch = b.branch
+left join u_rpfaas2a c on b.u_Arpno = c.u_arpno
+where a.docno = pi_docno group by c.u_arpno ;
+
+insert into tmp_class3(class,arpno)
+select
+group_concat(distinct C.u_actualuse)
+,C.u_arpno
+from u_rptaxes a
+left join u_rptaxarps b on a.docid = b.docid and b.u_selected = 1 and a.company = b.company and a.branch = b.branch
+left join u_rpfaas3a c on b.u_Arpno = c.u_arpno
+where a.docno = pi_docno group by c.u_arpno ;
+
+
+SELECT
+D.u_pinno
+,C.u_declaredowner
+,if(D.u_kind = 'LAND',L.u_owneraddress,if(D.u_kind = 'BUILDING',B1.u_owneraddress,M.u_owneraddress)) as owneraddress
+,D.u_tdno
+,if(D.u_kind = 'LAND',L.u_prevtdno,if(D.u_kind = 'BUILDING',B1.u_prevtdno,M.u_prevtdno)) as Prevtd
+,if(D.u_kind = 'LAND',L.u_barangay,if(D.u_kind = 'BUILDING',B1.u_barangay,M.u_barangay)) as barangay
+,if(D.u_kind = 'LAND',t1.class,if(D.u_kind = 'BUILDING',t2.class,t3.class)) as classification
+,if(D.u_kind = 'LAND',L.u_prevvalue,if(D.u_kind = 'BUILDING',B1.u_prevvalue,M.u_prevvalue)) as Prevvalue
+,if(D.u_kind = 'LAND','L',if(D.u_kind = 'BUILDING','B/','M/')) as Type
+,D.u_assvalue
+,concat(min(d.u_yrfr),'-',max(d.u_yrto)) as taxyear
+,sum(D.u_sef) as SEF
+,sum(D.u_penalty) as BasicPenalty
+,sum(D.u_sefpenalty) as SEFPenalty
+,sum((D.u_taxdue * (D.u_discperc * .01)))  as BasicDiscount
+,sum((D.u_sef * (D.u_discperc * .01)))  as SEFDiscount
+,sum(D.u_taxtotal) as TotalBasic
+,sum(D.u_seftotal) as SEFTotal
+
+from  u_rptaxes C
+left join  u_rptaxarps D on C.docid = D.docid and D.u_selected = 1 and C.company = D.company and C.branch = D.branch
+left outer join u_rpfaas1 L on L.u_pin = D.u_pinno
+left outer join u_rpfaas2 B1 on B1.u_pin = D.u_pinno
+left outer join u_rpfaas3 M on M.u_pin = D.u_pinno
+left join tmp_class1 t1 on D.u_Arpno = t1.arpno
+left join tmp_class2 t2 on D.u_Arpno = t2.arpno
+left join tmp_class3 t3 on D.u_Arpno = t3.arpno
+where C.docno = pi_docno and C.branch = pi_branch and C.company = pi_company group by D.u_tdno ;
+
+
+
+
+
+
+END $$
+
+DELIMITER ;

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>pi_address</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>address</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_name</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>name</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_docno</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>docno</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

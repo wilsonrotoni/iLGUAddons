@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_subdivisions','barangay','Location','any',30,100,'',0,'u_barangays:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.03.1413' WHERE ID='GPS.BPLS';

@@ -1,0 +1,16 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',252,'Record conversion','P','urpt_u_rco');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',252,'Record conversion','P','urpt_u_rco');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',252,'Record conversion','P','urpt_u_rco');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',252,'Record conversion,'P','urpt_u_rco');
+
+evaltrx:addUDR('u_rco','Record conversion','QS','mysql',1);
+
+
+
+
+
+
+
+
+evaltrx:addUDRLayout('u_rco','Record conversion',1,'RPTAS Add-On','Total RPUs.rpt','1',1,'','','');
+

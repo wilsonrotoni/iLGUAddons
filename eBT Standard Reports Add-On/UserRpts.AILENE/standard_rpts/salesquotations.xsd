@@ -1,0 +1,55 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="salesquotations" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="salesquotations" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="salesquotations">
+          <xs:complexType>
+            <xs:sequence>
+		  <xs:element name="company" type="xs:string" minOccurs="0" />
+		  <xs:element name="branch" type="xs:string" minOccurs="0" />
+		  <xs:element name="taxid" type="xs:string" minOccurs="0" />
+		  <xs:element name="bpcode" type="xs:string" minOccurs="0" />
+		  <xs:element name="bpname" type="xs:string" minOccurs="0" />
+		  <xs:element name="shiptoadd" type="xs:string" minOccurs="0" />
+		  <xs:element name="contact_person" type="xs:string" minOccurs="0" />
+		  <xs:element name="bprefno" type="xs:string" minOccurs="0" />
+		  <xs:element name="docdate" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="docno" type="xs:string" minOccurs="0" />
+		  <xs:element name="term" type="xs:string" minOccurs="0" />
+		  <xs:element name="sales_person" type="xs:string" minOccurs="0" />
+		  <xs:element name="serials" type="xs:string" minOccurs="0" />
+		  <xs:element name="itemcode" type="xs:string" minOccurs="0" />
+		  <xs:element name="itemdesc" type="xs:string" minOccurs="0" />
+		  <xs:element name="glacctno" type="xs:string" minOccurs="0" />
+		  <xs:element name="qty" type="xs:double" minOccurs="0" />
+		  <xs:element name="unitprice" type="xs:double" minOccurs="0" />
+		  <xs:element name="linetotal" type="xs:double" minOccurs="0" />
+		  <xs:element name="total_bf_disc" type="xs:double" minOccurs="0" />
+		  <xs:element name="disc_percentage" type="xs:double" minOccurs="0" />
+		  <xs:element name="disc_amount" type="xs:double" minOccurs="0" />
+		  <xs:element name="vat_amount" type="xs:double" minOccurs="0" />
+		  <xs:element name="wtax_amount" type="xs:double" minOccurs="0" />
+		  <xs:element name="instalment_addon_amount" type="xs:double" minOccurs="0" />
+		  <xs:element name="total_amount" type="xs:double" minOccurs="0" />
+		  <xs:element name="settled_amount" type="xs:double" minOccurs="0" />
+		  <xs:element name="due_amount" type="xs:double" minOccurs="0" />
+		  <xs:element name="remarks" type="xs:string" minOccurs="0" />
+		  <xs:element name="created_by" type="xs:string" minOccurs="0" />
+		  <xs:element name="item_remarks" type="xs:string" minOccurs="0" />
+		  <xs:element name="U_U_TELNO" type="xs:string" minOccurs="0" />
+		  <xs:element name="U_U_FAXNO" type="xs:string" minOccurs="0" />
+		  <xs:element name="U_U_EMAIL" type="xs:string" minOccurs="0" />
+		  <xs:element name="lineid" type="xs:double" minOccurs="0" />
+		  <xs:element name="currency" type="xs:string" minOccurs="0" />
+		  <xs:element name="mob" type="xs:string" minOccurs="0" />
+		  <xs:element name="companyx" type="xs:string" minOccurs="0" />
+		  <xs:element name="branchx" type="xs:string" minOccurs="0" />
+		  <xs:element name="docid" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,97 @@
+LIST OF VIOLATIONS
+
+Database 
+evaltrx:addUDT('motorviolations','Motor Violations','MD',''); 
+evaltrx:addUDO('motorviolations','Motor Violations','motorviolations','G'); 
+evaltrx:addUDF('motorviolations','seqno','Sequence No.','any',30,10,'',0,null,0,0,1,1,1,1);
+
+Admin Menu
+evaltrx:addUserMenu('','LGUADMIN',116,'Motor Violation','M','LGUADMINMOTORVIOLATION');
+evaltrx:addUserMenu('','LGUADMINMOTORVIOLATION',116,'List of Violations','P','u_motorviolations');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINMOTORVIOLATION',116,'List of Violations','P','u_motorviolations');
+
+LIST OF VEHICLES
+
+Database 
+evaltrx:addUDT('mvehicletype','Type of Vehicle','MDC','');
+//evaltrx:addUDT('mvehicletype','Type of Vehicle','MD',''); 
+evaltrx:addUDO('mvehicletype','Type of Vehicle','mvehicletype','G');
+evaltrx:addUDF('mvehicletype','seqno','Sequence No.','any',30,10,'',0,null,0,0,1,1,1,1);
+
+Admin Menu
+evaltrx:addUserMenu('','LGUADMIN',118,'Type of Vehicle','P','LGUADMINMOTORVIOLATION');
+evaltrx:addUserMenu('','LGUADMINMOTORVIOLATION',118,'Type of Vehicle','P','u_mvehicletype');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINMOTORVIOLATION',118,'Type of Vehicle','P','u_mvehicletype');
+
+
+LIST OF oFFICERS
+
+Database 
+evaltrx:addUDT('motorofficers','List Of Officers','MD',''); 
+evaltrx:addUDO('motorofficers','List of Officers','motorofficers','G');
+evaltrx:addUDF('motorofficers','seqno','Sequence No.','any',30,10,'',0,null,0,0,1,1,1,1);
+
+Admin Menu
+
+evaltrx:addUserMenu('','LGUADMINMOTORVIOLATION',121,'List of Officers','P','u_motorofficers');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINMOTORVIOLATION',121,'List of Officers','P','u_motorofficers');
+
+
+
+
+
+Violator's Apps (need palitan)
+Menu 
+evaltrx:addUserMenu('','LGU',594,'Motor Violation','M','LGUMotorViolation');
+evaltrx:addUserMenu('SYSADMIN','LGU',594,'Motor Violation','M','LGUMotorViolation');
+evaltrx:addUserMenu('','LGUMotorViolation',114,'List','P','u_motorviolationlist');
+evaltrx:addUserMenu('SYSADMIN','LGUMotorViolation',114,'List','P','u_motorviolationlist');
+evaltrx:addUserMenu('','LGUMotorViolation',115,'New Application','P','u_motorviolationapps');
+evaltrx:addUserMenu('SYSADMIN','LGUMotorViolation',115,'New Application','P','u_motorviolationapps');
+evaltrx:addProgId('u_motorviolationapps','Violation Application','./udp.php?&objectcode=u_motorviolationapps');
+evaltrx:addProgId('u_motorviolationlist','List of Violator','./udp.php?&objectcode=u_motorviolationlist');
+
+Database
+evaltrx:addUDT('motorviolationapps','Motor Violator List','D',''); 
+evaltrx:addUDO('motorviolationapps','Motor Violator List','motorviolationapps','');
+evaltrx:addUDF('u_motorviolationapps','Appdate','Application Date','date',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','CitizenID','Citizen ID','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Firstname','First Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Middlename','Middle Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Lastname','Last Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Birthday','Birthday','date',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Gender','Gender','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Age','Age','any',30,60,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Gender','Gender','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_motorviolators','gender','','');
+evaltrx:addUDFValue('u_motorviolatorsviolators','gender','Female','Female');
+evaltrx:addUDFValue('u_motorviolators','gender','Male','Male');
+evaltrx:addUDF('u_motorviolationapps','Birthday','Birthday','date',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','HouseNo','House No.','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Street','Street','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Barangay','Barangay','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Municipality','Municipality','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Province','Province','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','Zipcode','Zipcode','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','MobileNo','MobileNo','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','assesseddatetime','Assessed Timestamp','timestamp',0,70,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapps','reassessdatetime','Reassess Timestamp','timestamp',0,70,null,0,null,0,0,1,1,1,1);
+
+Violation Lines
+Database
+evaltrx:addUDT('motorviolationapplines','Motor Violation Lines','MD',''); 
+evaltrx:addUDO('motorviolationapplines','Motor Violation Lines','motorviolationapplines','');
+evaltrx:addUDF('u_motorviolationapplines','ViolationCode','Violation Code','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapplines','ViolationName','Violation Name','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapplines','VehicleType','Vehicle Type','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapplines','TicketBy','Ticket By','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolationapplines','CitizenID','Citizen ID','any',30,30,'',0,null,0,0,1,1,1,1);
+
+Meunu
+evaltrx:addUserMenu('','LGUADMINMOTORVIOLATION',119,'Motor Violation Assessment Lines','P','u_motorviolationapplines');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINMOTORVIOLATION',119,'Motor Violation Assessment Lines','P','u_motorviolationapplines');
+
+evaltrx:addUDOChild('motorviolationapps','motorviolationapplines','Motor Violation Lines','G');
+
+evaltrx:addProgId('u_motorviolationapplines','Violation App Lines','./udp.php?&objectcode=u_motorviolationapplines');
+

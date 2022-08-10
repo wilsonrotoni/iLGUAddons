@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_lgureceiptitems','issuectr','Issue Counter','numeric',4,35,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptitems','ctr','Issue Counter','numeric',4,35,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptitems','refno','Reference No','any',30,10,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.03.1116' WHERE ID='GPS.LGUReceipts';

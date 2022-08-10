@@ -1,0 +1,2 @@
+evaltrx:deleteUDT('buildingappreqs','Application Requirements','DL','');
+UPDATE DBVERSION SET VERSION='2021.05.09.1811' WHERE ID='GPS.ENGINEERING';

@@ -1,0 +1,9 @@
+evaltrx:addUDF('u_lgucanvassing','profitcenter','Profit Center','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgucanvassing','profitcentername','Profit Center Name','any',100,40,'',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lguaward','profitcenter','Profit Center','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lguaward','profitcentername','Profit Center Name','any',100,40,'',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lgupurchasedeliveryitems','remarks','Remarks','text',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupurchasedeliveryservice','remarks','Remarks','text',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusplitpoitems','remarks','Remarks','text',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusplitposervice','remarks','Remarks','text',0,10,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.06.10.1032' WHERE ID='GPS.LGUPurchasing';

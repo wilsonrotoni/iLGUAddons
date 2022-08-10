@@ -1,0 +1,16 @@
+evaltrx:addUDT('onlinebilling','Online Billing','D','');
+evaltrx:addUDO('onlinebilling','Online Billing','onlinebilling','');
+evaltrx:addUserMenu('','LGUUTILITIES',5000,'Online Billing','P','u_onlinebilling');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILITIES',5000,'Online Billing','P','u_onlinebilling');
+evaltrx:addUDF('u_onlinebilling','date','Date','date',0,30,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_onlinebilling','referenceno','Reference No.','any',100,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_onlinebilling','custname','Customer Name','any',100,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_onlinebilling','module','Module','any',50,50,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_onlinebilling','totalamount','Total Amount','amount',0,60,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_onlinebilling','email','Email','any',100,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_onlinebilling','alertmobileno','Alert Mobile No.','any',15,390,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_onlinebilling','module','','');
+evaltrx:addUDFValue('u_onlinebilling','module','BPL','Business Permit');
+evaltrx:addUDFValue('u_onlinebilling','module','TOS','Miscellaneous Payment');
+evaltrx:addUDFValue('u_onlinebilling','module','RPT','Real Property Tax');
+UPDATE DBVERSION SET VERSION='2020.06.04.1119' WHERE ID='GPS.OnlineBilling';

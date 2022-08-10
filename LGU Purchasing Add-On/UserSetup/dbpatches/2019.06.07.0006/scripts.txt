@@ -1,0 +1,14 @@
+evaltrx:addUDF('u_lgustocktransfer','empid','Employee ID','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','empname','Employee Name','any',100,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','profitcenter','Profit Center','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','profitcentername','Profit Center Name','any',100,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','date','Date','date',0,5,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','duedate','Due Date','date',0,5,null,0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lgustocktransfer','totalquantity','Total Quantity','amount',0,90,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lgustocktransfer','totalamount','Total Amount','amount',0,50,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lgustocktransfer','remarks','Remarks','text',0,50,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','requestedbyname','Head','any',100,100,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','approvedby','Approved By','any',100,100,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','reviewedby','Reviewed By','any',100,100,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgustocktransfer','jevno','JEV No.','any',30,22,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.07.0006' WHERE ID='GPS.LGUPurchasing';

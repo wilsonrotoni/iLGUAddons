@@ -1,0 +1,7 @@
+evaltrx:addUDT('buildingappreqs','Application Requirements','DL','');
+evaltrx:addUDOChild('buildingpermitapps','buildingappreqs','Application Requirements','G');
+evaltrx:addUDF('u_buildingappreqs','check','*','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingappreqs','reqcode','Requirements Code','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingappreqs','reqdesc','Requirements Description','any',255,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingappreqs','reqfile','Requirements Filename','any',255,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.03.05.0732' WHERE ID='GPS.ENGINEERING';

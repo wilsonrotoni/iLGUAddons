@@ -1,0 +1,7 @@
+evaltrx:addUserMenu('','LGU',594,'Motor Violation','M','LGUMotorViolation');
+evaltrx:addUserMenu('SYSADMIN','LGU',594,'Motor Violation','M','LGUMotorViolation');
+evaltrx:addUserMenu('','LGUMotorViolation',114,'List','P','u_motorviolationapps');
+evaltrx:addUserMenu('SYSADMIN','LGUMotorViolation',114,'List','P','u_motorviolationapps');
+evaltrx:addUserMenu('','LGUMotorViolation',115,'New Application','P','u_motorviolationapps');
+evaltrx:addUserMenu('SYSADMIN','LGUMotorViolation',115,'New Application','P','u_motorviolationapps');
+UPDATE DBVERSION SET VERSION='2020.03.18.2151' WHERE ID='GPS.MotorViolation';

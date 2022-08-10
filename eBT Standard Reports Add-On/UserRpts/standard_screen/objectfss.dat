@@ -1,0 +1,33 @@
+OBJECTCODE	FIELDNAME	FSTYPE	FSSOURCE	FSQUERYCODE	FSQUERYVALUE	REFRESHTYPE	VALIDATE	DATECREATED	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION
+sysRptxxx_account_list_detail	acctno	LQ	Q		select formatcode, acctname FROM chartofaccounts where postable = 1	M	0	2011-09-13 16:19:21	manager	2011-09-13 16:19:21	manager	1
+sysRptxxx_account_transactions	acctno	LQ	Q		select formatcode, acctname FROM chartofaccounts where postable = 1	M	0	2011-09-17 16:09:13	manager	2011-09-17 16:09:13	manager	1
+sysRptxxx_account_transactions	sub	LQ	Q		select slacctno, slacctname, sltype from journalentryitems where slacctno <> \\'\\' and docdate between \\'$[date1]$\\' and \\'$[date2]$\\' group by slacctno	M	0	2011-09-17 16:14:31	manager	2011-09-26 16:42:28	manager	6
+sysRptxxx_appliedcustdeposit	loantype	LQ	Q		select department, departmentname from departments	M	0	2009-06-28 04:26:32	sa	2009-06-28 04:26:32	sa	1
+sysRptxxx_bnk_ledger	suppno	LQ	Q		SELECT c.BANKACCTNO, b.BANK, b.BANKNAME FROM banks b inner join housebankaccounts c on c.bank = b.bank group by c.BANKACCTNO	M	0	2009-09-30 13:44:34	manager	2011-06-27 10:39:09	manager	11
+sysRptxxx_bnk_tj_cd	docno	LQ	Q		select Docno from journalentries where docdate between \\'$[date1]$\\' and \\'$[date2]$\\' and doctype in(\\'PY\\') group by docno	M	0	2011-09-27 14:21:33	manager	2011-09-27 14:26:56	manager	2
+sysRptxxx_bnk_tj_cr	docno	LQ	Q		select Docno from journalentries where docdate between \\'$[date1]$\\' and \\'$[date2]$\\' and doctype in(\\'RC\\') group by docno	M	0	2011-09-27 14:57:08	manager	2011-09-27 14:59:53	manager	2
+sysRptxxx_cl	bpcode	LQ	Q		select Custno, CustName, Balance from customers	M	0	2010-05-30 13:42:23	manager	2010-05-30 13:46:07	manager	2
+sysRptxxx_general_journal	docno	LQ	Q		select Docno from journalentries where docdate between \\'$[date1]$\\' and \\'$[date2]$\\' and doctype in (\\'JV\\') group by docno	M	0	2011-09-26 17:34:09	manager	2011-09-27 03:22:02	manager	2
+sysRptxxx_gl_detail	acctno	LQ	Q		select formatcode, acctname FROM chartofaccounts where postable = 1	M	0	2011-09-17 18:02:19	manager	2011-09-17 18:02:19	manager	1
+sysRptxxx_gl_summary	acctno	LQ	Q		select formatcode, acctname FROM chartofaccounts where postable = 1	M	0	2011-09-17 21:53:47	manager	2011-09-17 21:53:47	manager	1
+sysRptxxx_inv_pl	itemgroup	LQ	Q		select ItemGroup, ItemGroupName from itemgroups	M	0	2010-05-29 17:10:58	manager	2010-05-29 17:10:58	manager	1
+sysRptxxx_inv_pl	pricelist	LQ	Q		select Pricelist, PricelistName from pricelists	M	0	2010-05-29 17:08:30	manager	2010-05-29 17:08:30	manager	1
+sysRptxxx_inv_rr	bpcode	LQ	Q		SELECT suppno, suppname FROM suppliers	M	0	2009-06-23 00:22:07	sa	2009-06-23 00:22:07	sa	1
+sysRptxxx_inv_rr	group	LQ	Q		select department, departmentname from departments	M	0	2009-07-21 12:57:37	manager	2009-07-21 12:57:37	manager	1
+sysRptxxx_inv_ss	itemcode	LQ	Q		select itemcode, itemdesc from items	M	0	2010-02-12 00:03:13	manager	2010-02-12 00:03:13	manager	1
+sysRptxxx_inv_tj	docno	LQ	Q		select Docno from journalentries where docdate between \\'$[date1]$\\' and \\'$[date2]$\\' and doctype in(\\'GI\\',\\'GR\\',\\'GT\\',\\'TI\\',\\'TO\\') group by docno	M	0	2011-09-27 15:41:04	manager	2011-09-27 15:41:04	manager	1
+sysRptxxx_jv_list	doctype	LQ	Q		select DOCGROUP, DOCGROUPNAME from docgroups	M	0	2010-03-04 18:09:48	manager	2010-03-04 18:09:48	manager	1
+sysRptxxx_pdcassof	loantype	LQ	Q		select department, departmentname from departments	M	0	2009-06-29 12:46:11	sa	2009-06-29 12:46:11	sa	1
+sysRptxxx_prs	bpcode	LQ	Q		SELECT suppno, suppname FROM suppliers	M	0	2009-07-21 12:50:01	manager	2009-07-21 12:50:01	manager	1
+sysRptxxx_prs	dept	LQ	Q		select department, departmentname from departments	M	0	2009-07-21 12:50:21	manager	2009-07-21 12:50:21	manager	1
+sysRptxxx_pur_book	dept	LQ	Q		select department, departmentname from departments	M	0	2009-07-12 01:18:27	manager	2009-07-12 01:18:27	manager	1
+sysRptxxx_pur_tj	docno	LQ	Q		select Docno from journalentries where docdate between \\'$[date1]$\\' and \\'$[date2]$\\' and doctype in(\\'AP\\',\\'ACM\\',\\'PDN\\') group by docno	M	0	2011-09-27 14:03:08	manager	2011-09-27 14:07:13	manager	2
+sysRptxxx_sl	acctno	LQ	Q		select formatcode, acctname FROM chartofaccounts where postable = 1	M	0	2010-05-28 14:44:05	manager	2010-05-28 14:44:05	manager	1
+sysRptxxx_soa	bpcode	LQ	Q		select Custno, CustName, Balance from customers	M	0	2011-06-27 00:23:11	manager	2011-06-29 00:45:14	manager	2
+sysRptxxx_soa	source	LQ	Q		select custno, custname from customers 	M	0	2010-02-09 22:36:20	manager	2011-01-18 15:49:17	admin	4
+sysRptxxx_sr_tj	docno	LQ	Q		select Docno from journalentries where docdate between \\'$[date1]$\\' and \\'$[date2]$\\' and doctype in(\\'AR\\',\\'DN\\',\\'CM\\',\\'CS\\',\\'RT\\') group by docno	M	0	2011-09-27 03:17:41	manager	2011-09-27 15:30:13	manager	3
+sysRptxxx_stock_ledger	itemcode	LQ	Q		select itemcode, itemdesc from items	M	0	2009-06-23 00:48:28	sa	2009-06-23 00:48:28	sa	1
+sysRptxxx_supp_ledger	bpcode	LQ	Q		SELECT Suppno, SuppName, Balance FROM suppliers	M	0	2010-05-31 01:23:19	manager	2010-05-31 01:23:19	manager	1
+sysRptxxx_transaction_journals	docno	LQ	Q		select docno from journalentries where docdate between \\'$[date1]$\\' and \\'$[date2]$\\' group by docno	M	0	2011-09-26 16:26:52	manager	2011-09-26 16:31:36	manager	8
+sysRptxxx_trans_journal	doctype	LQ	Q		select DOCGROUP, DOCGROUPNAME from docgroups	M	0	2010-02-15 00:13:10	manager	2010-02-15 00:13:44	manager	2
+sysRptxxx_unappliedcustdeposit	loantype	LQ	Q		select department, departmentname from departments	M	0	2009-06-28 04:25:36	sa	2009-06-28 04:25:36	sa	1

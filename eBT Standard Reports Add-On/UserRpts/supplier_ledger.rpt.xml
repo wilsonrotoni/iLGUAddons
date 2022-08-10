@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>xml</DataSource>
+		<CommandType>StoredProcedure</CommandType>
+		<CommandText>supplier_ledger</CommandText>
+		<TableName>supplier_ledger</TableName>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>pi_company</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>company</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_branch</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>branch</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_bpcode</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>bpcode</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_date1</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>date1</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_date2</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>date2</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

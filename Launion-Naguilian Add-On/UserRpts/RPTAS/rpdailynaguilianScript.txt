@@ -1,0 +1,16 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',228,'Daily Collection by Barangay','P','urpt_u_RPTDAILYBYBRGY');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSMTOP',228,'Daily Collection by Barangay','P','urpt_u_RPTDAILYBYBRGY');
+evaltrx:addUserMenu('LGU','LGURPTSMTOP',228,'Daily Collection by Barangay','P','urpt_u_RPTDAILYBYBRGY');
+evaltrx:addUserMenu('LGUUSR','LGURPTSMTOP',228,'Daily Collection by Barangay','P','urpt_u_RPTDAILYBYBRGY');
+
+evaltrx:addUDR('u_RPTDAILYBYBRGY','Daily Collection by Barangay','QS','mysql',1);
+
+evaltrx:addUDRParam('u_RPTDAILYBYBRGY','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_RPTDAILYBYBRGY','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRParam('u_RPTDAILYBYBRGY','userid','Username','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_RPTDAILYBYBRGY','userid','LQ','Q','select userid,username from users;
+
+evaltrx:addUDRLayout('u_RPTDAILYBYBRGY','Daily Collection by Barangay',1,'RPTAS Add-On','rpdailynaguilian.rpt','1',1,'','','');
+
+

@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('userprofitcenters','profitcentername','Profit Center Name','any',100,20,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.15.1532' WHERE ID='GPS.LGUPurchasing';

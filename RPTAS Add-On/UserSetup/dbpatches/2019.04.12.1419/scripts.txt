@@ -1,0 +1,2 @@
+evaltrx:modifyUDO('rpactuses','Real Property Actual Usage','rpactuses','');
+UPDATE DBVERSION SET VERSION='2019.04.12.1419' WHERE ID='GPS.RPTAS';

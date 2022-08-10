@@ -1,0 +1,4 @@
+evaltrx:addUDF('arinvoiceitems','facapitalizeby','Capitalize By','upper',10,25,'Unit',0,null,0,0,1,1,0,1);
+evaltrx:addUDFValue('arinvoiceitems','facapitalizeby','Unit','Unit');
+evaltrx:addUDFValue('arinvoiceitems','facapitalizeby','Lot','Lot');
+UPDATE DBVERSION SET VERSION='2019.08.23.1414' WHERE ID='GPS.FixedAsset';

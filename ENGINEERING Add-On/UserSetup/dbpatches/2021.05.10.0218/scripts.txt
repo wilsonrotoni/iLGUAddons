@@ -1,0 +1,4 @@
+evaltrx:DELETEUDF('u_buildingpermitappfees','discount','Discount','amount',20,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:DELETEUDF('u_buildingpermitappfees','total','Total','amount',20,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:DELETEUDF('u_buildingpermitappfees','penalty','Penalty','amount',20,90,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.10.0218' WHERE ID='GPS.ENGINEERING';

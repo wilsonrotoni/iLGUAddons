@@ -1,0 +1,4 @@
+evaltrx:addUDT('buildingpermitapps4','BEMEP Details','DL','');
+evaltrx:addUDOChild('buildingpermitapps','buildingpermitapps4','BEMEP Details','G');
+evaltrx:addUDF('u_buildingpermitapps4','area','Area','any',225,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.09.1931' WHERE ID='GPS.ENGINEERING';

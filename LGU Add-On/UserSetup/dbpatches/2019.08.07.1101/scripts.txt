@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_lgubills','isupload','Is Uploaded','numeric',3,0,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgubills','uploadeddate','Uploaded Date','date',0,50,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxes','isupload','Is Uploaded','numeric',3,0,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxes','uploadeddate','Uploaded Date','date',0,50,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.08.07.1101' WHERE ID='GPS.LGU';

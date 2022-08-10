@@ -1,0 +1,28 @@
+.labelPageHeader { COLOR: #FFFFFF; BACKGROUND-COLOR: #151515;
+
+}
+
+.labelPageHeaderPgInfo { COLOR: #FFFFFF; BACKGROUND-COLOR: #151515;
+
+}
+
+.popupwinheadrow TD { BORDER-LEFT-COLOR: #7D7D7D; BORDER-BOTTOM-COLOR: #7D7D7D; BORDER-TOP-COLOR: #7D7D7D; BORDER-RIGHT-COLOR: #7D7D7D; COLOR: #ffffff; BACKGROUND-COLOR: #151515; 	}
+
+.popupwin {        BORDER-LEFT-COLOR: #7D7D7D; BORDER-BOTTOM-COLOR: #7D7D7D; BORDER-TOP-COLOR: #7D7D7D; BORDER-RIGHT-COLOR: #7D7D7D}
+
+.popupwinheadrow a:link { 	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	text-decoration: none;  }
+.popupwinheadrow a:visited {  font-family: Verdana, Arial, Helvetica, sans-serif;
+ 	color: #FFFFFF;
+	text-decoration: none; }
+.popupwinheadrow a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.popupwinheadrow a:active {  font-family: Verdana, Arial, Helvetica, sans-serif;
+	 	color: #FFFFFF;
+	text-decoration: none; }

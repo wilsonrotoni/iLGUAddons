@@ -1,0 +1,16 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',270,'Land Assessed Value per Brgy','P','urpt_u_rpassessedbrgy');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',270,'Land Assessed Value per Brgy','P','urpt_u_rpassessedbrgy');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',270,'Land Assessed Value per Brgy','P','urpt_u_rpassessedbrgy');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',270,'Land Assessed Value per Brgy','P','urpt_u_rpassessedbrgy');
+
+evaltrx:addUDR('u_rpassessedbrgy','Launion-Naguilian Add-On','QS','mysql',1);
+
+
+
+evaltrx:addUDRParam('u_rpassessedbrgy','date1','For the Period Ending:','','date',1,'text',10,'eval:currentdate()',1,null);
+
+evaltrx:addUDRParam('u_rpassessedbrgy','taxable','','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_rpassessedbrgy','taxable',1,'Taxable');
+evaltrx:addUDRParamValue('u_rpassessedbrgy','taxable',0,''Exempt');
+
+evaltrx:addUDRLayout('u_rpassessedbrgy','Land Assessed Value per Brgy',0,'Launion-Naguilian Add-On','RPTAS\rpassessedbrgy.rpt','1',1,'','','');

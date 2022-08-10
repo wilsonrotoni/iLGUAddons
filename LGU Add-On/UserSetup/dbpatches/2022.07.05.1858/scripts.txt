@@ -1,0 +1,15 @@
+evaltrx:addUDF('u_lgusetup','rppenstartmonth','Penalty Start Month','any',100,20,'3',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','1','January');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','2','Febuary');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','3','March');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','4','April');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','5','May');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','6','June');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','7','July');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','8','August');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','9','September');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','10','October');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','11','November');
+evaltrx:addUDFValue('u_lgusetup','rppenstartmonth','12','December');
+evaltrx:addUDF('u_lgupos','tttdno','Transfer Tax TD No','any',255,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2022.07.05.1858' WHERE ID='GPS.LGU';

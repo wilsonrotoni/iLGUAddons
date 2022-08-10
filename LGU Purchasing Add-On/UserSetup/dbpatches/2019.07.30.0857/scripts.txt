@@ -1,0 +1,2 @@
+evaltrx:modifyUDO('lguitems','Items','');
+UPDATE DBVERSION SET VERSION='2019.07.30.0857' WHERE ID='GPS.LGUPurchasing';

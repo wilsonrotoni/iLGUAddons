@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_lgusetup','epsf','EPSF','any',50,70,null,0,'u_lgufees:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgusetup','epsfamt','EPSF Amount','amount',0,7,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.14.0127' WHERE ID='GPS.RPTAS';

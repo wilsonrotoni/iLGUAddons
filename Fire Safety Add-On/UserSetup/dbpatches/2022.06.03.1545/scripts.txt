@@ -1,0 +1,14 @@
+evaltrx:addUserMenu('','LGUADMINFSI',40,'Approvers','P','u_fireapprovers');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINFSI',40,'Approvers','P','u_fireapprovers');
+evaltrx:addUDT('fireapprovers','Approvers','MDC','');
+evaltrx:addUDO('fireapprovers','Approvers','fireapprovers','G');
+evaltrx:addUDF('u_fireapprovers','position','Position','any',100,5,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fireapprovers','approve','Approve','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fireapprovers','assess','Assess','numeric',1,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fireapprovers','encode','Encode','numeric',1,50,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fsapps','receiveddate','Received Date','date',0,390,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fsapps','receivedby','Received By','any',100,340,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fsapps','certno','Certificate No.','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fsapps','fsecno','FSEC No.','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fsapps','fsicno','FSIC No.','any',30,20,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2022.06.03.1545' WHERE ID='GPS.FireSafety';

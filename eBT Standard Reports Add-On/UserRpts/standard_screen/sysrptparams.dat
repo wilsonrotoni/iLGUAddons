@@ -1,0 +1,228 @@
+REPORTID	PARAMID	PARAMNAME	ALIAS	FORMAT	INPUTTYPE	DEFAULTVALUE	LINKTABLE	DESCRETEVALUE	REQUIRED	DATECREATED	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION	SETLINKTABLE	SETVALIDVALUES	SETDEFAULTVALUE	SEQ
+xxx_accounts_list_summary	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-13 14:24:42	manager	2011-09-13 14:24:42	manager	1	1	0	1	0
+xxx_accounts_list_summary	date1	As of :		date	text	eval:currentdate()		1	1	2011-09-13 14:25:06	manager	2011-09-13 14:25:06	manager	1	0	0	1	1
+xxx_account_list_detail	acctno	Account No.		any	text			1	0	2011-09-13 16:18:51	manager	2011-09-13 16:19:38	manager	2	0	0	0	1
+xxx_account_list_detail	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-13 16:18:03	manager	2011-09-13 16:18:03	manager	1	1	0	1	0
+xxx_account_list_detail	date1	As of :		date	text	eval:currentdate()		1	1	2011-09-13 16:18:33	manager	2011-09-13 16:19:32	manager	2	0	0	1	2
+xxx_account_list_detail	zero	Include 0 balances :		any	select			1	0	2011-09-13 16:55:59	manager	2012-06-26 19:36:34	manager	9	0	1	0	3
+xxx_account_transactions	acctno	Account No.		any	text			1	0	2011-09-17 16:06:59	manager	2011-09-17 16:06:59	manager	1	0	0	0	1
+xxx_account_transactions	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-17 16:06:18	manager	2011-09-17 16:06:18	manager	1	1	0	1	0
+xxx_account_transactions	date1	From :		date	text	eval:currentdate()		1	1	2011-09-17 16:08:23	manager	2011-09-26 16:41:28	manager	2	0	0	1	2
+xxx_account_transactions	date2	to :		date	text	eval:currentdate()		1	1	2011-09-17 16:08:44	manager	2011-09-26 16:41:22	manager	2	0	0	1	3
+xxx_account_transactions	sub	SL Account No.		any	text			1	0	2011-09-17 16:07:46	manager	2011-09-26 16:41:33	manager	2	0	0	0	4
+xxx_aging	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-02-07 23:00:44	manager	2010-02-07 23:05:01	manager	2	1	0	1	0
+xxx_aging	date1	As of :		date	text	eval:currentdate()		1	1	2010-02-07 23:01:15	manager	2010-02-07 23:05:28	manager	3	0	0	1	1
+xxx_appliedcustdeposit	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2008-08-05 15:49:15	sa	2010-02-11 17:48:04	manager	6	1	0	1	0
+xxx_appliedcustdeposit	date1	From :		date	text	eval:currentdate()		1	1	2008-08-05 15:50:32	sa	2009-06-22 00:45:23	sa	3	0	0	1	2
+xxx_appliedcustdeposit	date2	to :		date	text	eval:currentdate()		1	1	2008-08-05 15:51:02	sa	2009-06-22 00:45:34	sa	4	0	0	1	3
+xxx_ap_aging	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2009-09-27 02:19:40	manager	2009-09-27 02:19:40	manager	1	1	0	1	0
+xxx_ap_aging	date1	As of :		date	text	eval:currentdate()		1	1	2009-09-27 02:22:06	manager	2009-09-27 02:22:06	manager	1	0	0	1	3
+xxx_ap_aging	dep	dep		any	hidden			1	0	2009-09-27 02:21:37	manager	2009-09-27 02:21:37	manager	1	0	0	0	2
+xxx_ap_aging	suppno	suppno		any	hidden			1	0	2009-09-27 02:21:15	manager	2009-09-27 02:21:20	manager	2	0	0	0	1
+xxx_arcreditmemo_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-08 19:49:20	manager	2010-03-08 19:59:47	manager	2	1	0	1	0
+xxx_arcreditmemo_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-08 19:57:48	manager	2010-03-08 19:57:48	manager	1	0	0	1	1
+xxx_arcreditmemo_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-08 19:58:26	manager	2010-03-08 19:58:26	manager	1	0	0	1	2
+xxx_arcreditmemo_list	status	Status :		any	select			1	0	2010-03-08 19:59:17	manager	2010-03-08 19:59:26	manager	2	0	1	0	3
+xxx_arinvoice_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-08 19:34:58	manager	2010-03-08 19:34:58	manager	1	1	0	1	0
+xxx_arinvoice_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-08 19:35:39	manager	2010-03-08 19:35:39	manager	1	0	0	1	1
+xxx_arinvoice_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-08 19:36:02	manager	2010-03-08 19:36:02	manager	1	0	0	1	2
+xxx_arinvoice_list	status	Status :		any	select			1	0	2010-03-08 19:37:01	manager	2010-03-08 19:37:01	manager	1	0	1	0	3
+xxx_bnk_ledger	account	account		any	hidden			1	0	2009-09-30 13:39:37	manager	2009-09-30 13:39:37	manager	1	0	0	0	1
+xxx_bnk_ledger	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2009-09-30 13:39:18	manager	2009-09-30 13:39:18	manager	1	1	0	1	0
+xxx_bnk_ledger	date1	From :		date	text	eval:currentdate()		1	1	2009-09-30 13:40:56	manager	2009-09-30 13:40:56	manager	1	0	0	1	3
+xxx_bnk_ledger	date2	to :		date	text	eval:currentdate()		1	1	2009-09-30 13:41:57	manager	2009-09-30 13:41:57	manager	1	0	0	1	3
+xxx_bnk_ledger	suppno	Bank No. :		any	text			1	1	2009-09-30 13:40:02	manager	2010-05-27 17:59:17	manager	2	0	0	0	2
+xxx_bnk_tj_cd	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-27 14:16:18	manager	2011-09-27 14:16:18	manager	1	1	0	1	0
+xxx_bnk_tj_cd	date1	From :		date	text	eval:currentdate()		1	1	2011-09-27 14:16:52	manager	2011-09-27 14:16:52	manager	1	0	0	1	1
+xxx_bnk_tj_cd	date2	to :		date	text	eval:currentdate()		1	1	2011-09-27 14:17:17	manager	2011-09-27 14:17:17	manager	1	0	0	1	2
+xxx_bnk_tj_cd	docno	Document No. :		any	text			1	0	2011-09-27 14:17:42	manager	2011-09-27 14:17:42	manager	1	0	0	0	3
+xxx_bnk_tj_cd	doctype	Source Journal :		any	select			1	0	2011-09-27 14:18:19	manager	2011-09-27 14:26:33	manager	2	0	1	0	4
+xxx_bnk_tj_cd	doctype_name	doctype_name		any	hidden	Cash Disbursements		1	0	2011-09-27 14:18:51	manager	2011-09-27 14:18:51	manager	1	0	0	1	5
+xxx_bnk_tj_cr	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-27 14:53:50	manager	2011-09-27 14:57:22	manager	2	1	0	1	0
+xxx_bnk_tj_cr	date1	From :		date	text	eval:currentdate()		1	1	2011-09-27 14:54:17	manager	2011-09-27 14:54:17	manager	1	0	0	1	1
+xxx_bnk_tj_cr	date2	to :		date	text	eval:currentdate()		1	1	2011-09-27 14:54:52	manager	2011-09-27 14:54:52	manager	1	0	0	1	2
+xxx_bnk_tj_cr	docno	Document No. :		any	text			1	0	2011-09-27 14:55:20	manager	2011-09-27 14:55:28	manager	2	0	0	0	3
+xxx_bnk_tj_cr	doctype	Source Journal :		any	select	\\'RC\\'		1	0	2011-09-27 14:55:57	manager	2011-09-27 15:07:05	manager	3	0	1	1	4
+xxx_bnk_tj_cr	doctype_name	doctype_name		any	hidden	Cash Receipts		1	0	2011-09-27 14:56:28	manager	2011-09-27 14:56:28	manager	1	0	0	1	5
+xxx_bs_last_year_analysis	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-23 00:57:20	manager	2011-09-23 00:57:20	manager	1	1	0	1	0
+xxx_bs_last_year_analysis	date2	As of :		date	text	eval:currentdate()		1	1	2011-09-23 00:58:27	manager	2011-09-23 00:58:27	manager	1	0	0	1	2
+xxx_bs_last_year_analysis	zero	Include 0 balances :		any	select			1	0	2011-09-23 01:00:11	manager	2011-09-23 01:00:30	manager	2	0	1	0	3
+xxx_bs_standard	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-19 02:54:04	manager	2011-09-19 02:54:04	manager	1	1	0	1	0
+xxx_bs_standard	date2	As of :		date	text	eval:currentdate()		1	1	2011-09-19 02:55:16	manager	2011-09-19 02:55:16	manager	1	0	0	1	2
+xxx_bs_standard	zero	Include 0 balances :		any	select			1	0	2011-09-19 03:08:24	manager	2011-09-19 03:08:24	manager	1	0	1	0	3
+xxx_cashinbank	account	account		any	hidden			1	0	2009-09-28 00:43:16	manager	2010-05-27 17:08:07	manager	3	0	0	0	1
+xxx_cashinbank	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2009-09-28 00:41:57	manager	2009-09-28 00:41:57	manager	1	1	0	1	0
+xxx_cashinbank	date1	As of :		date	text	eval:currentdate()		1	1	2009-09-28 00:43:55	manager	2009-09-28 00:43:55	manager	1	0	0	1	3
+xxx_cashinbank	suppno	suppno		any	hidden			1	0	2009-09-28 00:43:29	manager	2009-09-28 00:43:29	manager	1	0	0	0	2
+xxx_cash_flow	branch	Branch :		any	select	eval:$branch	branches:branchcode:branchname	1	1	2009-11-21 03:21:35	manager	2009-11-21 03:21:35	manager	1	1	0	1	0
+xxx_cash_flow	date1	From :		date	text	eval:currentdate()		1	1	2009-11-21 03:22:08	manager	2009-11-21 03:22:08	manager	1	0	0	1	1
+xxx_cash_flow	date2	to :		date	text	eval:currentdate()		1	1	2009-11-21 03:22:34	manager	2009-11-21 03:22:34	manager	1	0	0	1	2
+xxx_cdr	pi_branch	Branch		any	select	eval:$branch	branches:branchcode:branchname	1	1	2011-05-04 10:42:18	admin	2011-10-03 15:57:06	manager	2	1	0	1	0
+xxx_cdr	pi_date	Date		date	text	eval:currentdate()		0	1	2011-05-04 10:43:08	admin	2011-10-03 15:56:55	manager	2	0	0	1	1
+xxx_cl	bpcode	Customer No. :		any	text			1	1	2010-05-30 13:39:34	manager	2010-05-31 01:06:19	manager	2	0	0	0	1
+xxx_cl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-02-08 19:56:47	manager	2010-02-08 19:56:47	manager	1	1	0	1	0
+xxx_cl	date1	From :		date	text	eval:currentdate()		1	1	2010-05-30 13:41:13	manager	2010-05-30 13:41:13	manager	1	0	0	1	2
+xxx_cl	date2	to :		date	text	eval:currentdate()		1	1	2010-05-30 13:41:29	manager	2010-05-30 13:41:29	manager	1	0	0	1	3
+xxx_crbook	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-02-11 12:31:31	manager	2010-02-11 12:33:27	manager	2	1	0	1	0
+xxx_crbook	date1	From :		date	text	eval:currentdate()		1	1	2010-02-11 12:32:02	manager	2010-02-11 12:32:51	manager	2	0	0	1	1
+xxx_crbook	date2	to :		date	text	eval:currentdate()		1	1	2010-02-11 12:32:39	manager	2010-02-11 12:32:39	manager	1	0	0	1	2
+xxx_general_journal	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-26 17:30:36	manager	2011-09-26 17:30:36	manager	1	1	0	1	0
+xxx_general_journal	date1	From :		date	text	eval:currentdate()		1	1	2011-09-26 17:31:07	manager	2011-09-26 17:31:07	manager	1	0	0	1	1
+xxx_general_journal	date2	to :		date	text	eval:currentdate()		1	1	2011-09-26 17:31:21	manager	2011-09-26 17:31:21	manager	1	0	0	1	2
+xxx_general_journal	docno	Document No. :		any	text			1	0	2011-09-26 17:31:53	manager	2011-09-26 17:31:53	manager	1	0	0	0	3
+xxx_general_journal	doctype	doctype		any	hidden	0		1	0	2012-06-26 21:55:28	manager	2012-06-26 21:55:53	manager	2	0	0	1	4
+xxx_general_journal	doctype_name	doctype_name		any	hidden	General Journal		1	0	2011-09-27 02:51:29	manager	2011-09-27 02:51:29	manager	1	0	0	1	5
+xxx_gl_detail	acctno	Account No.		any	text			1	0	2011-09-17 18:00:36	manager	2011-09-17 18:00:36	manager	1	0	0	0	1
+xxx_gl_detail	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-17 18:00:13	manager	2011-09-17 18:00:13	manager	1	1	0	1	0
+xxx_gl_detail	date1	From :		date	text	eval:currentdate()		1	1	2011-09-17 18:01:34	manager	2011-09-17 18:01:34	manager	1	0	0	1	2
+xxx_gl_detail	date2	to :		date	text	eval:currentdate()		1	1	2011-09-17 18:01:54	manager	2011-09-17 18:01:54	manager	1	0	0	1	3
+xxx_gl_summary	acctno	Account No.		any	text			1	0	2011-09-17 21:52:34	manager	2011-09-17 21:52:34	manager	1	0	0	0	1
+xxx_gl_summary	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-17 21:52:12	manager	2011-09-17 21:52:12	manager	1	1	0	1	0
+xxx_gl_summary	date1	From :		date	text	eval:currentdate()		1	1	2011-09-17 21:53:07	manager	2011-09-17 21:53:07	manager	1	0	0	1	2
+xxx_gl_summary	date2	to :		date	text	eval:currentdate()		1	1	2011-09-17 21:53:30	manager	2011-09-17 21:53:30	manager	1	0	0	1	3
+xxx_goodsreturn_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-17 15:36:04	manager	2010-03-17 15:36:04	manager	1	1	0	1	0
+xxx_goodsreturn_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-17 15:36:29	manager	2010-03-17 15:36:29	manager	1	0	0	1	1
+xxx_goodsreturn_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-17 15:36:42	manager	2010-03-17 15:36:42	manager	1	0	0	1	2
+xxx_goodsreturn_list	status	Status :		any	select			1	0	2010-03-17 15:37:44	manager	2010-03-17 15:37:44	manager	1	0	1	0	3
+xxx_goods_issue	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-04-26 14:44:05	manager	2010-04-26 14:44:05	manager	1	1	0	1	0
+xxx_goods_issue	date1	From :		date	text	eval:currentdate()		1	1	2010-04-26 14:44:32	manager	2010-04-26 14:44:32	manager	1	0	0	1	1
+xxx_goods_issue	date2	to :		date	text	eval:currentdate()		1	1	2010-04-26 14:44:56	manager	2010-04-26 14:44:56	manager	1	0	0	1	2
+xxx_goods_issue	status	Status :		any	select			1	0	2010-04-26 14:45:58	manager	2010-04-26 14:45:58	manager	1	0	1	0	3
+xxx_goods_receipt	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-04-26 12:26:21	manager	2010-04-26 12:26:21	manager	1	1	0	1	0
+xxx_goods_receipt	date1	From :		date	text	eval:currentdate()		1	1	2010-04-26 12:26:46	manager	2010-04-26 12:26:46	manager	1	0	0	1	1
+xxx_goods_receipt	date2	to :		date	text	eval:currentdate()		1	1	2010-04-26 12:27:09	manager	2010-04-26 12:27:09	manager	1	0	0	1	2
+xxx_goods_receipt	status	Status :		any	select			1	0	2010-04-26 12:28:21	manager	2010-04-26 12:28:21	manager	1	0	1	0	3
+xxx_grpo_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-17 15:18:06	manager	2010-03-17 15:18:06	manager	1	1	0	1	0
+xxx_grpo_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-17 15:18:27	manager	2010-03-17 15:18:27	manager	1	0	0	1	1
+xxx_grpo_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-17 15:18:41	manager	2010-03-17 15:18:41	manager	1	0	0	1	2
+xxx_grpo_list	status	Status :		any	select			1	0	2010-03-17 15:19:34	manager	2010-03-17 15:19:34	manager	1	0	1	0	3
+xxx_inv_pl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2008-11-16 16:55:49	sa	2010-05-29 16:54:34	manager	4	1	0	1	0
+xxx_inv_pl	itemgroup	Item Group :		any	text			1	0	2010-05-29 17:06:44	manager	2010-05-29 17:06:44	manager	1	0	0	0	3
+xxx_inv_pl	pricelist	Price List :		any	text			1	0	2010-05-29 17:06:16	manager	2010-05-29 17:06:52	manager	2	0	0	0	1
+xxx_inv_rr	branch	Branch :		any	select	eval:$branch	branches:branchcode:branchname	1	1	2008-11-16 17:15:25	sa	2009-07-01 23:46:44	manager	3	1	0	1	0
+xxx_inv_rr	date1	From :		date	text	eval:currentdate()		1	1	2008-11-16 17:18:32	sa	2009-06-22 03:49:45	sa	4	0	0	1	4
+xxx_inv_rr	date2	to :		date	text	eval:currentdate()		1	1	2008-11-16 17:19:07	sa	2009-06-22 03:49:38	sa	3	0	0	1	6
+xxx_inv_rr	status	Status :		any	select			1	0	2010-03-08 18:25:30	manager	2010-03-08 18:25:53	manager	3	0	1	0	7
+xxx_inv_ss	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2008-11-17 14:38:12	sa	2010-02-11 23:55:23	manager	6	1	0	1	0
+xxx_inv_ss	brandcode	Brandcode :		any	select		makes:make:makename	1	0	2008-11-17 14:39:15	sa	2009-07-23 13:28:37	manager	2	1	0	0	3
+xxx_inv_ss	date1	As of :		date	text	eval:currentdate()		1	1	2008-11-17 14:40:25	sa	2010-02-12 00:00:58	manager	4	0	0	1	6
+xxx_inv_ss	itemcode	Item Code :		any	text			1	0	2010-02-12 00:01:37	manager	2010-02-12 00:01:37	manager	1	0	0	0	5
+xxx_inv_ss	itemgroup	Item Group :		any	select		itemgroups:itemgroup:itemgroupname	1	0	2008-11-17 14:39:43	sa	2012-01-22 10:49:35	manager	3	1	0	0	4
+xxx_inv_ss	whse	Warehouse :		any	select		warehouses:warehouse:warehousename	1	0	2008-11-17 14:38:52	sa	2010-02-12 00:39:50	manager	3	1	0	0	2
+xxx_inv_tj	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-27 15:35:25	manager	2011-09-27 15:35:25	manager	1	1	0	1	0
+xxx_inv_tj	date1	From :		date	text	eval:currentdate()		1	1	2011-09-27 15:35:53	manager	2011-09-27 15:35:53	manager	1	0	0	1	1
+xxx_inv_tj	date2	to :		date	text	eval:currentdate()		1	1	2011-09-27 15:36:12	manager	2011-09-27 15:36:12	manager	1	0	0	1	2
+xxx_inv_tj	docno	Document No. :		any	text			1	0	2011-09-27 15:37:38	manager	2011-09-27 15:39:01	manager	2	0	0	0	3
+xxx_inv_tj	doctype	Source Journal :		any	select	\\'GI\\',\\'GR\\',\\'GT\\',\\'TI\\',\\'TO\\'		1	0	2011-09-27 15:38:03	manager	2011-09-27 15:44:54	manager	2	0	1	1	4
+xxx_inv_tj	doctype_name	doctype_name		any	hidden	Inventory Journal		1	0	2011-09-27 15:38:44	manager	2011-09-27 15:38:44	manager	1	0	0	1	5
+xxx_jv_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-04 18:06:16	manager	2010-03-04 18:06:16	manager	1	1	0	1	0
+xxx_jv_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-04 18:07:58	manager	2010-03-04 18:07:58	manager	1	0	0	1	2
+xxx_jv_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-04 18:08:16	manager	2010-03-04 18:08:16	manager	1	0	0	1	3
+xxx_jv_list	docstatus	Status :		any	select			1	0	2010-03-04 18:09:16	manager	2010-03-04 18:14:38	manager	2	0	1	0	4
+xxx_jv_list	doctype	Document Group :		any	text			1	0	2010-03-04 18:07:20	manager	2010-03-04 18:07:20	manager	1	0	0	0	1
+xxx_pa	branch_no	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-02 17:06:22	manager	2010-03-02 17:06:22	manager	1	1	0	1	0
+xxx_pa	date_fm	From :		date	text	eval:currentdate()		1	1	2010-03-02 17:06:56	manager	2010-03-02 17:06:56	manager	1	0	0	1	1
+xxx_pa	date_to	to :		date	text	eval:currentdate()		1	1	2010-03-02 17:07:27	manager	2010-03-02 17:07:27	manager	1	0	0	1	2
+xxx_pdcassof	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2008-08-05 16:58:16	sa	2010-02-11 16:03:58	manager	4	1	0	1	0
+xxx_pdcassof	date1	As of :		date	text	eval:currentdate()		1	1	2008-08-05 16:58:36	sa	2010-02-11 16:04:27	manager	6	0	0	1	2
+xxx_pl_last_year_analysis	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-26 13:36:13	manager	2011-09-26 13:42:24	manager	2	1	0	1	0
+xxx_pl_last_year_analysis	date1	From :		date	text	eval:currentdate()		1	1	2011-09-26 13:36:40	manager	2011-09-26 13:37:47	manager	2	0	0	1	1
+xxx_pl_last_year_analysis	date2	to :		date	text	eval:currentdate()		1	1	2011-09-26 13:36:55	manager	2011-09-26 13:37:53	manager	2	0	0	1	2
+xxx_pl_last_year_analysis	zero	Include 0 balances :		any	select			1	0	2011-09-26 13:37:35	manager	2011-09-26 13:37:35	manager	1	0	1	0	3
+xxx_pl_with_last_year	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-25 06:26:15	manager	2011-09-25 06:26:15	manager	1	1	0	1	0
+xxx_pl_with_last_year	date1	From :		date	text	eval:currentdate()		1	1	2011-09-25 06:26:44	manager	2011-09-25 06:26:44	manager	1	0	0	1	1
+xxx_pl_with_last_year	date2	to :		date	text	eval:currentdate()		1	1	2011-09-25 06:26:58	manager	2011-09-25 06:26:58	manager	1	0	0	1	2
+xxx_pl_with_last_year	zero	Include 0 balances :		any	select			1	0	2011-09-25 06:27:33	manager	2011-09-25 06:27:33	manager	1	0	1	0	3
+xxx_pl_year_to_date	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-25 04:08:05	manager	2011-09-25 04:08:05	manager	1	1	0	1	0
+xxx_pl_year_to_date	date1	From :		date	text	eval:currentdate()		1	1	2011-09-25 04:08:34	manager	2012-06-26 19:52:12	manager	3	0	0	1	1
+xxx_pl_year_to_date	date2	to :		date	text	eval:currentdate()		1	1	2011-09-25 04:09:15	manager	2011-09-25 04:09:15	manager	1	0	0	1	3
+xxx_pl_year_to_date	zero	Include 0 balances :		any	select			1	0	2011-09-25 04:09:46	manager	2011-09-25 04:09:46	manager	1	0	1	0	4
+xxx_profit_loss_statement	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-24 21:19:36	manager	2011-09-24 21:19:36	manager	1	1	0	1	0
+xxx_profit_loss_statement	date1	From :		date	text	eval:currentdate()		1	1	2011-09-24 21:20:03	manager	2011-09-25 05:06:05	manager	2	0	0	1	1
+xxx_profit_loss_statement	date2	to :		date	text	eval:currentdate()		1	1	2011-09-24 21:21:15	manager	2011-09-24 21:21:15	manager	1	0	0	1	3
+xxx_profit_loss_statement	zero	Include 0 balances :		any	select			1	0	2011-09-24 21:26:44	manager	2011-09-24 21:27:06	manager	2	0	1	0	4
+xxx_prs	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2009-07-21 12:42:13	manager	2010-02-10 18:33:05	manager	2	1	0	1	0
+xxx_prs	date1	From :		date	text	eval:currentdate()		1	1	2009-07-21 12:44:16	manager	2009-07-21 12:44:16	manager	1	0	0	1	4
+xxx_prs	date2	to :		date	text	eval:currentdate()		1	1	2009-07-21 12:44:43	manager	2009-07-21 12:44:43	manager	1	0	0	1	5
+xxx_prs	status	Status :		any	select			1	0	2010-03-08 18:49:00	manager	2010-03-08 18:50:37	manager	3	0	1	0	7
+xxx_purchaseorder_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-17 15:02:08	manager	2010-03-17 15:02:08	manager	1	1	0	1	0
+xxx_purchaseorder_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-17 15:03:37	manager	2010-03-17 15:03:37	manager	1	0	0	1	1
+xxx_purchaseorder_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-17 15:03:50	manager	2010-03-17 15:03:50	manager	1	0	0	1	2
+xxx_purchaseorder_list	status	Status :		any	select			1	0	2010-03-17 15:04:31	manager	2010-03-17 15:04:31	manager	1	0	1	0	3
+xxx_pur_book	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2009-07-12 01:14:28	manager	2010-02-09 23:53:12	manager	5	1	0	1	0
+xxx_pur_book	date1	From :		date	text	eval:currentdate()		1	1	2009-07-12 01:15:37	manager	2009-07-12 01:15:37	manager	1	0	0	1	2
+xxx_pur_book	date2	to :		date	text	eval:currentdate()		1	1	2009-07-12 01:15:58	manager	2009-07-12 01:15:58	manager	1	0	0	1	3
+xxx_pur_tj	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-27 14:00:10	manager	2011-09-27 14:00:10	manager	1	1	0	1	0
+xxx_pur_tj	date1	From :		date	text	eval:currentdate()		1	1	2011-09-27 14:00:44	manager	2011-09-27 14:00:44	manager	1	0	0	1	1
+xxx_pur_tj	date2	to :		date	text	eval:currentdate()		1	1	2011-09-27 14:00:59	manager	2011-09-27 14:00:59	manager	1	0	0	1	3
+xxx_pur_tj	docno	Document No. :		any	text			1	0	2011-09-27 14:01:32	manager	2011-09-27 14:01:32	manager	1	0	0	0	3
+xxx_pur_tj	doctype	Source Journal :		any	select	\\'AP\\',\\'ACM\\',\\'PDN\\'		1	0	2011-09-27 14:01:59	manager	2011-09-27 14:05:45	manager	2	0	1	1	4
+xxx_pur_tj	doctype_name	doctype_name		any	hidden	Purchases and Payables Journal		1	0	2011-09-27 14:02:39	manager	2011-09-27 14:02:39	manager	1	0	0	1	6
+xxx_recurringposting	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-18 14:55:48	manager	2010-03-18 14:55:48	manager	1	1	0	1	0
+xxx_recurringposting	date1	From :		date	text	eval:currentdate()		1	1	2010-03-18 14:56:13	manager	2010-03-18 14:56:13	manager	1	0	0	1	1
+xxx_recurringposting	date2	to :		date	text	eval:currentdate()		1	1	2010-03-18 14:56:25	manager	2010-03-18 14:56:25	manager	1	0	0	1	2
+xxx_recurringposting	docstatus	Status :		any	select			1	0	2010-03-18 15:23:51	manager	2010-03-18 15:23:51	manager	1	0	1	0	3
+xxx_salesdelivery_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-17 14:26:54	manager	2010-03-17 14:26:54	manager	1	1	0	1	0
+xxx_salesdelivery_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-17 14:27:18	manager	2010-03-17 14:27:18	manager	1	0	0	1	1
+xxx_salesdelivery_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-17 14:27:30	manager	2010-03-17 14:27:30	manager	1	0	0	1	2
+xxx_salesdelivery_list	status	Status :		any	select			1	0	2010-03-17 14:28:09	manager	2010-03-17 14:28:09	manager	1	0	1	0	3
+xxx_salesorder_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-17 14:05:17	manager	2010-03-17 14:05:17	manager	1	1	0	1	0
+xxx_salesorder_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-17 14:05:58	manager	2010-03-17 14:05:58	manager	1	0	0	1	1
+xxx_salesorder_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-17 14:06:35	manager	2010-03-17 14:06:35	manager	1	0	0	1	2
+xxx_salesorder_list	status	Status :		any	select			1	0	2010-03-17 14:07:46	manager	2010-03-17 14:07:46	manager	1	0	1	0	3
+xxx_salesquotation_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-17 13:08:17	manager	2010-03-17 13:08:17	manager	1	1	0	1	0
+xxx_salesquotation_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-17 13:09:05	manager	2010-03-17 13:09:05	manager	1	0	0	1	1
+xxx_salesquotation_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-17 13:09:40	manager	2010-03-17 13:09:40	manager	1	0	0	1	2
+xxx_salesquotation_list	status	Status :		any	select			1	0	2010-03-17 13:11:21	manager	2010-03-17 13:11:21	manager	1	0	1	0	3
+xxx_salesreturn_list	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-03-17 14:37:40	manager	2010-03-17 14:37:40	manager	1	1	0	1	0
+xxx_salesreturn_list	date1	From :		date	text	eval:currentdate()		1	1	2010-03-17 14:38:02	manager	2010-03-17 14:38:02	manager	1	0	0	1	1
+xxx_salesreturn_list	date2	to :		date	text	eval:currentdate()		1	1	2010-03-17 14:38:17	manager	2010-03-17 14:38:17	manager	1	0	0	1	2
+xxx_salesreturn_list	status	Status :		any	select			1	0	2010-03-17 14:47:22	manager	2010-03-17 14:47:22	manager	1	0	1	0	3
+xxx_sales_analysis	branch_no	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-02-25 13:07:10	manager	2010-02-25 13:07:10	manager	1	1	0	1	0
+xxx_sales_analysis	date_fm	From :		date	text	eval:currentdate()		1	1	2010-02-25 13:07:38	manager	2010-02-25 13:08:08	manager	2	0	0	1	1
+xxx_sales_analysis	date_to	to :		date	text	eval:currentdate()		1	1	2010-02-25 13:08:03	manager	2010-02-25 13:08:03	manager	1	0	0	1	2
+xxx_sb	branch_no	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-02-08 13:17:11	manager	2010-02-08 13:17:11	manager	1	1	0	1	0
+xxx_sb	date_fm	From :		date	text	eval:currentdate()		1	1	2010-02-08 13:17:46	manager	2010-02-08 13:17:46	manager	1	0	0	1	1
+xxx_sb	date_to	to :		date	text	eval:currentdate()		1	1	2010-02-08 13:18:13	manager	2010-02-08 13:18:13	manager	1	0	0	1	2
+xxx_sl	acctno	GL Account Code :		any	text			1	0	2010-05-28 14:43:21	manager	2010-05-28 14:43:21	manager	1	0	0	0	1
+xxx_sl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-05-28 14:41:17	manager	2010-05-28 14:41:17	manager	1	1	0	1	0
+xxx_sl	date1	As of :		date	text	eval:currentdate()		1	1	2010-05-28 14:44:48	manager	2010-05-28 14:44:48	manager	1	0	0	1	2
+xxx_soa	bpcode	Customer :		any	text			1	1	2011-06-27 00:19:38	manager	2011-06-27 00:19:38	manager	1	0	0	0	1
+xxx_soa	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-02-09 22:32:18	manager	2010-02-09 22:32:18	manager	1	1	0	1	0
+xxx_soa	date1	From :		date	text	eval:currentdate()		1	1	2011-06-27 00:20:01	manager	2011-06-27 00:20:01	manager	1	0	0	1	2
+xxx_soa	date2	to :		date	text	eval:currentdate()		1	1	2011-06-27 00:20:18	manager	2011-06-27 00:20:18	manager	1	0	0	1	3
+xxx_sr_tj	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-27 03:06:30	manager	2011-09-27 03:06:30	manager	1	1	0	1	0
+xxx_sr_tj	date1	From :		date	text	eval:currentdate()		1	1	2011-09-27 03:07:01	manager	2011-09-27 03:07:01	manager	1	0	0	1	1
+xxx_sr_tj	date2	to :		date	text	eval:currentdate()		1	1	2011-09-27 03:07:15	manager	2011-09-27 03:07:15	manager	1	0	0	1	2
+xxx_sr_tj	docno	Document No. :		any	text			1	0	2011-09-27 03:07:46	manager	2011-09-27 03:07:46	manager	1	0	0	0	3
+xxx_sr_tj	doctype	Source Journal :		any	select	\\'AR\\',\\'DN\\',\\'CM\\',\\'CS\\',\\'RT\\'		1	0	2011-09-27 15:29:17	manager	2011-09-27 15:29:17	manager	1	0	1	1	5
+xxx_sr_tj	doctype_name	doctype_name		any	hidden	Sales and Receivables Journal		1	0	2011-09-27 03:12:37	manager	2011-09-27 03:12:47	manager	2	0	0	1	5
+xxx_stock_aging	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2008-11-12 14:28:30	sa	2010-02-13 00:59:57	manager	4	1	0	1	0
+xxx_stock_aging	date1	As of :		date	text	eval:currentdate()		1	1	2008-11-12 14:30:28	sa	2009-06-22 03:56:37	sa	3	0	0	1	4
+xxx_stock_aging	whse	Warehouse :		any	select		warehouses:warehouse:warehousename	1	0	2008-11-12 14:30:06	sa	2008-11-12 14:30:06	sa	1	1	0	0	2
+xxx_stock_ledger	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2009-04-17 22:15:26	sa	2010-02-12 01:46:27	manager	3	1	0	1	0
+xxx_stock_ledger	date1	Date from :		date	text	eval:currentdate()		1	1	2009-04-17 22:20:13	sa	2009-04-18 00:35:07	sa	2	0	0	1	4
+xxx_stock_ledger	date2	to :		date	text	eval:currentdate()		1	1	2009-04-18 00:35:54	sa	2009-04-18 00:37:37	sa	2	0	0	1	5
+xxx_stock_ledger	department	Department :		any	hidden			1	1	2009-04-17 22:16:17	sa	2010-02-12 01:46:52	manager	4	0	0	0	1
+xxx_stock_ledger	itemcode	Itemcode :		any	text			1	1	2009-04-17 22:17:40	sa	2009-04-17 22:30:51	sa	5	0	0	0	3
+xxx_stock_ledger	whse	Warehouse :		any	select		warehouses:warehouse:warehousename	1	1	2009-04-17 22:17:14	sa	2009-04-17 22:17:14	sa	1	1	0	0	2
+xxx_sttrans	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-04-26 15:12:43	manager	2010-04-26 15:12:43	manager	1	1	0	1	0
+xxx_sttrans	date1	From :		date	text	eval:currentdate()		1	1	2010-04-26 15:13:04	manager	2010-04-26 15:13:04	manager	1	0	0	1	1
+xxx_sttrans	date2	to :		date	text	eval:currentdate()		1	1	2010-04-26 15:13:18	manager	2010-04-26 15:13:18	manager	1	0	0	1	2
+xxx_sttrans	status	Status :		any	select			1	0	2010-04-26 15:14:09	manager	2010-04-26 15:14:09	manager	1	0	1	0	3
+xxx_supp_ledger	bpcode	Supplier No. :		any	text			1	1	2010-05-31 01:04:32	manager	2010-05-31 01:04:32	manager	1	0	0	0	1
+xxx_supp_ledger	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2010-05-31 01:03:51	manager	2010-05-31 01:03:51	manager	1	1	0	1	0
+xxx_supp_ledger	date1	From :		date	text	eval:currentdate()		1	1	2010-05-31 01:05:14	manager	2010-05-31 01:05:14	manager	1	0	0	1	2
+xxx_supp_ledger	date2	to :		date	text	eval:currentdate()		1	1	2010-05-31 01:05:34	manager	2010-05-31 01:05:34	manager	1	0	0	1	3
+xxx_transaction_journals	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-26 16:13:29	manager	2011-09-26 16:14:28	manager	2	1	0	1	0
+xxx_transaction_journals	date1	From :		date	text	eval:currentdate()		1	1	2011-09-26 16:13:50	manager	2011-09-26 16:32:05	manager	3	0	0	1	1
+xxx_transaction_journals	date2	to :		date	text	eval:currentdate()		1	1	2011-09-26 16:14:09	manager	2011-09-26 16:32:10	manager	3	0	0	1	2
+xxx_transaction_journals	docno	Document No. :		any	text			1	0	2011-09-26 16:24:33	manager	2011-09-26 16:32:16	manager	2	0	0	0	3
+xxx_trans_journal	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2009-02-17 08:42:09	manager	2010-02-15 00:07:41	manager	5	1	0	1	0
+xxx_trans_journal	date1	From :		date	text	eval:currentdate()		1	1	2009-02-17 08:49:02	manager	2010-02-15 00:11:18	manager	9	0	0	1	3
+xxx_trans_journal	date2	To :		date	text	eval:currentdate()		1	1	2009-02-17 08:49:19	manager	2009-05-05 18:28:20	manager	5	0	0	1	4
+xxx_trans_journal	doctype	Document Group :		any	text			1	0	2009-05-04 11:53:53	manager	2010-02-15 00:25:43	manager	14	0	0	0	2
+xxx_trial_balance	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2011-09-18 02:04:26	manager	2011-09-18 02:04:26	manager	1	1	0	1	0
+xxx_trial_balance	date2	As of :		date	text	eval:currentdate()		1	1	2011-09-18 03:06:51	manager	2011-09-18 12:51:39	manager	2	0	0	1	2
+xxx_unappliedcustdeposit	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2008-08-05 17:12:03	sa	2010-02-11 16:42:33	manager	4	1	0	1	0
+xxx_unappliedcustdeposit	date1	As of :		date	text	eval:currentdate()		1	1	2009-06-21 22:36:34	sa	2009-06-21 22:45:00	sa	2	0	0	1	2

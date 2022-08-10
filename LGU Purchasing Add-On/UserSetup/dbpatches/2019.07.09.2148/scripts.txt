@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lgusplitpo','pdprofitcenter','Deliver To','any',50,30,null,0,'profitcenters:profitcenter:profitcentername',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.09.2148' WHERE ID='GPS.LGUPurchasing';

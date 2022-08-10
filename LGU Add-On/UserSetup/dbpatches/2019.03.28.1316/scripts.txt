@@ -1,0 +1,7 @@
+evaltrx:registerAddonMenu('GPS','LGU');
+evaltrx:addAddonMenu('GPS','LGU','LGU',500);
+evaltrx:addAddonMenu('GPS','LGU','LGU',530);
+evaltrx:addAddonMenu('GPS','LGU','LGU',600);
+evaltrx:addAddonMenu('GPS','LGU','LGU',700);
+evaltrx:addAddonMenu('GPS','LGU','LGU',1000);
+UPDATE DBVERSION SET VERSION='2019.03.28.1316' WHERE ID='GPS.LGU';

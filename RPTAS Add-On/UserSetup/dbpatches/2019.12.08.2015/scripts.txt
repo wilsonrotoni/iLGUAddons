@@ -1,0 +1,6 @@
+evaltrx:addUDP('billsearchproperty','Bill Search Property','N','');
+evaltrx:addUDF('u_paymenthistory','issuedby','Issued By','any',100,160,'',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_paymenthistory','payyear','Pay Year','any',10,90,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('users','manualpostingflag','Manual Posting','numeric',1,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbill','ismanualposting','Is Manual Posting','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.12.08.2015' WHERE ID='GPS.RPTAS';

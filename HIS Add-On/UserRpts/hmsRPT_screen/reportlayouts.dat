@@ -1,0 +1,207 @@
+PROGID	PRINTLAYOUT	LOCATION	REPORTFILE	ISDEFAULT	ISACTIVE	DATECREATED	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION	VIEWERTYPE	USERPARAMS	USERGROUPPARAMS	USERROLEPARAMS	DOCSTATUSPARAMS
+sysRptaging	DETAILS	HIS Add-On	AR_AGING\\std_aging3.rpt	1	1	2010-05-30 22:43:48	manager	2014-03-03 13:17:44	manager	5	1				
+sysRptaging	DETAILS W/ PAYMENTS DETAILS	HIS Add-On	AR_AGING\\std_aging3_payment_details.rpt	0	1	2010-02-07 23:01:38	manager	2014-03-03 13:17:56	manager	7	1				
+sysRptaging	SUMMARY	HIS Add-On	AR_AGING\\std_aging3_summary.rpt	0	1	2010-05-30 23:08:11	manager	2014-03-03 13:17:44	manager	3	1				
+sysRptAP_AGING	DETAILS	HIS Add-On	AP_AGING\\std_ap_aging3_details.rpt	1	1	2009-09-27 02:22:40	manager	2014-03-03 13:44:21	manager	7	1				
+sysRptAP_AGING	DETAILS W/ PAYMENTS DETAILS	HIS Add-On	AP_AGING\\std_ap_aging3_payment_details.rpt	0	1	2014-03-03 13:32:27	manager	2014-03-03 13:32:27	manager	1	1				
+sysRptAP_AGING	SUMMARY	HIS Add-On	AP_AGING\\std_ap_aging3_payment_sum.rpt	0	1	2014-03-03 13:28:19	manager	2014-03-03 13:32:27	manager	2	1				
+sysRpthis_reqrpts	Consultancy Requests	HIS Add-On	consult_req_listing.rpt	0	1	2013-10-07 19:21:36	manager	2013-10-07 19:21:36	manager	1	1				
+sysRpthis_reqrpts	Laboratory Tests Requests	HIS Add-On	lab_req_listing.rpt	0	1	2013-10-07 19:21:36	manager	2013-10-07 19:21:36	manager	1	1				
+sysRpthis_reqrpts	Medicines and Supplies Requests	HIS Add-On	medsup_req_listing.rpt	1	1	2013-10-07 19:19:05	manager	2013-10-07 19:19:05	manager	1	1				
+sysRpthis_reqrpts	Miscellaneous Requests	HIS Add-On	misc_req_listing.rpt	0	1	2013-10-07 19:21:36	manager	2013-10-07 19:21:36	manager	1	1				
+sysRpthis_reqrpts	Special Room Requests	HIS Add-On	sroom_req_listing.rpt	0	1	2013-10-07 19:21:36	manager	2013-10-07 19:21:36	manager	1	1				
+sysRpthms_apinvsum	Details	HIS Add-On	ap_details.rpt	1	1	2013-06-20 16:39:04	manager	2013-06-20 16:39:04	manager	1	1				
+sysRpthms_apinvsum	Summary	HIS Add-On	ap_sum.rpt	0	1	2013-06-20 16:39:04	manager	2013-06-20 16:39:04	manager	1	1				
+sysRpthms_ap_aging	Details	HIS Add-On	AP_AGING\\ap_aging3_details.rpt	1	1	2013-06-20 15:41:57	manager	2013-11-13 12:54:58	manager	2	1				
+sysRpthms_ap_aging	Details w/ Payments Details	HIS Add-On	AP_AGING\\ap_aging3_payment_details.rpt	0	1	2013-11-13 12:54:58	manager	2013-11-13 12:54:58	manager	1	1				
+sysRpthms_ap_aging	Summary	HIS Add-On	AP_AGING\\ap_aging3_sum.rpt	0	1	2013-06-20 15:41:57	manager	2013-11-13 12:54:58	manager	2	1				
+sysRpthms_ap_aging2	Details	HIS Add-On	AP_AGING\\std_ap_aging3_details.rpt	1	1	2014-03-03 18:36:29	manager	2014-03-03 18:36:29	manager	1	1				
+sysRpthms_ap_aging2	Details w/ Payments Details	HIS Add-On	AP_AGING\\std_ap_aging3_payment_details.rpt	0	1	2014-03-03 18:36:29	manager	2014-03-03 18:36:29	manager	1	1				
+sysRpthms_ap_aging2	Summary	HIS Add-On	AP_AGING\\std_ap_aging3_payment_sum.rpt	0	1	2014-03-03 18:36:29	manager	2014-03-03 18:36:29	manager	1	1				
+sysRpthms_araging	Details	HIS Add-On	AR_AGING\\aging3.rpt	1	1	2013-06-11 18:22:54	manager	2013-06-11 18:22:54	manager	1	1				
+sysRpthms_araging	Details w/ Payments Details	HIS Add-On	AR_AGING\\aging3_payment_details.rpt	0	1	2013-06-11 18:22:54	manager	2013-06-11 18:22:54	manager	1	1				
+sysRpthms_araging	Summary	HIS Add-On	AR_AGING\\aging3_summary.rpt	0	1	2013-06-11 18:22:54	manager	2013-06-11 18:22:54	manager	1	1				
+sysRptHMS_ARAGING2	Details	HIS Add-On	AR_AGING\\std_aging3.rpt	1	1	2014-03-03 18:18:43	manager	2014-03-03 18:18:43	manager	1	1				
+sysRptHMS_ARAGING2	Details w/ Payments Details	HIS Add-On	AR_AGING\\std_aging3_payment_details.rpt	0	1	2014-03-03 18:18:43	manager	2014-03-03 18:18:43	manager	1	1				
+sysRptHMS_ARAGING2	Summary	HIS Add-On	AR_AGING\\std_aging3_summary.rpt	0	1	2014-03-03 18:18:43	manager	2014-03-03 18:18:43	manager	1	1				
+sysRpthms_bl	Details	HIS Add-On	FS\\bank_ledger_detail.rpt	1	1	2013-06-20 18:15:38	manager	2013-06-20 18:16:18	manager	2	1				
+sysRpthms_bl	Summary	HIS Add-On	FS\\bank_ledger_summary.rpt	0	1	2013-06-20 18:16:18	manager	2013-06-20 18:16:18	manager	1	1				
+sysRpthms_bs	All Levels	HIS Add-On	FS\\balance_sheet_standard.rpt	1	1	2013-06-20 17:57:48	manager	2014-03-06 11:41:23	manager	2	1				
+sysRpthms_bs	Level 1	HIS Add-On	FS\\balance_sheet_standard_level_1.rpt	0	1	2014-03-06 11:41:23	manager	2014-03-06 11:41:23	manager	1	1				
+sysRpthms_bs	Level 2	HIS Add-On	FS\\balance_sheet_standard_level_2.rpt	0	1	2014-03-06 11:41:23	manager	2014-03-06 11:41:23	manager	1	1				
+sysRpthms_bs	Level 3	HIS Add-On	FS\\balance_sheet_standard_level_3.rpt	0	1	2013-06-20 17:57:48	manager	2014-03-06 11:41:23	manager	2	1				
+sysRpthms_census_filter_roomtype	Cases Report	HIS Add-On	census_filter_roomtype.rpt	1	1	2013-06-06 16:04:29	manager	2013-06-11 09:52:55	manager	2	1				
+sysRpthms_census_filter_roomtype_by_f	Census Report	HIS Add-On	census_filter_roomtype_by_f.rpt	1	1	2013-06-06 16:16:11	manager	2013-06-11 09:53:48	manager	2	1				
+sysRpthms_cf2	Claim Form 2	HIS Add-On	PHIC\\transmittal_phic_details1.rpt	1	1	2013-06-11 15:37:12	manager	2013-06-11 15:37:12	manager	1	1				
+sysRpthms_cf2	Claim Form 2 - Package	HIS Add-On	PHIC\\transmittal_phic_package_details1.rpt	0	1	2013-06-11 16:31:50	manager	2013-06-11 16:31:50	manager	1	1				
+sysRpthms_chrgrpts	Details - Filtered by Profit Center	HIS Add-On	LISTING\\charge_profit_list.rpt	0	1	2014-03-31 11:48:19	manager	2014-03-31 11:48:19	manager	1	1				
+sysRpthms_chrgrpts	Details - Section	HIS Add-On	LISTING\\charge_list.rpt	1	1	2014-03-13 23:21:48	manager	2014-03-31 11:52:42	manager	2	1				
+sysRpthms_chrgrpts	Summary - Filtered by Profit Center 	HIS Add-On	LISTING\\charge_profit_sum.rpt	0	1	2014-03-31 11:48:19	manager	2014-03-31 11:48:19	manager	1	1				
+sysRpthms_chrgrpts	Summary - Section	HIS Add-On	LISTING\\charge_sum.rpt	0	1	2014-03-13 23:21:48	manager	2014-03-31 11:52:42	manager	2	1				
+sysRpthms_coa	COA	HIS Add-On	FS\\coa.rpt	1	1	2013-06-29 18:12:58	manager	2013-06-29 18:12:58	manager	1	1				
+sysRpthms_daily_census	Daily Census	HIS Add-On	daily_census.rpt	1	1	2013-06-06 15:48:01	manager	2013-06-11 09:52:02	manager	2	1				
+sysRpthms_daily_census	Daily Room Census	HIS Add-On	daily_census2.rpt	0	1	2013-08-22 18:58:24	manager	2013-08-22 18:58:24	manager	1	1				
+sysRpthms_dcr	Details	HIS Add-On	BNK\\dcr.rpt	1	1	2013-08-29 14:25:04	manager	2014-03-30 19:59:52	manager	2	1				
+sysRpthms_dcr	Details - Group by Mode of Payment	HIS Add-On	BNK\\dcr2.rpt	0	1	2014-04-08 13:24:17	manager	2014-04-08 20:22:01	manager	4	1				
+sysRpthms_dcr	Summary	HIS Add-On	BNK\\dcr_sum.rpt	0	1	2014-03-30 19:56:51	manager	2014-03-30 19:56:51	manager	1	1				
+sysRpthms_deips	Details	HIS Add-On	INV\\dep_exp_iss_pur_st_details.rpt	1	1	2013-08-07 17:03:51	manager	2013-08-20 15:21:06	manager	2	1				
+sysRpthms_deips	Summary	HIS Add-On	INV\\dep_exp_iss_pur_st_summary.rpt	0	1	2013-08-07 17:03:51	manager	2013-08-20 15:21:06	manager	2	1				
+sysRpthms_dietL	Diet Card	HIS Add-On	diet_card.rpt	1	1	2013-07-03 16:07:29	manager	2013-07-03 16:07:29	manager	1	1				
+sysRpthms_dietL	Diet List	HIS Add-On	diet_list.rpt	1	1	2013-06-20 13:55:39	manager	2013-06-20 13:55:39	manager	1	1				
+sysRpthms_dl	Discharged List	HIS Add-On	discharge_list.rpt	1	1	2013-06-20 12:56:04	manager	2013-06-20 12:56:04	manager	1	1				
+sysRpthms_gl	Details	HIS Add-On	FS\\general_ledger_detail.rpt	1	1	2013-06-20 17:28:03	manager	2013-06-20 17:28:03	manager	1	1				
+sysRpthms_gl	Summary	HIS Add-On	FS\\general_ledger_summary.rpt	0	1	2013-06-20 17:28:03	manager	2013-06-20 17:28:03	manager	1	1				
+sysRpthms_heartstation	Details with Reference Section	HIS Add-On	LISTING\\charge_profit_list.rpt	0	1	2014-03-31 14:19:17	manager	2014-03-31 14:19:17	manager	1	1				
+sysRpthms_heartstation	Summary by Item	HIS Add-On	LISTING\\charge_profit_sum.rpt	0	1	2014-03-31 14:19:17	manager	2014-03-31 14:19:17	manager	1	1				
+sysRpthms_heartstation	Summary Report	HIS Add-On	LISTING\\hs_list.rpt	1	1	2013-07-03 19:28:25	manager	2014-03-31 14:14:39	manager	4	1				
+sysRpthms_heartstation	Summary Report - Patient Reg.	HIS Add-On	LISTING\\hs_list_sum.rpt	0	1	2013-07-30 16:16:35	manager	2014-03-31 14:16:29	manager	4	1				
+sysRpthms_inv_SCvsActual	Details	HIS Add-On	INV\\inv_SCvsActual.rpt	1	1	2013-08-20 15:07:02	manager	2013-08-20 15:07:02	manager	1	1				
+sysRpthms_inv_SCvsActual	Summary	HIS Add-On	INV\\inv_SCvsActual_sum.rpt	0	1	2013-08-20 15:07:02	manager	2013-08-20 15:07:02	manager	1	1				
+sysRpthms_iop_ledger	1. Admission Report	HIS Add-On	ROD_ledger_sum.rpt	1	1	2013-11-11 16:23:07	manager	2013-11-11 16:25:25	manager	2	1				
+sysRpthms_iop_ledger	2. ROD Ledger Report	HIS Add-On	ROD_ledger.rpt	0	1	2013-11-11 16:23:07	manager	2013-11-11 16:25:25	manager	2	1				
+sysRpthms_iop_ledger	3. OPD Census Report	HIS Add-On	OPD_ledger.rpt	0	1	2013-11-11 16:23:07	manager	2013-11-11 16:25:25	manager	2	1				
+sysRpthms_iop_ledger	4. OPD Consultation Fee Report	HIS Add-On	OPD_ledger_sum.rpt	0	1	2013-11-11 16:23:07	manager	2013-11-11 16:25:25	manager	2	1				
+sysRpthms_ixr	Inventory Expiration Report	HIS Add-On	INV\\invexp.rpt	1	1	2013-06-26 21:23:14	manager	2013-06-26 21:23:14	manager	1	1				
+sysRpthms_lablist	Expenses Report	HIS Add-On	LISTING\\lab_exp.rpt	0	1	2013-08-07 16:33:15	manager	2014-03-21 14:40:05	manager	3	1				
+sysRpthms_lablist	Statistical Report	HIS Add-On	LISTING\\lab_stat.rpt	0	1	2013-06-30 18:41:55	manager	2014-03-21 14:47:51	manager	5	1				
+sysRpthms_lablist	Statistical Report (Amount) - Per Year	HIS Add-On	LISTING\\lab_stat_year_amt.rpt	0	1	2013-07-30 15:20:18	manager	2014-03-21 14:53:04	manager	2	1				
+sysRpthms_lablist	Statistical Report (Quantity) - Per Year	HIS Add-On	LISTING\\lab_stat_year_qty.rpt	0	1	2013-07-30 14:50:29	manager	2014-03-21 14:57:06	manager	4	1				
+sysRpthms_lablist	Summary Report	HIS Add-On	LISTING\\lab_list.rpt	1	1	2013-06-30 17:50:29	manager	2014-03-21 14:25:09	manager	5	1				
+sysRpthms_lablist	Summary Report - By Payment Term	HIS Add-On	LISTING\\lab_list2.rpt	0	1	2013-08-23 12:40:46	manager	2014-03-21 14:31:59	manager	3	1				
+sysRpthms_lablist	Summary Report - Per Procedure	HIS Add-On	LISTING\\lab_list_sum.rpt	0	1	2013-07-30 16:14:51	manager	2014-03-21 14:25:09	manager	2	1				
+sysRpthms_log_book	Log Book	HIS Add-On	log_book.rpt	1	1	2013-06-06 15:39:48	manager	2013-06-11 09:49:42	manager	2	1				
+sysRpthms_minmax	Maximum Level	HIS Add-On	INV\\maxlvl.rpt	0	1	2013-06-26 15:08:34	manager	2013-06-26 15:08:34	manager	1	1				
+sysRpthms_minmax	Minimum Level	HIS Add-On	INV\\minlvl.rpt	1	1	2013-06-26 14:51:28	manager	2013-06-26 15:08:34	manager	2	1				
+sysRpthms_nursinginv	Medicines and Supplies Inventory Report	HIS Add-On	INV\\med_inv.rpt	1	1	2013-07-04 10:00:31	manager	2013-08-20 15:59:00	manager	2	1				
+sysRpthms_pf	Cash Professional Fee Receipts	HIS Add-On	doc_prof_fees.rpt	0	1	2013-11-12 16:22:43	manager	2014-03-30 20:28:24	manager	2	1				
+sysRpthms_pf	Doctors Professional Fee	HIS Add-On	doc_prof_fees_sum.rpt	0	1	2013-11-12 16:22:43	manager	2013-11-12 16:22:43	manager	1	1				
+sysRpthms_pf	Professional Fees Summary Report	HIS Add-On	LISTING\\consult_list.rpt	1	1	2013-07-03 23:36:12	manager	2014-03-30 20:28:24	manager	6	1				
+sysRpthms_phamorpts	Cash to Cash Basis - Per Registration Type	HIS Add-On	LISTING\\pha_stat_year_qty_ca.rpt	0	1	2013-08-23 19:42:51	manager	2014-03-21 13:22:58	manager	2	1				
+sysRpthms_phamorpts	Charged Basis - Per Payment Term	HIS Add-On	LISTING\\pha_stat_year_qty_chpt.rpt	0	1	2013-08-23 19:42:51	manager	2014-03-21 13:25:12	manager	2	1				
+sysRpthms_phamorpts	Charged Basis - Per Registration Type	HIS Add-On	LISTING\\pha_stat_year_qty_ch.rpt	1	1	2013-08-23 19:42:51	manager	2014-03-21 13:27:11	manager	2	1				
+sysRpthms_phamorpts	Exempt Prohibited & Exempt Regulated Drugs	HIS Add-On	LISTING\\pha_stat_year_qty_exempt.rpt	0	1	2013-08-23 19:42:51	manager	2014-03-21 13:29:06	manager	2	1				
+sysRpthms_phamorpts	Prohibited Drugs Per Classification	HIS Add-On	LISTING\\pha_stat_year_qty_prohibit.rpt	0	1	2013-08-23 19:42:51	manager	2014-03-21 13:30:50	manager	2	1				
+sysRpthms_phamorpts	Regulated Drugs Per Classification	HIS Add-On	LISTING\\pha_stat_year_qty_regulated.rpt	0	1	2013-08-23 19:42:51	manager	2014-03-21 13:32:32	manager	2	1				
+sysRpthms_pharpt	Summary Report	HIS Add-On	LISTING\\pharma_list.rpt	1	1	2013-08-22 22:23:38	manager	2014-03-21 13:17:26	manager	2	1				
+sysRpthms_pl	All Levels	HIS Add-On	FS\\profit_and_loss_statement.rpt	1	1	2013-06-20 18:01:39	manager	2014-03-06 11:46:53	manager	2	1				
+sysRpthms_pl	Level 1	HIS Add-On	FS\\profit_and_loss_statement_level_1.rpt	0	1	2014-03-06 11:46:53	manager	2014-03-06 11:46:53	manager	1	1				
+sysRpthms_pl	Level 2	HIS Add-On	FS\\profit_and_loss_statement_level_2.rpt	0	1	2014-03-06 11:46:53	manager	2014-03-06 11:46:53	manager	1	1				
+sysRpthms_pl	Level 3	HIS Add-On	FS\\profit_and_loss_statement_level_3.rpt	0	1	2013-06-20 18:01:39	manager	2014-03-06 11:46:53	manager	2	1				
+sysRpthms_povrr	By Items	HIS Add-On	POVRR\\POvRR_Summary_item.rpt	0	1	2013-06-20 17:03:02	manager	2013-06-20 17:03:02	manager	1	1				
+sysRpthms_povrr	By Suppliers	HIS Add-On	POVRR\\POvRR_Summary_supp.rpt	1	1	2013-06-20 17:03:02	manager	2013-06-20 17:03:46	manager	2	1				
+sysRpthms_prl	Price List	HIS Add-On	INV\\price_list.rpt	1	1	2013-07-09 23:12:03	manager	2013-08-20 16:01:36	manager	2	1				
+sysRpthms_pulmolist	Pulmonary Audit Report	HIS Add-On	LISTING\\pulmo_list.rpt	1	1	2013-06-30 15:49:03	manager	2014-03-21 13:03:00	manager	2	1				
+sysRpthms_pulmopr	Pulmonary Patient Records	HIS Add-On	LISTING\\pulmo_patient_rec.rpt	1	1	2013-06-30 16:21:59	manager	2014-03-21 13:10:46	manager	2	1				
+sysRpthms_radiolist	Summary Report	HIS Add-On	LISTING\\radio_list.rpt	1	1	2013-06-30 17:10:35	manager	2014-03-21 13:55:33	manager	3	1				
+sysRpthms_radiolist	Summary Report - Patient Reg.	HIS Add-On	LISTING\\radio_list_sum.rpt	0	1	2013-07-30 16:12:52	manager	2014-03-31 14:15:13	manager	3	1				
+sysRpthms_reqrpts	Details	HIS Add-On	LISTING\\cash_list.rpt	1	1	2014-03-13 21:51:00	manager	2014-03-13 21:51:00	manager	1	1				
+sysRpthms_reqrpts	Summary	HIS Add-On	LISTING\\cash_sum.rpt	0	1	2014-03-13 22:09:04	manager	2014-03-13 22:09:04	manager	1	1				
+sysRpthms_roompl	Room Price List	HIS Add-On	INV\\room_price_list.rpt	1	1	2013-08-23 01:25:37	manager	2013-08-23 01:25:37	manager	1	1				
+sysRpthms_rvd	Request vs Delivery Report	HIS Add-On	INV\\request_vs_deliver.rpt	1	1	2013-07-04 12:12:44	manager	2013-08-20 16:00:32	manager	2	1				
+sysRpthms_soa	Final Billing - Details	HIS Add-On	SOA\\soa_details_f.rpt	0	1	2013-08-07 11:37:57	manager	2013-08-07 11:37:57	manager	1	1				
+sysRpthms_soa	Final Billing - Summary	HIS Add-On	SOA\\soa_f.rpt	0	1	2013-08-07 11:37:57	manager	2013-08-07 11:37:57	manager	1	1				
+sysRpthms_soa	Pre-billing - Details	HIS Add-On	SOA\\soa_details.rpt	0	1	2013-06-25 13:24:49	manager	2013-08-07 11:37:57	manager	3	1				
+sysRpthms_soa	Pre-billing - Summary	HIS Add-On	SOA\\soa.rpt	1	1	2013-06-11 17:46:45	manager	2013-08-07 11:37:57	manager	4	1				
+sysRpthms_splroom	Special Rooms Report	HIS Add-On	splroom_list.rpt	1	1	2013-07-04 00:18:13	manager	2013-07-04 00:18:13	manager	1	1				
+sysRpthms_sumpo	GROUP BY ITEM, SUPPLIER, WAREHOUSE	HIS Add-On	po_details6.rpt	0	1	2014-02-27 19:59:56	manager	2014-02-27 19:59:56	manager	1	1				
+sysRpthms_sumpo	GROUP BY ITEM, WAREHOUSE, SUPPLIER	HIS Add-On	po_details7.rpt	0	1	2014-02-27 19:59:56	manager	2014-02-27 19:59:56	manager	1	1				
+sysRpthms_sumpo	GROUP BY SUPPLIER, ITEMS	HIS Add-On	po_details.rpt	1	1	2013-06-20 16:15:01	manager	2014-02-27 19:59:56	manager	2	1				
+sysRpthms_sumpo	GROUP BY SUPPLIER, PO	HIS Add-On	po_details2.rpt	0	1	2014-02-27 19:59:56	manager	2014-02-27 19:59:56	manager	1	1				
+sysRpthms_sumpo	GROUP BY WAREHOUSE, ITEM, SUPPLIER 	HIS Add-On	po_details5.rpt	0	1	2014-02-27 19:59:56	manager	2014-02-27 19:59:56	manager	1	1				
+sysRpthms_sumpo	GROUP BY WAREHOUSE, PO	HIS Add-On	po_details3.rpt	0	1	2014-02-27 19:59:56	manager	2014-02-27 19:59:56	manager	1	1				
+sysRpthms_sumpo	GROUP BY WAREHOUSE, SUPPLIER, ITEM	HIS Add-On	po_details4.rpt	0	1	2014-02-27 19:59:56	manager	2014-02-27 19:59:56	manager	1	1				
+sysRpthms_sumpo	SUMMARIZED PURCHASE ORDER REPORT - ALL	HIS Add-On	po_sum.rpt	0	1	2014-02-27 19:59:56	manager	2014-02-27 19:59:56	manager	1	1				
+sysRpthms_sumpo	SUMMARIZED PURCHASE ORDER REPORT - WITH FILTER	HIS Add-On	po_sum2.rpt	0	1	2014-02-27 19:59:56	manager	2014-02-27 19:59:56	manager	1	1				
+sysRpthms_tb	Trial Balance	HIS Add-On	FS\\trial_balance.rpt	1	1	2013-06-20 17:35:35	manager	2013-06-20 17:35:35	manager	1	1				
+sysRpthms_trans	1. Mother Transmittal - Package	HIS Add-On	TRANS\\mother_transmittal_pkg.rpt	1	1	2013-06-21 19:08:42	manager	2013-06-21 19:08:42	manager	1	1				
+sysRpthms_trans	2. Details - Package	HIS Add-On	TRANS\\transmittal_pkg_list.rpt	0	1	2013-06-21 11:46:43	manager	2013-08-20 14:46:36	manager	5	1				
+sysRpthms_trans	3. Summary - Package	HIS Add-On	TRANS\\transmittal_pkg_sum.rpt	0	1	2013-06-21 11:46:43	manager	2013-08-20 14:46:36	manager	5	1				
+sysRpthms_trans	4. Mother Transmittal	HIS Add-On	TRANS\\mother_transmittal.rpt	0	1	2013-06-21 19:08:42	manager	2013-08-20 14:46:36	manager	3	1				
+sysRpthms_trans	5. Details	HIS Add-On	TRANS\\transmittal_list.rpt	0	1	2013-06-21 11:46:43	manager	2013-08-20 14:46:36	manager	5	1				
+sysRpthms_trans	6. Summary	HIS Add-On	TRANS\\transmittal_list_sum.rpt	0	1	2013-06-21 11:46:43	manager	2013-08-20 14:46:36	manager	5	1				
+sysRpthms_transpay	Package Professional Fee	HIS Add-On	BNK\\pack_prof_fee.rpt	0	1	2013-12-11 14:13:50	manager	2013-12-11 14:13:50	manager	1	1				
+sysRpthms_transpay	Payment Report	HIS Add-On	BNK\\trans_payment.rpt	1	1	2013-06-21 13:46:00	manager	2013-06-21 13:46:00	manager	1	1				
+sysRpthms_transpay	Underpayment (Slash) Report	HIS Add-On	BNK\\trans_underpayment.rpt	0	1	2013-06-21 13:46:00	manager	2013-06-21 13:46:00	manager	1	1				
+sysRpthms_trans_hmo	1. Details	HIS Add-On	HMO\\transmittal_hmo.rpt	1	1	2013-06-11 16:55:51	manager	2013-06-11 16:55:51	manager	1	1				
+sysRpthms_trans_hmo	2. Summary	HIS Add-On	HMO\\transmittal_hmo_summary.rpt	0	1	2013-06-11 16:55:51	manager	2013-06-11 16:55:51	manager	1	1				
+sysRpthms_trans_hmo	3. Details - Package	HIS Add-On	HMO\\transmittal_hmo_package.rpt	0	1	2013-06-11 16:55:51	manager	2013-06-11 16:55:51	manager	1	1				
+sysRpthms_trans_hmo	4. Summary - Package	HIS Add-On	HMO\\transmittal_hmo_summary_package.rpt	0	1	2013-06-11 16:55:51	manager	2013-06-11 16:55:51	manager	1	1				
+sysRpthms_trans_phic	1. Details	HIS Add-On	PHIC\\transmittal_phic.rpt	1	1	2013-06-11 09:40:29	manager	2013-06-11 10:00:59	manager	5	1				
+sysRpthms_trans_phic	2. Summary	HIS Add-On	PHIC\\transmittal_phic_summary.rpt	0	1	2013-06-11 09:56:20	manager	2013-06-11 10:00:59	manager	3	1				
+sysRpthms_trans_phic	3. Details - Package	HIS Add-On	PHIC\\transmittal_phic_package.rpt	0	1	2013-06-11 09:59:04	manager	2013-06-11 10:00:59	manager	2	1				
+sysRpthms_trans_phic	4. Summary - Package	HIS Add-On	PHIC\\transmittal_phic_summary_package.rpt	0	1	2013-06-11 09:59:04	manager	2013-06-11 10:00:59	manager	2	1				
+sysRptinv_stock_status_all_whse_w_cost	HIS - Stock Status	HIS Add-On	LISTING\\stock_stat.rpt	1	1	2008-11-17 13:37:43	sa	2014-03-25 14:25:21	manager	6	1				
+u_hisbills	SOA Details	HIS Add-On	SOA\\soa_details.rpt	0	1	2013-08-25 15:49:53	manager	2014-04-07 22:14:12	manager	6	1				
+u_hisbills	SOA Summary	HIS Add-On	SOA\\soa.rpt	1	1	2013-08-25 15:49:53	manager	2014-04-07 22:14:12	manager	6	1				
+u_hisbills	SOA Summary with Excess	HIS Add-On	SOA\\soa2.rpt	0	1	2014-04-11 18:02:01	manager	2014-04-11 18:02:01	manager	1	1				
+u_hisbills	STATEMENT	HIS Add-On	SOA\\soa_f.rpt	0	0	2013-08-25 15:50:58	manager	2014-04-07 22:14:12	manager	3	1				[C][CN][O]
+u_hisbills	STATEMENT - DETAILS	HIS Add-On	SOA\\soa_details_f.rpt	0	0	2013-08-25 15:50:58	manager	2014-04-07 22:14:12	manager	3	1				[C][CN][O]
+u_hischarges	Charges Form	HIS Add-On	FORM\\charges.rpt	1	1	2014-03-06 17:21:13	manager	2014-03-10 20:00:59	manager	3	1				
+u_hischarges	Laboratory Charges Form	HIS Add-On	FORM\\charges_lab.rpt	0	1	2014-03-20 18:18:59	manager	2014-03-20 18:18:59	manager	1	1				
+u_hischarges	Laboratory Test Result	HIS Add-On	FORM\\lab_test.rpt	0	1	2014-03-06 12:23:41	manager	2014-03-10 20:00:59	manager	3	1				
+u_hischarges	Radiology Charges Form	HIS Add-On	FORM\\charges_lab.rpt	0	1	2014-03-28 22:21:42	manager	2014-03-28 22:21:42	manager	1	1				
+u_hischarges	Radiology X-Ray Test Result	HIS Add-On	FORM\\lab_test_remarks.rpt	0	1	2014-03-06 13:09:51	manager	2014-03-30 13:09:02	manager	4	1				
+u_hisconsultancyfees	Professional Fees Form	HIS Add-On	consult_form.rpt	1	1	2013-07-03 22:41:42	manager	2013-07-03 22:41:42	manager	1	1				
+u_hisconsultancyrequests	Consultancy Requests Form	HIS Add-On	consult_form_req.rpt	1	1	2013-07-03 23:58:58	manager	2013-07-03 23:58:58	manager	1	1				
+u_hiscredits	Returned/Credited	HIS Add-On	FORM\\credits.rpt	1	1	2014-03-20 18:32:27	manager	2014-03-20 18:32:27	manager	1	1				
+u_hisdietscheds	Diet List	HIS Add-On	diet_form.rpt	1	1	2013-06-30 13:48:06	manager	2013-06-30 13:48:06	manager	1	1				
+u_hisinclaims	PHIC Claim Form 2 - Page 1	HIS Add-On	PHIC_CL2\\claimform2_1.rpt	1	1	2013-08-26 19:11:50	manager	2013-08-26 19:12:54	manager	2	1				
+u_hisinclaims	PHIC Claim Form 2 - Page 2	HIS Add-On	PHIC_CL2\\claimform2_2.rpt	0	1	2013-08-26 19:11:50	manager	2013-08-26 19:12:54	manager	2	1				
+u_hisinclaims	PHIC Claim Form 2 - Page 3	HIS Add-On	PHIC_CL2\\claimform2_3.rpt	0	1	2013-08-26 19:11:50	manager	2013-08-26 19:12:54	manager	2	1				
+u_hisinclaimxmtals	2. PHIC Claim Form 2 Page 1	HIS Add-On	PHIC\\claimform2_pck.rpt	0	0	2013-12-06 17:46:41	manager	2014-04-08 13:48:12	manager	3	1				
+u_hisinclaimxmtals	2. PHIC Claim Form 2 Page 2	HIS Add-On	PHIC\\claimform2_pck2.rpt	0	0	2013-12-06 18:03:48	manager	2014-04-08 13:48:12	manager	3	1				
+u_hisinclaimxmtals	2a. PHIC Claim Form 2 - Package - Page 1	HIS Add-On	PHIC\\claimform2_pck_1.rpt	0	0	2013-06-23 15:50:53	manager	2014-04-08 15:13:13	manager	6	1				
+u_hisinclaimxmtals	3a. PHIC Claim Form 2 - Package - Page 2	HIS Add-On	PHIC\\claimform2_pck_2.rpt	0	0	2013-06-28 08:05:31	manager	2014-04-08 15:13:13	manager	5	1				
+u_hisinclaimxmtals	4a. PHIC Claim Form 2 - Package - Page 3	HIS Add-On	PHIC\\claimform2_pck_3.rpt	0	0	2013-06-28 08:05:31	manager	2014-04-08 15:13:13	manager	5	1				
+u_hisinclaimxmtals	6. PHIC Claim Form 2 Page 1	HIS Add-On	PHIC\\claimform2_1.rpt	0	0	2013-06-23 15:50:53	manager	2014-04-08 15:13:13	manager	4	1				
+u_hisinclaimxmtals	7. PHIC Claim Form 2 Page 2	HIS Add-On	PHIC\\claimform2_2.rpt	0	0	2013-06-28 08:05:31	manager	2014-04-08 15:13:13	manager	3	1				
+u_hisinclaimxmtals	8. PHIC Claim Form 2 Page 3	HIS Add-On	PHIC\\claimform2_3.rpt	0	0	2013-06-28 08:05:31	manager	2014-04-08 15:13:13	manager	3	1				
+u_hisinclaimxmtals	HMO/Co./LGU Transmittal Form - All	HIS Add-On	TRANS\\transmittal_hmo.rpt	0	1	2013-11-06 12:12:37	manager	2013-11-06 14:37:39	manager	5	1				
+u_hisinclaimxmtals	HMO/Co./LGU Transmittal Form - IP	HIS Add-On	TRANS\\transmittal_hmo_ip.rpt	0	1	2013-11-06 14:35:58	manager	2013-11-06 14:37:39	manager	2	1				
+u_hisinclaimxmtals	HMO/Co./LGU Transmittal Form - OP	HIS Add-On	TRANS\\transmittal_hmo_op.rpt	0	1	2013-11-06 14:44:15	manager	2013-11-06 14:44:15	manager	1	1				
+u_hisinclaimxmtals	PHIC Transmittal Form	HIS Add-On	TRANS\\transmittal.rpt	0	0	2013-06-21 17:45:25	manager	2014-04-08 21:04:22	manager	6	1				
+u_hisinclaimxmtals	PHIC Transmittal Form - Package	HIS Add-On	TRANS\\transmittal_pck.rpt	1	1	2013-06-21 18:08:41	manager	2014-04-08 15:15:06	manager	6	1				
+u_hisips	Admission And Discharge Record	HIS Add-On	med_rec2.rpt	1	1	2013-07-10 18:39:22	manager	2013-07-10 18:39:22	manager	1	1				
+u_hisips	HIS-REC-FR-03A(CERT OF CONFINEMENT)	HIS Add-On	mc_HIS-REC-FR-03A.rpt	0	1	2014-01-23 12:51:22	manager	2014-01-23 17:07:21	manager	5	1				
+u_hisips	HIS-REC-FR-03B(CERT OF CONFINE-AP)	HIS Add-On	mc_HIS-REC-FR-03B.rpt	0	1	2014-01-23 13:40:11	manager	2014-01-23 17:07:21	manager	4	1				
+u_hislabsubtests	Laboratory Sub Test Result	HIS Add-On	FORM\\lab_test_sub.rpt	1	1	2013-07-11 00:13:20	manager	2014-03-06 12:55:30	manager	2	1				
+u_hislabtestrequests	Lab Form - Cash to Cash	HIS Add-On	lab_form_ca.rpt	0	1	2013-06-30 20:50:38	manager	2013-06-30 20:50:38	manager	1	1				
+u_hislabtestrequests	Lab Form - Charged	HIS Add-On	lab_form_ch.rpt	1	1	2013-06-30 20:22:15	manager	2013-06-30 20:22:15	manager	1	1				
+u_hislabtests	Laboratory Test Result	HIS Add-On	FORM\\lab_test_current.rpt	1	1	2014-04-03 22:35:43	manager	2014-04-03 22:35:43	manager	1	1				
+u_hislabtesttypes	CBC	HIS Add-On	save_data\\lab_test_cbc.rpt	0	1	2013-06-23 20:09:38	manager	2013-06-23 20:09:38	manager	1	1				
+u_hislabtesttypes	Clinical Chemistry	HIS Add-On	save_data\\lab_test_cc.rpt	0	1	2013-06-23 20:09:38	manager	2013-06-23 20:09:38	manager	1	1				
+u_hislabtesttypes	Culture and Sensitivity (C/S)	HIS Add-On	save_data\\lab_test_culsen.rpt	0	1	2013-07-10 23:48:43	manager	2013-07-10 23:48:43	manager	1	1				
+u_hislabtesttypes	Serology	HIS Add-On	save_data\\lab_test_sero.rpt	0	1	2013-06-23 20:09:38	manager	2013-06-23 20:09:38	manager	1	1				
+u_hislabtesttypes	Urinalysis	HIS Add-On	save_data\\lab_test_uri.rpt	1	1	2013-06-23 20:09:38	manager	2013-06-23 20:09:38	manager	1	1				
+u_hismedcerts	HIS-REC-FR-04A(MED CERT-IN PT)	HIS Add-On	mc_HIS-REC-FR-04A.rpt	1	1	2014-01-23 17:17:49	manager	2014-01-23 17:17:49	manager	1	1				
+u_hismedcerts	HIS-REC-FR-04B(NEW OPD-MED CERT)	HIS Add-On	mc_HIS-REC-FR-04B.rpt	0	1	2014-01-23 18:17:53	manager	2014-01-23 18:17:53	manager	1	1				
+u_hismedcerts	HIS-REC-FR-04C(MED CERT REHAB)	HIS Add-On	mc_HIS-REC-FR-04C.rpt	0	1	2014-02-03 13:05:28	manager	2014-02-03 13:05:28	manager	1	1				
+u_hismedcerts	HIS-REC-FR-04D(DIALYSIS MED CERT)	HIS Add-On	mc_HIS-REC-FR-04D.rpt	0	1	2014-02-03 13:27:04	manager	2014-02-03 13:27:04	manager	1	1				
+u_hismedcerts	HIS-REC-FR-04E(MED CERT EMPLOYMENT)	HIS Add-On	mc_HIS-REC-FR-04E.rpt	0	1	2014-02-03 13:48:48	manager	2014-02-03 13:48:48	manager	1	1				
+u_hismedcerts	HIS-REC-FR-04F(MED VACCINE)	HIS Add-On	mc_HIS-REC-FR-04F.rpt	0	1	2014-02-06 14:35:43	manager	2014-02-06 14:35:43	manager	1	1				
+u_hismedcerts	HIS-REC-FR-08(MED.ABSTRACT)	HIS Add-On	mc_HIS-REC-FR-08.rpt	0	1	2014-02-06 17:33:00	manager	2014-02-06 17:33:00	manager	1	1				
+u_hismedlegalcerts	HIS-REC-FR-05(MEDICO-LEGAL)	HIS Add-On	mc_HIS-REC-FR-05.rpt	1	1	2014-02-06 15:13:15	manager	2014-02-06 15:13:15	manager	1	1				
+u_hismedrecs	Admission And Discharge Record	HIS Add-On	med_rec.rpt	1	1	2013-06-14 15:29:03	manager	2013-07-10 18:09:40	manager	2	1				
+u_hismedsupprs	By Items	HIS Add-On	whs_pur_req_item_form.rpt	0	1	2013-08-08 13:57:16	manager	2013-08-08 13:57:16	manager	1	1				
+u_hismedsupprs	By Suppliers	HIS Add-On	whs_pur_req_supp_form.rpt	1	1	2013-08-08 13:57:16	manager	2013-08-08 13:57:16	manager	1	1				
+u_hismedsuprequests	Requests Form	HIS Add-On	med_req.rpt	1	1	2013-07-04 00:54:52	manager	2013-07-04 01:47:20	manager	3	1				
+u_hismedsups	Issuances Form	HIS Add-On	med_issue.rpt	1	1	2013-07-04 01:05:38	manager	2013-07-04 01:44:48	manager	2	1				
+u_hismedsupstockrequests	Requests - Stocks	HIS Add-On	whs_req_item_form.rpt	1	1	2013-08-19 12:22:25	manager	2013-08-19 12:22:25	manager	1	1				
+u_hismedsupstocktfins	Transfer-In - Stocks	HIS Add-On	whs_ti_item_form.rpt	1	1	2013-08-19 12:08:02	manager	2013-08-19 12:26:12	manager	2	1				
+u_hismedsupstocktfs	Transfer-Out - Stocks	HIS Add-On	whs_to_item_form.rpt	1	1	2013-08-13 14:37:36	manager	2013-08-19 12:25:55	manager	2	1				
+u_hismedsuptfins	Receipts/Returns Form	HIS Add-On	med_receipt.rpt	1	1	2013-07-04 00:51:25	manager	2013-07-09 11:54:12	manager	4	1				
+u_hismedsuptfs	Delivery Form with Requested QTY	HIS Add-On	med_delivery.rpt	1	1	2013-07-04 15:09:37	manager	2013-07-04 15:09:37	manager	1	1				
+u_hismedsuptfs	Returns Form	HIS Add-On	med_return.rpt	1	1	2013-07-04 01:42:17	manager	2013-07-04 01:43:26	manager	2	1				
+u_hismiscrequests	MISC. REQUEST	HIS Add-On	misc_req.rpt	1	1	2014-01-09 13:47:55	manager	2014-01-09 13:47:55	manager	1	1				
+u_hismiscs	Services Form	HIS Add-On	pulmo_form.rpt	1	1	2013-06-30 15:08:36	manager	2013-07-03 17:30:18	manager	3	1				
+u_hisops	Admission And Discharge Record	HIS Add-On	med_rec3.rpt	1	1	2013-07-10 18:41:54	manager	2013-07-10 18:41:54	manager	1	1				
+u_hisphicclaims	Attachment for more than 3 Doctors	HIS Add-On	PHIC_CL2\\claimform2_pck3.rpt	0	1	2014-04-09 22:08:06	manager	2014-04-09 22:09:03	manager	2	1				
+u_hisphicclaims	PHIC CF2 Page 1	HIS Add-On	PHIC_CL2\\claimform2_pck.rpt	1	1	2014-03-13 16:31:32	manager	2014-04-09 22:08:06	manager	2	1				
+u_hisphicclaims	PHIC CF2 Page 2	HIS Add-On	PHIC_CL2\\claimform2_pck2.rpt	0	1	2014-03-13 16:34:21	manager	2014-04-09 22:08:06	manager	3	1				
+u_hispos	HIS - OR	HIS Add-On	BNK\\or_csh.rpt	1	1	2013-06-26 22:04:11	manager	2013-06-30 12:47:09	manager	2	1				
+u_hispronotes	PHIC Claim Form 2 - Page 1	HIS Add-On	PHIC_CL2\\claimform2_pck_1.rpt	1	1	2013-08-26 19:14:36	manager	2013-08-26 19:14:36	manager	1	1				
+u_hispronotes	PHIC Claim Form 2 - Page 2	HIS Add-On	PHIC_CL2\\claimform2_pck_2.rpt	0	1	2013-08-26 19:14:36	manager	2013-08-26 19:14:36	manager	1	1				
+u_hispronotes	PHIC Claim Form 2 - Page 3	HIS Add-On	PHIC_CL2\\claimform2_pck_3.rpt	0	1	2013-08-26 19:14:36	manager	2013-08-26 19:14:36	manager	1	1				
+u_hisrequests	Cash Sales/Requests Form	HIS Add-On	FORM\\cash.rpt	1	1	2014-03-06 18:22:01	manager	2014-03-29 04:00:05	manager	4	1				
+u_hissplroomrequests	Special Room Requests Form	HIS Add-On	splroom_form_req.rpt	1	1	2013-07-04 00:32:03	manager	2013-07-04 00:32:03	manager	1	1				
+u_hissplrooms	Special Rooms Forms	HIS Add-On	splroom_form.rpt	1	1	2013-07-04 00:07:34	manager	2013-07-04 00:26:51	manager	2	1				

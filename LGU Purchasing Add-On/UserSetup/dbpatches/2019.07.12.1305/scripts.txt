@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_lgupurchasedeliveryservice','itemtype','Item Type','any',15,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_lgupurchasedeliveryservice','itemtype','C','Consumption');
+evaltrx:addUDFValue('u_lgupurchasedeliveryservice','itemtype','S','Stock');
+evaltrx:addUDFValue('u_lgupurchasedeliveryservice','itemtype','F','Fixed Asset');
+UPDATE DBVERSION SET VERSION='2019.07.12.1305' WHERE ID='GPS.LGUPurchasing';

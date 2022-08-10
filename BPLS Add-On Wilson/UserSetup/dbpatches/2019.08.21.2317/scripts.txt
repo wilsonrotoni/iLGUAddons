@@ -1,0 +1,5 @@
+evaltrx:addUDT('bplbldgnames','Building Names','MDC','');
+evaltrx:addUDO('bplbldgnames','Building Names','bplbldgnames','G');
+evaltrx:addUserMenu('','LGUADMINBPLS',100.0,'Building Names','P','u_bplbldgnames');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINBPLS',100.0,'Building Names','P','u_bplbldgnames');
+UPDATE DBVERSION SET VERSION='2019.08.21.2317' WHERE ID='GPS.BPLS';

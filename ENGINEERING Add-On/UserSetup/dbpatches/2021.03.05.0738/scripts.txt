@@ -1,0 +1,2 @@
+evaltrx:addUDT('buildingfeesarea','Building Permit Fees - Area','MDLC','');
+UPDATE DBVERSION SET VERSION='2021.03.05.0738' WHERE ID='GPS.ENGINEERING';

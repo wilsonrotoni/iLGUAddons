@@ -1,0 +1,16 @@
+
+
+evaltrx:addUserMenu('','LGURPTSPAY',100,'OR Series Collection','P','urpt_u_orseries');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',100,'OR Series Collection','P','urpt_u_orseries');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',100,'OR Series Collection','P','urpt_u_orseries');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',100,'OR Series Collection','P','urpt_u_orseries');
+
+evaltrx:addUDR('u_orseries','OR Series Collection','QS','mysql',1);
+
+evaltrx:addUDRParam('u_orseries','orfrom','OR Number From','','any',1,'text',0,null,0,null);
+evaltrx:addUDRParam('u_orseries','orto','OR Number To','','any',1,'text',1,null,0,null);
+
+evaltrx:addUDRLayout('u_orseries','OR Series Collection',1,'LGU Add-On','orseries.rpt','1',1,'','','');
+
+
+

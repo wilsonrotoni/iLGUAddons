@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_buildingdivisions','divisioncode','Division Catergory Code','any',255,10,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.09.2044' WHERE ID='GPS.ENGINEERING';

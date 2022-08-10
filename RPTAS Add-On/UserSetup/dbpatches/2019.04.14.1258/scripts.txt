@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_rplandtreesvalue','gryear','GR Year','any',100,10,'',0,'u_gryears:code:name',0,0,1,1,1,1);
+evaltrx:deleteUDF('u_rplandtreesvalue','type','Type','any',30,5,'',0,'u_rplandtrees:code:name',0,0,1,1,1,1);
+evaltrx:deleteUDF('u_rplandtreesvalue','class','Class','any',30,15,'',0,'u_rplandclasses:code:name',0,0,1,1,1,1);
+evaltrx:deleteUDF('u_rplandtreesvalue','unitvalue','Unit Value','price',0,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.14.1258' WHERE ID='GPS.RPTAS';

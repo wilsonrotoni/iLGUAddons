@@ -1,0 +1,2 @@
+evaltrx:addUDP('listAuditTrailLogs','Audit Trail Logs','N','');
+UPDATE DBVERSION SET VERSION='2019.12.20.0939' WHERE ID='GPS.AuditTrail';

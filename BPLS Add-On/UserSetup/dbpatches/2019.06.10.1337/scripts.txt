@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_bplapplines','taxclass','Tax Classification','any',100,15,'',0,'u_bpltaxclasses:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapplines','btaxamount','B.Tax Amount','amount',0,70,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.10.1337' WHERE ID='GPS.BPLS';

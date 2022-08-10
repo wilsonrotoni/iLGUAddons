@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lgucollectors','userid','User ID','any',50,10,'',0,'users:userid:username',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.16.1335' WHERE ID='GPS.LGUBacoor';

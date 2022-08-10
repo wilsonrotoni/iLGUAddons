@@ -1,0 +1,10 @@
+evaltrx:addUDF('u_rpfaas1','temporarytdn','Temporary TDN','numeric',1,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','temporarytdn','Temporary TDN','numeric',1,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','temporarytdn','Temporary TDN','numeric',1,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1','classid','Class Id','numeric',4,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','classid','Class Id','numeric',4,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','classid','Class Id','numeric',4,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1','actualuseid','Actual Use Id','numeric',4,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','actualuseid','Actual Use Id','numeric',4,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','actualuseid','Actual Use Id','numeric',4,300,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.11.27.1236' WHERE ID='GPS.RPTAS';

@@ -1,0 +1,639 @@
+USERID	MENUID	ITEMID	MENUNAME	MENUCMD	MENUTYPE	RCDVERSION	CREATEDBY	DATECREATED	LASTUPDATEDBY	LASTUPDATED	AUTHTYPE	VISIBLE	ISSYSTEM	IS_SD	IS_SA	IS_SAP	IS_PU	IS_PUP	IS_IN	IS_INP	IS_GL	IS_GLP	IS_BA	IS_SE	IS_SO	IS_FU	IS_FUP	IS_FI	IS_FIP	IS_PR	IS_PRP	IS_PA	IS_PAP	IS_HU	IS_HUP	IS_GE
+	BANKINGRPTS	10.0	Collections - Report	rptCollections	P	2	sa	2006-12-08 10:04:20	sa	2006-12-09 04:18:05	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	20.0	Collections And Deposits Report	rptCollectionsAndDeposits	P	2	sa	2006-12-06 15:47:47	sa	2006-12-09 04:18:13	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	100.0	Incoming Payment List - Customer	IncomingPaymentListCustomer	P	1	sa	2008-04-07 16:05:08	sa	2008-04-07 16:05:08	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	110.0	Incoming Payment List - Supplier	IncomingPaymentListSupplier	P	1	sa	2008-04-07 16:05:25	sa	2008-04-07 16:05:25	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	120.0	Incoming Payment List - G/L Account	IncomingPaymentListAccount	P	2	sa	2008-04-07 16:05:44	manager	2009-06-18 05:26:49	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	150.0	Outgoing Payment List - Customer	OutgoingPaymentListCustomer	P	1	sa	2008-04-07 16:06:05	sa	2008-04-07 16:06:05	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	160.0	Outgoing Payment List - Supplier	OutgoingPaymentListSupplier	P	1	sa	2008-04-07 16:06:25	sa	2008-04-07 16:06:25	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	170.0	Outgoing Payment List - G/L Account	OutgoingPaymentListAccount	P	2	sa	2008-04-07 16:06:46	manager	2009-06-18 05:26:49	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	180.0	Credit Memo List - Customer	CreditMemoListCustomer	P	1	system	2009-12-19 10:09:10	system	2009-12-19 10:09:10	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	190.0	Credit Memo List - Supplier	CreditMemoListSupplier	P	1	system	2009-12-19 10:09:10	system	2009-12-19 10:09:10	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	195.0	Credit Memo List - G/L Account	CreditMemoListAccount	P	2	system	2009-12-19 10:09:10	system	2009-12-19 10:10:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	210.0	Debit Memo List - Customer	DebitMemoListCustomer	P	1	system	2009-12-19 10:10:12	system	2009-12-19 10:10:12	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	220.0	Debit Memo List - Supplier	DebitMemoListSupplier	P	1	system	2009-12-19 10:10:12	system	2009-12-19 10:10:12	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	230.0	Debit Memo List - G/L Account	DebitMemoListAccount	P	2	system	2009-12-19 10:10:12	system	2009-12-19 10:10:56	F	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	250.0	External Bank Reconciliation - List	ExternalBankReconList	P	1	manager	2010-08-06 21:32:01	manager	2010-08-06 21:32:01	F	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	300.0	Cash In Bank Ledger	CashInBankLedger	P	1	system	2009-12-19 10:19:50	system	2009-12-19 10:19:50	F	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	500.0	Cash Receipts Book	sysRptCRBook	P	2	manager	2010-02-11 12:47:16	manager	2010-02-15 19:40:09	F	1	0	0	1	1	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	501.0	PDC Schedule	sysRptpdcassof	P	3	manager	2010-02-11 16:10:49	manager	2010-03-03 11:05:11	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	502.0	Unapplied Customer Deposit Schedule	sysRptunappliedcustdeposit	P	3	manager	2010-02-11 17:27:40	manager	2010-03-03 11:05:11	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	503.0	Applied Customer Deposit Schedule	sysRptappliedcustdeposit	P	3	manager	2010-02-11 17:58:01	manager	2010-03-03 11:05:11	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	504.0	Cash In Bank Balances Report	sysRptcashinbank	P	2	manager	2010-05-27 17:18:39	manager	2010-05-27 18:17:38	F	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+	BANKINGRPTS	505.0	Bank Ledger Report	sysRpthms_bl	P	2	manager	2010-05-27 18:17:38	manager	2013-06-20 18:19:07	F	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	10.0	Chart of Accounts	sysRpthms_coa	P	1	manager	2013-06-29 18:20:19	manager	2013-06-29 18:20:19		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	FINANCIALRPTS	50.0	Journal Voucher List	JournalVoucherList	P	2	sa	2008-09-03 20:55:07	sa	2008-09-03 20:58:06	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	60.0	Journal Entry List	JournalEntryList	P	1	sa	2008-11-10 02:18:27	sa	2008-11-10 02:18:27	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	100.0	Journal Ledger	JournalLedger	P	1	manager	2009-08-29 09:11:35	manager	2009-08-29 09:11:35	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	109.0	General Ledger 	sysRpthms_gl	P	2	manager	2009-11-21 03:18:17	manager	2013-06-20 17:51:13	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	110.0	Trial Balance	sysRpthms_tb	P	3	manager	2009-11-21 03:15:19	manager	2013-06-20 17:51:13	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	112.0	Book of Accounts	sysRpttrans_journal	P	1	manager	2010-02-15 00:28:27	manager	2010-02-15 00:28:27	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	113.0	Subsidiary Ledger	sysRptsl	P	1	manager	2010-05-28 14:55:59	manager	2010-05-28 14:55:59	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	120.0	Balance Sheet	sysRpthms_bs	P	2	manager	2009-11-21 03:18:17	manager	2013-06-20 18:03:23	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	130.0	Comparative Balance Sheet	sysRptcom_balance_sheet	P	2	manager	2009-11-21 03:18:17	manager	2013-06-20 18:03:23	F	0	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	131.0	Profit and Loss	sysRpthms_pl	P	2	manager	2009-11-21 19:35:02	manager	2013-06-20 18:03:23	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	140.0	Cash Flow	sysRptcash_flow	P	1	manager	2009-11-21 03:24:04	manager	2009-11-21 03:24:04	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	151.0	Journal Voucher List Report	sysRptjv_list	P	4	manager	2010-03-04 18:16:50	manager	2010-03-08 19:43:35	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	FINANCIALRPTS	152.0	Recurring Postings List Report	sysRptrecurringposting	P	1	manager	2010-03-18 15:25:55	manager	2010-03-18 15:25:55	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	HIS	500.0	Reports	HISRPTS	M	1	manager	2013-06-06 15:21:44	manager	2013-06-06 15:21:44		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISINV	1.0	Nursing Service Stock Report	sysRpthms_nursinginv	P	2	manager	2013-08-19 12:59:27	manager	2013-10-21 16:03:39		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISINV	2.0	Request vs Delivery Report	sysRpthms_rvd	P	1	manager	2013-08-19 12:59:27	manager	2013-08-19 12:59:27		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISINV	3.0	Price List	sysRpthms_prl	P	1	manager	2013-08-19 13:42:01	manager	2013-08-19 13:42:01		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISINV	3.1	Room Price List	sysRpthms_roompl	P	1	manager	2013-08-23 01:26:22	manager	2013-08-23 01:26:22		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISINV	4.0	Inventory Min./Max. Level Report	sysRpthms_minmax	P	1	manager	2013-08-19 13:06:02	manager	2013-08-19 13:06:02		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISINV	5.0	Inventory Expiration Report	sysRpthms_ixr	P	1	manager	2013-08-19 13:06:02	manager	2013-08-19 13:06:02		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISINV	6.0	Departmental Expenses, Issuances, Purchases & Stock Transfer Report	sysRpthms_deips	P	1	manager	2013-08-19 13:06:02	manager	2013-08-19 13:06:02		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISINV	7.0	Inventory Stock Status (Stock Card vs. Actual)	sysRpthms_inv_SCvsActual	P	1	manager	2013-08-20 15:17:49	manager	2013-08-20 15:17:49		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISPHAX	1.0	Summary Report	sysRpthms_pharpt	P	2	manager	2013-08-23 19:26:46	manager	2013-08-23 19:32:30		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISPHAX	2.0	Monthly Reports	sysRpthms_phamorpts	P	1	manager	2013-08-23 19:46:11	manager	2013-08-23 19:46:11		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISPULX	1.0	Pulmonary Audit Report	sysRpthms_pulmolist	P	1	manager	2013-08-23 19:20:47	manager	2013-08-23 19:20:47		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISPULX	2.0	Pulmonary Patient Records	sysRpthms_pulmopr	P	1	manager	2013-08-23 19:20:47	manager	2013-08-23 19:20:47		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	1.0	Log Book	sysRpthms_log_book	P	1	manager	2013-06-06 15:42:05	manager	2013-06-06 15:42:05		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	1.5	Diet List	sysRpthms_dietL	P	1	manager	2013-06-20 14:01:05	manager	2013-06-20 14:01:05		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2013-06-06 15:49:56	manager	2013-06-06 15:49:56		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	3.0	Cases	sysRpthms_census_filter_roomtype	P	1	manager	2013-06-06 16:07:49	manager	2013-06-06 16:07:49		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	manager	2013-06-06 16:18:45	manager	2013-06-06 16:18:45		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	manager	2013-06-20 12:53:07	manager	2013-06-20 12:53:07		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	4.2	Daily Collection Summary	sysRpthms_dcr	P	1	manager	2013-08-29 14:30:18	manager	2013-08-29 14:30:18		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	5.0	Transmittal	sysRpthms_trans	P	2	manager	2013-06-11 10:09:12	manager	2013-06-21 12:01:28		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	5.1	Transmittal Payments	sysRpthms_transpay	P	1	manager	2013-06-21 13:53:54	manager	2013-06-21 13:53:54		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	5.2	A/R Aging - PHIC/HMO/LGU/CO	sysRpthms_araging	P	3	manager	2013-12-16 11:51:46	manager	2014-03-03 18:24:40		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	8.0	Statement of Account	sysRpthms_soa	P	3	manager	2013-06-11 18:06:05	manager	2013-12-13 14:08:53		0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	8.5	Inventory Reports	HISINV	M	2	manager	2013-08-19 12:56:38	manager	2013-08-19 12:59:27		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	8.6	Pulmonary Reports	HISPULX	M	2	manager	2013-08-23 19:17:51	manager	2013-08-23 19:20:00		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	8.7	Pharmacy Reports	HISPHAX	M	3	manager	2013-08-22 22:26:22	manager	2013-08-23 19:24:00		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	11.0	Radiology Summary Report	sysRpthms_radiolist	P	1	manager	2013-06-30 17:27:23	manager	2013-06-30 17:27:23		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	12.0	Laboratory Reports	sysRpthms_lablist	P	3	manager	2013-06-30 17:54:05	manager	2013-06-30 17:57:07		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	13.0	Heart Station Summary Report	sysRpthms_heartstation	P	1	manager	2013-07-03 19:31:12	manager	2013-07-03 19:31:12		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	14.0	Professional Fees Report	sysRpthms_pf	P	1	manager	2013-07-03 23:38:11	manager	2013-07-03 23:38:11		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	15.0	Special Rooms Report	sysRpthms_splroom	P	1	manager	2013-07-04 00:25:32	manager	2013-07-04 00:25:32		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	16.0	Cash Sales/Request Reports	sysRpthms_reqrpts	P	2	manager	2013-10-07 19:51:00	manager	2014-03-13 22:13:44		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	16.1	Charge/Render Reports	sysRpthms_chrgrpts	P	1	manager	2014-03-13 23:27:43	manager	2014-03-13 23:27:43		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	HISRPTS	17.0	Admission and Consultation Report	sysRpthms_iop_ledger	P	1	manager	2013-11-11 16:19:17	manager	2013-11-11 16:19:17		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	InventoryRpts	4.0	Item List	itemlist	P	1	sa	2008-04-04 03:00:00	sa	2008-04-04 03:00:00	F	1	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+	InventoryRpts	4.2	Last Prices	lastprices	P	1	manager	2012-11-24 22:58:57	manager	2012-11-24 22:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	InventoryRpts	4.5	Inventory Requirement By Sales	inventoryrequirementbysales	P	1	manager	2012-02-10 23:52:25	manager	2012-02-10 23:52:25	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	InventoryRpts	5.0	Inventory Requirement Management	inventoryrequirementmanagement	P	1	manager	2011-09-14 18:18:27	manager	2011-09-14 18:18:27	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	InventoryRpts	6.0	Goods Receipt List	goodsreceiptlist	P	1	sa	2008-04-04 03:00:27	sa	2008-04-04 03:00:27	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	7.0	Goods Issue List	goodsissuelist	P	1	sa	2008-04-04 03:00:53	sa	2008-04-04 03:00:53	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	8.0	Stock Transfer List	StockTransferList	P	1	sa	2008-04-04 03:02:20	sa	2008-04-04 03:02:20	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	10.0	Goods Receipt Report	rptGoodsReceiptReport	P	1	sa	2006-11-30 18:18:54	sa	2006-11-30 18:18:54	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	15.0	Goods Receipt w/ Cost Report	rptGoodsReceiptwCostReport	P	1	sa	2006-12-08 07:57:46	sa	2006-12-08 07:57:46	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	20.0	Goods Issue Report	rptGoodsIssueReport	P	1	sa	2006-11-30 18:19:10	sa	2006-11-30 18:19:10	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	30.0	Accounts Payable/Receiving Report	rptAccountsPayableReceivingReport	P	1	sa	2006-12-08 07:49:12	sa	2006-12-08 07:49:12	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	35.0	Stock Adjustment List	stockadjustmentlist	P	1	manager	2009-04-06 00:45:32	manager	2009-04-06 00:45:32	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	36.0	Initial Quantity List	initialquantitylist	P	1	manager	2009-04-06 00:45:15	manager	2009-04-06 00:45:15	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	37.0	Stock Revaluation List	stockrevaluationlist	P	1	manager	2009-04-06 00:45:32	manager	2009-04-06 00:45:32	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	37.5	Stock Allocation List	stockallocationlist	P	1	manager	2010-07-22 14:11:34	manager	2010-07-22 14:11:34	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	37.9	Re-Packing List	RepackingList	P	2	manager	2011-11-03 23:56:45	manager	2011-11-03 23:57:15		1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	38.0	Pick and Pack List	pickpacklist	P	1	manager	2010-04-18 17:25:17	manager	2010-04-18 17:25:17	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	39.0	Transfer Request List	StockTransferRequestIBList	P	1	sa	2008-12-16 16:06:53	sa	2008-12-16 16:06:53	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	40.0	Transfer Out List	GoodsIssueIBList	P	1	sa	2008-11-10 02:18:27	sa	2008-11-10 02:18:27	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	41.0	Transfer In List	GoodsReceiptIBList	P	1	sa	2008-11-10 02:18:27	sa	2008-11-10 02:18:27	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	42.0	Transfer REcon List	StockTransferLossList	P	2	sa	2008-12-16 14:08:21	manager	2009-06-19 13:21:58	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	43.0	Transfer Out (Transit) List	stocktransferouttransitIB	P	1	manager	2009-02-12 12:19:45	manager	2009-02-12 12:19:45	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	44.0	Transfer In (Transit) List	stocktransferintransitIB	P	1	manager	2009-02-12 12:19:45	manager	2009-02-12 12:19:45	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	50.0	Serial Numbers List	SerialNumberList	P	1	sa	2008-11-10 02:18:26	sa	2008-11-10 02:18:26	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	55.0	Batch Numbers List	BatchNumberList	P	1	sa	2008-11-10 02:18:26	sa	2008-11-10 02:18:26	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	90.0	Stock List	stockcardcostinglist	P	1	sa	2008-11-10 02:18:27	sa	2008-11-10 02:18:27	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	95.0	Stock List - Consignment	StockConsignmentList	P	1	manager	2010-01-18 00:17:43	manager	2010-01-18 00:17:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	100.0	Stock Ledger	StockLedger	P	1	manager	2009-08-29 09:11:35	manager	2009-08-29 09:11:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	105.0	Stock Ledger - Consignment	StockConsignmentLedger	P	1	manager	2010-01-18 00:17:43	manager	2010-01-18 00:17:43	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	110.0	Repo Details	RepoDetailsList	P	1	manager	2009-08-29 12:39:21	manager	2009-08-29 12:39:21	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+	InventoryRpts	112.0	Aging	sysRptstock_aging	P	1	manager	2010-02-13 01:42:30	manager	2010-02-13 01:42:30	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	200.0	Stock Status with Cost	sysRptinv_stock_status_all_whse_w_cost	P	2	manager	2010-02-12 00:18:33	manager	2010-02-12 00:19:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	210.0	Stock Ledger	sysRptstock_ledger	P	1	manager	2010-02-12 02:23:26	manager	2010-02-12 02:23:26	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	215.0	Price List	sysRptinv_price_list_price_wo_cost	P	1	manager	2010-05-29 17:28:02	manager	2010-05-29 17:28:02	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	300.0	Goods Receipt List Report	sysRptgoods_receipt	P	1	manager	2010-04-26 12:33:45	manager	2010-04-26 12:33:45	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	350.0	Goods Issue List Report	sysRptgoods_issue	P	1	manager	2010-04-26 14:48:47	manager	2010-04-26 14:48:47	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	400.0	Stock Transfer List Report	sysRptsttrans	P	2	manager	2010-04-26 15:09:06	manager	2010-04-26 15:20:29	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	410.0	Fuel Buffering	sysRptfuel_buff	P	1	manager	2010-04-28 14:40:49	manager	2010-04-28 14:40:49	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	420.0	Fuel Monitoring Sheet	sysRptfuel_moni	P	1	manager	2010-04-28 14:41:52	manager	2010-04-28 14:41:52	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	430.0	DSR and JV List Report	sysRptdsr_jv	P	1	manager	2010-04-29 15:03:34	manager	2010-04-29 15:03:34	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	440.0	Consignment Stock Monitoring	sysRptconstmonitor	P	1	manager	2010-05-07 12:23:47	manager	2010-05-07 12:23:47	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	InventoryRpts	450.0	Early Registration	sysRptearlyreg	P	1	manager	2010-05-08 22:20:31	manager	2010-05-08 22:20:31	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	60.0	Purchase Request List	PurchaseRequestList	P	1	sa	2008-04-03 21:07:20	sa	2008-04-03 21:07:20	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	70.0	Purchase Order List	PurchaseOrderList	P	1	sa	2008-04-03 21:07:41	sa	2008-04-03 21:07:41	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	80.0	Goods Receipt PO	PurchaseDeliveryList	P	1	sa	2008-04-03 21:08:07	sa	2008-04-03 21:08:07	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	90.0	Goods Return	PurchaseReturnList	P	1	sa	2008-04-03 21:08:31	sa	2008-04-03 21:08:31	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	100.0	A/P Invoice List	APInvoiceList	P	3	sa	2008-04-03 21:09:01	system	2009-12-19 10:07:42	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	110.0	A/P Credit Memo List	APCreditMemoList	P	3	sa	2008-04-03 21:09:18	system	2009-12-19 10:07:42	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	120.0	A/P Aging - DOCTORS	sysRpthms_ap_aging	P	4	manager	2010-02-10 00:43:22	manager	2014-03-03 18:29:06	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	120.5	A/P Aging - SUPPLIERS/OTHERS	sysRpthms_ap_aging2	P	3	manager	2014-03-03 13:23:04	manager	2014-03-03 18:36:54		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	PURCHASINGRPTS	121.0	Purchase Order Report	sysRpthms_sumpo	P	1	manager	2013-06-20 16:24:03	manager	2013-06-20 16:24:03		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	PURCHASINGRPTS	122.0	Purchase Subsidiary Ledger	sysRpthms_apinvsum	P	1	manager	2013-06-20 16:49:39	manager	2013-06-20 16:49:39		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	PURCHASINGRPTS	123.0	Purchase Order Vs. Receiving Report	sysRpthms_povrr	P	1	manager	2013-06-20 17:12:45	manager	2013-06-20 17:12:45		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	PURCHASINGRPTS	130.0	Purchase Book	sysRptpur_book	P	1	manager	2010-02-09 23:56:59	manager	2010-02-09 23:56:59	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	160.0	Purchase Analysis	sysRptpa	P	1	manager	2010-03-02 17:11:37	manager	2010-03-02 17:11:37	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	161.0	Purchase Order List Report	sysRptpurchaseorder_list	P	2	manager	2010-03-17 15:08:00	manager	2010-03-17 15:09:44	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	162.0	Goods Receipt PO List Report	sysRptgrpo_list	P	1	manager	2010-03-17 15:23:15	manager	2010-03-17 15:23:15	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	163.0	Goods Return List Report	sysRptgoodsreturn_list	P	1	manager	2010-03-17 15:43:39	manager	2010-03-17 15:43:39	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	164.0	A/P Invoice List Report	sysRptinv_rr	P	3	manager	2010-02-10 18:21:25	manager	2010-03-17 15:07:07	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS	165.0	A/P Credit Memo List Report	sysRptprs	P	3	manager	2010-02-10 18:38:50	manager	2010-03-17 15:07:07	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	PURCHASINGRPTS 	200.0	Purchasing Requirement Management	purchaserequirementmanagement	P	1	manager	2011-07-25 01:14:46	manager	2011-07-25 01:14:46	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	SALESRPTS	10.0	Sales Report	rptSales	P	1	sa	2006-12-09 04:19:05	sa	2006-12-09 04:19:05	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	20.0	Collections And Deposits Report	rptCollectionsAndDeposits	P	1	sa	2006-12-06 15:47:47	sa	2006-12-06 15:47:47	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	60.0	Sales Quotation List	SalesQuotationList	P	1	sa	2008-04-03 21:05:16	sa	2008-04-03 21:05:16	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	70.0	Sales Order List	SalesOrderList	P	1	sa	2008-04-03 21:04:53	sa	2008-04-03 21:04:53	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	80.0	Delivery List	SalesDeliveryList	P	3	sa	2008-04-03 21:04:34	system	2009-12-19 10:06:16	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	90.0	Return List	SalesReturnList	P	3	sa	2008-04-03 21:04:14	system	2009-12-19 10:06:16	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	95.0	A/R Down Payment Request List	ARDownPaymentRequestList	P	1	system	2009-12-19 10:21:02	system	2009-12-19 10:21:02	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	96.0	A/R Down Payment Invoice List	ARDownPaymentInvoiceList	P	1	system	2009-12-19 10:21:02	system	2009-12-19 10:21:02	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	99.0	Notes Receivable List	NRInvoiceList	P	2	sa	2008-11-10 02:18:27	manager	2009-07-09 00:15:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+	SALESRPTS	100.0	Account Receivable List	ARInvoiceList	P	2	sa	2008-04-02 21:59:40	manager	2009-07-09 00:15:58	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	101.0	Cash Sales List	ARInvoicePaymentList	P	1	sa	2008-11-10 02:18:27	sa	2008-11-10 02:18:27	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	110.0	A/R Credit Memo List	ARCreditMemoList	P	3	sa	2008-04-03 21:03:43	manager	2011-04-21 17:21:16	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	115.0	Sales Inquiry	SalesSummary	P	1	manager	2012-02-12 17:59:01	manager	2012-02-12 17:59:01	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	SALESRPTS	120.0	Consignment Sales Management	ConsignmentSalesManagement	P	1	manager	2012-02-10 23:52:25	manager	2012-02-10 23:52:25	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	SALESRPTS	130.0	A/R Aging - PHIC/HMO/LGU/CO	sysRpthms_araging	P	4	manager	2010-02-07 23:16:00	manager	2014-03-03 18:20:53	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	130.5	A/R Aging - EMPLOYEE/NON-TRADE	sysRptHMS_ARAGING2	P	2	manager	2014-03-03 13:13:13	manager	2014-03-03 18:20:53		1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+	SALESRPTS	131.0	Sales Book	sysRptsb	P	2	manager	2010-02-08 15:54:20	manager	2010-02-10 16:15:08	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	134.0	Sales Analysis	sysRptsales_analysis	P	1	manager	2010-02-25 13:20:17	manager	2010-02-25 13:20:17	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	190.0	Sales Quotation List Report	sysRptsalesquotation_list	P	4	manager	2010-03-17 13:30:36	manager	2010-03-17 14:31:19	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	191.0	Sales Order List Report	sysRptsalesorder_list	P	2	manager	2010-03-17 14:12:24	manager	2010-03-17 14:31:19	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	192.0	Sales Delivery List Report	sysRptsalesdelivery_list	P	2	manager	2010-03-17 14:30:43	manager	2010-03-17 14:31:19	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	193.0	Sales Return List Report	sysRptsalesreturn_list	P	1	manager	2010-03-17 14:41:02	manager	2010-03-17 14:41:02	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	198.0	A/R Invoice List Report	sysRptarinvoice_list	P	2	manager	2010-03-08 19:40:14	manager	2010-03-17 13:28:33	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	199.0	A/R Credit Memo List Report	sysRptarcreditmemo_list	P	2	manager	2010-03-08 20:02:41	manager	2010-03-17 13:28:33	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	200.0	Sales Monitoring	sysRptsale_moni	P	3	manager	2010-02-08 00:13:31	manager	2010-03-17 13:28:33	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	300.0	Collection Report	sysRptinv_pay	P	4	manager	2010-02-07 14:38:28	manager	2010-03-17 13:28:33	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	400.0	Sales and Effective Margin	sysRptsaleEffe	P	1	manager	2010-04-27 15:15:53	manager	2010-04-27 15:15:53	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	410.0	Sales Summary	sysRptsales_sum	P	1	manager	2010-04-30 04:05:27	manager	2010-04-30 04:05:27	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	420.0	Daily Lube Sales	sysRptlube_sales	P	1	manager	2010-04-30 15:27:21	manager	2010-04-30 15:27:21	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+	SALESRPTS	430.0	Lube Sales	sysRptlubesales	P	1	manager	2010-05-08 09:43:33	manager	2010-05-08 09:43:33	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	HIS	500.0	Reports	HISRPTS	M	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	1.0	Log Book	sysRpthms_log_book	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	1.5	Diet List	sysRpthms_dietL	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	3.0	Cases	sysRpthms_census_filter_roomtype	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	4.2	Daily Collection Summary	sysRpthms_dcr	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	5.0	Transmittal	sysRpthms_trans	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	5.1	Transmittal Payments	sysRpthms_transpay	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	5.2	A/R Aging - PHIC/HMO/LGU/CO	sysRpthms_araging	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	HISRPTS	8.0	Statement of Account	sysRpthms_soa	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	InventoryRpts	4.0	Item List	itemlist	P	1	110043	2014-04-10 09:28:54	110043	2014-04-10 09:28:54	F	1	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+110020	InventoryRpts	4.2	Last Prices	lastprices	P	1	110043	2014-04-10 09:28:54	110043	2014-04-10 09:28:54	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	InventoryRpts	4.5	Inventory Requirement By Sales	inventoryrequirementbysales	P	1	110043	2014-04-10 09:28:54	110043	2014-04-10 09:28:54	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	InventoryRpts	5.0	Inventory Requirement Management	inventoryrequirementmanagement	P	1	110043	2014-04-10 09:28:54	110043	2014-04-10 09:28:54	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+110020	InventoryRpts	6.0	Goods Receipt List	goodsreceiptlist	P	1	110043	2014-04-10 09:28:54	110043	2014-04-10 09:28:54	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	7.0	Goods Issue List	goodsissuelist	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	8.0	Stock Transfer List	StockTransferList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	10.0	Goods Receipt Report	rptGoodsReceiptReport	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	15.0	Goods Receipt w/ Cost Report	rptGoodsReceiptwCostReport	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	20.0	Goods Issue Report	rptGoodsIssueReport	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	30.0	Accounts Payable/Receiving Report	rptAccountsPayableReceivingReport	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	35.0	Stock Adjustment List	stockadjustmentlist	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	36.0	Initial Quantity List	initialquantitylist	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	37.0	Stock Revaluation List	stockrevaluationlist	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	37.5	Stock Allocation List	stockallocationlist	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	37.9	Re-Packing List	RepackingList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	38.0	Pick and Pack List	pickpacklist	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	39.0	Transfer Request List	StockTransferRequestIBList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	40.0	Transfer Out List	GoodsIssueIBList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	41.0	Transfer In List	GoodsReceiptIBList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	42.0	Transfer REcon List	StockTransferLossList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	43.0	Transfer Out (Transit) List	stocktransferouttransitIB	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	44.0	Transfer In (Transit) List	stocktransferintransitIB	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	50.0	Serial Numbers List	SerialNumberList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	55.0	Batch Numbers List	BatchNumberList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	90.0	Stock List	stockcardcostinglist	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	95.0	Stock List - Consignment	StockConsignmentList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	100.0	Stock Ledger	StockLedger	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	105.0	Stock Ledger - Consignment	StockConsignmentLedger	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	110.0	Repo Details	RepoDetailsList	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+110020	InventoryRpts	112.0	Aging	sysRptstock_aging	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	200.0	Stock Status with Cost	sysRptinv_stock_status_all_whse_w_cost	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	210.0	Stock Ledger	sysRptstock_ledger	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	215.0	Price List	sysRptinv_price_list_price_wo_cost	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	300.0	Goods Receipt List Report	sysRptgoods_receipt	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	350.0	Goods Issue List Report	sysRptgoods_issue	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	400.0	Stock Transfer List Report	sysRptsttrans	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	410.0	Fuel Buffering	sysRptfuel_buff	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	420.0	Fuel Monitoring Sheet	sysRptfuel_moni	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	430.0	DSR and JV List Report	sysRptdsr_jv	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	440.0	Consignment Stock Monitoring	sysRptconstmonitor	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+110020	InventoryRpts	450.0	Early Registration	sysRptearlyreg	P	1	110043	2014-04-10 09:28:55	110043	2014-04-10 09:28:55	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+120029	HIS	500.0	Reports	HISRPTS	M	1	110043	2014-04-01 21:58:31	110043	2014-04-01 21:58:31	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+120029	HISRPTS	1.5	Diet List	sysRpthms_dietL	P	1	110043	2014-04-01 21:58:31	110043	2014-04-01 21:58:31	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+120029	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	110043	2014-04-01 21:58:31	110043	2014-04-01 21:58:31	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HIS	500.0	Reports	HISRPTS	M	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	1.0	Log Book	sysRpthms_log_book	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	1.5	Diet List	sysRpthms_dietL	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	3.0	Cases	sysRpthms_census_filter_roomtype	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	4.2	Daily Collection Summary	sysRpthms_dcr	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	5.0	Transmittal	sysRpthms_trans	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	5.1	Transmittal Payments	sysRpthms_transpay	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	5.2	A/R Aging - PHIC/HMO/LGU/CO	sysRpthms_araging	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+60205	HISRPTS	8.0	Statement of Account	sysRpthms_soa	P	1	110043	2014-04-02 15:19:17	110043	2014-04-02 15:19:17	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+DIETARY	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-03-31 18:49:15	manager	2014-03-31 18:49:15	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+DIETARY	HISRPTS	1.5	Diet List	sysRpthms_dietL	P	1	manager	2014-03-31 18:49:15	manager	2014-03-31 18:49:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+DIETARY	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-03-31 18:49:15	manager	2014-03-31 18:49:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+DIETARY	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	manager	2014-03-31 18:49:15	manager	2014-03-31 18:49:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	BANKINGRPTS	10.0	Collections - Report	rptCollections	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	20.0	Collections And Deposits Report	rptCollectionsAndDeposits	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	100.0	Incoming Payment List - Customer	IncomingPaymentListCustomer	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	110.0	Incoming Payment List - Supplier	IncomingPaymentListSupplier	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	120.0	Incoming Payment List - G/L Account	IncomingPaymentListAccount	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	150.0	Outgoing Payment List - Customer	OutgoingPaymentListCustomer	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	160.0	Outgoing Payment List - Supplier	OutgoingPaymentListSupplier	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	170.0	Outgoing Payment List - G/L Account	OutgoingPaymentListAccount	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	180.0	Credit Memo List - Customer	CreditMemoListCustomer	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	190.0	Credit Memo List - Supplier	CreditMemoListSupplier	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	195.0	Credit Memo List - G/L Account	CreditMemoListAccount	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	210.0	Debit Memo List - Customer	DebitMemoListCustomer	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	220.0	Debit Memo List - Supplier	DebitMemoListSupplier	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	230.0	Debit Memo List - G/L Account	DebitMemoListAccount	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	250.0	External Bank Reconciliation - List	ExternalBankReconList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	300.0	Cash In Bank Ledger	CashInBankLedger	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	500.0	Cash Receipts Book	sysRptCRBook	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	501.0	PDC Schedule	sysRptpdcassof	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	502.0	Unapplied Customer Deposit Schedule	sysRptunappliedcustdeposit	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	503.0	Applied Customer Deposit Schedule	sysRptappliedcustdeposit	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	504.0	Cash In Bank Balances Report	sysRptcashinbank	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	BANKINGRPTS	505.0	Bank Ledger Report	sysRpthms_bl	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	10.0	Chart of Accounts	sysRpthms_coa	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	FINANCIALRPTS	50.0	Journal Voucher List	JournalVoucherList	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	60.0	Journal Entry List	JournalEntryList	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	100.0	Journal Ledger	JournalLedger	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	109.0	General Ledger 	sysRpthms_gl	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	110.0	Trial Balance	sysRpthms_tb	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	112.0	Book of Accounts	sysRpttrans_journal	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	113.0	Subsidiary Ledger	sysRptsl	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	120.0	Balance Sheet	sysRpthms_bs	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	130.0	Comparative Balance Sheet	sysRptcom_balance_sheet	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	131.0	Profit and Loss	sysRpthms_pl	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	140.0	Cash Flow	sysRptcash_flow	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	151.0	Journal Voucher List Report	sysRptjv_list	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	FINANCIALRPTS	152.0	Recurring Postings List Report	sysRptrecurringposting	P	1	manager	2014-04-08 12:58:56	manager	2014-04-08 12:58:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISINV	1.0	Nursing Service Stock Report	sysRpthms_nursinginv	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISINV	2.0	Request vs Delivery Report	sysRpthms_rvd	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISINV	3.0	Price List	sysRpthms_prl	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISINV	3.1	Room Price List	sysRpthms_roompl	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISINV	4.0	Inventory Min./Max. Level Report	sysRpthms_minmax	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISINV	5.0	Inventory Expiration Report	sysRpthms_ixr	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISINV	6.0	Departmental Expenses, Issuances, Purchases & Stock Transfer Report	sysRpthms_deips	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISINV	7.0	Inventory Stock Status (Stock Card vs. Actual)	sysRpthms_inv_SCvsActual	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISPHAX	1.0	Summary Report	sysRpthms_pharpt	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISPHAX	2.0	Monthly Reports	sysRpthms_phamorpts	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISPULX	1.0	Pulmonary Audit Report	sysRpthms_pulmolist	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISPULX	2.0	Pulmonary Patient Records	sysRpthms_pulmopr	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	1.0	Log Book	sysRpthms_log_book	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	1.5	Diet List	sysRpthms_dietL	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	3.0	Cases	sysRpthms_census_filter_roomtype	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	4.2	Daily Collection Summary	sysRpthms_dcr	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	5.0	Transmittal	sysRpthms_trans	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	5.1	Transmittal Payments	sysRpthms_transpay	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	5.2	A/R Aging - PHIC/HMO/LGU/CO	sysRpthms_araging	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	8.0	Statement of Account	sysRpthms_soa	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	8.5	Inventory Reports	HISINV	M	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	8.6	Pulmonary Reports	HISPULX	M	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	8.7	Pharmacy Reports	HISPHAX	M	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	11.0	Radiology Summary Report	sysRpthms_radiolist	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	12.0	Laboratory Reports	sysRpthms_lablist	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	13.0	Heart Station Summary Report	sysRpthms_heartstation	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	14.0	Professional Fees Report	sysRpthms_pf	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	15.0	Special Rooms Report	sysRpthms_splroom	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	16.0	Cash Sales/Request Reports	sysRpthms_reqrpts	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	16.1	Charge/Render Reports	sysRpthms_chrgrpts	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	HISRPTS	17.0	Admission and Consultation Report	sysRpthms_iop_ledger	P	1	manager	2014-04-08 12:58:58	manager	2014-04-08 12:58:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	InventoryRpts	4.0	Item List	itemlist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	4.2	Last Prices	lastprices	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	InventoryRpts	4.5	Inventory Requirement By Sales	inventoryrequirementbysales	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	InventoryRpts	5.0	Inventory Requirement Management	inventoryrequirementmanagement	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	InventoryRpts	6.0	Goods Receipt List	goodsreceiptlist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	7.0	Goods Issue List	goodsissuelist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	8.0	Stock Transfer List	StockTransferList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	10.0	Goods Receipt Report	rptGoodsReceiptReport	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	15.0	Goods Receipt w/ Cost Report	rptGoodsReceiptwCostReport	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	20.0	Goods Issue Report	rptGoodsIssueReport	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	30.0	Accounts Payable/Receiving Report	rptAccountsPayableReceivingReport	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	35.0	Stock Adjustment List	stockadjustmentlist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	36.0	Initial Quantity List	initialquantitylist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	37.0	Stock Revaluation List	stockrevaluationlist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	37.5	Stock Allocation List	stockallocationlist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	37.9	Re-Packing List	RepackingList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	38.0	Pick and Pack List	pickpacklist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	39.0	Transfer Request List	StockTransferRequestIBList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	40.0	Transfer Out List	GoodsIssueIBList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	41.0	Transfer In List	GoodsReceiptIBList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	42.0	Transfer REcon List	StockTransferLossList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	43.0	Transfer Out (Transit) List	stocktransferouttransitIB	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	44.0	Transfer In (Transit) List	stocktransferintransitIB	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	50.0	Serial Numbers List	SerialNumberList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	55.0	Batch Numbers List	BatchNumberList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	90.0	Stock List	stockcardcostinglist	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	95.0	Stock List - Consignment	StockConsignmentList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	100.0	Stock Ledger	StockLedger	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	105.0	Stock Ledger - Consignment	StockConsignmentLedger	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	110.0	Repo Details	RepoDetailsList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	112.0	Aging	sysRptstock_aging	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	200.0	Stock Status with Cost	sysRptinv_stock_status_all_whse_w_cost	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	210.0	Stock Ledger	sysRptstock_ledger	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	215.0	Price List	sysRptinv_price_list_price_wo_cost	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	300.0	Goods Receipt List Report	sysRptgoods_receipt	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	350.0	Goods Issue List Report	sysRptgoods_issue	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	400.0	Stock Transfer List Report	sysRptsttrans	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	410.0	Fuel Buffering	sysRptfuel_buff	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	420.0	Fuel Monitoring Sheet	sysRptfuel_moni	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	430.0	DSR and JV List Report	sysRptdsr_jv	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	440.0	Consignment Stock Monitoring	sysRptconstmonitor	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	InventoryRpts	450.0	Early Registration	sysRptearlyreg	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	60.0	Purchase Request List	PurchaseRequestList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	70.0	Purchase Order List	PurchaseOrderList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	80.0	Goods Receipt PO	PurchaseDeliveryList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	90.0	Goods Return	PurchaseReturnList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	100.0	A/P Invoice List	APInvoiceList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	110.0	A/P Credit Memo List	APCreditMemoList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	120.0	A/P Aging - DOCTORS	sysRpthms_ap_aging	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	120.5	A/P Aging - SUPPLIERS/OTHERS	sysRpthms_ap_aging2	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	PURCHASINGRPTS	121.0	Purchase Order Report	sysRpthms_sumpo	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	PURCHASINGRPTS	122.0	Purchase Subsidiary Ledger	sysRpthms_apinvsum	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	PURCHASINGRPTS	123.0	Purchase Order Vs. Receiving Report	sysRpthms_povrr	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	PURCHASINGRPTS	130.0	Purchase Book	sysRptpur_book	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	160.0	Purchase Analysis	sysRptpa	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	161.0	Purchase Order List Report	sysRptpurchaseorder_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	162.0	Goods Receipt PO List Report	sysRptgrpo_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	163.0	Goods Return List Report	sysRptgoodsreturn_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	164.0	A/P Invoice List Report	sysRptinv_rr	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS	165.0	A/P Credit Memo List Report	sysRptprs	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	PURCHASINGRPTS 	200.0	Purchasing Requirement Management	purchaserequirementmanagement	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	SALESRPTS	10.0	Sales Report	rptSales	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	20.0	Collections And Deposits Report	rptCollectionsAndDeposits	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	60.0	Sales Quotation List	SalesQuotationList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	70.0	Sales Order List	SalesOrderList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	80.0	Delivery List	SalesDeliveryList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	90.0	Return List	SalesReturnList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	95.0	A/R Down Payment Request List	ARDownPaymentRequestList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	96.0	A/R Down Payment Invoice List	ARDownPaymentInvoiceList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	99.0	Notes Receivable List	NRInvoiceList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	100.0	Account Receivable List	ARInvoiceList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	101.0	Cash Sales List	ARInvoicePaymentList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	110.0	A/R Credit Memo List	ARCreditMemoList	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	115.0	Sales Inquiry	SalesSummary	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	SALESRPTS	120.0	Consignment Sales Management	ConsignmentSalesManagement	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	SALESRPTS	130.0	A/R Aging - PHIC/HMO/LGU/CO	sysRpthms_araging	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	130.5	A/R Aging - EMPLOYEE/NON-TRADE	sysRptHMS_ARAGING2	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-ACCT	SALESRPTS	131.0	Sales Book	sysRptsb	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	134.0	Sales Analysis	sysRptsales_analysis	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	190.0	Sales Quotation List Report	sysRptsalesquotation_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	191.0	Sales Order List Report	sysRptsalesorder_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	192.0	Sales Delivery List Report	sysRptsalesdelivery_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	193.0	Sales Return List Report	sysRptsalesreturn_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	198.0	A/R Invoice List Report	sysRptarinvoice_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	199.0	A/R Credit Memo List Report	sysRptarcreditmemo_list	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	200.0	Sales Monitoring	sysRptsale_moni	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	300.0	Collection Report	sysRptinv_pay	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	400.0	Sales and Effective Margin	sysRptsaleEffe	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	410.0	Sales Summary	sysRptsales_sum	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	420.0	Daily Lube Sales	sysRptlube_sales	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-ACCT	SALESRPTS	430.0	Lube Sales	sysRptlubesales	P	1	manager	2014-04-08 12:58:57	manager	2014-04-08 12:58:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-BILLING	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-03 11:25:30	manager	2014-04-03 11:25:30	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-BILLING	HISRPTS	16.1	Charge/Render Reports	sysRpthms_chrgrpts	P	1	manager	2014-04-03 11:25:30	manager	2014-04-03 11:25:30	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-CASHIER	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-09 14:57:48	manager	2014-04-09 14:57:48	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-CASHIER	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-04-09 14:57:48	manager	2014-04-09 14:57:48	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-CASHIER	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	manager	2014-04-09 14:57:48	manager	2014-04-09 14:57:48	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-CASHIER	HISRPTS	4.2	Daily Collection Summary	sysRpthms_dcr	P	1	manager	2014-04-09 14:57:48	manager	2014-04-09 14:57:48	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-CASHIER	HISRPTS	14.0	Professional Fees Report	sysRpthms_pf	P	1	manager	2014-04-09 14:57:48	manager	2014-04-09 14:57:48	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-CASHIER	HISRPTS	16.0	Cash Sales/Request Reports	sysRpthms_reqrpts	P	1	manager	2014-04-09 14:57:48	manager	2014-04-09 14:57:48	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-CASHIER	HISRPTS	16.1	Charge/Render Reports	sysRpthms_chrgrpts	P	1	manager	2014-04-09 14:57:48	manager	2014-04-09 14:57:48	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-CSR	InventoryRpts	90.0	Stock List	stockcardcostinglist	P	1	manager	2014-04-10 11:13:13	manager	2014-04-10 11:13:13	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-HMO	FINANCIALRPTS	100.0	Journal Ledger	JournalLedger	P	1	manager	2014-04-10 17:43:48	manager	2014-04-10 17:43:48	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PHIC	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-07 16:12:04	manager	2014-04-07 16:12:04	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PHIC	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-04-07 16:12:04	manager	2014-04-07 16:12:04	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PHIC	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	manager	2014-04-07 16:12:04	manager	2014-04-07 16:12:04	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PHIC	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	manager	2014-04-07 16:12:04	manager	2014-04-07 16:12:04	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PHIC2	FINANCIALRPTS	100.0	Journal Ledger	JournalLedger	P	1	manager	2014-04-10 17:55:56	manager	2014-04-10 17:55:56	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PHIC2	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-10 17:55:57	manager	2014-04-10 17:55:57	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PHIC2	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-04-10 17:55:57	manager	2014-04-10 17:55:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PHIC2	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	manager	2014-04-10 17:55:57	manager	2014-04-10 17:55:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PHIC2	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	manager	2014-04-10 17:55:57	manager	2014-04-10 17:55:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PHIC2	HISRPTS	5.1	Transmittal Payments	sysRpthms_transpay	P	1	manager	2014-04-10 17:55:57	manager	2014-04-10 17:55:57	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISINV	1.0	Nursing Service Stock Report	sysRpthms_nursinginv	P	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISINV	2.0	Request vs Delivery Report	sysRpthms_rvd	P	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISINV	3.0	Price List	sysRpthms_prl	P	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISINV	3.1	Room Price List	sysRpthms_roompl	P	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISINV	4.0	Inventory Min./Max. Level Report	sysRpthms_minmax	P	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISINV	5.0	Inventory Expiration Report	sysRpthms_ixr	P	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISINV	6.0	Departmental Expenses, Issuances, Purchases & Stock Transfer Report	sysRpthms_deips	P	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISINV	7.0	Inventory Stock Status (Stock Card vs. Actual)	sysRpthms_inv_SCvsActual	P	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	HISRPTS	8.5	Inventory Reports	HISINV	M	1	manager	2014-04-09 22:34:15	manager	2014-04-09 22:34:15	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	InventoryRpts	4.0	Item List	itemlist	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	4.2	Last Prices	lastprices	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	InventoryRpts	4.5	Inventory Requirement By Sales	inventoryrequirementbysales	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	InventoryRpts	5.0	Inventory Requirement Management	inventoryrequirementmanagement	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	InventoryRpts	6.0	Goods Receipt List	goodsreceiptlist	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	7.0	Goods Issue List	goodsissuelist	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	8.0	Stock Transfer List	StockTransferList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	10.0	Goods Receipt Report	rptGoodsReceiptReport	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	15.0	Goods Receipt w/ Cost Report	rptGoodsReceiptwCostReport	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	20.0	Goods Issue Report	rptGoodsIssueReport	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	35.0	Stock Adjustment List	stockadjustmentlist	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	36.0	Initial Quantity List	initialquantitylist	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	37.0	Stock Revaluation List	stockrevaluationlist	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	37.5	Stock Allocation List	stockallocationlist	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	37.9	Re-Packing List	RepackingList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	39.0	Transfer Request List	StockTransferRequestIBList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	40.0	Transfer Out List	GoodsIssueIBList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	41.0	Transfer In List	GoodsReceiptIBList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	42.0	Transfer REcon List	StockTransferLossList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	55.0	Batch Numbers List	BatchNumberList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	90.0	Stock List	stockcardcostinglist	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	100.0	Stock Ledger	StockLedger	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	200.0	Stock Status with Cost	sysRptinv_stock_status_all_whse_w_cost	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	210.0	Stock Ledger	sysRptstock_ledger	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	300.0	Goods Receipt List Report	sysRptgoods_receipt	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	350.0	Goods Issue List Report	sysRptgoods_issue	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	InventoryRpts	400.0	Stock Transfer List Report	sysRptsttrans	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	60.0	Purchase Request List	PurchaseRequestList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	70.0	Purchase Order List	PurchaseOrderList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	80.0	Goods Receipt PO	PurchaseDeliveryList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	90.0	Goods Return	PurchaseReturnList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	100.0	A/P Invoice List	APInvoiceList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	110.0	A/P Credit Memo List	APCreditMemoList	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	121.0	Purchase Order Report	sysRpthms_sumpo	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	PURCHASINGRPTS	122.0	Purchase Subsidiary Ledger	sysRpthms_apinvsum	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	PURCHASINGRPTS	123.0	Purchase Order Vs. Receiving Report	sysRpthms_povrr	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+FIN-PURCH	PURCHASINGRPTS	130.0	Purchase Book	sysRptpur_book	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	160.0	Purchase Analysis	sysRptpa	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	161.0	Purchase Order List Report	sysRptpurchaseorder_list	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	162.0	Goods Receipt PO List Report	sysRptgrpo_list	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	163.0	Goods Return List Report	sysRptgoodsreturn_list	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	164.0	A/P Invoice List Report	sysRptinv_rr	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS	165.0	A/P Credit Memo List Report	sysRptprs	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+FIN-PURCH	PURCHASINGRPTS 	200.0	Purchasing Requirement Management	purchaserequirementmanagement	P	1	manager	2014-04-09 22:34:14	manager	2014-04-09 22:34:14	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+HIS-RECORDS	HIS	500.0	Reports	HISRPTS	M	1	110043	2014-04-01 15:07:35	110043	2014-04-01 15:07:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+HIS-RECORDS	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	110043	2014-04-01 15:07:35	110043	2014-04-01 15:07:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+HIS-RECORDS	HISRPTS	3.0	Cases	sysRpthms_census_filter_roomtype	P	1	110043	2014-04-01 15:07:35	110043	2014-04-01 15:07:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+HIS-RECORDS	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	110043	2014-04-01 15:07:35	110043	2014-04-01 15:07:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+HIS-RECORDS	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	110043	2014-04-01 15:07:35	110043	2014-04-01 15:07:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+HIS-RECORDS	HISRPTS	17.0	Admission and Consultation Report	sysRpthms_iop_ledger	P	1	110043	2014-04-01 15:07:35	110043	2014-04-01 15:07:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+LAB	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-09 10:40:59	manager	2014-04-09 10:40:59	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+LAB	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-04-09 10:40:59	manager	2014-04-09 10:40:59	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+LAB	HISRPTS	12.0	Laboratory Reports	sysRpthms_lablist	P	1	manager	2014-04-09 10:40:59	manager	2014-04-09 10:40:59	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+LAB	HISRPTS	16.1	Charge/Render Reports	sysRpthms_chrgrpts	P	1	manager	2014-04-09 10:40:59	manager	2014-04-09 10:40:59	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+NSG	HIS	500.0	Reports	HISRPTS	M	1	110043	2014-04-06 16:33:37	110043	2014-04-06 16:33:37	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+NSG	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	110043	2014-04-06 16:33:37	110043	2014-04-06 16:33:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+NSG-HS	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-11 16:10:27	manager	2014-04-11 16:10:27	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+NSG-HS	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-04-11 16:10:27	manager	2014-04-11 16:10:27	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+NSG-HS	HISRPTS	13.0	Heart Station Summary Report	sysRpthms_heartstation	P	1	manager	2014-04-11 16:10:27	manager	2014-04-11 16:10:27	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+NSG-NU-FL.1	HIS	500.0	Reports	HISRPTS	M	1	110043	2014-04-01 22:04:23	110043	2014-04-01 22:04:23	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+NSG-NU-FL.1	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	110043	2014-04-01 22:04:23	110043	2014-04-01 22:04:23	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISPULX	1.0	Pulmonary Audit Report	sysRpthms_pulmolist	P	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISPULX	2.0	Pulmonary Patient Records	sysRpthms_pulmopr	P	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISRPTS	3.0	Cases	sysRpthms_census_filter_roomtype	P	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISRPTS	4.2	Daily Collection Summary	sysRpthms_dcr	P	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISRPTS	8.6	Pulmonary Reports	HISPULX	M	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISRPTS	16.0	Cash Sales/Request Reports	sysRpthms_reqrpts	P	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+PULM	HISRPTS	16.1	Charge/Render Reports	sysRpthms_chrgrpts	P	1	manager	2014-04-04 00:45:58	manager	2014-04-04 00:45:58	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+RAD	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-04-11 11:15:26	manager	2014-04-11 11:15:26	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+RAD	HISRPTS	14.0	Professional Fees Report	sysRpthms_pf	P	1	manager	2014-04-11 11:15:26	manager	2014-04-11 11:15:26	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	BANKINGRPTS	100.0	Incoming Payment List - Customer	IncomingPaymentListCustomer	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	110.0	Incoming Payment List - Supplier	IncomingPaymentListSupplier	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	120.0	Incoming Payment List - G/L Account	IncomingPaymentListAccount	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	150.0	Outgoing Payment List - Customer	OutgoingPaymentListCustomer	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	160.0	Outgoing Payment List - Supplier	OutgoingPaymentListSupplier	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	170.0	Outgoing Payment List - G/L Account	OutgoingPaymentListAccount	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	180.0	Credit Memo List - Customer	CreditMemoListCustomer	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	190.0	Credit Memo List - Supplier	CreditMemoListSupplier	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	195.0	Credit Memo List - G/L Account	CreditMemoListAccount	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	250.0	External Bank Reconciliation - List	ExternalBankReconList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	300.0	Cash In Bank Ledger	CashInBankLedger	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	500.0	Cash Receipts Book	sysRptCRBook	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	1	1	1	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	501.0	PDC Schedule	sysRptpdcassof	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	502.0	Unapplied Customer Deposit Schedule	sysRptunappliedcustdeposit	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	503.0	Applied Customer Deposit Schedule	sysRptappliedcustdeposit	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	1	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	BANKINGRPTS	505.0	Bank Ledger Report	sysRpthms_bl	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	10.0	Chart of Accounts	sysRpthms_coa	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	FINANCIALRPTS	50.0	Journal Voucher List	JournalVoucherList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	60.0	Journal Entry List	JournalEntryList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	100.0	Journal Ledger	JournalLedger	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	109.0	General Ledger 	sysRpthms_gl	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	110.0	Trial Balance	sysRpthms_tb	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	112.0	Book of Accounts	sysRpttrans_journal	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	113.0	Subsidiary Ledger	sysRptsl	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	120.0	Balance Sheet	sysRpthms_bs	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	131.0	Profit and Loss	sysRpthms_pl	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	140.0	Cash Flow	sysRptcash_flow	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	151.0	Journal Voucher List Report	sysRptjv_list	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	FINANCIALRPTS	152.0	Recurring Postings List Report	sysRptrecurringposting	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	HIS	500.0	Reports	HISRPTS	M	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	R	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISINV	1.0	Nursing Service Stock Report	sysRpthms_nursinginv	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISINV	2.0	Request vs Delivery Report	sysRpthms_rvd	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISINV	3.0	Price List	sysRpthms_prl	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISINV	3.1	Room Price List	sysRpthms_roompl	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISINV	4.0	Inventory Min./Max. Level Report	sysRpthms_minmax	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISINV	5.0	Inventory Expiration Report	sysRpthms_ixr	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISINV	6.0	Departmental Expenses, Issuances, Purchases & Stock Transfer Report	sysRpthms_deips	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISINV	7.0	Inventory Stock Status (Stock Card vs. Actual)	sysRpthms_inv_SCvsActual	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISPHAX	1.0	Summary Report	sysRpthms_pharpt	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISPHAX	2.0	Monthly Reports	sysRpthms_phamorpts	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISPULX	1.0	Pulmonary Audit Report	sysRpthms_pulmolist	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISPULX	2.0	Pulmonary Patient Records	sysRpthms_pulmopr	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	1.0	Log Book	sysRpthms_log_book	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	1.5	Diet List	sysRpthms_dietL	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	2.0	Daily Census	sysRpthms_daily_census	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	3.0	Cases	sysRpthms_census_filter_roomtype	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	4.0	Census	sysRpthms_census_filter_roomtype_by_f	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	4.1	Discharged List	sysRpthms_dl	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	4.2	Daily Collection Summary	sysRpthms_dcr	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	5.0	Transmittal	sysRpthms_trans	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	5.1	Transmittal Payments	sysRpthms_transpay	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	5.2	A/R Aging - PHIC/HMO/LGU/CO	sysRpthms_araging	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	8.5	Inventory Reports	HISINV	M	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	8.6	Pulmonary Reports	HISPULX	M	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	8.7	Pharmacy Reports	HISPHAX	M	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	11.0	Radiology Summary Report	sysRpthms_radiolist	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	12.0	Laboratory Reports	sysRpthms_lablist	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	13.0	Heart Station Summary Report	sysRpthms_heartstation	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	14.0	Professional Fees Report	sysRpthms_pf	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	15.0	Special Rooms Report	sysRpthms_splroom	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	16.0	Cash Sales/Request Reports	sysRpthms_reqrpts	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	16.1	Charge/Render Reports	sysRpthms_chrgrpts	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	HISRPTS	17.0	Admission and Consultation Report	sysRpthms_iop_ledger	P	1	manager	2014-03-21 15:29:37	manager	2014-03-21 15:29:37	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	InventoryRpts	4.0	Item List	itemlist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	1	1	1	1	1	1	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	4.2	Last Prices	lastprices	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	InventoryRpts	4.5	Inventory Requirement By Sales	inventoryrequirementbysales	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	InventoryRpts	5.0	Inventory Requirement Management	inventoryrequirementmanagement	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	InventoryRpts	6.0	Goods Receipt List	goodsreceiptlist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	7.0	Goods Issue List	goodsissuelist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	8.0	Stock Transfer List	StockTransferList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	35.0	Stock Adjustment List	stockadjustmentlist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	36.0	Initial Quantity List	initialquantitylist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	37.0	Stock Revaluation List	stockrevaluationlist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	37.5	Stock Allocation List	stockallocationlist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	37.9	Re-Packing List	RepackingList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	38.0	Pick and Pack List	pickpacklist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	39.0	Transfer Request List	StockTransferRequestIBList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	40.0	Transfer Out List	GoodsIssueIBList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	41.0	Transfer In List	GoodsReceiptIBList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	42.0	Transfer REcon List	StockTransferLossList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	43.0	Transfer Out (Transit) List	stocktransferouttransitIB	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	44.0	Transfer In (Transit) List	stocktransferintransitIB	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	50.0	Serial Numbers List	SerialNumberList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	55.0	Batch Numbers List	BatchNumberList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	90.0	Stock List	stockcardcostinglist	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	95.0	Stock List - Consignment	StockConsignmentList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	100.0	Stock Ledger	StockLedger	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	105.0	Stock Ledger - Consignment	StockConsignmentLedger	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	110.0	Repo Details	RepoDetailsList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	112.0	Aging	sysRptstock_aging	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	200.0	Stock Status with Cost	sysRptinv_stock_status_all_whse_w_cost	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	210.0	Stock Ledger	sysRptstock_ledger	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	215.0	Price List	sysRptinv_price_list_price_wo_cost	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	300.0	Goods Receipt List Report	sysRptgoods_receipt	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	350.0	Goods Issue List Report	sysRptgoods_issue	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	InventoryRpts	400.0	Stock Transfer List Report	sysRptsttrans	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	60.0	Purchase Request List	PurchaseRequestList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	70.0	Purchase Order List	PurchaseOrderList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	80.0	Goods Receipt PO	PurchaseDeliveryList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	90.0	Goods Return	PurchaseReturnList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	100.0	A/P Invoice List	APInvoiceList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	110.0	A/P Credit Memo List	APCreditMemoList	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	120.0	A/P Aging - DOCTORS	sysRpthms_ap_aging	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	120.5	A/P Aging - SUPPLIERS/OTHERS	sysRpthms_ap_aging2	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	PURCHASINGRPTS	121.0	Purchase Order Report	sysRpthms_sumpo	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	PURCHASINGRPTS	122.0	Purchase Subsidiary Ledger	sysRpthms_apinvsum	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	PURCHASINGRPTS	123.0	Purchase Order Vs. Receiving Report	sysRpthms_povrr	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	PURCHASINGRPTS	130.0	Purchase Book	sysRptpur_book	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	160.0	Purchase Analysis	sysRptpa	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	161.0	Purchase Order List Report	sysRptpurchaseorder_list	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	162.0	Goods Receipt PO List Report	sysRptgrpo_list	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	163.0	Goods Return List Report	sysRptgoodsreturn_list	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	164.0	A/P Invoice List Report	sysRptinv_rr	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS	165.0	A/P Credit Memo List Report	sysRptprs	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	PURCHASINGRPTS 	200.0	Purchasing Requirement Management	purchaserequirementmanagement	P	1	manager	2014-03-21 15:29:35	manager	2014-03-21 15:29:35	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	SALESRPTS	60.0	Sales Quotation List	SalesQuotationList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	70.0	Sales Order List	SalesOrderList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	80.0	Delivery List	SalesDeliveryList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	90.0	Return List	SalesReturnList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	95.0	A/R Down Payment Request List	ARDownPaymentRequestList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	96.0	A/R Down Payment Invoice List	ARDownPaymentInvoiceList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	99.0	Notes Receivable List	NRInvoiceList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	100.0	Account Receivable List	ARInvoiceList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	101.0	Cash Sales List	ARInvoicePaymentList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	110.0	A/R Credit Memo List	ARCreditMemoList	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	115.0	Sales Inquiry	SalesSummary	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	SALESRPTS	120.0	Consignment Sales Management	ConsignmentSalesManagement	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	SALESRPTS	130.0	A/R Aging - PHIC/HMO/LGU/CO	sysRpthms_araging	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	130.5	A/R Aging - EMPLOYEE/NON-TRADE	sysRptHMS_ARAGING2	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1
+SYSADMIN	SALESRPTS	131.0	Sales Book	sysRptsb	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	134.0	Sales Analysis	sysRptsales_analysis	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	190.0	Sales Quotation List Report	sysRptsalesquotation_list	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	191.0	Sales Order List Report	sysRptsalesorder_list	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	192.0	Sales Delivery List Report	sysRptsalesdelivery_list	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	193.0	Sales Return List Report	sysRptsalesreturn_list	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	198.0	A/R Invoice List Report	sysRptarinvoice_list	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+SYSADMIN	SALESRPTS	199.0	A/R Credit Memo List Report	sysRptarcreditmemo_list	P	1	manager	2014-03-21 15:29:34	manager	2014-03-21 15:29:34	F	1	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0

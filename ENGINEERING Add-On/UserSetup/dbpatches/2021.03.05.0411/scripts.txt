@@ -1,0 +1,3 @@
+evaltrx:addUDT('buildingscopeofwork','Building Scope of Work','MDC','');
+evaltrx:addUDO('buildingscopeofwork','Building Scope of Work','buildingscopeofwork','G');
+UPDATE DBVERSION SET VERSION='2021.03.05.0411' WHERE ID='GPS.ENGINEERING';

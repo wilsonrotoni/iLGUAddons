@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>pi_yr</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>yr</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_profitcenter</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>profitcenter</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

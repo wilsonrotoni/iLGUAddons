@@ -1,0 +1,6 @@
+evaltrx:addUDOFindColumn('fa','code','10');
+evaltrx:addUDOFindColumn('fa','name','20');
+evaltrx:addUDOFindColumn('fa','u_itemcode','30');
+evaltrx:addUDOFindColumn('fa','u_itemdesc','40');
+evaltrx:addUDOFindColumn('fa','u_empname','50');
+UPDATE DBVERSION SET VERSION='2019.03.06.2340' WHERE ID='GPS.FixedAsset';

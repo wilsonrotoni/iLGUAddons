@@ -1,0 +1,27 @@
+1.
+set output file c:\standard_screen\reportlayouts.dat;
+select * from reportlayouts where progid like '%xxx%' or progid = 'JournalEntries';
+
+2.
+set output file c:\standard_screen\sysrpts.dat;
+select * from sysrpts where reportid like '%xxx%';
+
+3.
+set output file c:\standard_screen\sysrptparams.dat;
+select * from sysrptparams where reportid like '%xxx%';
+
+4.
+set output file c:\standard_screen\sysrptparamvalues.dat;
+select * from sysrptparamvalues where reportid like '%xxx%';
+
+5.
+set output file c:\standard_screen\progids.dat;
+select * from progids where progid like '%xxx%';
+
+6.
+set output file c:\standard_screen\usermenu.dat;
+select * from usermenu where menuid like '%xxx%' or menucmd like '%xxx%';
+
+7.
+set output file c:\standard_screen\objectfss.dat;
+select * from objectfss where objectcode like '%xxx%';

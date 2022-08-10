@@ -1,0 +1,4 @@
+evaltrx:registerAddonMenu('GPS','Fire Safety');
+evaltrx:addAddonMenu('GPS','Fire Safety','LGUFSI',50);
+evaltrx:addAddonMenu('GPS','Fire Safety','LGUFSI',60);
+UPDATE DBVERSION SET VERSION='2019.03.28.1116' WHERE ID='GPS.FireSafety';

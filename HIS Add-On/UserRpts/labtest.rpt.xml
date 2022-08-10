@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>pi_docno</Id>
+			<DataType>String</DataType>
+			<Source>filter</Source>
+			<SourceKey>docno</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

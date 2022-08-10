@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_bplbldgnames','street','Street','any',100,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplbldgnames','brgy','Barangay','any',100,20,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.08.23.2137' WHERE ID='GPS.BPLS';

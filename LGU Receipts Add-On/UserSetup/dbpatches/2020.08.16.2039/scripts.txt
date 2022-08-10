@@ -1,0 +1,16 @@
+evaltrx:addUDT('lgureceiptmultipleissue','Multiple Issue Receipts','D','');
+evaltrx:addUDO('lgureceiptmultipleissue','Multiple Issue Receipts','lgureceiptmultipleissue','');
+evaltrx:addUDF('u_lgureceiptmultipleissue','dateissued','Date Issued','date',0,3,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptmultipleissue','cashier','Cashier','any',25,26,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptmultipleissue','time','Time','time',10,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptmultipleissue','totalnoofreceipt','Total No of Receipt','numeric',4,30,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDT('lgureceiptmultipleissueitems','Multiple Issue Receipts Items','DL','');
+evaltrx:addUDOChild('lgureceiptmultipleissue','lgureceiptmultipleissueitems','Multiple Issue Receipts Items','G');
+evaltrx:addUDF('u_lgureceiptmultipleissueitems','receiptlineid','Receipts ID','numeric',4,5,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptmultipleissueitems','docseries','Booklet Series','any',35,7,null,0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lgureceiptmultipleissueitems','receiptfrm','Receipt From','any',30,10,'',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lgureceiptmultipleissueitems','receiptto','Receipt To','any',30,20,'',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lgureceiptmultipleissueitems','form','Type of Form','any',30,25,null,0,'u_lguforms:code:name',0,0,1,1,1,0);
+evaltrx:addUDF('u_lgureceiptmultipleissueitems','noofreceipt','No of Receipt','numeric',4,30,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_lgureceiptmultipleissueitems','available','Available','numeric',4,35,'0',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2020.08.16.2039' WHERE ID='GPS.LGUReceipts';

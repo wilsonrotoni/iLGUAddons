@@ -1,0 +1,16 @@
+
+evaltrx:addUserMenu('','LGURPTSPAY',172,'Daily Collection Report','P','urpt_u_dailycollecti');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',172,'Daily Collection Report','P','urpt_u_dailycollecti');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',172,'Daily Collection Report','P','urpt_u_dailycollecti');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',172,'Daily Collection Report','P','urpt_u_dailycollecti');
+
+evaltrx:addUDR('u_dailycollecti','Daily Collection Report','QS','mysql',1);
+
+evaltrx:addUDRParam('u_dailycollecti','date1','Date','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_dailycollecti','profitcenter','Profitcenter','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_dailycollecti','profitcenter','BPL','BPLS');
+evaltrx:addUDRParamValue('u_dailycollecti','profitcenter','MTOP','FRANCHISE');
+evaltrx:addUDRParamValue('u_dailycollecti','profitcenter','PMR','PUBLIC MARKET');
+evaltrx:addUDRParamValue('u_dailycollecti','profitcenter','RPTA','REAL PROPERTY');
+
+evaltrx:addUDRLayout('u_dailycollecti','Daily Collection Report',1,'LGU Add-On','DCCR.rpt','1',1,'','','');

@@ -1,0 +1,87 @@
+REPORTID	PARAMID	PARAMVALUE	PARAMVALUEDESC	PARAMVALUEINDEX	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION	DATECREATED
+xxx_account_list_detail	zero		Yes	0	manager	2011-09-13 16:55:59	manager	1	2011-09-13 16:55:59
+xxx_account_list_detail	zero	0	No	0	manager	2011-09-13 16:55:59	manager	1	2011-09-13 16:55:59
+xxx_arcreditmemo_list	status		All	0	manager	2010-03-08 19:59:17	manager	1	2010-03-08 19:59:17
+xxx_arcreditmemo_list	status	C	Closed	0	manager	2010-03-08 19:59:17	manager	1	2010-03-08 19:59:17
+xxx_arcreditmemo_list	status	D	Draft	0	manager	2010-03-08 19:59:17	manager	1	2010-03-08 19:59:17
+xxx_arcreditmemo_list	status	O	Open	0	manager	2010-03-08 19:59:17	manager	1	2010-03-08 19:59:17
+xxx_arinvoice_list	status		All	0	manager	2010-03-08 19:37:01	manager	1	2010-03-08 19:37:01
+xxx_arinvoice_list	status	C	Closed	0	manager	2010-03-08 19:37:01	manager	1	2010-03-08 19:37:01
+xxx_arinvoice_list	status	D	Draft	0	manager	2010-03-08 19:37:01	manager	1	2010-03-08 19:37:01
+xxx_arinvoice_list	status	O	Open	0	manager	2010-03-08 19:37:01	manager	1	2010-03-08 19:37:01
+xxx_bnk_tj_cd	doctype	0	All	0	manager	2011-09-27 14:26:33	manager	1	2011-09-27 14:26:33
+xxx_bnk_tj_cd	doctype	\\'PY\\'	Disbursements	0	manager	2011-09-27 14:26:33	manager	1	2011-09-27 14:26:33
+xxx_bnk_tj_cr	doctype	0	All	0	manager	2011-09-27 14:59:45	manager	1	2011-09-27 14:59:45
+xxx_bnk_tj_cr	doctype	\\'RC\\'	Receipts	0	manager	2011-09-27 14:59:45	manager	1	2011-09-27 14:59:45
+xxx_bs_last_year_analysis	zero		Yes	0	manager	2011-09-23 01:00:11	manager	1	2011-09-23 01:00:11
+xxx_bs_last_year_analysis	zero	0	No	0	manager	2011-09-23 01:00:11	manager	1	2011-09-23 01:00:11
+xxx_bs_standard	zero		Yes	0	manager	2011-09-19 03:08:24	manager	1	2011-09-19 03:08:24
+xxx_bs_standard	zero	0	No	0	manager	2011-09-19 03:08:24	manager	1	2011-09-19 03:08:24
+xxx_goodsreturn_list	status		All	0	manager	2010-03-17 15:37:44	manager	1	2010-03-17 15:37:44
+xxx_goodsreturn_list	status	C	Closed	0	manager	2010-03-17 15:37:44	manager	1	2010-03-17 15:37:44
+xxx_goodsreturn_list	status	D	Draft	0	manager	2010-03-17 15:37:44	manager	1	2010-03-17 15:37:44
+xxx_goodsreturn_list	status	O	Open	0	manager	2010-03-17 15:37:44	manager	1	2010-03-17 15:37:44
+xxx_goods_issue	status		All	0	manager	2010-04-26 14:45:58	manager	1	2010-04-26 14:45:58
+xxx_goods_issue	status	C	Closed	0	manager	2010-04-26 14:45:58	manager	1	2010-04-26 14:45:58
+xxx_goods_issue	status	D	Draft	0	manager	2010-04-26 14:45:58	manager	1	2010-04-26 14:45:58
+xxx_goods_issue	status	O	Open	0	manager	2010-04-26 14:45:58	manager	1	2010-04-26 14:45:58
+xxx_goods_receipt	status		All	0	manager	2010-04-26 12:28:21	manager	1	2010-04-26 12:28:21
+xxx_goods_receipt	status	C	Closed	0	manager	2010-04-26 12:28:21	manager	1	2010-04-26 12:28:21
+xxx_goods_receipt	status	D	Draft	0	manager	2010-04-26 12:28:21	manager	1	2010-04-26 12:28:21
+xxx_goods_receipt	status	O	Open	0	manager	2010-04-26 12:28:21	manager	1	2010-04-26 12:28:21
+xxx_grpo_list	status		All	0	manager	2010-03-17 15:19:34	manager	1	2010-03-17 15:19:34
+xxx_grpo_list	status	C	Closed	0	manager	2010-03-17 15:19:34	manager	1	2010-03-17 15:19:34
+xxx_grpo_list	status	D	Draft	0	manager	2010-03-17 15:19:34	manager	1	2010-03-17 15:19:34
+xxx_grpo_list	status	O	Open	0	manager	2010-03-17 15:19:34	manager	1	2010-03-17 15:19:34
+xxx_inv_rr	status		All	0	manager	2010-03-08 18:25:30	manager	1	2010-03-08 18:25:30
+xxx_inv_rr	status	C	Closed	0	manager	2010-03-08 18:25:30	manager	1	2010-03-08 18:25:30
+xxx_inv_rr	status	D	Draft	0	manager	2010-03-08 18:25:30	manager	1	2010-03-08 18:25:30
+xxx_inv_rr	status	O	Open	0	manager	2010-03-08 18:25:30	manager	1	2010-03-08 18:25:30
+xxx_inv_tj	doctype	0	All	0	manager	2011-09-27 15:44:54	manager	1	2011-09-27 15:44:54
+xxx_inv_tj	doctype	\\'GI\\',\\'GR\\',\\'GT\\',\\'TI\\',\\'TO\\'	Inventory	0	manager	2011-09-27 15:44:54	manager	1	2011-09-27 15:44:54
+xxx_jv_list	docstatus		All	0	manager	2010-03-04 18:14:38	manager	1	2010-03-04 18:14:38
+xxx_jv_list	docstatus	POSTED	POSTED	0	manager	2010-03-04 18:09:16	manager	1	2010-03-04 18:09:16
+xxx_jv_list	docstatus	UNPOSTED	UNPOSTED	0	manager	2010-03-04 18:09:16	manager	1	2010-03-04 18:09:16
+xxx_pl_last_year_analysis	zero		Yes	0	manager	2011-09-26 13:37:35	manager	1	2011-09-26 13:37:35
+xxx_pl_last_year_analysis	zero	0	No	0	manager	2011-09-26 13:37:35	manager	1	2011-09-26 13:37:35
+xxx_pl_with_last_year	zero		Yes	0	manager	2011-09-25 06:27:33	manager	1	2011-09-25 06:27:33
+xxx_pl_with_last_year	zero	0	No	0	manager	2011-09-25 06:27:33	manager	1	2011-09-25 06:27:33
+xxx_pl_year_to_date	zero		Yes	0	manager	2011-09-25 04:09:46	manager	1	2011-09-25 04:09:46
+xxx_pl_year_to_date	zero	0	No	0	manager	2011-09-25 04:09:46	manager	1	2011-09-25 04:09:46
+xxx_profit_loss_statement	zero		Yes	0	manager	2011-09-24 21:26:44	manager	1	2011-09-24 21:26:44
+xxx_profit_loss_statement	zero	0	No	0	manager	2011-09-24 21:26:44	manager	1	2011-09-24 21:26:44
+xxx_prs	status		All	0	manager	2010-03-08 18:50:37	manager	1	2010-03-08 18:50:37
+xxx_prs	status	C	Closed	0	manager	2010-03-08 18:50:37	manager	1	2010-03-08 18:50:37
+xxx_prs	status	D	Draft	0	manager	2010-03-08 18:50:37	manager	1	2010-03-08 18:50:37
+xxx_prs	status	O	Open	0	manager	2010-03-08 18:50:37	manager	1	2010-03-08 18:50:37
+xxx_purchaseorder_list	status		All	0	manager	2010-03-17 15:04:31	manager	1	2010-03-17 15:04:31
+xxx_purchaseorder_list	status	C	Closed	0	manager	2010-03-17 15:04:31	manager	1	2010-03-17 15:04:31
+xxx_purchaseorder_list	status	D	Draft	0	manager	2010-03-17 15:04:31	manager	1	2010-03-17 15:04:31
+xxx_purchaseorder_list	status	O	Open	0	manager	2010-03-17 15:04:31	manager	1	2010-03-17 15:04:31
+xxx_pur_tj	doctype	0	All	0	manager	2011-09-27 14:05:45	manager	1	2011-09-27 14:05:45
+xxx_pur_tj	doctype	\\'AP\\',\\'ACM\\',\\'PDN\\'	Purchases	0	manager	2011-09-27 14:05:45	manager	1	2011-09-27 14:05:45
+xxx_recurringposting	docstatus		All	0	manager	2010-03-18 15:23:51	manager	1	2010-03-18 15:23:51
+xxx_recurringposting	docstatus	C	Closed	0	manager	2010-03-18 15:23:51	manager	1	2010-03-18 15:23:51
+xxx_recurringposting	docstatus	O	Open	0	manager	2010-03-18 15:23:51	manager	1	2010-03-18 15:23:51
+xxx_salesdelivery_list	status		All	0	manager	2010-03-17 14:28:09	manager	1	2010-03-17 14:28:09
+xxx_salesdelivery_list	status	C	Closed	0	manager	2010-03-17 14:28:09	manager	1	2010-03-17 14:28:09
+xxx_salesdelivery_list	status	D	Draft	0	manager	2010-03-17 14:28:09	manager	1	2010-03-17 14:28:09
+xxx_salesdelivery_list	status	O	Open	0	manager	2010-03-17 14:28:09	manager	1	2010-03-17 14:28:09
+xxx_salesorder_list	status		All	0	manager	2010-03-17 14:07:46	manager	1	2010-03-17 14:07:46
+xxx_salesorder_list	status	C	Closed	0	manager	2010-03-17 14:07:46	manager	1	2010-03-17 14:07:46
+xxx_salesorder_list	status	D	Draft	0	manager	2010-03-17 14:07:46	manager	1	2010-03-17 14:07:46
+xxx_salesorder_list	status	O	Open	0	manager	2010-03-17 14:07:46	manager	1	2010-03-17 14:07:46
+xxx_salesquotation_list	status		All	0	manager	2010-03-17 13:11:21	manager	1	2010-03-17 13:11:21
+xxx_salesquotation_list	status	C	Closed	0	manager	2010-03-17 13:11:21	manager	1	2010-03-17 13:11:21
+xxx_salesquotation_list	status	D	Draft	0	manager	2010-03-17 13:11:21	manager	1	2010-03-17 13:11:21
+xxx_salesquotation_list	status	O	Open	0	manager	2010-03-17 13:11:21	manager	1	2010-03-17 13:11:21
+xxx_salesreturn_list	status		All	0	manager	2010-03-17 14:47:22	manager	1	2010-03-17 14:47:22
+xxx_salesreturn_list	status	C	Closed	0	manager	2010-03-17 14:47:22	manager	1	2010-03-17 14:47:22
+xxx_salesreturn_list	status	D	Draft	0	manager	2010-03-17 14:47:22	manager	1	2010-03-17 14:47:22
+xxx_salesreturn_list	status	O	Open	0	manager	2010-03-17 14:47:22	manager	1	2010-03-17 14:47:22
+xxx_sr_tj	doctype	0	All	0	manager	2011-09-27 15:29:17	manager	1	2011-09-27 15:29:17
+xxx_sr_tj	doctype	\\'AR\\',\\'DN\\',\\'CM\\',\\'CS\\',\\'RT\\'	Sales	0	manager	2011-09-27 15:29:17	manager	1	2011-09-27 15:29:17
+xxx_sttrans	status		All	0	manager	2010-04-26 15:14:09	manager	1	2010-04-26 15:14:09
+xxx_sttrans	status	C	Closed	0	manager	2010-04-26 15:14:09	manager	1	2010-04-26 15:14:09
+xxx_sttrans	status	D	Draft	0	manager	2010-04-26 15:14:09	manager	1	2010-04-26 15:14:09
+xxx_sttrans	status	O	Open	0	manager	2010-04-26 15:14:09	manager	1	2010-04-26 15:14:09

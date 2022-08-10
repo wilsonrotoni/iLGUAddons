@@ -1,0 +1,58 @@
+REPORTID	REPORTNAME	REPORTACTION	DATECREATED	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION	SYSMANAGE	PROCNAME	DBTYPE
+xxx_accounts_list_summary	Accounts List Summary	QS	2011-09-13 14:09:58	manager	2011-09-13 14:26:57	manager	2	1		mysql
+xxx_account_list_detail	Accounts List Detail	QS	2011-09-13 16:17:32	manager	2011-09-13 16:56:09	manager	2	1		mysql
+xxx_account_transactions	Account Transactions	QS	2011-09-17 16:05:54	manager	2011-09-26 16:42:32	manager	3	1		mysql
+xxx_aging	Aging	QS	2010-02-07 22:59:32	manager	2010-02-07 22:59:32	manager	1	1		mysql
+xxx_appliedcustdeposit	Applied Customer Deposit Schedule	QS	2008-08-05 15:48:55	sa	2009-07-01 23:44:22	manager	4	1		mysql
+xxx_AP_AGING	Aging	QS	2009-09-27 02:19:01	manager	2010-02-10 00:50:14	manager	3	1		mysql
+xxx_arcreditmemo_list	A/R Credit Memo List Report	QS	2010-03-08 19:48:39	manager	2010-03-08 19:48:39	manager	1	1		mysql
+xxx_arinvoice_list	A/R Invoice List Report 	QS	2010-03-08 19:34:17	manager	2010-03-08 19:34:17	manager	1	1		mysql
+xxx_bnk_ledger	Bank Ledger	QS	2009-09-30 13:38:48	manager	2009-09-30 13:44:58	manager	3	1		mysql
+xxx_bnk_tj_cd	Cash Disbursements	QS	2011-09-27 14:15:19	manager	2011-09-27 14:15:19	manager	1	1		mysql
+xxx_bnk_tj_cr	Cash Receipts	QS	2011-09-27 14:45:58	manager	2011-09-27 15:00:32	manager	2	1		mysql
+xxx_bs_last_year_analysis	Balance Sheet Last Year Analysis	QS	2011-09-23 00:56:54	manager	2012-06-26 16:20:59	manager	3	1		mysql
+xxx_bs_standard	Balance Sheet Standard	QS	2011-09-19 02:53:22	manager	2012-06-26 16:10:45	manager	3	1		mysql
+xxx_cashinbank	Cash In Bank Balances	QS	2009-09-28 00:41:22	manager	2010-05-27 17:08:11	manager	3	1		mysql
+xxx_cash_flow	Cash Flow	QS	2009-11-21 03:21:07	manager	2009-11-21 03:23:02	manager	2	1		mysql
+xxx_cdr	Cash Disbursement Report	QS	2011-05-04 10:41:59	admin	2011-05-04 11:25:41	admin	3	1		mysql
+xxx_cl	Customer Ledger	QS	2010-02-08 19:56:19	manager	2010-05-30 13:43:31	manager	4	1		mysql
+xxx_crbook	Cash Receipts Book	QS	2009-07-14 01:16:27	manager	2010-02-11 12:51:49	manager	2	1		mysql
+xxx_general_journal	General Journal	QS	2011-09-26 17:30:08	manager	2011-09-27 02:54:27	manager	2	1		mysql
+xxx_gl_detail	General Ledger Detail	QS	2011-09-17 17:58:53	manager	2011-09-17 18:02:57	manager	3	1		mysql
+xxx_gl_summary	General Ledger Summary	QS	2011-09-17 21:51:51	manager	2011-09-17 21:54:37	manager	2	1		mysql
+xxx_goodsreturn_list	Goods Return List Report	QS	2010-03-17 15:33:44	manager	2010-03-17 15:33:44	manager	1	1		mysql
+xxx_goods_issue	Goods Issue List Report	QS	2010-04-26 14:43:26	manager	2010-04-26 14:43:26	manager	1	1		mysql
+xxx_goods_receipt	Goods Receipt List Report	QS	2010-04-26 12:25:13	manager	2010-04-26 12:25:13	manager	1	1		mysql
+xxx_grpo_list	Goods Receipt PO List Report	QS	2010-03-17 15:17:37	manager	2010-03-17 15:17:37	manager	1	1		mysql
+xxx_inv_pl	Price List	QS	2008-11-16 16:52:25	sa	2010-05-29 16:54:20	manager	3	1		mysql
+xxx_inv_rr	A/P Invoice List Report	QS	2008-11-16 17:13:07	sa	2010-03-08 18:21:42	manager	7	1		mysql
+xxx_inv_ss	Stock Status with Cost	QS	2008-11-17 14:37:20	sa	2009-07-23 13:28:45	manager	3	1		mysql
+xxx_inv_tj	Inventory Journal	QS	2011-09-27 15:35:06	manager	2011-09-27 15:35:06	manager	1	1		mysql
+xxx_jv_list	Journal Vouchers List Report	QS	2010-03-04 18:05:35	manager	2010-03-08 20:23:00	manager	3	1		mysql
+xxx_pa	Purchase Analysis	QS	2010-03-02 17:05:26	manager	2010-03-02 17:09:53	manager	2	1		mysql
+xxx_pdcassof	PDC Schedule	QS	2008-08-05 16:57:52	sa	2009-06-29 12:53:06	sa	9	1		mysql
+xxx_pl_last_year_analysis	Profit and Loss Last Year Analysis	QS	2011-09-26 13:35:40	manager	2011-09-26 13:42:28	manager	3	1		mysql
+xxx_pl_with_last_year	Profit and Loss With Last Year	QS	2011-09-25 06:25:46	manager	2011-09-25 06:28:49	manager	2	1		mysql
+xxx_pl_year_to_date	Profit and Loss With Year to Date	QS	2011-09-25 04:07:25	manager	2011-09-25 04:07:25	manager	1	1		mysql
+xxx_profit_loss_statement	Profit and Loss Statement	QS	2011-09-24 21:18:56	manager	2011-09-25 05:06:08	manager	2	1		mysql
+xxx_prs	A/P Credit Memo List Report	QS	2009-07-21 12:41:26	manager	2010-03-08 18:50:02	manager	4	1		mysql
+xxx_purchaseorder_list	Purchase Order List Report	QS	2010-03-17 15:01:41	manager	2010-03-17 15:03:19	manager	2	1		mysql
+xxx_pur_book	Purchase Book	QS	2009-07-12 01:13:56	manager	2009-07-12 01:33:00	manager	2	1		mysql
+xxx_pur_tj	Purchases and Payables Journal	QS	2011-09-27 13:59:01	manager	2011-09-27 13:59:01	manager	1	1		mysql
+xxx_recurringposting	Recurring Postings List Report	QS	2010-03-18 14:55:27	manager	2010-03-18 14:55:27	manager	1	1		mysql
+xxx_salesdelivery_list	Sales Delivery List Report	QS	2010-03-17 14:24:47	manager	2010-03-17 14:24:47	manager	1	1		mysql
+xxx_salesorder_list	Sales Order List Report	QS	2010-03-17 14:04:37	manager	2010-03-17 14:04:37	manager	1	1		mysql
+xxx_salesquotation_list	Sales Quotation List Report	QS	2010-03-17 13:07:40	manager	2010-03-17 13:07:40	manager	1	1		mysql
+xxx_salesreturn_list	Sales Return List Report	QS	2010-03-17 14:37:14	manager	2010-03-17 14:37:14	manager	1	1		mysql
+xxx_sales_analysis	Sales Analysis	QS	2010-02-25 13:06:38	manager	2010-02-25 13:18:49	manager	2	1		mysql
+xxx_sb	Sales Book	QS	2010-02-08 13:16:33	manager	2010-02-09 14:36:31	manager	3	1		mysql
+xxx_sl	Subsidiary Ledger	QS	2010-05-28 14:40:46	manager	2010-05-28 14:40:46	manager	1	1		mysql
+xxx_soa	Statement of Account	QS	2010-02-09 22:31:50	manager	2010-05-31 01:39:21	manager	3	1		mysql
+xxx_sr_tj	Sales and Receivables Journal	QS	2011-09-27 03:06:06	manager	2011-09-27 03:06:06	manager	1	1		mysql
+xxx_stock_aging	Stock Aging	QS	2008-11-12 14:28:02	sa	2010-02-13 01:38:19	manager	6	1		mysql
+xxx_stock_ledger	Stock Ledger	QS	2009-04-17 22:10:22	sa	2010-02-12 02:22:03	manager	10	1		mysql
+xxx_sttrans	Stock Transfer List Report	QS	2010-04-26 15:12:02	manager	2010-04-26 15:12:02	manager	1	1		mysql
+xxx_supp_ledger	Supplier Ledger	QS	2010-05-31 01:03:19	manager	2010-05-31 01:03:19	manager	1	1		mysql
+xxx_trans_journal	Book of Accounts	QS	2009-02-17 08:41:30	manager	2011-10-01 16:22:42	manager	17	1		mysql
+xxx_trial_balance	Trial Balance	QS	2011-09-18 02:03:49	manager	2012-06-26 16:03:39	manager	7	1		mysql
+xxx_unappliedcustdeposit	Unapplied Customer Deposit Schedule	QS	2008-08-05 17:11:41	sa	2009-06-28 04:25:39	sa	5	1		mysql

@@ -1,0 +1,10 @@
+evaltrx:addUDF('u_bplapplines','year','Year','any',4,5,null,0,'',0,0,1,1,1,1);
+evaltrx:addUDF('u_bplappfees','year','Year','any',4,5,null,0,'',0,0,1,1,1,1);
+evaltrx:addUDP('addmultiplefees','BPLS Add Multiple Fees','N','');
+ALTER TABLE `u_lgubills` ADD INDEX `Index_cobcustdueamount`(`COMPANY`, `BRANCH`, `U_CUSTNO`, `U_DUEDATE`);
+ALTER TABLE `u_bplapps` ADD INDEX `Index_cobbusappdatedocs`(`COMPANY`, `BRANCH`, `U_BUSINESSNAME`, `U_APPDATE`, `DOCSTATUS`);
+UPDATE U_BPLAPPLINES A INNER JOIN U_BPLAPPS B ON A.DOCID = B.DOCID AND A.BRANCH = B.BRANCH AND A.COMPANY = B.COMPANY SET A.U_YEAR = B.U_YEAR;
+UPDATE U_BPLAPPFEES A INNER JOIN U_BPLAPPS B ON A.DOCID = B.DOCID AND A.BRANCH = B.BRANCH AND A.COMPANY = B.COMPANY SET A.U_YEAR = B.U_YEAR;
+evaltrx:addUDP('bplbusinessledgerold2','Business Old Ledger','N','');
+evaltrx:addUDF('u_bplupdgross','authorizedby','Authorized By','any',100,160,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.09.20.1444' WHERE ID='GPS.BPLS';

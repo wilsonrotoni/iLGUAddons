@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_rptaxes','issuedocno','Issue Docno','any',30,35,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxes','seriesdocno','Series Docno','any',30,6,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.13.1923' WHERE ID='GPS.RPTAS';

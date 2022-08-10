@@ -1,0 +1,18 @@
+evaltrx:addUDT('motorviolators','Add New Violator','MD','');
+evaltrx:addUDF('u_motorviolators','Firstname','First Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Middlename','Middle Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Lastname','Last Name','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Gender','Gender','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_motorviolators','gender','','');
+evaltrx:addUDFValue('u_motorviolators','gender','Female','Female');
+evaltrx:addUDFValue('u_motorviolators','gender','Male','Male');
+evaltrx:addUDF('u_motorviolators','Birthday','Birthday','date',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','HouseNo','House No.','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Street','Street','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Barangay','Barangay','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Municipality','Municipality','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Province','Province','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Zipcode','Zipcode','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','MobileNo','MobileNo','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_motorviolators','Appdate','Application Date','date',0,10,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.03.26.2334' WHERE ID='GPS.MotorViolation';

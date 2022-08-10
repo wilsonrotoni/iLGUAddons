@@ -1,0 +1,22 @@
+evaltrx:addUserMenu('','LGURPTSPAY',250,'List Of Delinquents','P','urpt_u_delinquen');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',250,'List Of Delinquents','P','urpt_u_delinquen');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',250,'List Of Delinquents','P','urpt_u_delinquen');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',250,'List Of Delinquents','P','urpt_u_delinquen');
+
+evaltrx:addUDR('u_delinquen','List Of Delinquents','QS','mysql',1);
+
+evaltrx:addUDRParam('u_delinquen','profitcenter','Profitcenter','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_delinquen','profitcenter','BPL','BPLS');
+evaltrx:addUDRParamValue('u_delinquen','profitcenter','MTOP','FRANCHISE');
+evaltrx:addUDRParamValue('u_delinquen','profitcenter','PMR','PUBLIC MARKET');
+evaltrx:addUDRParamValue('u_delinquen','profitcenter','RPTA','REAL PROPERTY');
+
+
+evaltrx:addUDRParam('u_delinquen','status','Status','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_delinquen','status','c','Paid');
+evaltrx:addUDRParamValue('u_delinquen','status','o','Upaid');
+
+evaltrx:addUDRLayout('u_delinquen','List Of Delinquents',1,'LGU Add-On','listofdelinquents.rpt','1',1,'','','');
+
+
+

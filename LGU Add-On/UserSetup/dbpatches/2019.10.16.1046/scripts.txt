@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_lgupos','cancelledby','Cancelled By','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','cancelledreason','Cancelled Reason','any',30,100,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','cancelledremarks','Cancelled Remarks','text',0,150,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.16.1046' WHERE ID='GPS.LGU';

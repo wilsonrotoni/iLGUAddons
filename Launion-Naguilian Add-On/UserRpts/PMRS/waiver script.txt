@@ -1,0 +1,16 @@
+evaltrx:addUserMenu('','LGURPTSPMR',160,'Waiver','P','urpt_u_waiverr');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPMR',160,'Waiver','P','urpt_u_waiverr');
+evaltrx:addUserMenu('LGU','LGURPTSPMR',160,'Waiver','P','urpt_u_waiverr');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPMR',160,'Waiver','P','urpt_u_waiverr');
+
+evaltrx:addUDR('u_waiverr','Waiver','QS','mysql',1);
+
+
+evaltrx:addUDRParam('u_waiverr','docno','docno','','any',1,'text',0,null,0,null);
+
+
+
+evaltrx:addUDRLayout('u_waiverr','Waiver',1,'PMRS Add-On','waiver.rpt','1',1,'','','');
+
+
+

@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','AUDIT',40.0,'Audit Trail Logs','P','u_listaudittraillogs');
+evaltrx:addUserMenu('SYSADMIN','AUDIT',40.0,'Audit Trail Logs','P','u_listaudittraillogs');
+UPDATE DBVERSION SET VERSION='2019.12.20.0943' WHERE ID='GPS.AuditTrail';

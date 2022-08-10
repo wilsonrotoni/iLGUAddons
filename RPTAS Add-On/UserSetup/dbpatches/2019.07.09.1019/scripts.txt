@@ -1,0 +1,9 @@
+evaltrx:addUDT('rpfaas1e','Real Property FAAS - Land Stripping','DL','G');
+evaltrx:addUDOChild('rpfaas1a','rpfaas1e','Land Stripping','G');
+evaltrx:addUDF('u_rpfaas1e','strip','Strip','any',30,10,'',0,'u_landstripping:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1e','sqm','Area','measure',0,15,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1e','adjperc','% Adjustment','percent',0,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1e','unitvalue','Unit Value','measure',0,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1e','adjunitvalue','Adjusted Unit Value','measure',0,38,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1e','basevalue','Market Value','amount',0,40,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.09.1019' WHERE ID='GPS.RPTAS';

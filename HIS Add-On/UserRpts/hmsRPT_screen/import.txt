@@ -1,0 +1,30 @@
+set logtrx on;
+set shareddatatype COMPANY;
+set logtrxrows off;
+
+ALTER TABLE `objectfss` MODIFY COLUMN `OBJECTCODE` VARCHAR(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL COMMENT 'OBJECT CODE';
+
+delete from reportlayouts where location = 'HIS Add-On';
+import data into reportlayouts from c:\hmsRPT_screen\reportlayouts.dat;
+
+delete from sysrpts where reportid like '%hms%';
+import data into sysrpts from c:\hmsRPT_screen\sysrpts.dat;
+
+delete from sysrptparams where reportid like '%hms%';
+import data into sysrptparams from c:\hmsRPT_screen\sysrptparams.dat;
+
+delete from sysrptparamvalues where reportid like '%hms%';
+import data into sysrptparamvalues from c:\hmsRPT_screen\sysrptparamvalues.dat;
+
+delete from progids where progid like '%hms%';
+import data into progids from c:\hmsRPT_screen\progids.dat;
+
+delete from usermenu where menuid in('FINANCIALRPTS','SALESRPTS','PURCHASINGRPTS','BANKINGRPTS', 'InventoryRpts','HISRPTS','HISINV','HISPULX','HISPHAX') or menucmd in('HISRPTS','HISINV','HISPULX','HISPHAX');
+
+import data into usermenu from c:\hmsRPT_screen\usermenu.dat;
+
+delete from objectfss where objectcode like '%hms%';
+import data into objectfss from c:\hmsRPT_screen\objectfss.dat;
+
+delete from docseriesprintlayouts where location = 'HIS Add-On';
+import data into docseriesprintlayouts from c:\hmsRPT_screen\docseriesprintlayouts.dat;

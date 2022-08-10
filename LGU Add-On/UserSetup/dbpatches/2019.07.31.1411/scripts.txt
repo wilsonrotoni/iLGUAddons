@@ -1,0 +1,2 @@
+evaltrx:deleteUDF('u_lgupos','ftlastyearrpaid','Last Year Paid','numeric',4,430,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.31.1411' WHERE ID='GPS.LGU';

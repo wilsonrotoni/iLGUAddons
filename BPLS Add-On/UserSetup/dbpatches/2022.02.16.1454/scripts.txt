@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_bpltaxbill','remarks','Remarks','text',0,150,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2022.02.16.1454' WHERE ID='GPS.BPLS';

@@ -1,0 +1,6 @@
+evaltrx:addUDF('users','dashboarduser','Dashboard User','numeric',1,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('users','gender','Gender','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('users','gender','','');
+evaltrx:addUDFValue('users','gender','M','Male');
+evaltrx:addUDFValue('users','gender','F','Female');
+UPDATE DBVERSION SET VERSION='2022.07.23.1420' WHERE ID='GPS.OnlineCollectionDashboard';

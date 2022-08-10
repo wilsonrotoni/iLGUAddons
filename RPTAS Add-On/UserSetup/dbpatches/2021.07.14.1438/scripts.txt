@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_rpsemiquardiscspen','dueday','Due Day','numeric',4,50,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpsemiquardiscspen','discafterdue','Discount After Due','amount',0,60,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxbill','duedate','Due Date','date',0,70,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.07.14.1438' WHERE ID='GPS.RPTAS';

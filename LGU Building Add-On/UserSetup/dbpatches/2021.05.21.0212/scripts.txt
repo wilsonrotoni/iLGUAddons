@@ -1,0 +1,5 @@
+evaltrx:addUserMenu('','LGUADMINOTHREQSBLDG',90,'Building Barangays','P','u_bldgbarangays');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQSBLDG',90,'Building Barangays','P','u_bldgbarangays');
+evaltrx:addUDT('bldgbarangays','Building Barangays','MDC','G');
+evaltrx:addUDO('bldgbarangays','Building Barangays','bldgbarangays','G');
+UPDATE DBVERSION SET VERSION='2021.05.21.0212' WHERE ID='GPS.LGUBuilding';

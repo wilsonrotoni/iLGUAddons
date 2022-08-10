@@ -1,0 +1,12 @@
+evaltrx:addUDF('u_rpfaas2a','bldgno','Unit','any',50,4,'1',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','1','1');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','2','2');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','3','3');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','4','4');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','5','5');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','6','6');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','7','7');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','8','8');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','9','9');
+evaltrx:addUDFValue('u_rpfaas2a','bldgno','10','10');
+UPDATE DBVERSION SET VERSION='2019.10.24.1033' WHERE ID='GPS.RPTAS';

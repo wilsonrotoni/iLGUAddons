@@ -1,0 +1,31 @@
+evaltrx:addUserMenu('','LGURPTSBPLS',173,'List of Registered Business Etablishments II','P','urpt_u_listbusestabvII');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSBPLS',173,'List of Registered Business Etablishments II','P','urpt_u_listbusestabvII');
+evaltrx:addUserMenu('LGU','LGURPTSBPLS',173,'List of Registered Business Etablishments II','P','urpt_u_listbusestabvII');
+evaltrx:addUserMenu('LGUUSR','LGURPTSBPLS',173,'List of Registered Business Etablishments II','P','urpt_u_listbusestabvII');
+
+evaltrx:addUDR('u_listbusestabvII','List of Registered Business Etablishments V II ','QS','mysql',1);
+
+evaltrx:addUDRParam('u_listbusestabvII','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbusestabvII','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbusestabvII','apptype','ApplicationType','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_listbusestabvII','apptype','','ALL');
+evaltrx:addUDRParamValue('u_listbusestabvII','apptype','new','NEW');
+evaltrx:addUDRParamValue('u_listbusestabvII','apptype','Renew','RENEW');
+
+evaltrx:addUDRParam('u_listbusestabvII','gender','Gender','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_listbusestabvII','gender','','ALL');
+evaltrx:addUDRParamValue('u_listbusestabvII','gender','male','MALE');
+evaltrx:addUDRParamValue('u_listbusestabvII','gender','female','FEMALE');
+
+
+
+evaltrx:addUDRLayout('u_listbusestabvII','List of Registered Business Etablishments II',1,'BPLS Add-On','bus_estabII.rpt','1',1,'','','');
+
+
+
+
+
+
+
+
+

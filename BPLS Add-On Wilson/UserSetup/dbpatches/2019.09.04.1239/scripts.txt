@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_bplapps','bphaseno','Business Phase No.','any',50,290,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','blandmark','Business Land Mark','any',50,290,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.04.1239' WHERE ID='GPS.BPLS';

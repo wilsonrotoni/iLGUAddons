@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>pi_company</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>company</SourceKey>
+			<SampleData></SampleData>	
+		</Parameter>
+		<Parameter>
+			<Id>pi_branch</Id>
+			<DataType>String</DataType>
+			<Source>Global</Source>
+			<SourceKey>branch</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_month1</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>month1</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_month2</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>month2</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_taxable</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>taxable</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_year1</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>year1</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		
+		
+
+	</Parameters>
+</Configs>

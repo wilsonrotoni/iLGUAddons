@@ -1,0 +1,2 @@
+evaltrx:DELETEUDF('u_buildingpermitapps','asstotal','Total Assessment','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.10.1242' WHERE ID='GPS.ENGINEERING';

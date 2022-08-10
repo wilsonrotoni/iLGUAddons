@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_bplapps','corpname','Corporation Name','any',100,160,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.08.06.1415' WHERE ID='GPS.BPLS';

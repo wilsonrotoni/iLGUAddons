@@ -1,0 +1,2 @@
+evaltrx:modifyUDF('u_lgupurchasedeliveryservice','itemtype','Item Type','any',15,23,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.12.1306' WHERE ID='GPS.LGUPurchasing';

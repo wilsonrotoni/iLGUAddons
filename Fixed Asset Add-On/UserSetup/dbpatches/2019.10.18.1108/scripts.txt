@@ -1,0 +1,13 @@
+evaltrx:addUDT('facomponents','Fixed Asset - Components','MDLC','G');
+evaltrx:addUDOChild('fa','facomponents','Fixed Asset - Components','G');
+evaltrx:addUDF('u_fa','adj','Adjustments','amount',0,110,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_fa','accumdepreadj','Accumulated Dep. Adj','amount',0,300,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_fa','components','Components','numeric',4,310,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_faacquiitems','trxtype','Trx Type','any',30,35,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fachilds','adj','Adjustments','amount',0,55,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_facomponents','id','ID','numeric',4,10,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_facomponents','description','Description','any',100,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_famanacquiitems','accumdepreadj','Accumulated Dep. Adj','amount',0,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fasales','vatamount','VAT','amount',0,10,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_fasales','wtaxamount','W/Tax','amount',0,10,'0',0,null,0,0,1,1,1,0);
+UPDATE DBVERSION SET VERSION='2019.10.18.1108' WHERE ID='GPS.FixedAsset';

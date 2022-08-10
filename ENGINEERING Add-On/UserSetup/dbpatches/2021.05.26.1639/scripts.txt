@@ -1,0 +1,2 @@
+evaltrx:deleteUDO('buildingpermitapps','Building Permit Application','buildingpermitapps','');
+UPDATE DBVERSION SET VERSION='2021.05.26.1639' WHERE ID='GPS.ENGINEERING';

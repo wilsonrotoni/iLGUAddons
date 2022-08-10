@@ -1,0 +1,203 @@
+(SELECT
+
+      UPPER(co.COMPANYNAME) as COMPANY,
+      UPPER(br.BRANCHNAME) AS BRANCHNAME,
+
+      a.level,
+
+       case when a.level = 5 then e.acctcode
+            when a.level = 4 then d.acctcode
+            when a.level = 3 then c.acctcode
+            when a.level = 2 then b.acctcode end as 1_acctcode,
+       case when a.level = 5 then e.acctname
+            when a.level = 4 then d.acctname
+            when a.level = 3 then c.acctname
+            when a.level = 2 then b.acctname end as 1_acctname,
+       case when a.level = 5 then e.level
+            when a.level = 4 then d.level
+            when a.level = 3 then c.level
+            when a.level = 2 then b.level end as 1_level,
+
+       case when a.level = 5 then if(e.postable = 1, 'Detail', 'Header')
+               when a.level = 4 then if(d.postable = 1, 'Detail', 'Header')
+               when a.level = 3 then if(c.postable = 1, 'Detail', 'Header')
+               when a.level = 2 then if(b.postable = 1, 'Detail', 'Header') end as 1_HD,
+        
+
+       case when a.level = 5 then d.acctcode
+            when a.level = 4 then c.acctcode
+            when a.level = 3 then b.acctcode
+            when a.level = 2 then a.acctcode end as 2_acctcode,
+       case when a.level = 5 then d.acctname
+            when a.level = 4 then c.acctname
+            when a.level = 3 then b.acctname
+            when a.level = 2 then a.acctname end as 2_acctname,
+       case when a.level = 5 then d.level
+            when a.level = 4 then c.level
+            when a.level = 3 then b.level
+            when a.level = 2 then a.level end as 2_level,
+
+       case when a.level = 5 then if(d.postable = 1, 'Detail', 'Header')
+               when a.level = 4 then if(c.postable = 1, 'Detail', 'Header')
+               when a.level = 3 then if(b.postable = 1, 'Detail', 'Header')
+               when a.level = 2 then if(a.postable = 1, 'Detail', 'Header') end as 2_HD,
+
+
+       case when a.level = 5 then c.acctcode
+            when a.level = 4 then b.acctcode
+            when a.level = 3 then a.acctcode end as 3_acctcode,
+       case when a.level = 5 then c.acctname
+            when a.level = 4 then b.acctname
+            when a.level = 3 then a.acctname end as 3_acctname,
+       case when a.level = 5 then c.level
+            when a.level = 4 then b.level
+            when a.level = 3 then a.level end as 3_level,
+
+       case when a.level = 5 then if(c.postable = 1, 'Detail', 'Header')
+               when a.level = 4 then if(b.postable = 1, 'Detail', 'Header')
+               when a.level = 3 then if(a.postable = 1, 'Detail', 'Header') end as 3_HD,
+
+
+       case when a.level = 5 then b.acctcode
+            when a.level = 4 then a.acctcode end as 4_acctcode,
+       case when a.level = 5 then b.acctname
+            when a.level = 4 then a.acctname end as 4_acctname,
+       case when a.level = 5 then b.level
+            when a.level = 4 then a.level end as 4_level,
+
+       case when a.level = 5 then if(b.postable = 1, 'Detail', 'Header')
+               when a.level = 4 then if(a.postable = 1, 'Detail', 'Header') end as 4_HD,
+
+       case when a.level = 5 then a.acctcode end as 5_acctcode,
+       case when a.level = 5 then a.acctname end as 5_acctname,
+       case when a.level = 5 then a.level end as 5_level,
+
+       case when a.level = 5 then if(a.postable = 1, 'Detail', 'Header') end as 5_HD,
+
+       if(month(je.docdate) = month(date('{?pi_date2}')) and year(je.docdate) = year(date('{?pi_date2}')) and je.doctype = 'CP', 0, sum(if (je.GLDEBIT is null, 0, je.GLDEBIT))) as GLDEBIT,
+       if(month(je.docdate) = month(date('{?pi_date2}')) and year(je.docdate) = year(date('{?pi_date2}')) and je.doctype = 'CP', 0, sum(if (je.GLCREDIT is null, 0, je.GLCREDIT))) as GLCREDIT,
+    
+       date('{?pi_date1}') as date1,
+       date('{?pi_date2}') as date2,
+       
+       h.profitcenter,
+       h.profitcenter sections,
+       i.profitcentergroup,
+       i.profitcentergroupname,
+       je.glacctno,
+       0 budget
+
+FROM chartofaccounts a
+    LEFT OUTER JOIN chartofaccounts b on a.parentacct = b.acctcode and
+                    case when a.level = 5 then b.level = 4
+                         when a.level = 4 then b.level = 3
+                         when a.level = 3 then b.level = 2
+                         when a.level = 2 then b.level = 1 end
+
+    LEFT OUTER JOIN chartofaccounts c on b.parentacct = c.acctcode and
+                    case when b.level = 5 then c.level = 4
+                         when b.level = 4 then c.level = 3
+                         when b.level = 3 then c.level = 2
+                         when b.level = 2 then c.level = 1 end
+
+    LEFT OUTER JOIN chartofaccounts d on c.parentacct = d.acctcode and
+                    case when c.level = 5 then d.level = 4
+                         when c.level = 4 then d.level = 3
+                         when c.level = 3 then d.level = 2
+                         when c.level = 2 then d.level = 1 end
+
+    LEFT OUTER JOIN chartofaccounts e on d.parentacct = e.acctcode and
+                    case when d.level = 5 then e.level = 4
+                         when d.level = 4 then e.level = 3
+                         when d.level = 3 then e.level = 2
+                         when d.level = 2 then e.level = 1 end
+
+    LEFT OUTER JOIN journalentryitems je on a.acctcode = je.glacctno
+    LEFT OUTER JOIN branches br on br.branchcode = je.branch and br.companycode = je.company
+    LEFT OUTER JOIN companies co on co.companycode = je.company
+    LEFT OUTER JOIN profitcenters h on je.profitcenter = h.profitcenter
+    LEFT OUTER JOIN profitcentergroups i on h.groupcode = i.profitcentergroup
+
+WHERE je.docdate between '{?pi_date1}' and '{?pi_date2}'
+             and je.company = '{?pi_company}' 
+             and ( '{?pi_branch}'='' or ( '{?pi_branch}'<>'' and je.branch = '{?pi_branch}'))
+             and a.postable = 1 
+             and ( '{?pi_zero}'='' or ( '{?pi_zero}'<>'' and (je.gldebit<> '{?pi_zero}' or je.glcredit<>'{?pi_zero}')))
+             and ( '{?pi_profitcenter}'='' or ( '{?pi_profitcenter}'<>'' and je.profitcenter = '{?pi_profitcenter}'))
+
+
+GROUP BY je.company, je.branch, je.glacctno, je.profitcenter)
+
+
+
+
+
+
+
+UNION ALL
+
+
+
+
+
+
+
+(SELECT 
+
+      UPPER(co.COMPANYNAME) as COMPANY,
+      UPPER(br.BRANCHNAME) AS BRANCHNAME,
+
+      '' level,
+
+      '' 1_acctcode,
+      '' 1_acctname,
+      '' 1_level,
+      '' 1_HD,
+      '' 2_acctcode,
+      '' 2_acctname,
+      '' 2_level,
+      '' 2_HD,
+
+
+      '' 3_acctcode,
+      '' 3_acctname,
+      '' 3_level,
+      '' 3_HD,
+      '' 4_acctcode,
+      '' 4_acctname,
+      '' 4_level,
+
+      '' 4_HD,
+
+      '' 5_acctcode,
+      '' 5_acctname,
+      '' 5_level,
+
+      '' 5_HD,
+
+       0 GLDEBIT,
+       0 GLCREDIT,
+    
+       date('{?pi_date1}') as date1,
+       date('{?pi_date2}') as date2,
+       
+       c.profitcenter,
+       c.profitcenter sections,
+       i.profitcentergroup,
+       i.profitcentergroupname,
+       b.u_glacctno glacctno,
+       b.u_yr budget
+
+from u_budget a
+    left outer join u_budgetgls b on a.company = b.company and a.branch = b.branch and a.code = b.code
+    left outer join profitcenters c on a.u_department = c.profitcenter
+    LEFT OUTER JOIN profitcentergroups i on c.groupcode = i.profitcentergroup
+    LEFT OUTER JOIN branches br on br.branchcode = a.branch and br.companycode = a.company
+    LEFT OUTER JOIN companies co on co.companycode = a.company
+
+where a.company = '{?pi_company}' 
+           and a.branch = '{?pi_branch}'
+           and a.u_yr = year(date('{?pi_date2}'))
+           and ( '{?pi_profitcenter}'='' or ( '{?pi_profitcenter}'<>'' and a.u_department = '{?pi_profitcenter}'))
+
+GROUP BY a.company, a.branch, b.u_glacctno, c.profitcenter)

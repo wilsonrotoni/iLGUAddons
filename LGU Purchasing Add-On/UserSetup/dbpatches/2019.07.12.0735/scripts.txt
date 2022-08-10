@@ -1,0 +1,7 @@
+evaltrx:addUDF('users','progbillencoder','Stock Transfer - Encoder','numeric',1,190,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('users','progbillapprover','Stock Transfer - Approver','numeric',1,191,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('users','progbillencoder','0','No');
+evaltrx:addUDFValue('users','progbillencoder','1','Yes');
+evaltrx:addUDFValue('users','progbillapprover','0','No');
+evaltrx:addUDFValue('users','progbillapprover','1','Yes');
+UPDATE DBVERSION SET VERSION='2019.07.12.0735' WHERE ID='GPS.LGUPurchasing';

@@ -1,0 +1,6 @@
+evaltrx:addUDT('rplandtreesvalues','Real Property - Tress Values','MDLC','');
+evaltrx:addUDOChild('rplandtreesvalue','rplandtreesvalues','Real Property - Tress Values','G');
+evaltrx:addUDF('u_rplandtreesvalues','type','Type','any',30,5,'',0,'u_rplandtrees:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rplandtreesvalues','class','Class','any',30,15,'',0,'u_rplandclasses:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rplandtreesvalues','unitvalue','Unit Value','price',0,30,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.14.1305' WHERE ID='GPS.RPTAS';

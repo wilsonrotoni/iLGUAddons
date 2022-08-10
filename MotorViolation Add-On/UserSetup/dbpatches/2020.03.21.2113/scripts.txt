@@ -1,0 +1,2 @@
+evaltrx:addUDT('mvehicletype','Type of Vehicle','MD','');
+UPDATE DBVERSION SET VERSION='2020.03.21.2113' WHERE ID='GPS.MotorViolation';

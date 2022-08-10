@@ -1,0 +1,15 @@
+evaltrx:addUserMenu('','LGURPTSPAY',109,'Item Collection','P','urpt_u_item_collect');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',109,'Item Collection','P','urpt_u_item_collect');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',109,'Item Collection','P','urpt_u_item_collect');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',109,'Item Collection','P','urpt_u_item_collect');
+
+evaltrx:addUDR('u_item_collect','Cashier Collection','QS','mysql',1);
+
+evaltrx:addUDRParam('u_item_collect','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_item_collect','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+
+evaltrx:addUDRLayout('u_item_collect','Item Collection',1,'LGU Add-On','Col_Item_Reps.rpt','1',1,'','','');
+
+
+

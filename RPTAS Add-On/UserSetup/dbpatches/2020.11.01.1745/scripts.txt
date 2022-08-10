@@ -1,0 +1,7 @@
+evaltrx:addUserMenu('','LGUUTILUL',100,'Upload General Revisions','P','u_UploadGeneralRevisions');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILUL',100,'Upload General Revisions','P','u_UploadGeneralRevisions');
+evaltrx:addProgId('u_UploadGeneralRevisions','Upload General Revisions','./udp.php?&objectcode=u_UploadGeneralRevisions');
+evaltrx:addUDF('u_rpfaas1','revisiondocno','Revision Document No','any',50,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','revisiondocno','Revision Document No','any',50,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','revisiondocno','Revision Document No','any',50,20,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.11.01.1745' WHERE ID='GPS.RPTAS';

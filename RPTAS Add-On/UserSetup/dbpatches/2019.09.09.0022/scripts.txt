@@ -1,0 +1,7 @@
+evaltrx:addUDT('rpnotice','RP Notice of Assessment','D','');
+evaltrx:addUDO('rpnotice','RP Notice of Assessment','rpnotice','');
+evaltrx:addUDF('u_rpnotice','year','Year','numeric',4,1,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnotice','tin','TIN','any',80,140,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpnotice','declaredowner','Declared Owner','any',500,160,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxes','date','Date','date',0,70,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.09.0022' WHERE ID='GPS.RPTAS';

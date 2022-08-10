@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGUADMINENGINEERING',120,'List of Required Plans','P','u_buildingrequiredplans');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINENGINEERING',120,'List of Required Plans','P','u_buildingrequiredplans');
+UPDATE DBVERSION SET VERSION='2021.03.05.0645' WHERE ID='GPS.ENGINEERING';

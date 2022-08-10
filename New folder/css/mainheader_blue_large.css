@@ -1,0 +1,196 @@
+/* bottomnav_blue = 4095D1, bottomnav1_blue = 3E82C5*/
+
+.labelCompanyName {
+	color: #081073;
+	font-size:18px; font-family:Arial, Helvetica, sans-serif
+}
+.labelBranchName {
+	color: #081073;
+	font-size:16px; font-family:Arial, Helvetica, sans-serif
+}
+.labelUserName {
+	color: #A2000C;
+	font-size:14px; font-family:Arial, Helvetica, sans-serif
+}
+
+#topnav {
+	BACKGROUND-COLOR: #3E82C5;
+	font-size:14px; font-family:Arial, Helvetica, sans-serif
+}
+
+#topnav DIV {
+	BACKGROUND-COLOR: #F4FAFF;
+	
+}
+#topnav SPAN {
+	BORDER-LEFT-COLOR: #666666; BORDER-TOP-COLOR: #666666; BORDER-RIGHT-COLOR: #666666;
+	BORDER-BOTTOM-COLOR: #333399;
+	
+}
+#topnav SPAN SPAN {
+	BACKGROUND-COLOR: #F4FAFF;
+	
+}
+#topnav SPAN A {
+	COLOR: #666666;
+	
+}
+
+#topnav SPAN.selected {
+	BORDER-TOP-COLOR: #333399;
+	
+}
+/* 4095D1 */
+#topnav SPAN.selected SPAN {
+	BORDER-LEFT-COLOR: #333399;  BACKGROUND-COLOR: #3E82C5; BORDER-RIGHT-COLOR: #333399;
+	
+}
+
+#topnav SPAN.selected A {
+	COLOR: #F4FAFF;
+	
+}
+#topnav SPAN.hover {
+	BORDER-LEFT-COLOR: #95b3de; BORDER-BOTTOM-COLOR: #95b3de; BORDER-TOP-COLOR: #95b3de; BORDER-RIGHT-COLOR: #95b3de;
+	
+}
+#topnav SPAN.hover SPAN {
+	BORDER-LEFT-COLOR: #95b3de; BORDER-BOTTOM-COLOR: #95b3de; BORDER-TOP-COLOR: #95b3de; BACKGROUND-COLOR: #95b3de; BORDER-RIGHT-COLOR: #95b3de; 
+}
+#topnav SPAN.hover A {
+	COLOR: #666666;
+	
+}
+
+.bottomnavrow {
+	BACKGROUND-IMAGE: url(../imgs/bottomnav1_blue.gif);BACKGROUND-COLOR: #3E82C5;
+	
+}
+
+/* darkblue = 1A0099, verylightblue = F4FAFF */
+
+.bottomnavbottomborder {
+BACKGROUND-COLOR: #258625;
+
+}
+
+#bottomnav SPAN A {
+	COLOR: #F4FAFF;
+	
+	font-size:14px; font-family:Arial, Helvetica, sans-serif
+}
+
+#bottomnav A {
+	BORDER-LEFT-COLOR: transparent; BORDER-BOTTOM-COLOR: transparent; BORDER-TOP-COLOR: transparent;  BORDER-RIGHT-COLOR: transparent;
+	
+}
+
+#bottomnav A:hover {
+	BORDER-LEFT-COLOR: #1A0099; BORDER-BOTTOM-COLOR: #1A0099; BORDER-TOP-COLOR: #1A0099; BACKGROUND-COLOR: #F4FAFF; BORDER-RIGHT-COLOR: #1A0099; COLOR: #1A0099;
+	
+}
+
+.bottomnavhover {
+	BORDER-LEFT-COLOR: #1A0099; BORDER-BOTTOM-COLOR: #1A0099; BORDER-TOP-COLOR: #1A0099; BACKGROUND-COLOR: #F4FAFF; BORDER-RIGHT-COLOR: #1A0099; COLOR: #1A0099;
+	
+}
+
+#sidenav {
+	BACKGROUND-COLOR: #F4FAFF;
+	font-size:12px; font-family:Arial, Helvetica, sans-serif	
+}
+
+#sidenav DIV {
+	BACKGROUND-COLOR: #F4FAFF;
+	font-size:12px; font-family:Arial, Helvetica, sans-serif
+}
+#sidenav SPAN {
+	BORDER-LEFT-COLOR: #666666; BORDER-TOP-COLOR: #666666; BORDER-RIGHT-COLOR: #666666;
+	BORDER-BOTTOM-COLOR: #333399;
+	font-size:12px; font-family:Arial, Helvetica, sans-serif
+}
+#sidenav SPAN SPAN {
+	BACKGROUND-COLOR: #F4FAFF;
+	font-size:12px; font-family:Arial, Helvetica, sans-serif
+}
+#sidenav SPAN A {
+	COLOR: #666666;
+	font-size:12px; font-family:Arial, Helvetica, sans-serif
+}
+
+#sidenav DIV.selected {
+	BORDER-TOP-COLOR: #333399;
+	font-size:14px; font-family:Arial, Helvetica, sans-serif
+}
+/* 4095D1 */
+#sidenav DIV.selected {
+	BORDER-LEFT-COLOR: #333399;  BACKGROUND-COLOR: #081073; BORDER-RIGHT-COLOR: #333399;
+	font-size:14px; font-family:Arial, Helvetica, sans-serif	
+}
+
+#sidenav DIV.selected A {
+	COLOR: #F4FAFF;
+	font-size:14px; font-family:Arial, Helvetica, sans-serif
+}
+
+
+<!-- -->
+.menuDrop TD {
+	BORDER-LEFT-COLOR: #1A0099; BORDER-BOTTOM-COLOR: #1A0099; COLOR: #1A0099; BORDER-TOP-COLOR: #1A0099; BACKGROUND-COLOR: #F4FAFF; BORDER-RIGHT-COLOR: #1A0099;
+	font-size:14px; font-family:Arial, Helvetica, sans-serif
+}
+
+
+.menuDrop A:link {
+	COLOR: #1A0099;
+	
+}
+.menuDrop A:visited {
+	COLOR: #1A0099;
+	
+}
+.menuDrop A:active {
+	COLOR: #1A0099;
+	
+}
+.menuDrop A:hover {
+	COLOR: #1A0099; BACKGROUND-COLOR: #C3DAF9;
+	
+}
+
+
+.menuDrophover {
+	COLOR: #1A0099; BACKGROUND-COLOR: #C3DAF9;
+	
+}
+
+/*
+A.menuItem:link {
+	COLOR: #B2B2B2; BACKGROUND-COLOR: #EAEAEA
+}
+A.menuItem:visited {
+	COLOR: #B2B2B2; BACKGROUND-COLOR: #EAEAEA
+}
+A.menuItem:active {
+	COLOR: #B2B2B2; BACKGROUND-COLOR: #EAEAEA
+}
+A.menuItem:hover {
+	TEXT-DECORATION: bold; COLOR: #fff; BACKGROUND-COLOR: #333399
+}
+
+*/
+
+.menuArrow {
+	BACKGROUND-IMAGE: url(../imgs/menu-arrow-a.gif);
+	
+}
+.menuArrow2 {
+	BACKGROUND-IMAGE: url(../imgs/menu-arrow2-a.gif);
+	
+}
+
+.copyright {
+	BACKGROUND-IMAGE: url(../imgs/copyright1_blue.gif); COLOR: #F4FAFF; BACKGROUND-COLOR: #3E82C5;
+	
+}
+

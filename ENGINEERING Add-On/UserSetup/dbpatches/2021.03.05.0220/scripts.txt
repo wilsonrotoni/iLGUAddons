@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGU',597,'Building Permit','M','LGUENGINEERING');
+evaltrx:addUserMenu('SYSADMIN','LGU',597,''Building Permit','M','LGUENGINEERING');
+UPDATE DBVERSION SET VERSION='2021.03.05.0220' WHERE ID='GPS.ENGINEERING';

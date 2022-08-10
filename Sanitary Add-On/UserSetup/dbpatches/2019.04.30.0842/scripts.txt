@@ -1,0 +1,6 @@
+evaltrx:addUserMenu('','LGU',21.5,'Other Requirements','M','LGUOTHREQS','F',1,1);
+evaltrx:addUserMenu('','LGUOTHREQS',30.0,'Sanitary','M','LGUOTHREQSSANITARY');
+evaltrx:addUserMenu('','LGUOTHREQSSANITARY',10.0,'Sanitary Permit Application','P','u_sanitaryapps');
+evaltrx:addUserMenu('','LGUOTHREQSSANITARY',20.0,'Sanitary Permit Inspection','P','u_sanitaryins');
+evaltrx:addUserMenu('','LGUADMIN',13.0,'Other Requirements','M','LGUADMINOTHREQS','F',1,1);
+UPDATE DBVERSION SET VERSION='2019.04.30.0842' WHERE ID='GPS.Sanitary';

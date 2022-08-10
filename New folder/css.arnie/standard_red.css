@@ -1,0 +1,39 @@
+
+div {
+   scrollbar-face-color: #808080; /*/ obviously change this to whatever you want /*/
+   scrollbar-arrow-color: #FFFFFF;
+   scrollbar-highlight-color: #FFFBF0;
+   scrollbar-3dlight-color: #808080;
+   scrollbar-shadow-color: #FFFBF0;
+   scrollbar-darkshadow-color: #808080;
+   scrollbar-track-color: #CCCCCC;
+} 
+
+.labelPageHeader { COLOR: #C60000; BACKGROUND-COLOR: #A12929;
+	BACKGROUND-IMAGE: url(../imgs/labelPageHeader2_red.gif);
+}
+
+.labelPageHeaderPgInfo { COLOR: #C60000; BACKGROUND-COLOR: #A12929;
+	BACKGROUND-IMAGE: url(../imgs/labelPageHeader2_red.gif);
+}
+
+.popupwinheadrow TD { BORDER-LEFT-COLOR: #E40005; BORDER-BOTTOM-COLOR: #E40005; BORDER-TOP-COLOR: #E40005; BORDER-RIGHT-COLOR: #E40005; COLOR: #ffffff; BACKGROUND-COLOR: #E40005; 	BACKGROUND-IMAGE: url(../imgs/bottomnav1_red.gif)}
+
+.popupwin {        BORDER-LEFT-COLOR: #E40005; BORDER-BOTTOM-COLOR: #E40005; BORDER-TOP-COLOR: #E40005; BORDER-RIGHT-COLOR: #E40005}
+
+.popupwinheadrow a:link { 	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #7575FF; color: #FFFFFF;
+	text-decoration: none;  }
+.popupwinheadrow a:visited {  font-family: Verdana, Arial, Helvetica, sans-serif;
+ 	background-color: #aaaacc; color: #FFFFFF;
+	text-decoration: none; }
+.popupwinheadrow a:hover {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	background-color: #aaaacc;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.popupwinheadrow a:active {  font-family: Verdana, Arial, Helvetica, sans-serif;
+	 	background-color: #aaaacc; color: #FFFFFF;
+	text-decoration: none; }

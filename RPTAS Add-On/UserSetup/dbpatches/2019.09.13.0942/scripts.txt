@@ -1,0 +1,4 @@
+evaltrx:addUserMenu('','LGUUTILMIG',500,'Update Geo Records','P','u_updateGEORPTASCancelledProperty');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',500,'Update Geo Records','P','u_updateGEORPTASCancelledProperty');
+evaltrx:addProgId('u_updateGEORPTASCancelledProperty','Update Geo Records','./udp.php?&objectcode=u_updateGEORPTASCancelledProperty');
+UPDATE DBVERSION SET VERSION='2019.09.13.0942' WHERE ID='GPS.RPTAS';

@@ -1,0 +1,4 @@
+evaltrx:addUserMenu('','LGUENGINEERING',130,'List','P','u_buildingpermitlist');
+evaltrx:addUserMenu('SYSADMIN','LGUENGINEERING',130,'List','P','u_buildingpermitlist');
+evaltrx:addProgId('u_buildingpermitlist','Building Permit List','./udp.php?&objectcode=u_buildingpermitlist');
+UPDATE DBVERSION SET VERSION='2021.03.05.0224' WHERE ID='GPS.ENGINEERING';

@@ -1,0 +1,6 @@
+evaltrx:addUDP('queuegenerator','Queueing Generator','N','');
+evaltrx:addUserMenu('','QUEUEING',10,'Monitor','P','u_queuedisplay');
+evaltrx:addUserMenu('SYSADMIN','QUEUEING',10,'Monitor','P','u_queuedisplay');
+evaltrx:addUserMenu('','QUEUEING',50,'Generate Number','P','u_queuegenerator');
+evaltrx:addUserMenu('SYSADMIN','QUEUEING',50,'Generate Number','P','u_queuegenerator');
+UPDATE DBVERSION SET VERSION='2019.11.24.1145' WHERE ID='GPS.Queueing';

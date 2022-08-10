@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>pi_address</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>address</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_billingdate</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>billingdate</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_gross</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>gross</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_taxpayer</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>taxpayer</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

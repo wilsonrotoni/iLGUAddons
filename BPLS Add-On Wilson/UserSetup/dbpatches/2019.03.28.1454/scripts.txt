@@ -1,0 +1,15 @@
+delete from udolines where udoid = 'bplapps';
+delete from udolines where udoid = 'bplcharacters';
+evaltrx:addUDOChild('bplapps','bplapplines','Lines of Business','G');
+evaltrx:addUDOChild('bplapps','bplappreq1s','Requirements - A','G');
+evaltrx:addUDOChild('bplapps','bplappreq2s','Requirements - B','G');
+evaltrx:addUDOChild('bplapps','bplappreq3s','Requirements - C','G');
+evaltrx:addUDOChild('bplapps','bplappfees','Assessments','G');
+evaltrx:addUDOChild('bplapps','bplappemps','Employees','G');
+evaltrx:addUDOChild('bplapps','bplappreq4s','Requirements - D','G');
+evaltrx:addUDOChild('bplapps','bplappfirefees','Fire Dept Assessments','G');
+evaltrx:addUDOChild('bplapps','bplreqappfees','Requirements Application Assessments','G');
+evaltrx:addUDOChild('bplcharacters','bplcharacterkinds','Kind of Businesses','G');
+evaltrx:addUDOChild('bplcharacters','bplcharactercategories','Business Categories','G');
+evaltrx:addUDOChild('bplcharacters','bplcharacterimps','Impositions','G');
+UPDATE DBVERSION SET VERSION='2019.03.28.1454' WHERE ID='GPS.BPLS';

@@ -1,0 +1,895 @@
+// page events
+page.events.add.load('onPageLoadGPSLGUAcctg');
+//page.events.add.resize('onPageResizeGPSLGUAcctg');
+page.events.add.submit('onPageSubmitGPSLGUAcctg');
+page.events.add.submitreturn('onPageSubmitReturnGPSLGUAcctg');
+
+//page.events.add.cfl('onCFLGPSLGUAcctg');
+//page.events.add.cflgetparams('onCFLGetParamsGPSLGUAcctg');
+page.events.add.reportgetparams('onPageReportGetParamsGPSLGUAcctg');
+
+// taskbar events
+//page.taskbar.events.add.load('onTaskBarLoadGPSLGUAcctg');
+
+// element events
+//page.elements.events.add.focus('onElementFocusGPSLGUAcctg');
+//page.elements.events.add.keydown('onElementKeyDownGPSLGUAcctg');
+page.elements.events.add.validate('onElementValidateGPSLGUAcctg');
+//page.elements.events.add.validateparams('onElementGetValidateParamsGPSLGUAcctg');
+//page.elements.events.add.changing('onElementChangingGPSLGUAcctg');
+page.elements.events.add.change('onElementChangeGPSLGUAcctg');
+page.elements.events.add.click('onElementClickGPSLGUAcctg');
+//page.elements.events.add.cfl('onElementCFLGPSLGUAcctg');
+page.elements.events.add.cflgetparams('onElementCFLGetParamsGPSLGUAcctg');
+
+// table events
+page.tables.events.add.reset('onTableResetRowGPSLGUAcctg');
+page.tables.events.add.beforeInsert('onTableBeforeInsertRowGPSLGUAcctg');
+page.tables.events.add.afterInsert('onTableAfterInsertRowGPSLGUAcctg');
+page.tables.events.add.beforeUpdate('onTableBeforeUpdateRowGPSLGUAcctg');
+page.tables.events.add.afterUpdate('onTableAfterUpdateRowGPSLGUAcctg');
+//page.tables.events.add.beforeDelete('onTableBeforeDeleteRowGPSLGUAcctg');
+page.tables.events.add.delete('onTableDeleteRowGPSLGUAcctg');
+//page.tables.events.add.beforeSelect('onTableBeforeSelectRowGPSLGUAcctg');
+page.tables.events.add.select('onTableSelectRowGPSLGUAcctg');
+
+function onPageReportGetParamsGPSLGUAcctg(formattype,params) {
+		var paramids= new Array(),paramtypes= new Array(),paramvaluetypes= new Array(),paramaliases= new Array();
+		var docstatus = getInput("docstatus");
+		if (getVar("formSubmitAction")=="a") docstatus = "";
+		params = getReportLayout(getGlobal("progid2"),formattype,params,docstatus);
+		params["source"] = "aspx";
+		if (params["reportname"]!=undefined) {
+			if (params["querystring"]==undefined) {
+				params["querystring"] = "";
+				if (params["reportname"]=="JEV") {
+					params["querystring"] += generateQueryString("docno",getInput("u_jevno"));
+				} else {
+					params["querystring"] += generateQueryString("docno",getInput("docno"));
+				}
+			}	
+		}
+		return params;
+}
+
+function onPageLoadGPSLGUAcctg() {
+	if (getInput("docstatus")=="D") {
+		enableInput("docno");
+	}
+}
+
+function onPageResizeGPSLGUAcctg(width,height) {
+}
+
+function onPageSubmitGPSLGUAcctg(action) {
+	if (action=="a" || action=="sc") {
+		if (getInput("docstatus")!="D") {
+			if (getPrivate("approver")!="1") {
+				page.statusbar.showError("You must be an approver to add/update this document.");
+				return false;
+			}
+		} else {
+			if (getPrivate("encoder")!="1" && getPrivate("approver")!="1") {
+				page.statusbar.showError("You must be an encoder/approver to save/update as draft this document.");
+				return false;
+			}
+		}
+		
+		if (isInputEmpty("u_date")) return false;
+		if (isInputEmpty("u_bpname")) return false;
+		if (getInput("u_isjevseries")=="1")	{
+			if (isInputEmpty("u_jevseries")) return false;
+		}
+		if (getInput("docstatus")=="O") {
+			if (isInputEmpty("u_jevno")) return false;
+		}
+		if (getInputNumeric("u_refundamount")<0) {
+			if (isInputEmpty("u_refundglacctno")) return false;
+			if (isInputEmpty("u_refundglacctnname")) return false;
+		}
+		if (getInputNumeric("u_dueamount")>0) {
+			if (isInputEmpty("u_bpcode")) return false;
+			if (isInputEmpty("u_bpname")) return false;
+		}
+	}
+	return true;
+}
+
+function onPageSubmitReturnGPSLGUAcctg(action,sucess,error) {
+	if (!sucess && error.substring(0,13)=="OBR vs Actual") alert(error.replace(/`/g,"\r\n"));
+}
+
+function onCFLGPSLGUAcctg(Id) {
+	return true;
+}
+
+function onCFLGetParamsGPSLGUAcctg(Id,params) {
+	return params;
+}
+
+function onTaskBarLoadGPSLGUAcctg() {
+}
+
+function onElementFocusGPSLGUAcctg(element,column,table,row) {
+	return true;
+}
+
+function onElementKeyDownGPSLGUAcctg(element,event,column,table,row) {
+}
+
+function onElementValidateGPSLGUAcctg(element,column,table,row) {
+	switch (table) {
+		case "T1":
+			switch (column) {
+				case "u_glacctno":
+				case "u_glacctname":
+					setTableInput(table,"u_slcode","");
+					setTableInput(table,"u_sldesc","");
+					if (getTableInput(table,column)!="") {
+						if (column=="u_glacctno") {
+							if (getTableInput(table,"u_glacctno").length==8) {
+								var s1="",s2="",s3="",s4="";
+								s1 = getTableInput(table,"u_glacctno").substr(0,1);
+								s2 = getTableInput(table,"u_glacctno").substr(1,2);
+								s3 = getTableInput(table,"u_glacctno").substr(3,2);
+								s4 = getTableInput(table,"u_glacctno").substr(5,3);
+								setTableInput(table,"u_glacctno",s1+"-"+s2+"-"+s3+"-"+s4);
+							}
+							result = page.executeFormattedQuery("select formatcode, acctname from chartofaccounts where ctrlacct=0 and postable=1 and formatcode = '"+getTableInput(table,column)+"'");	
+						} else  result = page.executeFormattedQuery("select formatcode, acctname from chartofaccounts where ctrlacct=0 and postable=1 and acctname like '"+utils.addslashes(getTableInput(table,column))+"%'");	
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								setTableInput(table,"u_glacctno",result.childNodes.item(0).getAttribute("formatcode"));
+								setTableInput(table,"u_glacctname",result.childNodes.item(0).getAttribute("acctname"));
+							} else {
+								setTableInput(table,"u_glacctno","");
+								setTableInput(table,"u_glacctname","");
+								page.statusbar.showError("Invalid G/L Account.");	
+								return false;
+							}
+						} else {
+							setTableInput(table,"u_glacctno","");
+							setTableInput(table,"u_glacctname","");
+							page.statusbar.showError("Error retrieving chartofaccount record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setTableInput(table,"u_glacctno","");
+						setTableInput(table,"u_glacctname","");
+					}
+					break;
+				case "u_amount":
+					if (getInput("u_autonegatedvalues")=="1") { 
+						if (getTableInput(table,"u_glacctno").substr(0,1)<=2 && getTableInputNumeric(table,"u_amount")>0) {
+							setTableInputAmount(table,"u_amount",getTableInputNumeric(table,"u_amount")*-1);
+						}
+					}
+					break;
+				case "u_profitcenter":
+					setTableInput(table,"u_slcode","");
+					setTableInput(table,"u_sldesc","");
+					if (getTableInput(table,column)!="") {
+						result = page.executeFormattedQuery("select profitcenter, profitcentername from profitcenters where profitcenter = '"+getTableInput(table,column)+"'");	
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								setTableInput(table,"u_profitcenter",result.childNodes.item(0).getAttribute("profitcenter"));
+								setTableInput(table,"u_profitcentername",result.childNodes.item(0).getAttribute("profitcentername"));
+							} else {
+								setTableInput(table,"u_profitcenter","");
+								setTableInput(table,"u_profitcentername","");
+								page.statusbar.showError("Invalid Profit Center.");	
+								return false;
+							}
+						} else {
+							setTableInput(table,"u_profitcenter","");
+							setTableInput(table,"u_profitcentername","");
+							page.statusbar.showError("Error retrieving profitcenters record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setTableInput(table,"u_profitcenter","");
+						setTableInput(table,"u_profitcentername","");
+					}
+					break;
+				case "u_slcode":
+				case "u_sldesc":
+					if (getTableInput(table,column)!="") {
+						var profitcenter = getInput("u_profitcenter");
+						if (getTableInput("T1","u_profitcenter")!="") profitcenter = getTableInput("T1","u_profitcenter");
+						if (profitcenter=="") {
+							page.statusbar.showError('Profit Center is required.');
+							return false;
+						}
+						if (isTableInputEmpty("T1","u_glacctno")) return false;
+						if (column=="u_slcode") result = page.executeFormattedQuery("select u_code, u_description from u_lgupcsubsidiaryaccts where code='"+profitcenter+"' and u_glacctno='"+getTableInput(table,"u_glacctno")+"' and u_code = '"+getTableInput(table,column)+"'");	
+						else  result = page.executeFormattedQuery("select u_code, u_description from u_lgupcsubsidiaryaccts where code='"+profitcenter+"' and u_glacctno='"+getTableInput(table,"u_glacctno")+"' and u_description like '"+getTableInput(table,column)+"%'");	
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								setTableInput(table,"u_slcode",result.childNodes.item(0).getAttribute("u_code"));
+								setTableInput(table,"u_sldesc",result.childNodes.item(0).getAttribute("u_description"));
+							} else {
+								setTableInput(table,"u_slcode","");
+								setTableInput(table,"u_sldesc","");
+								page.statusbar.showError("Invalid S/L.");	
+								return false;
+							}
+						} else {
+							setTableInput(table,"u_slcode","");
+							setTableInput(table,"u_sldesc","");
+							page.statusbar.showError("Error retrieving subsidiary record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setTableInput(table,"u_slcode","");
+						setTableInput(table,"u_sldesc","");
+					}
+					break;
+			}
+			break;
+		case "T2":
+			switch (column) {
+				case "u_amount":
+					if (getTableInputNumeric(table,"u_amount",row)<0) {
+						setTableInput(table,"u_amount",0,row);
+						page.statusbar.showWarning("You cannot enter negated amount.");
+					}
+					if (getTableInputNumeric(table,"u_amount",row)>getTableInputNumeric(table,"u_refbalance",row)) {
+						setTableInput(table,"u_amount",getTableInputNumeric(table,"u_refbalance",row),row);
+						page.statusbar.showWarning("You cannot apply more than the balance amount.");
+					}
+					computeTotalGPSLGUAcctg();
+					break;
+			}
+			break;
+		case "T3":
+			switch (column) {
+				case "u_amount":
+					if (getTableInputNumeric(table,"u_refbalance",row)<0 && getTableInputNumeric(table,"u_amount",row)>0) {
+						setTableInputAmount(table,"u_amount",getTableInputNumeric(table,"u_amount",row)*-1,row);
+					}
+					if (getTableInputNumeric(table,"u_refbalance",row)>0 && getTableInputNumeric(table,"u_amount",row)<0) {
+						setTableInputAmount(table,"u_amount",getTableInputNumeric(table,"u_amount",row)*-1,row);
+					}
+					if (getTableInputNumeric(table,"u_refbalance",row)<0) {
+						if ((getTableInputNumeric(table,"u_amount",row)*-1)>(getTableInputNumeric(table,"u_refbalance",row)*-1)) {
+							setTableInput(table,"u_amount",getTableInputNumeric(table,"u_refbalance",row),row);
+							page.statusbar.showWarning("You cannot apply more than the balance amount.");
+						}
+					} else {
+						if (getTableInputNumeric(table,"u_amount",row)>getTableInputNumeric(table,"u_refbalance",row)) {
+							setTableInput(table,"u_amount",getTableInputNumeric(table,"u_refbalance",row),row);
+							page.statusbar.showWarning("You cannot apply more than the balance amount.");
+						}
+					}
+					computeTotalGPSLGUAcctg();
+					break;
+			}
+			break;
+		case "T4":
+			switch (column) {
+				case "u_osno":
+					if (getTableInput(table,column)!="") {
+						result = page.executeFormattedQuery("select docno,u_checkamount from u_lguobligationslips where company='"+getGlobal("company")+"' and branch='"+getGlobal("branch")+"' and docstatus='O' and docno = '"+getTableInput(table,column)+"'");	
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								setTableInput(table,"u_osno",result.childNodes.item(0).getAttribute("docno"));
+								setTableInput(table,"u_amount",formatNumericAmount(result.childNodes.item(0).getAttribute("u_checkamount")));
+							} else {
+								setTableInput(table,"u_osno","");
+								setTableInput(table,"u_amount","");
+								page.statusbar.showError("Invalid Obligation Request No.");	
+								return false;
+							}
+						} else {
+							setTableInput(table,"u_osno","");
+							setTableInput(table,"u_amount","");
+							page.statusbar.showError("Error retrieving obligation request record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setTableInput(table,"u_osno","");
+						setTableInput(table,"u_amount","");
+					}
+					break;
+			}
+			break;
+		default:
+			switch(column) {
+				case "u_bpcode":
+					if (getInput(column)!="") {
+						if (getInput("u_bptype")=="C") {
+							result = page.executeFormattedQuery("select custno, custname from customers where custno = '"+getInput(column)+"'");
+						} else {
+							result = page.executeFormattedQuery("select suppno, suppname from suppliers where suppno = '"+getInput(column)+"'");
+						}
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								if (getInput("u_bptype")=="C") {
+									setInput("u_bpcode",result.childNodes.item(0).getAttribute("custno"));
+									setInput("u_bpname",result.childNodes.item(0).getAttribute("custname"));
+								} else {
+									setInput("u_bpcode",result.childNodes.item(0).getAttribute("suppno"));
+									setInput("u_bpname",result.childNodes.item(0).getAttribute("suppname"));
+								}
+								if(getInput("u_advall")=="0") getAdvGPSLGUAcctg();
+							} else {
+								setInput("u_bpcode","");
+								setInput("u_bpname","");
+								if(getInput("u_advall")=="0") getAdvGPSLGUAcctg();
+								page.statusbar.showError("Invalid Payee Code.");	
+								return false;
+							}
+						} else {
+							setInput("u_bpcode","");
+							setInput("u_bpname","");
+							if(getInput("u_advall")=="0") getAdvGPSLGUAcctg();
+							page.statusbar.showError("Error retrieving customer record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setInput("u_bpcode","");
+						setInput("u_bpname","");
+						if(getInput("u_advall")=="0") getAdvGPSLGUAcctg();
+					}
+					break;
+				case "u_apbpcode":
+					if (getInput(column)!="") {
+						result = page.executeFormattedQuery("select suppno, suppname from suppliers where suppno = '"+getInput(column)+"'");	
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								setInput("u_apbpcode",result.childNodes.item(0).getAttribute("suppno"));
+								setInput("u_apbpname",result.childNodes.item(0).getAttribute("suppname"));
+								getPayGPSLGUAcctg();
+							} else {
+								setInput("u_apbpcode","");
+								setInput("u_apbpname","");
+								getPayGPSLGUAcctg();
+								page.statusbar.showError("Invalid Payee Code.");	
+								return false;
+							}
+						} else {
+							setInput("u_apbpcode","");
+							setInput("u_apbpname","");
+							getPayGPSLGUAcctg();
+							page.statusbar.showError("Error retrieving supplier record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setInput("u_apbpcode","");
+						setInput("u_apbpname","");
+						getPayGPSLGUAcctg();
+					}
+					break;
+				case "u_profitcenter":
+					if (getInput(column)!="") {
+						result = page.executeFormattedQuery("select profitcenter, profitcentername from profitcenters where profitcenter = '"+getInput(column)+"'");	
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								setInput("u_profitcenter",result.childNodes.item(0).getAttribute("profitcenter"));
+								setInput("u_profitcentername",result.childNodes.item(0).getAttribute("profitcentername"));
+							} else {
+								setInput("u_profitcenter","");
+								setInput("u_profitcentername","");
+								page.statusbar.showError("Invalid Profit Center.");	
+								return false;
+							}
+						} else {
+							setInput("u_profitcenter","");
+							setInput("u_profitcentername","");
+							page.statusbar.showError("Error retrieving profitcenters record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setInput("u_profitcenter","");
+						setInput("u_profitcentername","");
+					}
+					break;
+				case "u_refundglacctno":
+				case "u_refundglacctname":
+					if (getTableInput(table,column)!="") {
+						if (column=="u_refundglacctno") result = page.executeFormattedQuery("select formatcode, acctname from chartofaccounts where ctrlacct=0 and postable=1 and formatcode = '"+getTableInput(table,column)+"'");	
+						else  result = page.executeFormattedQuery("select formatcode, acctname from chartofaccounts where ctrlacct=0 and postable=1 and acctname like '"+utils.addslashes(getTableInput(table,column))+"%'");	
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								setTableInput(table,"u_refundglacctno",result.childNodes.item(0).getAttribute("formatcode"));
+								setTableInput(table,"u_refundglacctname",result.childNodes.item(0).getAttribute("acctname"));
+							} else {
+								setTableInput(table,"u_refundglacctno","");
+								setTableInput(table,"u_refundglacctname","");
+								page.statusbar.showError("Invalid G/L Account.");	
+								return false;
+							}
+						} else {
+							setTableInput(table,"u_refundglacctno","");
+							setTableInput(table,"u_refundglacctname","");
+							page.statusbar.showError("Error retrieving chartofaccount record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setTableInput(table,"u_refundglacctno","");
+						setTableInput(table,"u_refundglacctname","");
+					}
+					break;
+				case "u_osno":
+					if (getInput(column)!="") {
+						if (getTableRowCount("T4",true)>0) {
+							page.statusbar.showError("Multiple Obligation Request No exists!");
+							selectTab("tab1",3);
+							return false;
+						}
+						result = page.executeFormattedQuery("select docno from u_lguobligationslips where company='"+getGlobal("company")+"' and branch='"+getGlobal("branch")+"' and docstatus='O' and docno = '"+getInput(column)+"'");	
+						if (result.getAttribute("result")!= "-1") {
+							if (parseInt(result.getAttribute("result"))>0) {
+								setInput("u_osno",result.childNodes.item(0).getAttribute("docno"));
+								setOSNOSLGUAcctg();
+								u_setOBRAccountsGPSLGUAcctg();
+							} else {
+								setInput("u_osno","");
+								setOSNOSLGUAcctg();
+								u_setOBRAccountsGPSLGUAcctg();
+								page.statusbar.showError("Invalid Obligation Request No.");	
+								return false;
+							}
+						} else {
+							setInput("u_osno","");
+							setOSNOSLGUAcctg();
+							u_setOBRAccountsGPSLGUAcctg();
+							page.statusbar.showError("Error retrieving obligation request record. Try Again, if problem persists, check the connection.");	
+							return false;
+						}
+					} else {
+						setInput("u_osno","");
+						setOSNOSLGUAcctg();
+						u_setOBRAccountsGPSLGUAcctg();
+					}
+					break;
+				case "u_date":
+					setInput("u_jevno","");
+					if (getInput("docseries")!=-1) {
+						setDocNo(null,null,null,"u_date");
+					} else {
+						setInput("docno","");
+					}
+					
+					break;
+/*				case "docno":
+					if (isInputEmpty("u_date")) return false;
+					//if (isInputEmpty("u_checkbank")) return false;
+					var year = formatDateToDB(getInput("u_date")).substr(2,2);
+					var month = formatDateToDB(getInput("u_date")).substr(5,2);
+					if (getInput("docno").length>4) {
+						setInput("docno",getGlobal("branch")+"-"+year+"-"+month+"-"+getInput("docno"));
+					} else {
+						setInput("docno",getGlobal("branch")+"-"+year+"-"+month+"-"+getInput("docno").padL(4,"0"));
+					}
+					break;*/
+			}
+	}
+	return true;
+}
+
+function onElementGetValidateParamsGPSLGUAcctg(table,row,column) {
+	var params = "";
+	return params;
+}
+
+function onElementChangingGPSLGUAcctg(element,column,table,row) {
+	return true;
+}
+
+function onElementChangeGPSLGUAcctg(element,column,table,row) {
+	switch (table) {
+		default:
+			switch (column) {
+				case "u_jevseries":
+					setInput("u_jevno","");
+					break;
+			}
+			break;
+	}
+	return true;
+}
+
+function onElementClickGPSLGUAcctg(element,column,table,row) {
+	switch (table) {
+		case "T2":
+			switch (column) {
+				case "u_selected":
+					if (isTableInputChecked(table,column,row)) {
+						setTableInputAmount(table,"u_amount",getTableInputNumeric(table,"u_refbalance",row),row);
+						enableTableInput(table,"u_amount",row);
+						focusTableInput(table,"u_amount",row);
+					} else {
+						setTableInputAmount(table,"u_amount",0,row);
+						disableTableInput(table,"u_amount",row);
+					}
+					computeTotalGPSLGUAcctg();
+					break;
+			}
+			break;
+		case "T3":
+			switch (column) {
+				case "u_selected":
+					if (isTableInputChecked(table,column,row)) {
+						setTableInputAmount(table,"u_amount",getTableInputNumeric(table,"u_refbalance",row),row);
+						enableTableInput(table,"u_amount",row);
+						focusTableInput(table,"u_amount",row);
+					} else {
+						setTableInputAmount(table,"u_amount",0,row);
+						disableTableInput(table,"u_amount",row);
+					}
+					computeTotalGPSLGUAcctg();
+					break;
+			}
+			break;
+		default:
+			switch (column) {
+				case "u_advall":
+					getAdvGPSLGUAcctg();
+					computeTotalGPSLGUAcctg();
+					break;
+			}
+			break;
+	}
+	return true;
+}
+
+function onElementCFLGPSLGUAcctg(element) {
+	return true;
+}
+
+function onElementCFLGetParamsGPSLGUAcctg(id,params) {
+	switch (id) {	
+		case "df_u_bpcode":
+			if (getInput("u_bptype")=="C") {
+				params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select custno, custname from customers")); 
+				params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("Payee Code`Payee Name")); 			
+				params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("15`50")); 			
+				params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 
+			} else {
+				params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select suppno, suppname from suppliers")); 
+				params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("Payee Code`Payee Name")); 			
+				params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("15`50")); 			
+				params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 
+			}
+			break;
+		case "df_u_apbpcode":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select suppno, suppname from suppliers")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("Payee Code`Payee Name")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("15`50")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 			
+			break;
+		case "df_u_profitcenter":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select profitcenter, profitcentername from profitcenters")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("Profit Center`Description")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("15`50")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 			
+			break;
+		case "df_u_refundglacctno":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select formatcode, acctname from chartofaccounts where ctrlacct=0 and postable=1")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("G/L Account No.`G/L Account Description")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("15`50")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 			
+			break;
+		case "df_u_osno":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select docno, u_date, u_bpname, u_remarks from u_lguobligationslips where company='"+getGlobal("company")+"' and branch='"+getGlobal("branch")+"' and docstatus='O'")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("No.`Date`Payee`Remarks")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("10`10`35`35")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("`date```")); 			
+			break;
+		case "df_u_glacctnoT1":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select formatcode, acctname from chartofaccounts where ctrlacct=0 and postable=1")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("G/L Account No.`G/L Account Description")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("15`50")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 			
+			break;
+		case "df_u_glacctnameT1":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select acctname, formatcode from chartofaccounts where ctrlacct=0 and postable=1")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("G/L Account Description`G/L Account No.")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("50`15")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 			
+			break;
+		case "df_u_profitcenterT1":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select profitcenter, profitcentername from profitcenters")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("Profit Center`Description")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("15`50")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 			
+			break;
+		case "df_u_slcodeT1":
+			var profitcenter = getInput("u_profitcenter");
+			if (getTableInput("T1","u_profitcenter")!="") profitcenter = getTableInput("T1","u_profitcenter");
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select u_code, u_description from u_lgupcsubsidiaryaccts where code='"+profitcenter+"' and u_glacctno='"+getTableInput("T1","u_glacctno")+"'")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("Code`Description")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("10`50")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 			
+			break;
+		case "df_u_sldescT1":
+			var profitcenter = getInput("u_profitcenter");
+			if (getTableInput("T1","u_profitcenter")!="") profitcenter = getTableInput("T1","u_profitcenter");
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select u_description, u_code  from u_lgupcsubsidiaryaccts where code='"+profitcenter+"' and u_glacctno='"+getTableInput("T1","u_glacctno")+"'")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("Description`Code")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("50`15")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("``")); 			
+			break;
+		case "df_u_remarksT1":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select u_acct from u_lgusubsidiaryaccts where code='"+getTableInput("T1","u_glacctno")+"'")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("Subsidiary")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("50")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("`")); 			
+			break;
+		case "df_u_osnoT4":
+			params["params"] = "&cflquery="+utils.replaceSpecialChar(Base64.encode("select docno, u_date, u_bpname, u_remarks from u_lguobligationslips where company='"+getGlobal("company")+"' and branch='"+getGlobal("branch")+"' and docstatus='O'")); 
+			params["params"] += "&cfltitles="+utils.replaceSpecialChar(Base64.encode("No.`Date`Payee`Remarks")); 			
+			params["params"] += "&cflwidths="+utils.replaceSpecialChar(Base64.encode("15`10`35`35")); 			
+			params["params"] += "&cflformats="+utils.replaceSpecialChar(Base64.encode("`date```")); 			
+			break;
+	}
+	return params;
+}
+
+function onTableResetRowGPSLGUAcctg(table) {
+	switch (table) {
+		case "T1":
+			focusTableInput(table,"u_glacctno");
+			break;
+	}
+}
+
+function onTableBeforeInsertRowGPSLGUAcctg(table) {
+	switch (table) {
+		case "T1": 
+			if (isTableInputEmpty(table,"u_glacctno")) return false; 
+			if (isTableInputEmpty(table,"u_glacctname")) return false; 
+			if (isTableInputZero(table,"u_amount")) return false; 
+			break;
+		case "T4": 
+			if (isTableInputEmpty(table,"u_osno")) return false; 
+			break;
+	}
+	return true;
+}
+
+function onTableAfterInsertRowGPSLGUAcctg(table,row) {
+	switch (table) {
+		case "T1": computeTotalGPSLGUAcctg(); break;
+		case "T4":
+			setInput("u_osno","");
+			setOSNOSLGUAcctg();
+			u_setOBRAccountsGPSLGUAcctg();
+			break;
+	}
+}
+
+function onTableBeforeUpdateRowGPSLGUAcctg(table,row) {
+	switch (table) {
+		case "T1": 
+			if (isTableInputEmpty(table,"u_glacctno")) return false; 
+			if (isTableInputEmpty(table,"u_glacctname")) return false; 
+			if (isTableInputZero(table,"u_amount")) return false; 
+			break;
+		case "T4": 
+			if (isTableInputEmpty(table,"u_osno")) return false; 
+			break;
+	}
+	return true;
+}
+
+function onTableAfterUpdateRowGPSLGUAcctg(table,row) {
+	switch (table) {
+		case "T1": computeTotalGPSLGUAcctg(); break;
+		case "T4":
+			setInput("u_osno","");
+			setOSNOSLGUAcctg();
+			u_setOBRAccountsGPSLGUAcctg();
+			break;
+	}
+}
+
+function onTableBeforeDeleteRowGPSLGUAcctg(table,row) {
+	return true;
+}
+
+function onTableDeleteRowGPSLGUAcctg(table,row) {
+	switch (table) {
+		case "T1": computeTotalGPSLGUAcctg(); break;
+		case "T4":
+			setInput("u_osno","");
+			setOSNOSLGUAcctg();
+			u_setOBRAccountsGPSLGUAcctg();
+			break;
+	}
+}
+
+function onTableBeforeSelectRowGPSLGUAcctg(table,row) {
+	return true;
+}
+
+function onTableSelectRowGPSLGUAcctg(table,row) {
+	var params = new Array();
+	switch (table) {
+		case "T2":
+			params["focus"] = false;
+			if (elementFocused.substring(0,13)=="df_u_amountT2") {
+				focusTableInput(table,"u_amount",row);
+			}
+			break;
+		case "T3":
+			params["focus"] = false;
+			if (elementFocused.substring(0,13)=="df_u_amountT3") {
+				focusTableInput(table,"u_amount",row);
+			}
+			break;
+	}
+	return params;
+}
+
+function computeTotalGPSLGUAcctg() {
+	var rc = 0, spentamount=0, advanceamount=0;
+	
+	rc =  getTableRowCount("T1");
+	for (i = 1; i <= rc; i++) {
+		if (isTableRowDeleted("T1",i)==false) {
+			if (getTableInput("T1","u_glacctno",i)=='1-03-05-020' || getTableInput("T1","u_glacctno",i)=='1-03-05-010') {
+				advanceamount += getTableInputNumeric("T1","u_amount",i)*-1;
+			} else {
+				spentamount += getTableInputNumeric("T1","u_amount",i);
+			}
+		}
+	}
+
+	rc =  getTableRowCount("T2");
+	for (i = 1; i <= rc; i++) {
+		if (isTableRowDeleted("T2",i)==false) {
+			advanceamount += (getTableInputNumeric("T2","u_amount",i));
+		}
+	}
+	
+	rc2 =  getTableRowCount("T3");
+	for (i = 1; i <= rc2; i++) {
+		if (isTableRowDeleted("T3",i)==false) {
+			spentamount += getTableInputNumeric("T3","u_amount",i);
+		}
+	}
+	
+	setInputAmount("u_spentamount",spentamount);
+	setInputAmount("u_advanceamount",advanceamount);
+	setInputAmount("u_refundamount",0);
+	setInputAmount("u_dueamount",0);
+	if (advanceamount>spentamount) {
+		setInputAmount("u_refundamount",spentamount-advanceamount);
+	}
+	if (advanceamount<spentamount) {
+		setInputAmount("u_dueamount",spentamount-advanceamount);
+	}
+}
+
+function setOSNOSLGUAcctg() {
+	var osnos="";
+	rc =  getTableRowCount("T4");
+	for (i = 1; i <= rc; i++) {
+		if (isTableRowDeleted("T4",i)==false) {
+			if (osnos!="") osnos += ", ";
+			osnos += (getTableInput("T4","u_osno",i));
+		}
+	}
+	if (getInput("u_osno")!="") {
+		if (osnos!="") osnos = ", " + osnos;
+		osnos = getInput("u_osno") + osnos;
+	}
+	setInput("u_osnos",osnos);
+	
+}
+
+function getAdvGPSLGUAcctg() {
+	var data = new Array();
+	clearTable("T2",true);
+	if (getInput("u_apbpcode")=="") clearTable("T3",true);
+	if (getInput("u_bpcode")!="" || getInput("u_advall")=="1") {
+		if (getInput("u_advall")=="0") {
+		//var result = page.executeFormattedQuery("select a.docdate, b.docno, a.reference1, b.debit as amount, b.balanceamount from journalvouchers a inner join journalvoucheritems b on b.company=a.company and b.branch=a.branch and b.docid=a.docid and b.balanceamount<>0 where a.company='"+getGlobal("company")+"' and a.branch='"+getGlobal("branch")+"' and b.itemno='"+getInput("u_bpcode")+"' and a.docstatus not in ('D')");
+			var result = page.executeFormattedQuery("select a.docdate, b.docno, b.itemno, b.itemname, a.reference1, a.reference2, b.debit-b.credit as amount, c.u_evat1, c.u_evat2, b.balanceamount as balanceamount  from journalvouchers a inner join journalvoucheritems b on b.company=a.company and b.branch=a.branch and b.docid=a.docid and b.balanceamount<>0 left join u_lguaps c on c.company=a.company and c.branch=a.branch and c.u_jevno=a.docno where a.company='"+getGlobal("company")+"' and a.branch='"+getGlobal("branch")+"' and b.itemno='"+getInput("u_bpcode")+"' and a.docstatus not in ('D')");
+		} else {
+			var result = page.executeFormattedQuery("select a.docdate, b.docno, b.itemno, b.itemname, a.reference1, a.reference2, b.debit-b.credit as amount, c.u_evat1, c.u_evat2, b.balanceamount as balanceamount  from journalvouchers a inner join journalvoucheritems b on b.company=a.company and b.branch=a.branch and b.docid=a.docid and b.balanceamount<>0 left join u_lguaps c on c.company=a.company and c.branch=a.branch and c.u_jevno=a.docno where a.company='"+getGlobal("company")+"' and a.branch='"+getGlobal("branch")+"' and b.itemtype='C' and a.docstatus not in ('D')");
+		}
+		if (result.getAttribute("result")!= "-1") {
+			if (parseInt(result.getAttribute("result"))>0) {
+				for (iii = 0; iii < result.childNodes.length; iii++) {
+					data["u_selected"] = 0;
+					data["u_refdate"] = formatDateToHttp(result.childNodes.item(iii).getAttribute("docdate"));
+					data["u_bpcode"] = result.childNodes.item(iii).getAttribute("itemno");
+					data["u_bpname"] = result.childNodes.item(iii).getAttribute("itemname");
+					data["u_refno"] = result.childNodes.item(iii).getAttribute("docno");
+					data["u_refno2"] = result.childNodes.item(iii).getAttribute("reference1");
+					data["u_amount"] = formatNumericAmount(0);
+					
+					if (result.childNodes.item(iii).getAttribute("reference2")=="Check Disbursement" || result.childNodes.item(iii).getAttribute("reference2")=="Cash Disbursement" || result.childNodes.item(iii).getAttribute("reference2")=="") {
+						data["u_refamount"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("amount"));
+						data["u_refbalance"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("balanceamount"));
+						insertTableRowFromArray("T2",data);
+						disableTableInput("T2","u_amount",iii+1);
+					} else {
+						if (getInput("u_apbpcode")=="") {	
+							data["u_refamount"] = formatNumericAmount(parseFloat(result.childNodes.item(iii).getAttribute("amount"))*-1);
+							data["u_refbalance"] = formatNumericAmount(parseFloat(result.childNodes.item(iii).getAttribute("balanceamount"))*-1);
+							data["u_refevat1"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("u_evat1"));
+							data["u_refevat2"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("u_evat2"));
+							insertTableRowFromArray("T3",data);
+							disableTableInput("T3","u_amount",iii+1);
+						}
+					}
+				}
+			}
+		} else {
+			page.statusbar.showError("Error retrieving advances. Try Again, if problem persists, check the connection.");	
+			return false;
+		}	
+	}
+}
+
+function getPayGPSLGUAcctg() {
+	var data = new Array();
+	clearTable("T3",true);
+	
+	if (getInput("u_apbpcode")!="") {
+		var result = page.executeFormattedQuery("select a.docdate, b.docno, a.reference1, a.reference2, b.credit-b.debit as amount, c.u_evat1, c.u_evat2, b.balanceamount*-1 as balanceamount  from journalvouchers a inner join journalvoucheritems b on b.company=a.company and b.branch=a.branch and b.docid=a.docid and b.balanceamount<>0 left join u_lguaps c on c.company=a.company and c.branch=a.branch and c.u_jevno=a.docno where a.company='"+getGlobal("company")+"' and a.branch='"+getGlobal("branch")+"' and b.itemno='"+getInput("u_apbpcode")+"' and a.docstatus not in ('D') and a.reference2='Accounts Payable'");
+		if (result.getAttribute("result")!= "-1") {
+			if (parseInt(result.getAttribute("result"))>0) {
+				for (iii = 0; iii < result.childNodes.length; iii++) {
+					data["u_selected"] = 0;
+					data["u_refdate"] = formatDateToHttp(result.childNodes.item(iii).getAttribute("docdate"));
+					data["u_refno"] = result.childNodes.item(iii).getAttribute("docno");
+					data["u_refno2"] = result.childNodes.item(iii).getAttribute("reference1");
+					data["u_amount"] = formatNumericAmount(0);
+					data["u_refamount"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("amount"));
+					data["u_refbalance"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("balanceamount"));
+					data["u_refevat1"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("u_evat1"));
+					data["u_refevat2"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("u_evat2"));
+					insertTableRowFromArray("T3",data);
+					disableTableInput("T3","u_amount",iii+1);
+				}
+			}
+		} else {
+			page.statusbar.showError("Error retrieving journals. Try Again, if problem persists, check the connection.");	
+			return false;
+		}
+	}
+}
+
+function u_setOBRAccountsGPSLGUAcctg() {
+	var data = new Array();
+	var osno = "";
+	if (getInput("u_osno")!="") {
+		osno = "'"+getInput("u_osno")+"'";
+	}
+	rc =  getTableRowCount("T4");
+	for (i = 1; i <= rc; i++) {
+		if (isTableRowDeleted("T4",i)==false) {
+			if (osno!="") osno += ", ";
+			osno += "'"+getTableInput("T4","u_osno",i)+"'";
+		}
+	}
+	clearTable("T1",true);
+	if (osno!="") {
+		var result = page.executeFormattedQuery("select b.u_profitcenter, b.u_profitcentername, b.u_glacctno, b.u_glacctname, b.u_slcode, b.u_sldesc, sum(b.u_debit) as u_debit, sum(b.u_credit) as u_credit, sum(b.u_debit)-sum(b.u_credit) as u_amount from u_lguobligationslips a inner join u_lguobligationslipaccts b on b.company=a.company and b.branch=a.branch and b.docid=a.docid where a.company='"+getGlobal("company")+"' and a.branch='"+getGlobal("branch")+"' and a.docno in ("+osno+") group by b.u_profitcenter, b.u_glacctno, b.u_slcode");
+		if (result.getAttribute("result")!= "-1") {
+			if (parseInt(result.getAttribute("result"))>0) {
+				for (iii = 0; iii < result.childNodes.length; iii++) {
+					data["u_profitcenter"] = result.childNodes.item(iii).getAttribute("u_profitcenter");
+					data["u_profitcentername"] = result.childNodes.item(iii).getAttribute("u_profitcentername");
+					data["u_glacctno"] = result.childNodes.item(iii).getAttribute("u_glacctno");
+					data["u_glacctname"] = result.childNodes.item(iii).getAttribute("u_glacctname");
+					data["u_slcode"] = result.childNodes.item(iii).getAttribute("u_slcode");
+					data["u_sldesc"] = result.childNodes.item(iii).getAttribute("u_sldesc");
+					data["u_amount"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("u_amount"));
+					//data["u_debit"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("u_debit"));
+					//data["u_credit"] = formatNumericAmount(result.childNodes.item(iii).getAttribute("u_credit"));
+					insertTableRowFromArray("T1",data);
+				}
+			}
+		} else {
+			page.statusbar.showError("Error retrieving budget balance. Try Again, if problem persists, check the connection.");	
+			return false;
+		}		
+	}
+}
+

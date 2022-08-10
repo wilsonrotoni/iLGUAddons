@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_bplupdgrosslines','paidamount','Paid Amount','amount',0,100,'0',0,null,0,0,1,1,1,0);
+evaltrx:addUDF('u_bplupdgrosslines','paidqtr','Paid Qtr','numeric',4,110,'0',0,null,0,0,1,1,1,0);
+evaltrx:modifyUDF('u_bplupdgrosslines','taxclass','Tax Classification','any',250,15,'',0,'u_bpltaxclasses:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_bplupdgrosslines','businesslinecode','Business Line Code','any',20,5,'',0,'u_bpllines:code:code',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.11.05.1440' WHERE ID='GPS.BPLS';

@@ -1,0 +1,6 @@
+<?php
+ 
+$objMaster->reportaction = "QS";
+
+?> 
+

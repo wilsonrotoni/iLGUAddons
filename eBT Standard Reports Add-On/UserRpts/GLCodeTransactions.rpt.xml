@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>odbc</DataSource>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>@AcctCode</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>acctcode</SourceKey>
+			<SampleData>130000</SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>@FROMDate</Id>
+			<DataType>DateTime</DataType>
+			<Source>Filter</Source>
+			<SourceKey>fromdate</SourceKey>
+			<SampleData>2001-01-01</SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>@ToDate</Id>
+			<DataType>DateTime</DataType>
+			<Source>Filter</Source>
+			<SourceKey>todate</SourceKey>
+			<SampleData>2009-01-01</SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

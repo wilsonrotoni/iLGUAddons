@@ -1,0 +1,9 @@
+evaltrx:addUserMenu('SYSADMIN','LGU',21.5,'Other Requirements','M','LGUOTHREQS','F',1,1);
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQS',30.0,'Sanitary','M','LGUOTHREQSSANITARY');
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQSSANITARY',10.0,'Sanitary Permit Application','P','u_sanitaryapps');
+evaltrx:addUserMenu('SYSADMIN','LGUOTHREQSSANITARY',20.0,'Sanitary Permit Inspection','P','u_sanitaryins');
+evaltrx:addUserMenu('SYSADMIN','LGUADMIN',13.0,'Other Requirements','M','LGUADMINOTHREQS','F',1,1);
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQS',30.0,'Sanitary','M','LGUADMINOTHREQSSANITARY');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQSSANITARY',5.0,'Categories','P','u_sanitarycategories');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINOTHREQSSANITARY',10.0,'Inspectors','P','u_sanitaryinspectors');
+UPDATE DBVERSION SET VERSION='2019.04.30.0853' WHERE ID='GPS.Sanitary';

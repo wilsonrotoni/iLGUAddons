@@ -1,0 +1,19 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',250,'Real Property Tax Account Register','P','urpt_u_rptarr');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',250,'Real Property Tax Account Register','P','urpt_u_rptarr');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',250,'Real Property Tax Account Register','P','urpt_u_rptarr');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',250,'Real Property Tax Account Register,'P','urpt_u_rptarr');
+
+evaltrx:addUDR('u_rptarr','Real Property Tax Account Register','QS','mysql',1);
+
+
+
+evaltrx:addUDRParam('u_rptarr','tin','Tin','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_rptarr','tin','LQ','Q','select code,u_ownertin, u_ownercompanyname from u_rpfaas1 where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+
+
+
+evaltrx:addUDRLayout('u_rptarr','Real Property Tax Account Register',1,'RPTAS Add-On','rptar.rpt','1',1,'','','');
+

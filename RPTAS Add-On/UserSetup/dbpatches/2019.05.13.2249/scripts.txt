@@ -1,0 +1,4 @@
+evaltrx:addUserMenu('','LGUUTILMIG',200.0,'Migrate GEO RPTAS','P','u_migrateGEORPTAS');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILMIG',200.0,'Migrate GEO RPTAS','P','u_migrateGEORPTAS');
+evaltrx:addProgId('u_migrateGEORPTAS','Migrate GEO BPLS','./udp.php?&objectcode=u_migrateGEORPTAS');
+UPDATE DBVERSION SET VERSION='2019.05.13.2249' WHERE ID='GPS.RPTAS';

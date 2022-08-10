@@ -1,0 +1,2 @@
+<SCRIPT language=JavaScript src="../Addons/GPS/HIS Add-On/UserJs/utils/u_hishealthins.js" type=text/javascript></SCRIPT>
+<SCRIPT language=JavaScript src="<?php autocaching('../Addons/GPS/HIS Add-On/UserJs/utils/u_hispatients.js'); ?>" type=text/javascript></SCRIPT>

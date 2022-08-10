@@ -1,0 +1,9 @@
+evaltrx:addUserMenu('','ADMIN',100.0,'Audit Trail','M','ADMINAUDIT');
+evaltrx:addUserMenu('','ADMINAUDIT',10.0,'User Documents','P','u_audittrailsetup');
+evaltrx:addUserMenu('','ADMINAUDIT',20.0,'Table Exceptions','P','u_audittrailexceptions');
+evaltrx:addUserMenu('','ADMINAUDIT',30.0,'Audit Trail Logs','P','u_audittrail');
+evaltrx:addUserMenu('SYSADMIN','ADMIN',100.0,'Audit Trail','M','ADMINAUDIT');
+evaltrx:addUserMenu('SYSADMIN','ADMINAUDIT',10.0,'User Documents','P','u_audittrailsetup');
+evaltrx:addUserMenu('SYSADMIN','ADMINAUDIT',20.0,'Table Exceptions','P','u_audittrailexceptions');
+evaltrx:addUserMenu('SYSADMIN','ADMINAUDIT',30.0,'Audit Trail Logs','P','u_audittrail');
+UPDATE DBVERSION SET VERSION='2019.04.10.1308' WHERE ID='GPS.AuditTrail';

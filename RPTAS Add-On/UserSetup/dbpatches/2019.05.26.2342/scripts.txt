@@ -1,0 +1,6 @@
+evaltrx:addUDT('oldbarangays','List of Old Barangays','MDC','');
+evaltrx:addUDO('oldbarangays','List of Old Barangay','oldbarangays','G');
+evaltrx:addUDF('u_rpfaas1','oldbarangay','Old Barangay','any',100,220,null,0,'u_oldbarangays:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','oldbarangay','Old Barangay','any',100,220,null,0,'u_oldbarangays:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','oldbarangay','Old Barangay','any',100,220,null,0,'u_oldbarangays:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.26.2342' WHERE ID='GPS.RPTAS';

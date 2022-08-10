@@ -1,0 +1,4 @@
+evaltrx:addUDT('bpltaxclassnature','Tax Classification - Business Nature','MDLC','');
+evaltrx:addUDOChild('bpltaxclasses','bpltaxclassnature','Business Nature','G');
+evaltrx:addUDF('u_bpltaxclassnature','businessnature','Business Nature','any',100,10,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.16.0928' WHERE ID='GPS.BPLS';

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configs>
+	<Config>
+		<DataSource>xml</DataSource>
+		<CommandType>StoredProcedure</CommandType>
+		<CommandText>sp_itemlist</CommandText>
+		<TableName>itemlist</TableName>
+	</Config>
+	<Parameters>
+		<Parameter>
+			<Id>pi_itemcode_fr</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>itemcode_fr</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_itemcode_to</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>itemcode_to</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+		<Parameter>
+			<Id>pi_itemgroup</Id>
+			<DataType>String</DataType>
+			<Source>Filter</Source>
+			<SourceKey>itemgroup</SourceKey>
+			<SampleData></SampleData>
+		</Parameter>
+	</Parameters>
+</Configs>

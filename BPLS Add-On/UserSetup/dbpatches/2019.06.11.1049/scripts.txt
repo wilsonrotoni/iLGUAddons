@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_bplmds','onhold','On-Hold','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','onhold','On-Hold','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.11.1049' WHERE ID='GPS.BPLS';

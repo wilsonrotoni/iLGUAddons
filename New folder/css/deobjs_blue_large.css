@@ -1,0 +1,9 @@
+
+INPUT.deobjs { BORDER-LEFT-COLOR: #66AAEE; BORDER-BOTTOM-COLOR: #66AAEE; BORDER-TOP-COLOR: #66AAEE; BACKGROUND-COLOR: #F4FAFF; BORDER-RIGHT-COLOR: #66AAEE; font-size:14px; font-family:Arial, Helvetica, sans-serif; height:inherit }
+SELECT.deobjs { BORDER-LEFT-COLOR: #66AAEE; BORDER-BOTTOM-COLOR: #66AAEE; BORDER-TOP-COLOR: #66AAEE; BACKGROUND-COLOR: #F4FAFF; BORDER-RIGHT-COLOR: #66AAEE; font-size:14px; font-family:Arial, Helvetica, sans-serif; height:inherit}
+TEXTAREA.deobjs { BORDER-LEFT-COLOR: #66AAEE; BORDER-BOTTOM-COLOR: #66AAEE; BORDER-TOP-COLOR: #66AAEE; BACKGROUND-COLOR: #F4FAFF; BORDER-RIGHT-COLOR: #66AAEE; font-size:14px; font-family:Arial, Helvetica, sans-serif; height:inherit}
+LABEL { font-size:14px; font-family:Arial, Helvetica, sans-serif; }
+
+input.deobjs:focus { BACKGROUND-COLOR: #FFFF99}
+select.deobjs:focus { BACKGROUND-COLOR: #FFFF99}
+textarea.deobjs:focus { BACKGROUND-COLOR: #FFFF99}

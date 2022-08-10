@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_rpfaas1','temporary','Temporary','numeric',1,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','temporary','Temporary','numeric',1,300,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','temporary','Temporary','numeric',1,300,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.20.1446' WHERE ID='GPS.RPTAS';

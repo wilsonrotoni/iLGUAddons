@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_bplapps','secregno','SEC Registration No.','any',16,80,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplapps','secregdate','SEC Date of Registration','date',0,90,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.08.23.1350' WHERE ID='GPS.BPLS';

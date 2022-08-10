@@ -1,0 +1,5 @@
+evaltrx:addUserMenu('','LGUPURCHASINGADMIN',300.0,'User Profit Center','P','u_pcusers');
+evaltrx:addUserMenu('SYSADMIN','LGUPURCHASINGADMIN',300.0,'User Profit Center','P','u_pcusers');
+evaltrx:addUDT('pcusers','User Profit Center','MD','');
+evaltrx:addUDO('pcusers','User Profit Center','pcusers','');
+UPDATE DBVERSION SET VERSION='2019.05.15.1227' WHERE ID='GPS.LGUPurchasing';

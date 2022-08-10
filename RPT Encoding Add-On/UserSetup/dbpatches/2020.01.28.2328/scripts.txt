@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_rpfaas1','bookno','Book No','any',30,5,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas2','bookno','Book No','any',30,5,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas3','bookno','Book No','any',30,5,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.01.28.2328' WHERE ID='GPS.RPTEncoding';

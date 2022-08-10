@@ -1,0 +1,5 @@
+evaltrx:addUserMenu('','LGUADMINCASHIER',55,'Cashier - Cancel Reasons','P','u_lguposcancelreasons');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINCASHIER',55,'Cashier - Cancel Reasons','P','u_lguposcancelreasons');
+evaltrx:addUDT('lguposcancelreasons','Cashier - Cancel Reasons','MD','G');
+evaltrx:addUDO('lguposcancelreasons','Cashier - Cancel Reasons','lguposcancelreasons','G');
+UPDATE DBVERSION SET VERSION='2019.10.16.1030' WHERE ID='GPS.LGU';

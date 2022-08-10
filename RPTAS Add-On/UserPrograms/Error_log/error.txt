@@ -1,0 +1,19 @@
+[u_rpfaas2] 1062 : Duplicate entry 'LGU-MAIN-211602' for key 'UIDX_RPFAAS2'
+[u_rpfaas1a] 1048 : Column 'U_ADJVALUE' cannot be null
+[u_rpfaas1a] 1048 : Column 'U_ADJVALUE' cannot be null
+[u_rpfaas1a] 1048 : Column 'U_ADJVALUE' cannot be null
+[u_rpfaas1a] 1062 : Duplicate entry 'LGU-MAIN-4145' for key 'PRIMARY'
+[u_rpfaas1a] 1062 : Duplicate entry 'LGU-MAIN-4145' for key 'PRIMARY'
+[u_rpfaas1] 1406 : Data too long for column 'U_TCTNO' at row 1
+[u_rpfaas1] 1406 : Data too long for column 'U_WEST' at row 1
+[u_rpfaas1p] 1406 : Data too long for column 'U_PREVTDNO' at row 1
+[u_rpfaas1p] 1406 : Data too long for column 'U_PREVTDNO' at row 1
+[u_rpfaas1] 1406 : Data too long for column 'U_EAST' at row 1
+[u_rpfaas1] 1406 : Data too long for column 'U_NORTH' at row 1
+[u_rpfaas1] 1406 : Data too long for column 'U_WEST' at row 1
+[u_rpfaas1] 1406 : Data too long for column 'U_SURVEYNO' at row 1
+[u_rpfaas1a] 1062 : Duplicate entry 'LGU-MAIN-563243' for key 'PRIMARY'
+[u_rpfaas1] 2006 : MySQL server has gone away
+[u_rpfaas1] 2006 : MySQL server has gone away
+[u_rpfaas3] 1054 : Unknown column 'U_TCTDATE' in 'field list'
+[u_rpfaas3] 1054 : Unknown column 'U_LANDPIND' in 'field list'

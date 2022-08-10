@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rpfaas2a','bldgdescriptions','Building Description','any',50,300,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.24.1122' WHERE ID='GPS.RPTAS';

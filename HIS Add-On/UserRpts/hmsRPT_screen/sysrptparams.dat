@@ -1,0 +1,210 @@
+REPORTID	PARAMID	PARAMNAME	ALIAS	FORMAT	INPUTTYPE	DEFAULTVALUE	LINKTABLE	DESCRETEVALUE	REQUIRED	DATECREATED	CREATEDBY	LASTUPDATED	LASTUPDATEDBY	RCDVERSION	SETLINKTABLE	SETVALIDVALUES	SETDEFAULTVALUE	SEQ
+hms_apinvsum	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 16:36:02	manager	2013-06-20 16:36:02	manager	1	1	0	1	0
+hms_apinvsum	date1	From :		date	text	eval:currentdate()		1	1	2013-06-20 16:36:21	manager	2013-06-20 16:36:21	manager	1	0	0	1	1
+hms_apinvsum	date2	to :		date	text	eval:currentdate()		1	1	2013-06-20 16:36:38	manager	2013-06-20 16:36:38	manager	1	0	0	1	2
+hms_apinvsum	whs	Warehouse :		any	text			1	0	2013-06-20 16:37:38	manager	2013-06-20 16:37:38	manager	1	0	0	0	3
+hms_ap_aging	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 15:37:27	manager	2013-06-20 15:37:27	manager	1	1	0	1	0
+hms_ap_aging	custno	Doctor/Supplier : 		any	text			1	0	2013-06-20 15:38:39	manager	2014-03-03 18:43:12	manager	3	0	0	0	2
+hms_ap_aging	date1	As of :		date	text	eval:currentdate()		1	1	2013-06-20 15:38:07	manager	2013-06-20 15:38:07	manager	1	0	0	1	1
+hms_ap_aging2	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2014-03-03 18:30:38	manager	2014-03-03 18:31:50	manager	2	1	0	1	0
+hms_ap_aging2	custgroup	Supplier Group :		any	text			1	0	2014-03-03 18:34:15	manager	2014-03-03 18:34:15	manager	1	0	0	0	4
+hms_ap_aging2	custno	Supplier Code :		any	text			1	0	2014-03-03 18:33:17	manager	2014-03-03 18:33:17	manager	1	0	0	0	3
+hms_ap_aging2	date1	As of :		date	text	eval:currentdate()		1	1	2014-03-03 18:31:41	manager	2014-03-03 18:31:41	manager	1	0	0	1	2
+hms_araging	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-11 18:14:36	manager	2013-06-11 18:14:36	manager	1	1	0	1	0
+hms_araging	custno	Patient/Customer :		any	text			1	0	2013-06-11 18:16:36	manager	2013-10-22 15:27:40	manager	2	0	0	0	2
+hms_araging	date1	As of :		date	text	eval:currentdate()		1	1	2013-06-11 18:16:07	manager	2013-06-11 18:16:07	manager	1	0	0	1	1
+hms_araging	hi	Health Insurance :		any	select			1	0	2013-10-22 15:15:10	manager	2013-10-22 15:15:10	manager	1	0	1	0	5
+hms_araging2	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2014-03-03 17:51:28	manager	2014-03-03 18:13:33	manager	4	1	0	1	0
+hms_araging2	custgroup	Customer Group :		any	text			1	0	2014-03-03 17:53:30	manager	2014-03-03 18:15:59	manager	2	0	0	0	4
+hms_araging2	custno	Customer Code :		any	text			1	0	2014-03-03 17:52:17	manager	2014-03-03 18:15:45	manager	6	0	0	0	3
+hms_araging2	date1	As of :		date	text	eval:currentdate()		1	1	2014-03-03 17:51:53	manager	2014-03-03 18:13:42	manager	4	0	0	1	2
+hms_bl	acctno	Bank Account No. :		any	text			1	0	2013-06-20 18:13:29	manager	2013-06-20 18:13:29	manager	1	0	0	0	1
+hms_bl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 18:12:52	manager	2013-06-20 18:12:52	manager	1	1	0	1	0
+hms_bl	date1	From :		date	text	eval:currentdate()		1	1	2013-06-20 18:13:55	manager	2013-06-20 18:13:55	manager	1	0	0	1	2
+hms_bl	date2	to :		date	text	eval:currentdate()		1	1	2013-06-20 18:14:14	manager	2013-06-20 18:14:14	manager	1	0	0	1	3
+hms_bs	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	0	2013-06-20 17:56:44	manager	2013-06-20 17:56:44	manager	1	1	0	1	0
+hms_bs	date1	As of :		date	text	eval:currentdate()		1	1	2013-06-20 17:57:08	manager	2013-06-20 17:57:08	manager	1	0	0	1	1
+hms_census_filter_roomtype	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-06 15:54:47	manager	2013-06-06 15:55:07	manager	2	1	0	1	0
+hms_census_filter_roomtype	date1	From :		date	text	eval:currentdate()		1	1	2013-06-06 15:55:29	manager	2013-06-06 16:03:07	manager	2	0	0	1	1
+hms_census_filter_roomtype	date2	to :		date	text	eval:currentdate()		1	1	2013-06-06 15:56:07	manager	2013-06-06 15:56:07	manager	1	0	0	1	2
+hms_census_filter_roomtype	dep	Section :		any	select		u_hissections:code:name	1	0	2013-10-21 15:38:00	manager	2013-10-21 15:38:00	manager	1	1	0	0	5
+hms_census_filter_roomtype	roomtype	Case Type :		any	text			1	1	2013-06-06 15:56:55	manager	2013-06-20 11:41:50	manager	2	0	0	0	3
+hms_census_filter_roomtype	type	Patient Registration :		any	select			1	0	2013-06-20 13:20:41	manager	2013-06-20 13:23:35	manager	2	0	1	0	4
+hms_census_filter_roomtype_by_f	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-06 16:13:07	manager	2013-06-06 16:13:07	manager	1	1	0	1	0
+hms_census_filter_roomtype_by_f	date1	From :		date	text	eval:currentdate()		1	1	2013-06-06 16:13:28	manager	2013-06-06 16:13:28	manager	1	0	0	1	1
+hms_census_filter_roomtype_by_f	date2	to :		date	text	eval:currentdate()		1	1	2013-06-06 16:13:43	manager	2013-06-06 16:13:43	manager	1	0	0	1	2
+hms_census_filter_roomtype_by_f	dep	Section :		any	select		u_hissections:code:name	1	0	2013-10-21 15:42:15	manager	2013-10-21 15:42:15	manager	1	1	0	0	5
+hms_census_filter_roomtype_by_f	roomtype	Census Type :		any	text			1	1	2013-06-06 16:14:48	manager	2013-06-06 16:14:48	manager	1	0	0	0	3
+hms_census_filter_roomtype_by_f	type	Patient Registration :		any	select			1	0	2013-06-20 13:25:42	manager	2013-06-20 13:25:42	manager	1	0	1	0	4
+hms_cf2	bpcode	Patient ID :		any	text			1	0	2013-06-11 10:35:22	manager	2013-06-11 10:35:22	manager	1	0	0	0	3
+hms_cf2	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-11 10:20:44	manager	2013-06-11 10:20:44	manager	1	1	0	1	0
+hms_cf2	date1	From :		date	text	eval:currentdate()		1	1	2013-06-11 10:21:17	manager	2013-06-11 10:21:17	manager	1	0	0	1	1
+hms_cf2	date2	to :		date	text	eval:currentdate()		1	1	2013-06-11 10:21:37	manager	2013-06-11 10:21:37	manager	1	0	0	1	2
+hms_chrgrpts	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2014-03-13 23:17:39	manager	2014-03-13 23:17:39	manager	1	1	0	1	0
+hms_chrgrpts	date1	From :		date	text	eval:currentdate()		1	1	2014-03-13 23:18:38	manager	2014-03-13 23:18:38	manager	1	0	0	1	3
+hms_chrgrpts	date2	to :		date	text	eval:currentdate()		1	1	2014-03-13 23:18:59	manager	2014-03-13 23:18:59	manager	1	0	0	1	4
+hms_chrgrpts	dep	Section :		any	select		u_hissections:code:name	1	0	2014-03-13 23:18:16	manager	2014-03-13 23:18:16	manager	1	1	0	0	1
+hms_coa	branch	Branch : 		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-29 18:17:37	manager	2013-06-29 18:18:58	manager	5	1	0	1	0
+hms_daily_census	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-06 15:46:56	manager	2013-06-06 15:46:56	manager	1	1	0	1	0
+hms_daily_census	date2	Date :		date	text	eval:currentdate()		1	1	2013-06-06 15:46:11	manager	2013-10-21 15:11:49	manager	3	0	0	1	1
+hms_daily_census	dep	Section :		any	select		u_hissections:code:name	1	0	2013-10-21 15:11:09	manager	2013-10-21 15:11:09	manager	1	1	0	0	3
+hms_daily_census	type	Patient Registration :		any	select			1	0	2013-06-20 13:17:37	manager	2013-10-21 15:11:32	manager	4	0	1	0	2
+hms_dcr	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-08-29 14:24:03	manager	2013-08-29 14:24:03	manager	1	1	0	1	0
+hms_dcr	colltype	Type of Collection :		any	select			1	0	2014-03-17 17:17:37	manager	2014-04-01 19:38:01	manager	2	0	1	0	3
+hms_dcr	date1	From :		date	text	eval:currentdate()		1	1	2013-08-29 14:24:33	manager	2014-04-08 20:19:07	manager	2	0	0	1	1
+hms_dcr	date2	to :		date	text	eval:currentdate()		1	1	2014-04-08 20:20:56	manager	2014-04-08 20:20:56	manager	1	0	0	1	2
+hms_dcr	docstatus	Doc. Status :		any	select			1	0	2014-01-09 17:37:09	manager	2014-03-30 16:21:58	manager	4	0	1	0	4
+hms_deips	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-08-07 17:01:09	manager	2013-08-07 17:01:09	manager	1	1	0	1	0
+hms_deips	date1	From :		date	text	eval:currentdate()		1	1	2013-08-07 17:02:54	manager	2013-08-07 17:02:54	manager	1	0	0	1	4
+hms_deips	date2	to :		date	text	eval:currentdate()		1	1	2013-08-07 17:03:14	manager	2013-08-07 17:03:14	manager	1	0	0	1	5
+hms_deips	itemclass	Item Class :		any	select		itemclasses:itemclass:itemclassname	1	0	2013-08-07 17:02:28	manager	2013-08-07 17:02:28	manager	1	1	0	0	3
+hms_deips	section	Section :		any	select		u_hissections:code:name	1	0	2013-08-07 17:01:58	manager	2013-08-07 17:01:58	manager	1	1	0	0	2
+hms_deips	whs	Warehouse :		any	select		warehouses:warehouse:warehousename	1	0	2013-08-07 17:01:36	manager	2014-03-25 13:29:23	manager	2	1	0	0	1
+hms_dietl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 13:53:50	manager	2013-06-20 13:53:50	manager	1	1	0	1	0
+hms_dietl	date1	From :		date	hidden	1999-01-01		1	1	2013-06-20 13:54:50	manager	2013-07-11 00:23:57	manager	2	0	0	1	1
+hms_dietl	date2	to :		date	hidden	eval:currentdate()		1	1	2013-06-20 13:55:11	manager	2013-07-11 00:24:06	manager	2	0	0	1	2
+hms_dietl	dep	Section :		any	select		u_hissections:code:name	1	0	2013-10-21 14:59:28	manager	2013-10-21 14:59:28	manager	1	1	0	0	3
+hms_dl	branch	Branches :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 12:49:45	manager	2013-06-20 12:49:45	manager	1	1	0	1	0
+hms_dl	date1	From :		date	text	eval:currentdate()		1	1	2013-06-20 12:50:25	manager	2013-06-20 12:50:25	manager	1	0	0	1	1
+hms_dl	date2	to :		date	text	eval:currentdate()		1	1	2013-06-20 12:50:46	manager	2013-06-20 12:50:46	manager	1	0	0	1	2
+hms_dl	dep	Section :		any	select		u_hissections:code:name	1	0	2013-10-21 15:46:03	manager	2013-10-21 15:46:20	manager	2	1	0	0	6
+hms_dl	type	Patient Registration :		any	select			1	0	2013-06-20 13:27:39	manager	2013-06-20 13:27:39	manager	1	0	1	0	4
+hms_gl	account	GL Account No. :		any	text			1	0	2013-06-20 17:26:00	manager	2013-06-20 17:26:00	manager	1	0	0	0	1
+hms_gl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 17:25:23	manager	2013-06-20 17:25:23	manager	1	1	0	1	0
+hms_gl	date1	From :		date	text	eval:currentdate()		1	1	2013-06-20 17:26:28	manager	2013-06-20 17:26:53	manager	2	0	0	1	2
+hms_gl	date2	to :		date	text	eval:currentdate()		1	1	2013-06-20 17:26:43	manager	2013-06-20 17:26:43	manager	1	0	0	1	3
+hms_heartstation	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-07-03 19:23:44	manager	2013-07-03 19:23:44	manager	1	1	0	1	0
+hms_heartstation	date1	From :		date	text	eval:currentdate()		1	1	2013-07-03 19:25:52	manager	2013-07-30 16:52:06	manager	2	0	0	1	4
+hms_heartstation	date2	to :		date	text	eval:currentdate()		1	1	2013-07-03 19:26:24	manager	2013-07-30 16:51:56	manager	2	0	0	1	5
+hms_heartstation	dep	Department :		any	hidden	NSG-HS		1	0	2013-07-03 19:27:24	manager	2013-08-22 13:43:55	manager	3	0	0	1	6
+hms_heartstation	regtype	Patient Registration :		any	select			1	0	2013-07-03 19:25:28	manager	2013-07-30 16:52:16	manager	3	0	1	0	3
+hms_heartstation	sec	Item Class :		any	select		itemclasses:itemclass:itemclassname	1	0	2013-07-30 16:52:48	manager	2013-08-22 13:58:16	manager	4	1	0	0	1
+hms_heartstation	trx	Type of Test : 		any	text			1	0	2013-07-03 19:24:10	manager	2013-07-30 16:52:26	manager	2	0	0	0	2
+hms_inv_scvsactual	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-08-20 15:02:44	manager	2013-08-20 15:02:44	manager	1	1	0	1	0
+hms_inv_scvsactual	date1	From :		date	text	eval:currentdate()		1	1	2013-08-20 15:04:06	manager	2013-08-20 15:04:49	manager	2	0	0	1	3
+hms_inv_scvsactual	date2	to :		date	text	eval:currentdate()		1	1	2013-08-20 15:04:21	manager	2013-08-20 15:05:01	manager	2	0	0	1	4
+hms_inv_scvsactual	itemclass	Item Class :		any	select		itemclasses:itemclass:itemclassname	1	0	2013-08-20 15:03:39	manager	2013-08-20 15:03:39	manager	1	1	0	0	2
+hms_inv_scvsactual	whs	Warehouse :		any	select		warehouses:warehouse:warehousename	1	0	2013-08-20 15:03:14	manager	2014-03-25 13:30:18	manager	2	1	0	0	1
+hms_iop_ledger	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-11-11 16:16:21	manager	2013-11-11 16:17:51	manager	2	1	0	1	0
+hms_iop_ledger	date1	From :		date	text	eval:currentdate()		1	1	2013-11-11 16:17:10	manager	2013-11-11 16:17:32	manager	2	0	0	1	3
+hms_iop_ledger	date2	to :		date	text	eval:currentdate()		1	1	2013-11-11 16:17:25	manager	2013-11-11 16:17:25	manager	1	0	0	1	4
+hms_iop_ledger	dep	Section :		any	select		u_hissections:code:name	1	0	2013-11-11 16:16:43	manager	2013-11-11 16:17:42	manager	2	1	0	0	2
+hms_ixr	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-26 21:19:24	manager	2013-06-26 21:19:24	manager	1	1	0	1	0
+hms_ixr	date1	From :		date	text	eval:currentdate()		1	1	2013-06-26 21:20:00	manager	2013-06-26 21:20:52	manager	3	0	0	1	4
+hms_ixr	date2	to :		date	text	eval:currentdate()		1	1	2013-06-26 21:20:22	manager	2013-06-26 21:22:00	manager	2	0	0	1	5
+hms_ixr	itemgroup	Item Group :		any	text			1	0	2013-06-26 21:21:45	manager	2013-06-26 21:21:45	manager	1	0	0	0	1
+hms_ixr	whscode	Warehouse :		any	text			1	0	2013-06-26 21:21:17	manager	2013-06-26 21:21:17	manager	1	0	0	0	2
+hms_lablist	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-30 17:47:04	manager	2013-06-30 17:47:04	manager	1	1	0	1	0
+hms_lablist	date1	From :		date	text	eval:currentdate()		1	1	2013-06-30 17:48:36	manager	2013-07-30 17:06:36	manager	3	0	0	1	4
+hms_lablist	date2	to :		date	text	eval:currentdate()		1	1	2013-06-30 17:48:54	manager	2013-07-30 17:06:25	manager	3	0	0	1	5
+hms_lablist	dep	Department		any	hidden	LAB		1	0	2013-06-30 17:49:30	manager	2013-08-22 13:45:42	manager	4	0	0	1	6
+hms_lablist	regtype	Patient Registration :		any	select			1	0	2013-07-03 18:54:48	manager	2013-07-30 17:06:46	manager	2	0	1	0	3
+hms_lablist	sec	Item Class :		any	select		itemclasses:itemclass:itemclassname	1	0	2013-07-30 17:07:20	manager	2013-08-22 14:00:00	manager	4	1	0	0	1
+hms_lablist	trx	Type of Test :		any	text			1	0	2013-06-30 17:47:42	manager	2013-07-30 17:06:57	manager	2	0	0	0	2
+hms_log_book	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-06 15:29:56	manager	2013-06-06 15:39:22	manager	3	1	0	1	0
+hms_log_book	date1	From :		date	text	eval:currentdate()		1	1	2013-06-06 15:31:23	manager	2013-06-06 15:31:23	manager	1	0	0	1	1
+hms_log_book	date2	to :		date	text	eval:currentdate()		1	1	2013-06-06 15:31:42	manager	2013-06-06 15:31:42	manager	1	0	0	1	2
+hms_log_book	dep	Section :		any	select		u_hissections:code:name	1	0	2013-10-21 14:52:28	manager	2013-10-21 14:52:28	manager	1	1	0	0	4
+hms_log_book	type	Patient Registration :		any	select			1	0	2013-06-20 13:15:37	manager	2013-06-20 13:22:15	manager	2	0	1	0	3
+hms_minmax	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-26 14:46:21	manager	2013-06-26 14:47:48	manager	2	1	0	1	0
+hms_minmax	date2	As of :		date	text	eval:currentdate()		1	1	2013-06-26 14:47:35	manager	2013-06-26 14:48:33	manager	3	0	0	1	3
+hms_minmax	itemgroup	Item Group :		any	text			1	0	2013-06-26 14:49:02	manager	2013-06-26 21:23:41	manager	2	0	0	0	1
+hms_minmax	whscode	Warehouse :		any	text			1	0	2013-06-26 14:48:14	manager	2013-06-26 21:23:51	manager	4	0	0	0	2
+hms_nursinginv	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-07-04 09:57:31	manager	2013-07-04 09:59:08	manager	3	1	0	1	0
+hms_nursinginv	date2	As of :		date	text	eval:currentdate()		1	1	2013-07-04 09:58:19	manager	2013-10-21 16:29:17	manager	3	0	0	1	3
+hms_nursinginv	dep	Section :		any	select		u_hissections:code:name	1	0	2013-07-04 09:57:50	manager	2013-10-21 16:07:14	manager	5	1	0	0	1
+hms_nursinginv	itemgroup	Item Group :		any	select		itemgroups:itemgroup:itemgroupname	1	0	2013-10-21 16:29:55	manager	2013-10-21 16:30:04	manager	2	1	0	0	2
+hms_pf	bpcode	Doctor Name :		any	text			1	0	2013-11-12 16:19:12	manager	2013-11-12 16:19:28	manager	2	0	0	0	3
+hms_pf	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-07-03 23:35:12	manager	2013-07-03 23:35:12	manager	1	1	0	1	0
+hms_pf	date1	From :		date	text	eval:currentdate()		1	1	2013-07-03 23:35:38	manager	2013-07-03 23:35:38	manager	1	0	0	1	1
+hms_pf	date2	to :		date	text	eval:currentdate()		1	1	2013-07-03 23:35:52	manager	2013-07-03 23:35:52	manager	1	0	0	1	2
+hms_pf	dep	Section :		any	select		u_hissections:code:name	1	0	2013-10-21 15:56:15	manager	2013-10-21 15:56:15	manager	1	1	0	0	4
+hms_phamorpts	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-08-23 19:35:07	manager	2013-08-23 19:35:07	manager	1	1	0	1	0
+hms_phamorpts	dep	dep		any	hidden	PHA		1	0	2013-08-23 19:35:29	manager	2013-08-23 19:35:29	manager	1	0	0	1	1
+hms_phamorpts	prepaid	Payment Type :		any	select			1	0	2013-08-23 19:36:43	manager	2013-08-23 19:36:43	manager	1	0	1	0	2
+hms_phamorpts	regtype	Patient Registration :		any	select			1	0	2013-08-23 19:38:11	manager	2013-08-23 19:38:11	manager	1	0	1	0	3
+hms_phamorpts	xmonth	Month :		any	select		enumCalendarMonths	1	1	2013-08-23 19:38:47	manager	2013-08-23 19:38:47	manager	1	1	0	0	4
+hms_phamorpts	xyear	Year :		any	select		enumCalendarYears	1	1	2013-08-23 19:39:13	manager	2013-08-23 19:39:13	manager	1	1	0	0	5
+hms_pharpt	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-08-22 22:16:20	manager	2013-08-22 22:16:53	manager	2	1	0	1	0
+hms_pharpt	date1	From :		date	text	eval:currentdate()		1	1	2013-08-22 22:16:47	manager	2013-08-22 22:16:47	manager	1	0	0	1	1
+hms_pharpt	date2	to :		date	text	eval:currentdate()		1	1	2013-08-22 22:17:06	manager	2013-08-22 22:17:06	manager	1	0	0	1	2
+hms_pharpt	dep	Department :		any	hidden	PHA		1	1	2013-08-22 22:17:47	manager	2013-08-22 22:17:47	manager	1	0	0	1	3
+hms_pharpt	prepaid	Payment Type :		any	select			1	0	2013-08-22 22:22:55	manager	2013-08-22 22:22:55	manager	1	0	1	0	4
+hms_pharpt	regtype	Patient Registration :		any	select			1	0	2013-08-22 22:42:14	manager	2013-08-22 22:42:14	manager	1	0	1	0	5
+hms_pl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 17:59:49	manager	2013-06-20 17:59:49	manager	1	1	0	1	0
+hms_pl	date1	From :		date	text	eval:currentdate()		1	1	2013-06-20 18:00:09	manager	2013-06-20 18:00:09	manager	1	0	0	1	1
+hms_pl	date2	to :		date	text	eval:currentdate()		1	1	2013-06-20 18:01:10	manager	2013-06-20 18:01:10	manager	1	0	0	1	2
+hms_povrr	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 17:00:49	manager	2013-06-20 17:00:49	manager	1	1	0	1	0
+hms_povrr	date1	P.O. From :		date	text	eval:currentdate()		1	1	2013-06-20 17:01:07	manager	2013-06-26 20:04:22	manager	3	0	0	1	1
+hms_povrr	date2	P.O. to :		date	text	eval:currentdate()		1	1	2013-06-20 17:01:25	manager	2013-06-26 20:04:36	manager	2	0	0	1	2
+hms_povrr	date3	RR As of :		date	text	eval:currentdate()		1	1	2013-06-26 20:05:07	manager	2013-06-26 20:06:00	manager	2	0	0	1	3
+hms_povrr	item	Item Code :		any	text			1	0	2013-06-20 17:02:10	manager	2013-06-26 20:05:18	manager	2	0	0	0	4
+hms_prl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-07-09 23:05:08	manager	2013-07-09 23:05:08	manager	1	1	0	1	0
+hms_prl	itemclass	Classification :		any	select		itemclasses:itemclass:itemclassname	1	0	2013-07-09 23:05:41	manager	2013-08-06 13:57:11	manager	3	1	0	0	2
+hms_prl	itemgroup	Section :		any	select		u_hissections:code:name	1	0	2013-07-09 23:06:12	manager	2013-08-06 13:56:34	manager	2	1	0	0	1
+hms_pulmolist	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-30 15:47:16	manager	2013-06-30 15:47:16	manager	1	1	0	1	0
+hms_pulmolist	date1	From :		date	text	eval:currentdate()		1	1	2013-06-30 15:47:36	manager	2013-06-30 15:47:36	manager	1	0	0	1	1
+hms_pulmolist	date2	to :		date	text	eval:currentdate()		1	1	2013-06-30 15:47:50	manager	2013-06-30 15:47:50	manager	1	0	0	1	2
+hms_pulmolist	dep	Department :		any	hidden	PULM		1	0	2013-06-30 15:48:24	manager	2013-08-22 14:15:53	manager	3	0	0	1	3
+hms_pulmopr	bpcode	Patient ID :		any	text			1	1	2013-06-30 16:20:47	manager	2013-06-30 16:25:24	manager	3	0	0	0	1
+hms_pulmopr	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-30 16:18:54	manager	2013-06-30 16:18:54	manager	1	1	0	1	0
+hms_pulmopr	date1	From :		date	text	eval:currentdate()		1	1	2013-06-30 16:19:13	manager	2013-06-30 16:25:35	manager	2	0	0	1	2
+hms_pulmopr	date2	to :		date	text	eval:currentdate()		1	1	2013-06-30 16:19:30	manager	2013-06-30 16:25:45	manager	2	0	0	1	3
+hms_pulmopr	dep	Department :		any	hidden	PULM		1	0	2013-06-30 16:20:13	manager	2013-08-22 14:14:50	manager	3	0	0	1	4
+hms_radiolist	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-30 17:03:58	manager	2013-06-30 17:03:58	manager	1	1	0	1	0
+hms_radiolist	date1	From :		date	text	eval:currentdate()		1	1	2013-06-30 17:05:27	manager	2013-08-22 14:02:05	manager	4	0	0	1	5
+hms_radiolist	date2	to :		date	text	eval:currentdate()		1	1	2013-06-30 17:06:13	manager	2013-08-22 14:01:55	manager	3	0	0	1	6
+hms_radiolist	dep	Section :		any	select			1	1	2013-06-30 17:08:42	manager	2013-08-22 14:03:03	manager	6	0	1	0	1
+hms_radiolist	regtype	Patient Registration :		any	select			1	0	2013-07-03 18:42:10	manager	2013-08-22 14:02:14	manager	3	0	1	0	4
+hms_radiolist	sec	Item Class :		any	select		itemclasses:itemclass:itemclassname	1	0	2013-07-30 16:49:13	manager	2013-08-22 14:02:35	manager	6	1	0	0	2
+hms_radiolist	trx	Transaction Type :		any	text			1	0	2013-06-30 17:05:10	manager	2013-08-22 14:02:26	manager	4	0	0	0	3
+hms_reqrpts	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-10-07 19:42:06	manager	2013-10-07 19:42:06	manager	1	1	0	1	0
+hms_reqrpts	date1	From :		date	text	eval:currentdate()		1	1	2013-10-07 19:45:23	manager	2013-10-07 19:45:23	manager	1	0	0	1	3
+hms_reqrpts	date2	to :		date	text	eval:currentdate()		1	1	2013-10-07 19:45:50	manager	2013-10-07 19:45:50	manager	1	0	0	1	4
+hms_reqrpts	dep	From Section :		any	select		u_hissections:code:name	1	0	2013-10-07 19:42:32	manager	2013-10-07 19:42:32	manager	1	1	0	0	1
+hms_reqrpts	dep2	to Section :		any	select		u_hissections:code:name	1	0	2013-10-07 19:42:54	manager	2013-10-07 19:42:54	manager	1	1	0	0	2
+hms_roompl	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-08-23 01:25:13	manager	2013-08-23 01:25:13	manager	1	1	0	1	0
+hms_rvd	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-07-04 12:01:09	manager	2013-07-04 12:01:09	manager	1	1	0	1	0
+hms_rvd	date1	Requested Date From :		date	text	eval:currentdate()		1	1	2013-07-04 12:01:40	manager	2013-07-04 12:03:42	manager	2	0	0	1	3
+hms_rvd	date2	Requested Date to :		date	text	eval:currentdate()		1	1	2013-07-04 12:02:03	manager	2013-07-04 12:03:51	manager	2	0	0	1	4
+hms_rvd	date3	Delivery As of :		date	text	eval:currentdate()		1	1	2013-07-04 12:02:25	manager	2013-07-04 12:03:59	manager	2	0	0	1	5
+hms_rvd	dep	Section :		any	select		u_hissections:code:name	1	1	2013-07-04 12:02:50	manager	2013-10-24 12:57:50	manager	4	1	0	0	1
+hms_rvd	docno	Request Docno. :		any	text			1	0	2013-07-04 12:03:33	manager	2013-07-04 12:03:33	manager	1	0	0	0	1
+hms_soa	bpcode	Patient ID :		any	text			1	1	2013-06-11 17:38:02	manager	2013-06-11 17:47:23	manager	2	0	0	0	1
+hms_soa	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-11 17:36:40	manager	2013-06-11 17:36:40	manager	1	1	0	1	0
+hms_soa	date1	From :		date	hidden	01/01/1800		1	1	2013-06-11 17:39:03	manager	2013-06-13 00:30:05	manager	2	0	0	1	3
+hms_soa	date2	As of :		date	text	eval:currentdate()		1	1	2013-06-11 17:39:47	manager	2013-06-13 13:10:44	manager	4	0	0	1	4
+hms_soa	docno	Bill No. :		any	text			1	1	2013-06-11 17:38:35	manager	2013-06-13 13:10:12	manager	6	0	0	0	3
+hms_splroom	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-07-04 00:16:57	manager	2013-07-04 00:17:06	manager	2	1	0	1	0
+hms_splroom	date1	From :		date	text	eval:currentdate()		1	1	2013-07-04 00:17:36	manager	2013-07-04 00:17:36	manager	1	0	0	1	1
+hms_splroom	date2	to :		date	text	eval:currentdate()		1	1	2013-07-04 00:17:51	manager	2013-07-04 00:17:51	manager	1	0	0	1	2
+hms_splroom	dep	Section :		any	select		u_hissections:code:name	1	0	2013-10-21 15:59:11	manager	2013-10-21 15:59:11	manager	1	1	0	0	4
+hms_sumpo	bpcode	BP Code :		any	text			1	0	2013-06-20 16:09:20	manager	2013-06-20 16:09:20	manager	1	0	0	0	3
+hms_sumpo	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 15:52:30	manager	2013-06-20 15:52:30	manager	1	1	0	1	0
+hms_sumpo	date1	From :		date	text	eval:currentdate()		1	1	2013-06-20 15:52:53	manager	2013-06-20 15:52:53	manager	1	0	0	1	1
+hms_sumpo	date2	to :		date	text	eval:currentdate()		1	1	2013-06-20 15:53:15	manager	2013-06-20 15:53:15	manager	1	0	0	1	2
+hms_sumpo	itemcode	Item Code :		any	text			1	0	2013-06-20 16:12:38	manager	2013-06-20 16:12:38	manager	1	0	0	0	4
+hms_sumpo	whs	Warehouse :		any	text			1	0	2013-06-20 16:10:20	manager	2013-06-20 16:10:20	manager	1	0	0	0	5
+hms_tb	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-20 17:34:55	manager	2013-06-20 17:34:55	manager	1	1	0	1	0
+hms_tb	date2	As of :		date	text	eval:currentdate()		1	1	2013-06-20 17:35:14	manager	2013-06-20 17:35:14	manager	1	0	0	1	2
+hms_trans	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-21 11:32:24	manager	2013-06-21 11:32:24	manager	1	1	0	1	0
+hms_trans	date1	From :		date	text	eval:currentdate()		1	1	2013-06-21 11:32:44	manager	2013-06-21 11:32:44	manager	1	0	0	1	1
+hms_trans	date2	to :		date	text	eval:currentdate()		1	1	2013-06-21 11:33:00	manager	2013-06-21 11:33:00	manager	1	0	0	1	2
+hms_trans	inscode	Insurance Code :		any	select			1	1	2013-06-21 11:33:22	manager	2013-12-13 14:06:47	manager	4	0	1	0	3
+hms_trans	mtype	Member Type :		any	text			1	0	2013-06-21 11:33:40	manager	2013-06-21 11:33:40	manager	1	0	0	0	4
+hms_transpay	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-21 13:40:14	manager	2013-06-21 13:40:14	manager	1	1	0	1	0
+hms_transpay	date1	Transmittal Date From :		date	text	eval:currentdate()		1	1	2013-06-21 13:40:50	manager	2013-06-21 13:40:50	manager	1	0	0	1	1
+hms_transpay	date2	Transmittal Date to :		date	text	eval:currentdate()		1	1	2013-06-21 13:41:13	manager	2013-06-21 13:41:13	manager	1	0	0	1	2
+hms_transpay	date3	Payment Date As of :		date	text	eval:currentdate()		1	1	2013-06-21 13:41:43	manager	2013-06-21 13:41:43	manager	1	0	0	1	3
+hms_transpay	inscode	Insurance Code :		any	select			1	1	2013-06-21 13:42:17	manager	2013-12-13 14:07:36	manager	4	0	1	0	4
+hms_transpay	mtype	Member type :		any	text			1	0	2013-06-21 13:42:40	manager	2013-06-21 13:42:40	manager	1	0	0	0	5
+hms_transpay	pck	Is Package :		any	select			1	0	2013-06-21 13:43:29	manager	2013-06-21 13:44:51	manager	2	0	1	0	6
+hms_trans_hmo	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-11 16:47:23	manager	2013-06-11 16:53:44	manager	2	1	0	1	0
+hms_trans_hmo	date1	From :		date	text	eval:currentdate()		1	1	2013-06-11 16:47:53	manager	2013-06-11 16:47:53	manager	1	0	0	1	1
+hms_trans_hmo	date2	to :		date	text	eval:currentdate()		1	1	2013-06-11 16:48:16	manager	2013-06-11 16:48:16	manager	1	0	0	1	2
+hms_trans_hmo	hmo	Health Insurance Code :		any	text			1	0	2013-06-11 16:50:33	manager	2013-06-11 16:52:03	manager	2	0	0	0	3
+hms_trans_hmo	phic	Member Type :		any	text			1	0	2013-06-11 16:49:07	manager	2013-06-11 16:51:47	manager	2	0	0	0	4
+hms_trans_phic	branch	Branch :		any	select	eval:$branch	brancheslist:branchcode:branchname	1	1	2013-06-11 09:36:45	manager	2013-06-11 09:36:45	manager	1	1	0	1	0
+hms_trans_phic	date1	From :		date	text	eval:currentdate()		1	1	2013-06-11 09:37:10	manager	2013-06-11 09:37:10	manager	1	0	0	1	1
+hms_trans_phic	date2	to :		date	text	eval:currentdate()		1	1	2013-06-11 09:37:32	manager	2013-06-11 09:37:32	manager	1	0	0	1	2
+hms_trans_phic	phic	Member Type :		any	text			1	0	2013-06-11 09:38:46	manager	2013-06-11 09:38:46	manager	1	0	0	0	3

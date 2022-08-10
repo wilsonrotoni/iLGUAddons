@@ -1,0 +1,2 @@
+evaltrx:deleteUDF('u_buildingdivisions','area','Area in Sqm','any',100,15,'',0,'u_buildingfeesarea:u_area',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.04.1908' WHERE ID='GPS.ENGINEERING';

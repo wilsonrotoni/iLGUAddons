@@ -1,0 +1,15 @@
+evaltrx:addUserMenu('','LGU',30.0,'Real Property Tax','M','LGURPT');
+evaltrx:addUserMenu('','LGURPT',10.0,'Real Property List','P','u_rplist');
+evaltrx:addUserMenu('','LGURPT',100.0,'FAAS - Land','P','u_rpfaas1');
+evaltrx:addUserMenu('','LGURPT',110.0,'FAAS - Building','P','u_rpfaas2');
+evaltrx:addUserMenu('','LGURPT',120.0,'FAAS - Machinery','P','u_rpfaas3');
+evaltrx:addUserMenu('','LGURPT',130.0,'FAAS - Land Subdivision','P','u_rpsubdivision');
+evaltrx:addUserMenu('','LGURPT',200.0,'RPT Payment Form','P','u_rptaxes');
+evaltrx:addUserMenu('SYSADMIN','LGU',30.0,'Real Property Tax','M','LGURPT');
+evaltrx:addUserMenu('SYSADMIN','LGURPT',10.0,'Real Property List','P','u_rplist');
+evaltrx:addUserMenu('SYSADMIN','LGURPT',100.0,'FAAS - Land','P','u_rpfaas1');
+evaltrx:addUserMenu('SYSADMIN','LGURPT',110.0,'FAAS - Building','P','u_rpfaas2');
+evaltrx:addUserMenu('SYSADMIN','LGURPT',120.0,'FAAS - Machinery','P','u_rpfaas3');
+evaltrx:addUserMenu('SYSADMIN','LGURPT',130.0,'FAAS - Land Subdivision','P','u_rpsubdivision');
+evaltrx:addUserMenu('SYSADMIN','LGURPT',200.0,'RPT Payment Form','P','u_rptaxes');
+UPDATE DBVERSION SET VERSION='2019.03.28.1037' WHERE ID='GPS.RPTAS';

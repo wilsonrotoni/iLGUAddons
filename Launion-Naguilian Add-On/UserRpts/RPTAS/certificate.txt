@@ -1,0 +1,20 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',285,'Certificate','P','urpt_u_rpcert');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',285,'Certificate','P','urpt_u_rpcert');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',285,'Certificate','P','urpt_u_rpcert');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',285,'Certificate,'P','urpt_u_rpcert');
+
+evaltrx:addUDR('u_rpcert','Certificate','QS','mysql',1);
+
+
+
+evaltrx:addUDRParam('u_rpcert','pin','Pin','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_rpcert','pin','LQ','Q','select code,u_pin, u_ownercompanyname from u_rpfaas1 where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+evaltrx:addUDRParam('u_rpcert','requester','Requester','','any',1,'text',0,null,0,null);
+
+
+
+
+evaltrx:addUDRLayout('u_rpcert','Certificate',1,'RPTAS Add-On','certificate.rpt','1',1,'','','');
+

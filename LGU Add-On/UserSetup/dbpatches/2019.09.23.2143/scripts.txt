@@ -1,0 +1,13 @@
+evaltrx:addUDT('terminalseries','Terminal Series','D','');
+evaltrx:addUDO('terminalseries','Terminal Series','terminalseries','');
+evaltrx:addUDF('u_terminalseries','isdefault','Dflt','numeric',4,5,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','terminalid','Terminal Id','any',30,6,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','cashier','Cashier','any',30,6,'',0,'users:userid:username',0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','docseriesname','Series Name','any',35,7,'',0,'u_lguforms:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','numlen','Digits','numeric',1,10,'7',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','prefix','Prefix','any',15,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','nextno','Next No.','numeric',3,30,'1',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','suffix','Suffix','any',15,40,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','autoseries','Auto Series','numeric',1,45,'1',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_terminalseries','nooflines','No of Lines','numeric',4,100,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.23.2143' WHERE ID='GPS.LGU';

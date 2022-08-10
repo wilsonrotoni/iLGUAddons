@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="FuelBuffering" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="FuelBuffering" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="FuelBuffering">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Company" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyType" type="xs:string" minOccurs="0" />
+              <xs:element name="Branch" type="xs:string" minOccurs="0" />
+              <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+              <xs:element name="date1" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="u_itemcode" type="xs:string" minOccurs="0" />
+              <xs:element name="itemdesc" type="xs:string" minOccurs="0" />
+              <xs:element name="UGT" type="xs:double" minOccurs="0" />
+              <xs:element name="DeadStock" type="xs:double" minOccurs="0" />
+              <xs:element name="AvailableForSale" type="xs:double" minOccurs="0" />
+              <xs:element name="AveVolume" type="xs:double" minOccurs="0" />
+              <xs:element name="NDays" type="xs:double" minOccurs="0" />
+              <xs:element name="ColorCondition" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

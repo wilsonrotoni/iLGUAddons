@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_buildingpermitapps2','check','*','numeric',1,1,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps2','scopeofwork','Scope Of Work','any',255,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps2','remarks','Remarks','any',100,50,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.03.05.0659' WHERE ID='GPS.ENGINEERING';

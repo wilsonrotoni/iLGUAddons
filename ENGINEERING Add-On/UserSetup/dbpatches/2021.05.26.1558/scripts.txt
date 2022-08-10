@@ -1,0 +1,6 @@
+evaltrx:addUDF('u_buildingpermitapps','civilengr','Civil Engineer','any',255,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','electricalengr','Electrical Engineer','any',255,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','sanitarymasterplumber','Sanitary Master Plumber','any',255,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','mechanicalengr','Mechanical Engineer','any',255,25,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','electronicsengr','Electronics Engineer','any',255,25,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.26.1558' WHERE ID='GPS.ENGINEERING';

@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_rpbldgextraitems','excludereport','Exclude Report','numeric',4,350,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_rpbldgextraitems','excludereport','0','No');
+evaltrx:addUDFValue('u_rpbldgextraitems','excludereport','1','Yes');
+UPDATE DBVERSION SET VERSION='2019.09.10.1352' WHERE ID='GPS.RPTAS';

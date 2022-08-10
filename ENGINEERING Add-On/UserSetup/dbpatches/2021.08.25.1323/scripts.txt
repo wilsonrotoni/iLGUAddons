@@ -1,0 +1,4 @@
+evaltrx:addUDF('u_buildingpermitapps','zoningappno','Zoning Application No.','any',255,5,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','plumbingappno','Zoning Application No.','any',255,5,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps','fencingappno','Zoning Application No.','any',255,5,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.08.25.1323' WHERE ID='GPS.ENGINEERING';

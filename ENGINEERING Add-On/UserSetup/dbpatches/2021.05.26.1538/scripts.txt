@@ -1,0 +1,4 @@
+evaltrx:addUDT('buildingpermitengineersclass','List of Engineers - Kind','MDLC','');
+evaltrx:addUDOChild('buildingpermitengineers','buildingpermitengineersclass','List of Engineers - Kind','G');
+evaltrx:addUDF('u_buildingpermitengineersclass','name','Name','any',225,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.26.1538' WHERE ID='GPS.ENGINEERING';

@@ -1,0 +1,10 @@
+evaltrx:addUDT('buildingpermitapps5','Other Details','DL','');
+evaltrx:addUDF('u_buildingpermitapps5','occupancyclassified','Occupancy Classified','any',255,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps5','numberofunits','Number of Units','numeric',1,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps5','numberofstorey','Number of Storey','numeric',1,25,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps5','totalfloorarea','Total Floor Area','numeric',1,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps5','lotarea','Lot Area','numeric',1,35,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps5','height','Height','numeric',1,40,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_buildingpermitapps5','totalestcost','Total Estimated Cost','amount',20,45,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDOChild('buildingpermitapps','buildingpermitapps5','Other Details','G');
+UPDATE DBVERSION SET VERSION='2021.05.09.2001' WHERE ID='GPS.ENGINEERING';

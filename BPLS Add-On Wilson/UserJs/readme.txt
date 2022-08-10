@@ -1,0 +1,1 @@
+// this directory must contain .js files with filename same as Page id in System Information

@@ -1,0 +1,4 @@
+evaltrx:registerAddonMenu('GPS','Fixed Asset');
+evaltrx:addAddonMenu('GPS','Fixed Asset','',900.1);
+
+UPDATE DBVERSION SET VERSION='2019.03.01.1300' WHERE ID='GPS.FixedAsset';

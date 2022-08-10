@@ -1,0 +1,32 @@
+<?xml version="1.0" standalone="yes"?>
+<xs:schema id="sales_monitoring" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+  <xs:element name="sales_monitoring" msdata:IsDataSet="true" msdata:UseCurrentLocale="true">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="sales_monitoring">
+          <xs:complexType>
+            <xs:sequence>
+		  <xs:element name="Company" type="xs:string" minOccurs="0" />
+		  <xs:element name="Branch" type="xs:string" minOccurs="0" />
+		  <xs:element name="BranchName" type="xs:string" minOccurs="0" />
+		  <xs:element name="Date1" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="Date2" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="docdate" type="xs:dateTime" minOccurs="0" />
+		  <xs:element name="bpname" type="xs:string" minOccurs="0" />
+		  <xs:element name="SO" type="xs:string" minOccurs="0" />
+		  <xs:element name="DR" type="xs:string" minOccurs="0" />
+		  <xs:element name="Source" type="xs:string" minOccurs="0" />
+		  <xs:element name="ItemDesc" type="xs:string" minOccurs="0" />
+		  <xs:element name="quantity" type="xs:double" minOccurs="0" />
+		  <xs:element name="uomsa" type="xs:string" minOccurs="0" />
+		  <xs:element name="unitprice" type="xs:double" minOccurs="0" />
+		  <xs:element name="amount" type="xs:double" minOccurs="0" />
+		  <xs:element name="PAYMENTTERMNAME" type="xs:string" minOccurs="0" />
+		  <xs:element name="groupname" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

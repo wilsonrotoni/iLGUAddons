@@ -1,0 +1,16 @@
+evaltrx:addUserMenu('','LGURPTSMTOP',166,'List of Renewed ','P','urpt_u_unrenew');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSMTOP',166,'List of Renewed ','P','urpt_u_unrenew');
+evaltrx:addUserMenu('LGU','LGURPTSMTOP',166,'List of Renewed ','P','urpt_u_unrenew');
+evaltrx:addUserMenu('LGUUSR','LGURPTSMTOP',166,'List of Renewed','P','urpt_u_unrenew');
+
+evaltrx:addUDR('u_unrenew','List of Renewed ','QS','mysql',1);
+
+evaltrx:addUDRParam('u_unrenew','toda','Toda','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_unrenew','toda','LQ','Q','select code,name from u_mtoptodas where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+evaltrx:addUDRLayout('u_unrenew','List of Renewed ',1,'LGU Add-On','list of renewed.rpt','1',1,'','','');
+
+
+

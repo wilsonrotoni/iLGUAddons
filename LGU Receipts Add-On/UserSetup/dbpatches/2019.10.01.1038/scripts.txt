@@ -1,0 +1,11 @@
+evaltrx:addUDT('lgureceiptcashierreturn','Cashier Return Receipts','D','');
+evaltrx:addUDO('lgureceiptcashierreturn','Cashier Return Receipts','lgureceiptcashierreturn','');
+evaltrx:addUDF('u_lgureceiptcashierreturn','cashier','Cashier','any',25,26,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptcashierreturn','receiptlineid','Receipts ID','numeric',4,5,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptcashierreturn','form','Type of Form','any',30,20,null,0,'u_lguforms:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptcashierreturn','receiptfrm','Receipt From','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptcashierreturn','receiptto','Receipt To','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptcashierreturn','quantity','Quantity','numeric',4,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptcashierreturn','datereturn','Date Return','date',0,3,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_lgureceiptcashierreturn','time','Time','time',10,10,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.01.1038' WHERE ID='GPS.LGUReceipts';

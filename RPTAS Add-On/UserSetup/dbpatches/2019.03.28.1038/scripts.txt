@@ -1,0 +1,3 @@
+evaltrx:registerAddonMenu('GPS','RPTAS');
+evaltrx:addAddonMenu('GPS','RPTAS','LGU',30);
+UPDATE DBVERSION SET VERSION='2019.03.28.1038' WHERE ID='GPS.RPTAS';

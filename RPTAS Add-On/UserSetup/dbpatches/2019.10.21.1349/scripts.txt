@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rpvalidatepaymentitems','refno','Reference No.','any',100,5,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.21.1349' WHERE ID='GPS.RPTAS';

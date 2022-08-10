@@ -1,0 +1,3 @@
+evaltrx:addUDT('barangays','List of Barangays','MDC','');
+evaltrx:addUDO('barangays','List of Barangay','barangays','G');
+UPDATE DBVERSION SET VERSION='2019.03.28.1324' WHERE ID='GPS.LGU';

@@ -1,0 +1,5 @@
+evaltrx:addUDT('userprofitcenters','User Profit Center - Items','MDL','G');
+evaltrx:addUDOChild('pcusers','userprofitcenters','User Profit Center - Items','G');
+evaltrx:addUDF('userprofitcenters','profitcenter','Profit Center','any',50,20,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('userprofitcenters','profitcentername','Profit Center Name','any',100,20,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.15.1235' WHERE ID='GPS.LGUPurchasing';

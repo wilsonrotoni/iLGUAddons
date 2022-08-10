@@ -1,0 +1,23 @@
+evaltrx:addUserMenu('','LGURPTSPMR',140,'List by Section','P','urpt_u_listbysection1');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPMR',140,'List by Section','P','urpt_u_listbysection1');
+evaltrx:addUserMenu('LGU','LGURPTSPMR',140,'List by Section','P','urpt_u_listbysection1');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPMR',140,'List Section','P','urpt_u_listbysection1');
+
+evaltrx:addUDR('u_listbysection1','List by Section','QS','mysql',1);
+
+evaltrx:addUDRParam('u_listbysection1','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbysection1','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+
+
+
+evaltrx:addUDRParam('u_listbysection1','section','Section','','any',1,'text',0,null,0,null);
+evaltrx:addUDRFormattedSearch('u_listbysection1','section','LQ','Q','select code,name from u_pmrsections where company=\'$[GLOBAL_COMPANY]$\' and branch=\'$[GLOBAL_BRANCH]$\'M',0);
+
+
+
+
+
+evaltrx:addUDRLayout('u_listbysection1','List by Section',1,'PMRS Add-On','listbysection.rpt','1',1,'','','');
+
+
+

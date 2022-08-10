@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_rpfaas1b','unit','Unit','any',50,15,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDFValue('u_rpfaas1b','unit','','');
+evaltrx:addUDFValue('u_rpfaas1b','unit','sqm.','Sqm.');
+evaltrx:addUDFValue('u_rpfaas1b','unit','has.','Has.');
+UPDATE DBVERSION SET VERSION='2019.10.24.1002' WHERE ID='GPS.RPTAS';

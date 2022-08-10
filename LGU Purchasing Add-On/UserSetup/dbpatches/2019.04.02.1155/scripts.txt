@@ -1,0 +1,2 @@
+evaltrx:addUDP('copyfrompo','Copy From Purchase Order','N','');
+UPDATE DBVERSION SET VERSION='2019.04.02.1155' WHERE ID='GPS.LGUPurchasing';

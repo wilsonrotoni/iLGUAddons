@@ -1,0 +1,2 @@
+evaltrx:addUDF('pcusers','user','User Name','any',50,30,'',0,'users:userid:username',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.05.15.1536' WHERE ID='GPS.LGUPurchasing';

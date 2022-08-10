@@ -1,0 +1,5 @@
+evaltrx:modifyUDF('u_lgustocktransferitems','toempid','To Employee ID','any',30,30,'',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgustocktransferitems','toempname','To Employee Name','any',100,40,'',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgustocktransferitems','toprofitcenter','To Profit Center','any',30,50,'',0,null,0,0,1,1,1,1);
+evaltrx:modifyUDF('u_lgustocktransferitems','toprofitcentername','To Profit Center Name','any',100,60,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.06.07.0019' WHERE ID='GPS.LGUPurchasing';

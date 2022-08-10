@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rpfaas1','oldpin','Old PIN','any',30,5,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.09.1332' WHERE ID='GPS.RPTAS';

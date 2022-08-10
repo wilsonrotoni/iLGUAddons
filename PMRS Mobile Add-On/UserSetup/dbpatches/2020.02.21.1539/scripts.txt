@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_pmrambulantcollectiontickets','feecode','Fee Code','any',30,35,null,0,'u_pmrcashtickets:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_lgupos','cashticketbillno','Cash Ticket Bill No.','any',30,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2020.02.21.1539' WHERE ID='GPS.PMRSMobile';

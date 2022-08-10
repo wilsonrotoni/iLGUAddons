@@ -1,0 +1,25 @@
+* { FONT-FAMILY: Calibri Light;
+}
+BODY {        FONT-SIZE: 15px; BACKGROUND: #fff; COLOR: #000; }
+
+TD {        FONT-SIZE: 15px;}
+
+.tableFreeForm TD { FONT-SIZE: 15px; HEIGHT:20px}
+.xtableFreeForm TD { FONT-SIZE: 15px; HEIGHT:18px}
+
+
+.labelPageHeader { FONT-WEIGHT: bold; FONT-SIZE: 15px;
+	HEIGHT: 18px}
+
+.labelPageHeaderPgInfo { FONT-WEIGHT: bold; FONT-SIZE: 12px; 
+	HEIGHT: 18px}
+
+.popupwinheadrow TD { FONT-WEIGHT: bold; BORDER-BOTTOM: 0px solid; FONT-SIZE: 15px; HEIGHT: 16px}
+
+.popupwinheadrowBig TD { FONT-WEIGHT: bold; BORDER-BOTTOM: 0px solid; FONT-SIZE: 24px;  HEIGHT: 24px}
+
+.popupwin { BORDER-RIGHT: 2px solid; BORDER-TOP: 2px solid; BORDER-LEFT: 2px solid; BORDER-BOTTOM: 2px solid}
+
+.popupwinTbl { BORDER-RIGHT: 0px solid; BORDER-TOP: 0px solid; BORDER-LEFT: 0px solid; BORDER-BOTTOM: 0px solid}
+
+.popupwinTbl TD { FONT-SIZE: 15px; HEIGHT:16px}

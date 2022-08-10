@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_lgupos','exactamount','Exact Amount','numeric',1,90,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.26.0007' WHERE ID='GPS.LGU';

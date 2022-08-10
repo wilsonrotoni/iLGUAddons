@@ -1,0 +1,3 @@
+evaltrx:addUDF('u_rptaxes','nopenalty','No Penalty','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rptaxes','nodiscount','No Discount','numeric',1,70,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.02.1120' WHERE ID='GPS.RPTAS';

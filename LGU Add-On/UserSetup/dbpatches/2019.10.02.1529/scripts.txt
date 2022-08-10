@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_terminalseries','docseries','Booklet Series','any',35,7,null,0,'',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.10.02.1529' WHERE ID='GPS.LGU';

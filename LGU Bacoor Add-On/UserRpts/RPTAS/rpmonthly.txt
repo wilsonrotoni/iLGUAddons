@@ -1,0 +1,18 @@
+evaltrx:addUserMenu('','LGURPTSRPTA',245,'Monthly Collection','P','urpt_u_rpmonth');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSRPTA',245,'Monthly Collection','P','urpt_u_rpmonth');
+evaltrx:addUserMenu('LGU','LGURPTSRPTA',245,'Monthly Collection','P','urpt_u_rpmonth');
+evaltrx:addUserMenu('LGUUSR','LGURPTSRPTA',245,'Monthly Collection,'P','urpt_u_rpmonth');
+
+evaltrx:addUDR('u_rpmonth','Monthly Collection','QS','mysql',1);
+
+
+
+evaltrx:addUDRParam('u_rpmonth','date1','From:','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_rpmonth','date2','To:','','date',1,'text',10,'eval:currentdate()',1,null);
+
+
+
+
+
+
+evaltrx:addUDRLayout('u_rpmonth','Monthly Collection',1,'RPTAS Add-On','rpmonthly.rpt','1',1,'','','');

@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_ctcapps','ischeque','Cheque Payment','numeric',1,80,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_ctcapps','checkdate','Check Date','date',0,10,null,0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_ctcapps','checkbank','Check Bank','any',30,20,'',0,'banks:bank:bankname',0,0,1,1,1,1);
+evaltrx:addUDF('u_ctcapps','checkno','Check No.','any',20,30,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.01.28.1735' WHERE ID='GPS.CTC';

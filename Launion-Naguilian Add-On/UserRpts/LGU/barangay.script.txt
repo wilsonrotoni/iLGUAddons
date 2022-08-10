@@ -1,0 +1,48 @@
+
+
+evaltrx:addUserMenu('','LGURPTSBPLS',108,'List by Barangay','P','urpt_u_listbybrgyyy');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSBPLS',108,'List by Barangay','P','urpt_u_listbybrgyyy');
+evaltrx:addUserMenu('LGU','LGURPTSBPLS',108,'List by Barangay','P','urpt_u_listbybrgyyy');
+evaltrx:addUserMenu('LGUUSR','LGURPTSBPLS',108,'List by Barangay','P','urpt_u_listbybgryyy');
+
+evaltrx:addUDR('u_listbybrgyyy','List by Barangay','QS','mysql',1);
+
+evaltrx:addUDRParam('u_listbybrgyyy','date1','From','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbybrgyyy','date2','To','','date',1,'text',10,'eval:currentdate()',1,null);
+evaltrx:addUDRParam('u_listbybrgyyy','brgy','Barangay','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','','ALL');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','alipang','Alipang');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','Ambangonan','AMBANGONAN');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','amlang','Amlang');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','bacani','Bacanai');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','bangar','Bacani');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','bani','Bani');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','benteng-sapilang','Benteng-Sapilang');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','cadumanian','Cadumanian');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','carunuan east','Carunuan East');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','Carunuan west','Carunuan West');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','casilagan','Casilagan');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','cataguingtingan','Cataguingtingan');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','conception','Concepption');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','damortis','Damortis');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','gumot-nagcolaran','Gumot-Nagcolaran');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','inabaan norte','Inabaan Norte');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','inabaan sur','Inabaan Sur');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','marcos','Marcos');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','parasapas','Parasapas');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','poblacion east','Poblacion East');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','poblacion west','Poblacion West');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','puzon','Puzon');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','rabon','Rabon');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','san jose','San Jose');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','subusub','Subusub');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','tabtabungao','Tabtabungao');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','tanglag','Tanglag');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','tay-ac','Tay-ac');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','udiao','Udiao');
+evaltrx:addUDRParamValue('u_listbybrgyyy','brgy','vila','Vila');
+
+evaltrx:addUDRLayout('u_listbybrgyyy','List by Barangay',1,'BPLS Add-On','barangay.rpt','1',1,'','','');
+
+
+

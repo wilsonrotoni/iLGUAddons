@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rpfaas2','totalareasqm','Total Area (sqm.)','measure',0,20,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.09.1208' WHERE ID='GPS.RPTAS';

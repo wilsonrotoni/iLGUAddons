@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rptaxes','docseries','OR Series','any',35,7,'',0,'u_lguforms:code:name',0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.07.18.1005' WHERE ID='GPS.RPTAS';

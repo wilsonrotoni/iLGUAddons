@@ -1,0 +1,2 @@
+evaltrx:modifyUDO('bplmds','Business Master Data','bplmds','');
+UPDATE DBVERSION SET VERSION='2019.06.17.2253' WHERE ID='GPS.BPLS';

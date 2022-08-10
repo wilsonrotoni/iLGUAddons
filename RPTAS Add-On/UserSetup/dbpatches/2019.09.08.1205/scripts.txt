@@ -1,0 +1,2 @@
+evaltrx:addProgId('u_rpforapprovallist','Real Property Tax For Approval','./udp.php?&objectcode=u_rpforapprovallist');
+UPDATE DBVERSION SET VERSION='2019.09.08.1205' WHERE ID='GPS.RPTAS';

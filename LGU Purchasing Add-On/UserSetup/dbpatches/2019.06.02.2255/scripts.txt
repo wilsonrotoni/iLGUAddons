@@ -1,0 +1,3 @@
+evaltrx:modifyUDT('lgupurchasesetup','Settings','MD','');
+evaltrx:modifyUDO('lgupurchasesetup','Settings','');
+UPDATE DBVERSION SET VERSION='2019.06.02.2255' WHERE ID='GPS.LGUPurchasing';

@@ -1,0 +1,9 @@
+evaltrx:addUDFValue('u_buildingpermitapps','Apptype','','');
+evaltrx:addUDFValue('u_buildingpermitapps','Apptype','Simple','Simple');
+evaltrx:addUDFValue('u_buildingpermitapps','Apptype','New','New');
+evaltrx:addUDFValue('u_buildingpermitapps','Apptype','Locational Clearance','Locational Clearance');
+evaltrx:addUDFValue('u_buildingpermitapps','Apptype','Renewal','Renewal');
+evaltrx:addUDFValue('u_buildingpermitapps','Apptype','Complex','Complex');
+evaltrx:addUDFValue('u_buildingpermitapps','Apptype','Amendatory','Amendatory');
+evaltrx:addUDFValue('u_buildingpermitapps','Apptype','Fire Safety Evaluation Clearance','Fire Safety Evaluation Clearance');
+UPDATE DBVERSION SET VERSION='2021.11.15.1249' WHERE ID='GPS.ENGINEERING';

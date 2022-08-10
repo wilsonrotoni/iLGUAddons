@@ -1,0 +1,3 @@
+evaltrx:addUserMenu('','LGUADMINENGINEERING',118,'Character of Occupancy','P','u_buildingcharacteroccupancy');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINENGINEERING',118,'Character of Occupancy','P','u_buildingcharacteroccupancy');
+UPDATE DBVERSION SET VERSION='2021.03.05.0432' WHERE ID='GPS.ENGINEERING';

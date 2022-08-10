@@ -1,0 +1,2 @@
+evaltrx:deleteUDF('u_buildingmds','expdate','Expiration Date','date',0,80,null,0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.05.10.1536' WHERE ID='GPS.ENGINEERING';

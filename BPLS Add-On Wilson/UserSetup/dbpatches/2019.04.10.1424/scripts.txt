@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_bplcharacters','mayorsamount','Mayors Fee','amount',0,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplcharacters','environmentamount','Environmental Tax','amount',0,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplcharacterkinds','mayorsamount','Mayors Fee','amount',0,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_bplcharacterkinds','environmentamount','Environmental Tax','amount',0,40,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.04.10.1424' WHERE ID='GPS.BPLS';

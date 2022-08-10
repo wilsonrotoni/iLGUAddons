@@ -1,0 +1,28 @@
+evaltrx:addUserMenu('','LGURPTSPAY',284,'Item Collection (temporary)','P','urpt_u_item_collectionn');
+evaltrx:addUserMenu('SYSADMIN','LGURPTSPAY',284,'Item Collection (temporary)','P','urpt_u_item_collectionn');
+evaltrx:addUserMenu('LGU','LGURPTSPAY',284,'Item Collection (temporary)','P','urpt_u_item_collectionn');
+evaltrx:addUserMenu('LGUUSR','LGURPTSPAY',284,'Item Collection (temporary)','P','urpt_u_item_collectionn');
+
+evaltrx:addUDR('u_item_collectionn','Item Collection','QS','mysql',1);
+
+evaltrx:addUDRParam('u_item_collectionn','docno','OR Number 1','','any',1,'text',0,null,0,null);
+evaltrx:addUDRParam('u_item_collectionn','docno2','OR Number 2','','any',1,'text',1,null,0,null);
+evaltrx:addUDRParam('u_item_collectionn','docno3','OR Number 3','','any',1,'text',1,null,0,null);
+
+evaltrx:addUDRParam('u_item_collectionn','date','Date','','date',1,'text',10,'eval:currentdate()',1,null);
+
+
+evaltrx:addUDRParam('u_item_collectionn','profitcenter','Profitcenter','','any',1,'select',0,null,0,null);
+evaltrx:addUDRParamValue('u_item_collectionn','profitcenter','BPL','BPLS');
+evaltrx:addUDRParamValue('u_item_collectionn','profitcenter','MTOP','FRANCHISE');
+evaltrx:addUDRParamValue('u_item_collectionn','profitcenter','PMR','PUBLIC MARKET');
+evaltrx:addUDRParamValue('u_item_collectionn','profitcenter','RPTA','REAL PROPERTY');
+evaltrx:addUDRParamValue('u_item_collectionn','profitcenter','','Cash');
+
+
+
+
+evaltrx:addUDRLayout('u_item_collectionn','Item Collection (temporary)',1,'LGU Add-On','Col_Item_Reps.rpt','1',1,'','','');
+
+
+

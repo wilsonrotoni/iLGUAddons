@@ -1,0 +1,2 @@
+evaltrx:addUDF('u_rpfaas2a','asslvlby','Ass Level By','any',5,20,'AC',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2019.09.18.1056' WHERE ID='GPS.RPTAS';

@@ -1,0 +1,17 @@
+evaltrx:addUDT('rplandimprovements','RP Land Improvments','MDC','');
+evaltrx:addUDO('rplandimprovements','RP Land Improvments','rplandimprovements','');
+evaltrx:addUDF('u_rplandimprovements','gryear','GR Year','any',50,260,'',0,'u_gryears:code:name',0,0,1,1,1,1);
+evaltrx:addUDT('rplandimprovementitems','Items','MDLC','');
+evaltrx:addUDOChild('rplandimprovements','rplandimprovementitems','Items','G');
+evaltrx:addUDF('u_rplandimprovementitems','description','Desription','any',30,10,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rplandimprovementitems','unitvalue','Unit Value','price',0,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUserMenu('','LGUADMINRPTAS',210,'Land Other Improvements','P','u_rplandimprovements');
+evaltrx:addUserMenu('SYSADMIN','LGUADMINRPTAS',210,'Land Other Improvements','P','u_rplandimprovements');
+evaltrx:addUDT('rpfaas1f','Real Property FAAS - Other Improvements','DL','G');
+evaltrx:addUDOChild('rpfaas1a','rpfaas1f','Other Improvements','G');
+evaltrx:addUDF('u_rpfaas1f','kind','Kind','any',30,10,'',0,'u_rplandimprovements:code:code',0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1f','description','Description','any',30,15,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1f','sqm','Area (sqm.)','measure',0,20,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1f','unitvalue','Unit Value.','measure',0,30,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_rpfaas1f','basevalue','Base Market Value','amount',0,40,'0',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2021.02.26.0005' WHERE ID='GPS.RPTAS';

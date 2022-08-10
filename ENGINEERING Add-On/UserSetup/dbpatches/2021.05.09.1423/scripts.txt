@@ -1,0 +1,7 @@
+evaltrx:deleteUDFValue('u_buildingpermitapps5','area','','');
+evaltrx:deleteUDFValue('u_buildingpermitapps5','area','Building','Building');
+evaltrx:deleteUDFValue('u_buildingpermitapps5','area','Electrical','Electrical');
+evaltrx:deleteUDFValue('u_buildingpermitapps5','area','Electronics','Electronics');
+evaltrx:deleteUDFValue('u_buildingpermitapps5','area','Mechanical','Mechanical');
+evaltrx:deleteUDFValue('u_buildingpermitapps5','area','Plumbing','Plumbing');
+UPDATE DBVERSION SET VERSION='2021.05.09.1423' WHERE ID='GPS.ENGINEERING';

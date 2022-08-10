@@ -1,0 +1,6 @@
+UPDATE USERMENU SET MENUCMD = 'LGUBPLREQAPPS', MENUTYPE = 'M' WHERE MENUID = 'LGU' AND ITEMID = '21';
+evaltrx:addUserMenu('','LGUBPLREQAPPS',100,'Requirements Application List','P','u_bplreqlist');
+evaltrx:addUserMenu('SYSADMIN','LGUBPLREQAPPS',100,'Requirements Application List','P','u_bplreqlist');
+evaltrx:addUserMenu('','LGUBPLREQAPPS',200,'New Requirements Application','P','u_bplreqapps');
+evaltrx:addUserMenu('SYSADMIN','LGUBPLREQAPPS',200,'New Requirements Application','P','u_bplreqapps');
+UPDATE DBVERSION SET VERSION='2019.09.11.1534' WHERE ID='GPS.BPLS';

@@ -1,0 +1,5 @@
+evaltrx:addUDF('u_bplmds','isgeneratedqr','Is Generated QR','numeric',1,50,'0',0,null,0,0,1,1,1,1);
+evaltrx:addUserMenu('','LGUUTILITIES',400,'BPL Generate QR','P','u_bplqrgenerate');
+evaltrx:addUserMenu('SYSADMIN','LGUUTILITIES',400,'BPL Generate QR','P','u_bplqrgenerate');
+evaltrx:addProgId('u_bplqrgenerate','BPL Generate QR','./udp.php?&objectcode=u_bplqrgenerate');
+UPDATE DBVERSION SET VERSION='2022.07.07.0226' WHERE ID='GPS.BPLS';
