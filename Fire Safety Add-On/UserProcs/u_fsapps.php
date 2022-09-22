@@ -204,6 +204,8 @@ $page->businessobject->items->seteditable("u_acctno",false);
 $page->businessobject->items->seteditable("u_encodedby",false);
 $page->businessobject->items->seteditable("u_encodeddate",false);
 $page->businessobject->items->seteditable("u_decisionno",false);
+$page->businessobject->items->seteditable("u_fsecno",false);
+$page->businessobject->items->seteditable("u_fsicno",false);
 
 $objGrids[0]->columndataentry("u_check","type","checkbox");
 $objGrids[0]->columninput("u_check","type","checkbox");

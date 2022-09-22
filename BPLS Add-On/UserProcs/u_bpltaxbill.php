@@ -166,7 +166,7 @@ function onAfterDefaultGPSBPLS() {
                         }
                       
                         //FOR UNPAID QUARTERS TAX
-                        if ($lastpayqtrtax != 0 && $lastpayqtrtax != 4 && $lastpayyear < date('Y') && $obju_BPLApps->getudfvalue("u_apptype") != "NEW" && $cntpayyear > 1) {
+                        if ($lastpayqtrtax != 0 && $lastpayqtrtax != 4 && $lastpayyear <= date('Y') && $obju_BPLApps->getudfvalue("u_apptype") != "NEW" && $cntpayyear > 1) {
 //                                $lastpayqtrtax = $lastpayqtrtax + 1;
                                 $objRs->queryopen("select u_businessline, u_unitcount, u_taxclass, sum(u_capital) as u_capital, sum(u_nonessential) as u_nonessential, u_btaxlinetotal, sum(u_essential) as u_essential from u_bplapplines where company='$obju_BPLApps->company' and branch='$obju_BPLApps->branch' and docid='$obju_BPLApps->docid' group by u_businessline");
                                 while ($objRs->queryfetchrow("NAME")) {
@@ -241,7 +241,7 @@ function onAfterDefaultGPSBPLS() {
                         }
                         
                         //FOR UNPAID QUARTERS Environmental
-                        if ($lastpayqtrenvi != 0 && $lastpayqtrenvi != 4 && $lastpayyear < date('Y') && $obju_BPLApps->getudfvalue("u_apptype") != "NEW" && $cntpayyear > 1) {
+                        if ($lastpayqtrenvi != 0 && $lastpayqtrenvi != 4 && $lastpayyear <= date('Y') && $obju_BPLApps->getudfvalue("u_apptype") != "NEW" && $cntpayyear > 1) {
                             $objRs->queryopen("SELECT SUM(U_AMOUNTPAID) as U_AMOUNTPAID FROM U_BPLLEDGER  WHERE COMPANY='$obju_BPLApps->company' and BRANCH='$obju_BPLApps->branch' AND U_ACCTNO = '".$obju_BPLApps->getudfvalue("u_appno")."' AND U_ISCANCELLED <> 1 AND U_PAYYEAR = '".$lastpayyear."' and U_FEEID IN ('2','0005') group by U_ACCTNO");
                                 while ($objRs->queryfetchrow("NAME")) {
                                     $totalevni= floatval($objRs->fields["U_AMOUNTPAID"] / $lastpayqtrenvi) * (4 - $lastpayqtrenvi);

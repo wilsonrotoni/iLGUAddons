@@ -246,7 +246,7 @@ function onAfterDefaultGPSBPLS() {
                                 }
                         }
                         //FOR UNPAID QUARTERS TAX
-                        if ($lastpayqtrtax != 0 && $lastpayqtrtax != 4 && $lastpayyear < date('Y') && $obju_BPLApps->getudfvalue("u_apptype") != "NEW" && $cntpayyear > 1) {
+                        if ($lastpayqtrtax != 0 && $lastpayqtrtax != 4 && $lastpayyear <= date('Y') && $obju_BPLApps->getudfvalue("u_apptype") != "NEW" && $cntpayyear > 1) {
 //                                $lastpayqtrtax = $lastpayqtrtax + 1;
                                 $objRs->queryopen("select u_businessline, u_unitcount, u_taxclass, sum(u_capital) as u_capital, sum(u_nonessential) as u_nonessential, u_btaxlinetotal, sum(u_essential) as u_essential from u_bplapplines where company='$obju_BPLApps->company' and branch='$obju_BPLApps->branch' and docid='$obju_BPLApps->docid' group by u_businessline");
                                 while ($objRs->queryfetchrow("NAME")) {
@@ -392,6 +392,16 @@ function onAfterDefaultGPSBPLS() {
                                         $total+=$objRs->fields["u_amount"];
                                 }
                                 
+                        }
+                        
+                        $objRs->queryopen("select u_lastname, u_firstname, u_middlename, u_gender, u_position from u_bplappemps where company='$obju_BPLApps->company' and branch='$obju_BPLApps->branch' and docid='$obju_BPLApps->docid' ");
+                        while ($objRs->queryfetchrow("NAME")) {
+                                $objGrids[5]->addrow();
+                                $objGrids[5]->setitem(null,"u_lastname",$objRs->fields["u_lastname"]);
+                                $objGrids[5]->setitem(null,"u_firstname",$objRs->fields["u_firstname"]);
+                                $objGrids[5]->setitem(null,"u_middlename",$objRs->fields["u_middlename"]);
+                                $objGrids[5]->setitem(null,"u_gender",$objRs->fields["u_gender"]);
+                                $objGrids[5]->setitem(null,"u_position",$objRs->fields["u_position"]);
                         }
                         
 			

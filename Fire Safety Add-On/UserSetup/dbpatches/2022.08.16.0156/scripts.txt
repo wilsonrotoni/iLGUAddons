@@ -1,0 +1,6 @@
+evaltrx:addUDT('fsinsinspectors','Fire Safety Inspection - Inspectors','DL','');
+evaltrx:addUDOChild('fsins','fsinsinspectors','Fire Safety Inspection - Inspectors','G');
+evaltrx:addUDF('u_fsinsinspectors','inspector','Name of Inspector','any',100,10,'',0,'u_bldginspectors:code:name',0,0,1,1,1,1);
+evaltrx:addUDF('u_fsins','fsecno','FSEC No.','any',30,20,'',0,null,0,0,1,1,1,1);
+evaltrx:addUDF('u_fsins','fsicno','FSIC No.','any',30,20,'',0,null,0,0,1,1,1,1);
+UPDATE DBVERSION SET VERSION='2022.08.16.0156' WHERE ID='GPS.FireSafety';

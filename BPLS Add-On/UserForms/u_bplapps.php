@@ -490,7 +490,7 @@
                     </div>
                 </div>
 
-                <div class="tabbertab" title="Employees">
+                <div class="tabbertab" title="Incorporators">
                     <div id="divemp" style="overflow:auto;">
                         <table class="tableFreeForm" width="100%" border="0" cellpadding="0" cellspacing="0" >
                          <tr>

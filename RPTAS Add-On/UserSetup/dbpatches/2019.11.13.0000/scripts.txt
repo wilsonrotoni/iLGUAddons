@@ -1,3 +1,5 @@
+evaltrx:addUDT('paymenthistory','Payment History','D','');
+evaltrx:addUDO('paymenthistory','Payment History','paymenthistory','');
 evaltrx:addUDF('u_paymenthistory','refno','refno','any',30,30,'',0,null,0,0,1,1,1,1);
 evaltrx:addUDF('u_paymenthistory','tdno','TD No','any',30,140,'',0,null,0,0,1,1,1,1);
 evaltrx:addUDF('u_paymenthistory','payyear','Pay Year','numeric',4,90,'0',0,null,0,0,1,1,1,1);

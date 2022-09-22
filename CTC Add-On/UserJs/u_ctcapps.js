@@ -415,7 +415,7 @@ function setCTCFees() {
     } else {
         interestperc = (paymonth - duemonth) + 1;
     }
-
+    
     if (paydate >= duedate) {
 
         if (paymonth > 2)
@@ -423,6 +423,7 @@ function setCTCFees() {
         else
             interest = 0;
     }
+    
     for (xxx = 1; xxx <= rc; xxx++) {
         if (isTableRowDeleted("T1", xxx) == false) {
             if (getTableInput("T1", "u_feecode", xxx) == getPrivate("ctcbasicfeecode")) {

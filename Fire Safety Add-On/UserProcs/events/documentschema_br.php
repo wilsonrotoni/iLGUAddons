@@ -9,6 +9,8 @@ function onBeforeAddEventdocumentschema_brGPSFireSafety($objTable) {
 			if ($obju_FSApps->getbykey($objTable->getudfvalue("u_appno"))) {
 				$obju_FSApps->docstatus = "FI";
 				$obju_FSApps->setudfvalue("u_insno",$objTable->docno);
+				$obju_FSApps->setudfvalue("u_fsecno",$objTable->getudfvalue("u_fsecno"));
+				$obju_FSApps->setudfvalue("u_fsicno",$objTable->getudfvalue("u_fsicno"));
 				$actionReturn = $obju_FSApps->update($obju_FSApps->docno,$obju_FSApps->rcdversion);
 			} else return raiseError("Unable to find Application No.[".$objTable->getudfvalue("u_appno")."].");
 			break;
@@ -69,6 +71,14 @@ function onBeforeUpdateEventdocumentschema_brGPSFireSafety($objTable) {
 				$objTable->setudfvalue("u_dispositionby",$_SESSION["userid"]);
 				$objTable->setudfvalue("u_dispositiondate",currentdateDB());
 			}
+                        
+                        $obju_FSApps = new documentschema_br(null,$objConnection,"u_fsapps");
+			if ($obju_FSApps->getbykey($objTable->getudfvalue("u_appno"))) {
+				$obju_FSApps->setudfvalue("u_insno",$objTable->docno);
+				$obju_FSApps->setudfvalue("u_fsecno",$objTable->getudfvalue("u_fsecno"));
+				$obju_FSApps->setudfvalue("u_fsicno",$objTable->getudfvalue("u_fsicno"));
+				$actionReturn = $obju_FSApps->update($obju_FSApps->docno,$obju_FSApps->rcdversion);
+			} else return raiseError("Unable to find Application No.[".$objTable->getudfvalue("u_appno")."].");
 			
 			/*if ($objTable->fields["DOCSTATUS"]!=$objTable->docstatus && $objTable->docstatus=="FA") {
 				$objTable->setudfvalue("u_recommendbystatus","Approved");

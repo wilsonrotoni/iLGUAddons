@@ -4,7 +4,7 @@
                 <td align=left>&nbsp;</td>
                 <td width="600" colspan="2"><label class="lblobjs"><b>NATURE OF INSPECTION CONDUCTED:</b></label></td>
                 <td width="168" ><table width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td width="40"><label <?php $page->businessobject->items->draw->caption("docno") ?> >No.</label></td><td align="right"><select <?php $page->businessobject->items->draw->select("docseries", array("loaddocseries", $page->objectcode, "-1:Manual")) ?> ></select></td></tr></table></td>
-                <td width="168" align=left>&nbsp;<input type="text" <?php $page->businessobject->items->draw->text("docno") ?> /></td>
+                <td width="168" align=left>&nbsp;<input type="text" size="16" <?php $page->businessobject->items->draw->text("docno") ?> /></td>
             </tr>
             <tr><td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_classification") ?>>Classification</label></td>
                 <td >&nbsp;<select <?php $page->businessobject->items->userfields->draw->select("u_classification") ?>></select></td>
@@ -14,7 +14,7 @@
                 <td align=left>&nbsp;<select <?php $page->businessobject->items->draw->select("docstatus", array("loadenumdocstatus", "", "")) ?> ></select></td>
             </tr>
             <tr>
-                <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_inspector") ?>>Name of Inspector</label></td>
+                <td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_inspector") ?>>Mobile App Inspector</label></td>
                 <td >&nbsp;<select <?php $page->businessobject->items->userfields->draw->select("u_inspector") ?>></select></td>
                 <td >&nbsp;<input type="checkbox" <?php $page->businessobject->items->userfields->draw->checkbox("u_noic_afop", 1) ?>/><label <?php $page->businessobject->items->userfields->draw->caption("u_noic_afop") ?>>Application for Occupancy Permit</label></td>
                 <td>&nbsp;<input type="checkbox" <?php $page->businessobject->items->userfields->draw->checkbox("u_noic_vioctntcv", 1) ?>/><label <?php $page->businessobject->items->userfields->draw->caption("u_noic_vioctntcv") ?>>Verification Inspection of Compliance to NTCV</label></td>
@@ -44,26 +44,18 @@
             <div class="tabbertab" title="General">
                 <div id="divudf" style="overflow:auto;">
                     <table class="tableFreeForm" width="100%" border="0" cellpadding="0" cellspacing="0" >
-                        <tr>
-                            <td width="400"><label class="lblobjs"><b>BUSINESS / OWNER DETAILS</b></label></td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
                          
                         <tr>
-                            <td width="168">&nbsp;<label <?php $page->businessobject->items->userfields->draw->caption("u_gi_businessname") ?>>Name of Business</label></td>
-                            <td>&nbsp;<input type="text" size="50" <?php $page->businessobject->items->userfields->draw->text("u_gi_businessname") ?>/></td>
+                            <td width="168">&nbsp;<label <?php $page->businessobject->items->userfields->draw->caption("u_fsecno") ?>>FSEC No.</label></td>
+                            <td>&nbsp;<input type="text" size="20" <?php $page->businessobject->items->userfields->draw->text("u_fsecno") ?>/></td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                         </tr>
                         <tr>
-                            <td width="168">&nbsp;<label <?php $page->businessobject->items->userfields->draw->caption("u_gi_natureofbusiness") ?>>Nature of Business</label></td>
-                            <td>&nbsp;<input type="text" size="50" <?php $page->businessobject->items->userfields->draw->text("u_gi_natureofbusiness") ?>/></td>
+                            <td width="168">&nbsp;<label <?php $page->businessobject->items->userfields->draw->caption("u_fsicno") ?>>FSIC No</label></td>
+                            <td>&nbsp;<input type="text" size="20" <?php $page->businessobject->items->userfields->draw->text("u_fsicno") ?>/></td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -137,7 +129,7 @@
                             <td >&nbsp;</td>
                         </tr>
                        
-                        <tr>
+<!--                        <tr>
                             <td width="230"><label class="lblobjs"><b>OTHER DETAILS</b></label></td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
@@ -180,54 +172,38 @@
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
                             <td>&nbsp;</td>
-                        </tr>
-                        <tr><td  >&nbsp;<label <?php $page->businessobject->items->userfields->draw->caption("u_gi_lstbpno") ?>>Latest Mayor's/Bus Permit/Date</label></td>
-                            <td>&nbsp;<input type="text" size="20" <?php $page->businessobject->items->userfields->draw->text("u_gi_lstbpno") ?>/>&nbsp;<input type="text" size="20" <?php $page->businessobject->items->userfields->draw->text("u_gi_lstbpdt") ?>/></td>
-                            <td><label <?php $page->businessobject->items->userfields->draw->caption("u_gi_munlicno") ?>>Municipal License No./Date</label></td>
-                            <td>&nbsp;<input type="text" size="20" <?php $page->businessobject->items->userfields->draw->text("u_gi_munlicno") ?>/>&nbsp;<input type="text" size="20" <?php $page->businessobject->items->userfields->draw->text("u_gi_munlicdt") ?>/></td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr><td  >&nbsp;<label <?php $page->businessobject->items->userfields->draw->caption("u_gi_lstfcoeino") ?>>Latest Certificate of Electrical Inspection No./Date</label></td>
-                            <td>&nbsp;<input type="text" size="20" <?php $page->businessobject->items->userfields->draw->text("u_gi_lstfcoeino") ?>/>&nbsp;<input type="text" size="20" <?php $page->businessobject->items->userfields->draw->text("u_gi_lstfcoeino") ?>/></td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
-                        <tr><td  >&nbsp;<label <?php $page->businessobject->items->userfields->draw->caption("u_gi_otherinfo") ?>>Other Information</label></td>
-                            <td >&nbsp;<input type="text" size="40" <?php $page->businessobject->items->userfields->draw->text("u_gi_otherinfo") ?>/></td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                            <td>&nbsp;</td>
-                        </tr>
+                        </tr>-->
+                        
                         </table>
 		  </div>
 		</div>
+                <div class="tabbertab" title="Inspectors">	
+                          <?php  $objGrids[0]->draw(true); ?>
+		</div>
 		<div class="tabbertab" title="Remarks">
-    <table class="tableFreeForm" width="100%" border="0" cellpadding="0" cellspacing="0" >
-        <tr class="fillerRow10px">
-          <td></td>
-          </tr>
-        <tr><td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_inspectorremarks") ?>>Inspection Report</label></td>
-            </tr>
-        <tr><td width="168"><TEXTAREA <?php $page->businessobject->items->userfields->draw->textarea("u_inspectorremarks") ?>rows="7" cols="100"><?php echo $page->getitemstring("u_inspectorremarks"); ?></TEXTAREA></td>
-            </tr>
-        <tr class="fillerRow10px">
-          <td></td>
-          </tr>
-        <tr><td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_recommendations") ?>>Recommendation</label></td>
-            </tr>
-        <tr><td width="168"><TEXTAREA <?php $page->businessobject->items->userfields->draw->textarea("u_recommendations") ?>rows="5" cols="100"><?php echo $page->getitemstring("u_recommendations"); ?></TEXTAREA></td>
-            </tr>
-    </table>            
-	  </div>
+                    <table class="tableFreeForm" width="100%" border="0" cellpadding="0" cellspacing="0" >
+                        <tr class="fillerRow10px">
+                          <td></td>
+                          </tr>
+                        <tr><td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_inspectorremarks") ?>>Inspection Report</label></td>
+                            </tr>
+                        <tr><td width="168"><TEXTAREA <?php $page->businessobject->items->userfields->draw->textarea("u_inspectorremarks") ?>rows="7" cols="100"><?php echo $page->getitemstring("u_inspectorremarks"); ?></TEXTAREA></td>
+                            </tr>
+                        <tr class="fillerRow10px">
+                          <td></td>
+                          </tr>
+                        <tr><td width="168"><label <?php $page->businessobject->items->userfields->draw->caption("u_recommendations") ?>>Recommendation</label></td>
+                            </tr>
+                        <tr><td width="168"><TEXTAREA <?php $page->businessobject->items->userfields->draw->textarea("u_recommendations") ?>rows="5" cols="100"><?php echo $page->getitemstring("u_recommendations"); ?></TEXTAREA></td>
+                            </tr>
+                    </table>            
+                </div>
+		
 		<div class="tabbertab" title="Inspection Report History">	
-            <table class="tableFreeForm" width="100%" cellpadding="0" cellspacing="0" border="0">
-                <tr><td><TEXTAREA <?php $page->businessobject->items->userfields->draw->textarea("u_inspectorremarkhistory") ?>rows="3" cols="50"><?php echo $page->getitemstring("u_inspectorremarkhistory") ?></TEXTAREA>
-                </td></tr>
-            </table>
+                    <table class="tableFreeForm" width="100%" cellpadding="0" cellspacing="0" border="0">
+                        <tr><td><TEXTAREA <?php $page->businessobject->items->userfields->draw->textarea("u_inspectorremarkhistory") ?>rows="3" cols="50"><?php echo $page->getitemstring("u_inspectorremarkhistory") ?></TEXTAREA>
+                        </td></tr>
+                    </table>
 		</div>
 	</div>
 </td></tr>		

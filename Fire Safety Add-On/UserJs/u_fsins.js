@@ -1,7 +1,7 @@
 // page events
 //page.events.add.load('onPageLoadGPSFireSafety');
 //page.events.add.resize('onPageResizeGPSFireSafety');
-//page.events.add.submit('onPageSubmitGPSFireSafety');
+page.events.add.submit('onPageSubmitGPSFireSafety');
 //page.events.add.cfl('onCFLGPSFireSafety');
 //page.events.add.cflgetparams('onCFLGetParamsGPSFireSafety');
 
@@ -37,6 +37,12 @@ function onPageResizeGPSFireSafety(width,height) {
 }
 
 function onPageSubmitGPSFireSafety(action) {
+        if (action=="a" || action=="sc") {
+		if (isInputEmpty("u_issdate")) return false;
+		if (isInputEmpty("u_inspectdate")) return false;
+		if (isInputEmpty("u_appno")) return false;
+		if (isInputEmpty("u_inspector")) return false;
+	}
 	return true;
 }
 

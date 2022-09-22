@@ -22,7 +22,7 @@
 	include_once("./utils/businessobjects.php");
 	include_once("./sls/enumdocstatus.php");
 
-	
+        
 	$expired=false;
 	$match=false;
 	$matchstatus="";
@@ -84,6 +84,7 @@
 	$schema["u_bphaseno"] = createSchemaUpper("u_bphaseno");
 	$schema["u_blotno"] = createSchemaUpper("u_blotno");
 	$schema["u_corpname"] = createSchemaUpper("u_corpname");
+	$schema["u_incorporators"] = createSchemaUpper("u_incorporators");
 //	$schema["u_birthdate"]["cfl"] = "Calendar";
 	
 	$objGrid = new grid("T1",$httpVars);
@@ -434,7 +435,7 @@
 //	setTabindex($schema["u_birthdate"]);
 //	setTabindex($schema["u_patientid"]);		
 	
-	$page->resize->addgrid("T1",20,240,false);
+	$page->resize->addgrid("T1",20,260,false);
 	$page->toolbar->setaction("print",false);
 	
 	$rptcols = 6; 
@@ -973,6 +974,10 @@
             <tr> 
               <td width="100" ><label <?php genCaptionHtml($schema["u_corpname"],"") ?>><b>Corporation Name</b></label></td>
               <td width="200" align=left><input type="text" size="50" <?php genInputTextHtml($schema["u_corpname"]) ?> /></td>
+            </tr>
+            <tr> 
+              <td width="100" ><label <?php genCaptionHtml($schema["u_incorporators"],"") ?>><b>Incorporators</b></label></td>
+              <td width="200" align=left><input type="text" size="50" <?php genInputTextHtml($schema["u_incorporators"]) ?> /></td>
             </tr>
             <tr class="fillerRow5px">
               <td align=left></td>

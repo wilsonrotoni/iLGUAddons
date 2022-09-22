@@ -37,9 +37,9 @@ function onPageReportGetParamsGPSLGUAcctgCAVBacoor(formattype,params) {
 
 function onPageLoadGPSLGUAcctgCAVBacoor() {
 	switch (getGlobal("branch")) {
-		case "100": setInputSelectedText("docseries","GF",true); break;
-		case "200": setInputSelectedText("docseries","SEF",true); break;
-		case "300": setInputSelectedText("docseries","TF",true); break;
+		case "101": setInputSelectedText("docseries","GF",true); break;
+		case "221": setInputSelectedText("docseries","SEF",true); break;
+		case "401": setInputSelectedText("docseries","TF",true); break;
 	}
 }
 
